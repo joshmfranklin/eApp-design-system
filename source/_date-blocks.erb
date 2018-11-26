@@ -1,89 +1,93 @@
 <section id="date-blocks" class="styleguide-section">
   <h2 class="styleguide-section-header">Date Blocks</h2>
 
-  <h3 class="styleguide-subsection-header">From/to date block</h3>
-  <fieldset id="from-to-date-block" class="usa-fieldset-inputs">
-    <legend>Dates used</legend>
-    <div class="from-to-dates">
-      <div class="from-date-container">
-        <p><strong>From date</strong></p>
-        <div class="m-d-y-block">
-          <div class="usa-form-control">
-            <label for="month">Month</label>
-            <input type="text" id="month" maxlength="2">
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">From/to date block</h3>
+    <fieldset id="from-to-date-block" class="usa-fieldset-inputs">
+      <legend>Dates used</legend>
+      <div class="from-to-dates">
+        <div class="from-date-container">
+          <p><strong>From date</strong></p>
+          <div class="m-d-y-block">
+            <div class="usa-form-control">
+              <label for="month">Month</label>
+              <input type="text" id="month" maxlength="2">
+            </div>
+            <div class="usa-form-control">
+              <label for="day">Day</label>
+              <input type="text" id="day" maxlength="2">
+            </div>
+            <div class="usa-form-control">
+              <label for="year">Year</label>
+              <input type="text" id="year" maxlength="4">
+            </div>
           </div>
-          <div class="usa-form-control">
-            <label for="day">Day</label>
-            <input type="text" id="day" maxlength="2">
-          </div>
-          <div class="usa-form-control">
-            <label for="year">Year</label>
-            <input type="text" id="year" maxlength="4">
-          </div>
-        </div>
-        <div class="modifiers">
-          <div class="modifier">
-            <input id="from-estimated" type="checkbox" name="from-estimated">
-            <label class="simple-checkbox" for="from-estimated"><span>Estimated</span></label>
-          </div>
-        </div>
-      </div>
-      <div class="from-to-date-arrow">
-        <i class="fas fa-long-arrow-alt-right fa-2x"></i>
-      </div>
-      <div class="to-date-container">
-        <p><strong>To date</strong></p>
-        <div class="m-d-y-block">
-          <div class="usa-form-control">
-            <label for="month">Month</label>
-            <input type="text" id="month" class="to-date-input" maxlength="2">
-          </div>
-          <div class="usa-form-control">
-            <label for="day">Day</label>
-            <input type="text" id="day" class="to-date-input" maxlength="2">
-          </div>
-          <div class="usa-form-control">
-            <label for="year">Year</label>
-            <input type="text" id="year" class="to-date-input" maxlength="4">
+          <div class="modifiers">
+            <div class="modifier">
+              <input id="from-estimated" type="checkbox" name="from-estimated">
+              <label class="simple-checkbox" for="from-estimated"><span>Estimated</span></label>
+            </div>
           </div>
         </div>
-        <div class="modifiers">
-          <div class="modifier">
-            <input id="to-estimated" class="to-date-input" type="checkbox" name="to-estimated">
-            <label class="simple-checkbox" for="to-estimated"><span>Estimated</span></label>
+        <div class="from-to-date-arrow">
+          <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+        </div>
+        <div class="to-date-container">
+          <p><strong>To date</strong></p>
+          <div class="m-d-y-block">
+            <div class="usa-form-control">
+              <label for="month">Month</label>
+              <input type="text" id="month" class="to-date-input" maxlength="2">
+            </div>
+            <div class="usa-form-control">
+              <label for="day">Day</label>
+              <input type="text" id="day" class="to-date-input" maxlength="2">
+            </div>
+            <div class="usa-form-control">
+              <label for="year">Year</label>
+              <input type="text" id="year" class="to-date-input" maxlength="4">
+            </div>
+          </div>
+          <div class="modifiers">
+            <div class="modifier">
+              <input id="to-estimated" class="to-date-input" type="checkbox" name="to-estimated">
+              <label class="simple-checkbox" for="to-estimated"><span>Estimated</span></label>
+            </div>
           </div>
         </div>
+        <div class="or">or</div>
+        <div class="present">
+          <input id="present" type="checkbox" name="present">
+          <label for="present"><span>Present</span></label>
+        </div>
       </div>
-      <div class="or">or</div>
-      <div class="present">
-        <input id="present" type="checkbox" name="present">
-        <label for="present"><span>Present</span></label>
-      </div>
-    </div>
-  </fieldset>
+    </fieldset>
+  </div>
 
-  <h3 class="styleguide-subsection-header">Month/Date/Year Block</h3>
-  <fieldset class="usa-fieldset-inputs">
-    <legend>Provide your date of birth</legend>
-    <div class="m-d-y-block">
-      <div class="usa-form-control">
-        <label for="month">Month</label>
-        <input type="text" id="month" maxlength="2">
-      </div>
-      <div class="usa-form-control">
-        <label for="day">Day</label>
-        <input type="text" id="day" maxlength="2">
-      </div>
-      <div class="usa-form-control">
-        <label for="year">Year</label>
-        <input type="text" id="year" maxlength="4">
-      </div>
-      <div class="modifiers">
-        <div class="modifier">
-          <input id="estimated" type="checkbox" name="estimated">
-          <label class="simple-checkbox" for="estimated"><span>Estimated</span></label>
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Month/Date/Year Block</h3>
+    <fieldset class="usa-fieldset-inputs">
+      <legend>Provide your date of birth</legend>
+      <div class="m-d-y-block">
+        <div class="usa-form-control">
+          <label for="month">Month</label>
+          <input type="text" id="month" maxlength="2">
+        </div>
+        <div class="usa-form-control">
+          <label for="day">Day</label>
+          <input type="text" id="day" maxlength="2">
+        </div>
+        <div class="usa-form-control">
+          <label for="year">Year</label>
+          <input type="text" id="year" maxlength="4">
+        </div>
+        <div class="modifiers">
+          <div class="modifier">
+            <input id="estimated" type="checkbox" name="estimated">
+            <label class="simple-checkbox" for="estimated"><span>Estimated</span></label>
+          </div>
         </div>
       </div>
-    </div>
-  </fieldset>
+    </fieldset>
+  </div>
 </section>

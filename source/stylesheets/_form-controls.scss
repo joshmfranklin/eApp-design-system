@@ -64,6 +64,11 @@
   display: block;
 }
 
+.usa-checkbox-radio-error [type=checkbox]+label,
+.usa-checkbox-radio-error [type=radio]+label {
+  border: 3px solid $color-secondary;
+}
+
 // Inputs and selects
 
 label {
@@ -87,7 +92,17 @@ select:disabled {
   margin-bottom: 2rem;
 }
 
-// Field modifiers
+// Input sizing
+
+.usa-small-input {
+  width: 10rem;
+}
+
+.usa-medium-input {
+  width: 30rem;
+}
+
+// Input modifiers
 
 .modifiers {
   display: flex;
@@ -110,7 +125,8 @@ fieldset {
   }
 }
 
-legend {
+legend,
+.usa-alt-label {
   font-size: 2rem;
   font-weight: 900;
   line-height: 1.3em;
@@ -121,4 +137,47 @@ legend.label-style {
   font-size: 1.7rem;
   font-weight: 400;
   margin-bottom: 1rem;
+}
+
+// Input validation
+
+.usa-input-error {
+  border: none;
+  margin: 0;
+  padding: 0;
+  right: 0;
+}
+
+.usa-input-error::before {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  color: $color-secondary;
+  font-weight: 900;
+  content: "\f06a";
+  right: 12px;
+  bottom: 14px;
+}
+
+.usa-input-success {
+  position: relative;
+
+  input {
+    border: 3px solid $color-green;
+  }
+}
+
+.usa-input-success::before {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  color: $color-green;
+  font-weight: 900;
+  content: "\f058";
+  right: 12px;
+  bottom: 14px;
+}
+
+.usa-input-error-message {
+  padding: 5px 8px;
+  background: $color-secondary-lightest;
+  margin: .5rem 0 1rem 0;
 }

@@ -1,30 +1,88 @@
 <section id="input-blocks" class="styleguide-section">
-  <h2 class="styleguide-section-header">Input Blocks</h2>
 
-  <h3 class="styleguide-subsection-header">Single/multi line text inputs</h3>
-  <div class="usa-form-control">
-    <label for="first-name">First name</label>
-    <input type="text" id="first-name">
-  </div>
-  <div class="usa-form-control">
-    <label for="reason-why-name-changed">Reason(s) why the name changed</label>
-    <textarea name="" id="reason-why-name-changed" cols="30" rows="10"></textarea>
-  </div>
+  <div class="styleguide-subsection">
+    <h2 class="styleguide-section-header">Input Blocks</h2>
 
-  <h3 class="styleguide-subsection-header">Select input</h3>
-  <div class="usa-form-control">
-    <label for="hair-color">Choose hair color</label>
-    <select name="" id="hair-color">
-      <option value="" disabled selected></option>
-      <option value="brown">Brown</option>
-      <option value="black">Black</option>
-      <option value="blonde">Blonde</option>
-    </select>
+    <h3 class="styleguide-subsection-header">Single/multi line text inputs</h3>
+    <div class="usa-form-control">
+      <label for="first-name">First name</label>
+      <input type="text" id="first-name">
+    </div>
+    <div class="usa-form-control">
+      <label for="reason-why-name-changed">Reason(s) why the name changed</label>
+      <textarea name="" id="reason-why-name-changed" cols="30" rows="10"></textarea>
+    </div>
+
   </div>
 
-  <h3 class="styleguide-subsection-header">Email input</h3>
-  <div class="usa-form-control">
-    <label for="home-email">Home email address</label>
-    <input type="email" id="home-email">
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Select input</h3>
+    <div class="usa-form-control">
+      <label for="hair-color">Suffix</label>
+      <select name="" id="hair-color">
+        <option value="" disabled selected></option>
+        <option value="brown">Mr.</option>
+        <option value="black">Mrs.</option>
+        <option value="blonde">Ms.</option>
+      </select>
+    </div>
   </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Email input</h3>
+    <div class="usa-form-control">
+      <label for="home-email">Home email address</label>
+      <input type="email" id="home-email">
+    </div>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Alternate input label style</h3>
+    <div class="usa-form-control">
+      <label for="alt-input" class="usa-alt-label">Hair color</label>
+      <select name="" id="hair-color">
+        <option value="" disabled selected></option>
+        <option value="brown">Brown</option>
+        <option value="black">Black</option>
+        <option value="blonde">Blonde</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Input sizing</h3>
+    <div class="usa-form-control usa-small-input">
+      <label for="small-input">Small input</label>
+      <input type="text">
+    </div>
+    <div class="usa-form-control usa-medium-input">
+      <label for="medium-input">Medium input</label>
+      <input type="text">
+    </div>
+    <div class="usa-form-control">
+      <label for="default-input">Default input</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Input validation states</h3>
+
+    <div class="form-control">
+      <label for="default-input">Default input</label>
+      <input type="text">
+    </div>
+
+    <div class="form-control usa-input-error">
+      <label for="error-input">Error input</label>
+      <span class="usa-input-error-message" id="input-error-message" role="alert">Your response is required</span>
+      <input type="text">
+    </div>
+
+    <div class="form-control usa-input-success">
+      <label for="success-input">Success input</label>
+      <input type="text">
+    </div>
+  </div>
+
 </section>

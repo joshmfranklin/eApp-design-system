@@ -7,6 +7,38 @@ body {
   height: calc(100% - 8rem);
 }
 
+.site-header {
+  background-color: $color-primary-darker;
+
+  .site-logo {
+    margin-left: 3rem;
+  }
+}
+
+.usa-header {
+  width: 100%;
+  z-index: 9000;
+}
+
+.site-header-navbar {
+  height: 8rem;
+  width: 100%;
+  display: block;
+  border-bottom: none;
+}
+
+.site-logo {
+  line-height: 7.5rem;
+  float: left;
+  color: $color-white;
+
+  em {
+    font-size: 2rem;
+    line-height: 8rem;
+    font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  }
+}
+
 .usa-header {
   position: fixed;
   top: 0;
@@ -42,6 +74,10 @@ body {
   margin: 6rem 0 3rem 0;
   padding-bottom: 2rem;
   border-bottom: 3px solid $color-gray-lighter;
+}
+
+.styleguide-subsection {
+  margin-bottom: 6rem;
 }
 
 .styleguide-subsection-header {
