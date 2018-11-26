@@ -1,0 +1,31 @@
+.site-header {
+  background-color: $color-primary-darkest;
+
+  .site-logo {
+    margin-left: 3rem;
+  }
+}
+
+.usa-header {
+  width: 100%;
+  z-index: 9000;
+}
+
+.site-header-navbar {
+  height: 8rem;
+  width: 100%;
+  display: block;
+  border-bottom: none;
+}
+
+.site-logo {
+  line-height: 7.5rem;
+  float: left;
+  color: $color-white;
+
+  em {
+    font-size: 2rem;
+    line-height: 8rem;
+    font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  }
+}

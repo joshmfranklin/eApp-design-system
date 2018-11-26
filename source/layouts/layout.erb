@@ -12,6 +12,36 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <%= yield %>
+    <header class="usa-header site-header">
+      <div class="usa-navbar siate-header-navbar">
+        <div class="usa-logo site-logo">
+          <em class="usa-logo-text">
+            eApp Styleguide
+          </em>
+        </div>
+      </div>
+    </header>
+
+    <section class="sidenav">
+      <nav>
+        <ul class="usa-sidenav-list">
+          <li>
+            <a href="" class="usa-current">Introduction</a>
+          </li>
+          <li>
+            <a href="">Another section</a>
+          </li>
+          <li>
+            <a href="">Another section</a>
+          </li>
+          <li>
+            <a href="">Another section</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section class="main-content">
+      <%= partial "intro" %>
+    </section>
   </body>
 </html>
