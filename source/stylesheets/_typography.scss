@@ -43,3 +43,19 @@ h4 {
 .usa-list-inline-justified li {
   width: 100%;
 }
+
+// Section header
+
+.section-header {
+  border-bottom: 1px solid $color-gray-light;
+  padding: 2rem 0;
+
+  .usa-grid {
+    padding: 0;
+  }
+}
+
+.secondary-heading {
+  text-align: right;
+  margin-bottom: 0;
+}

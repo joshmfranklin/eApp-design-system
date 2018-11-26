@@ -98,3 +98,27 @@ select:disabled {
 .modifier {
   margin-left: 1rem;
 }
+
+// Fieldsets
+
+fieldset {
+  margin-bottom: 4rem;
+
+  .usa-grid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+legend {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.3em;
+  margin-bottom: 2rem;
+}
+
+legend.label-style {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}

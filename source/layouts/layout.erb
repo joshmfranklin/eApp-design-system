@@ -8,6 +8,9 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Middleman" %></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/1.6.8/css/uswds.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/1.6.9/js/uswds.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
@@ -29,19 +32,47 @@
             <a href="" class="usa-current">Introduction</a>
           </li>
           <li>
-            <a href="">Another section</a>
+            <a href="#typography">Typography</a>
           </li>
           <li>
-            <a href="">Another section</a>
+            <a href="#alert-blocks">Alert blocks</a>
           </li>
           <li>
-            <a href="">Another section</a>
+            <a href="#input-blocks">Input blocks</a>
+          </li>
+          <li>
+            <a href="#checkbox-radio-blocks">Checkbox/radio button blocks</a>
+          </li>
+          <li>
+            <a href="#phone-number-block">Phone number block</a>
+          </li>
+          <li>
+            <a href="#date-blocks">Date blocks</a>
+          </li>
+          <li>
+            <a href="#address-block">Address block</a>
+          </li>
+          <li>
+            <a href="#accordion-block">Accordion block</a>
+          </li>
+          <li>
+            <a href="#back-next-block">Back/next block</a>
           </li>
         </ul>
       </nav>
     </section>
-    <section class="main-content">
+    <section class="main-content usa-content">
       <%= partial "intro" %>
+      <%= partial "typography" %>
+      <%= partial "alert-blocks" %>
+      <%= partial "input-blocks" %>
+      <%= partial "checkbox-radio-blocks" %>
+      <%= partial "phone-number-block" %>
+      <%= partial "date-blocks" %>
+      <%= partial "address-block" %>
+      <%= partial "accordion-block" %>
+      <%= partial "back-next-block" %>
+      <%= partial "sidenav-block" %>
     </section>
   </body>
 </html>

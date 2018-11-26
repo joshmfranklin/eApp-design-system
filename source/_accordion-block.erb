@@ -1,0 +1,93 @@
+<section id="accordion-block" class="styleguide-section">
+  <h2 class="styleguide-section-header">Accordion Block</h2>
+  <ul id="accordion" class="usa-accordion-bordered">
+    <li>
+      <div class="usa-accordion-header">
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="b-a1">
+          <div class="titles">
+            <div class="title">
+              <div class="title-right">
+                <span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-stack-1x fa-home fa-inverse"></i>
+                </span>
+                <span>801 Union Street, Burlington, VT 05401</span>
+              </div>
+              <div class="title-left">
+                <span>09/2017-10/2018</span>
+              </div>
+            </div>
+          </div>
+          <div class="usa-accordion-close-button">
+          </div>
+        </button>
+        <button class="usa-accordion-remove-button">
+          <span class="fas fa-times fa-fw"></span>
+          <span class="remove">Remove</span>
+        </button>
+       </div>
+      <div id="b-a1" class="usa-accordion-content">
+        <form action="" class="usa-form-large">
+          <fieldset class="usa-fieldset-inputs">
+            <legend>Provide street address</legend>
+
+            <input id="APO" type="checkbox" name="APO" value="truth">
+            <label for="APO"><span>This address is an APO/FPO/DPO</span></label>
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="United States of America">United States of America</option>
+              <option value="Another country">Another country</option>
+              <option value="Another country">Another country</option>
+            </select>
+
+            <label for="mailing-address-1">Street address</label>
+            <input id="mailing-address-1" name="mailing-address-1" type="text">
+
+            <label for="mailing-address-2">Apt, suite, building, floor, etc.(Optional)</label>
+            <input id="mailing-address-2" name="mailing-address-2" type="text">
+
+
+            <label for="city">City</label>
+            <input id="city" name="city" type="text">
+
+            <div class="usa-grid">
+              <div class="usa-width-one-half">
+                <label for="state">State</label>
+                <input id="state" name="state" type="text">
+              </div>
+
+              <div class="usa-width-one-half">
+                <label for="zip">Zip</label>
+                <input id="zip" name="zip" type="zip">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="usa-fieldset-inputs">
+            <legend>Is/was this residence</legend>
+            <ul class="usa-unstyled-list">
+              <li>
+                <input id="owned" type="radio" name="residence-type">
+                <label for="owned"><span>Owned by you</span></label>
+              </li>
+              <li>
+                <input id="rented-leased" type="radio" name="residence-type">
+                <label for="rented-leased"><span>Rented or leased by you</span></label>
+              </li>
+              <li>
+                <input id="military-housing" type="radio" name="residence-type">
+                <label for="military-housing"><span>Military housing</span></label>
+              </li>
+              <li>
+                <input id="other" type="radio" name="residence-type">
+                <label for="other"><span>Other</span></label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+    </li>
+  </ul>
+</section>

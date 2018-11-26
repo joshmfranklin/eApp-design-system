@@ -1,0 +1,80 @@
+<section id="phone-number-block" class="styleguide-section">
+  <h2 class="styleguide-section-header">Phone Number Block</h2>
+  <fieldset class="usa-fieldset-inputs">
+    <legend>Your phone number</legend>
+    <input id="dns" class="phone-input" type="checkbox" name="dns" value="dns">
+    <label class="simple-checkbox" for="dns"><span>I have a DSN number</span></label>
+
+    <div id="dsn-phone-number-block" class="usa-grid">
+      <div class="usa-width-two-thirds">
+        <label for="">DSN Phone number</label>
+        <ul class="usa-list-inline usa-list-inline-justified">
+          <li>
+            <input type="text">
+          </li>
+          <li id="dsn-dash">-</li>
+          <li>
+            <input type="text">
+          </li>
+        </ul>
+      </div>
+      <div class="usa-width-one-sixth">
+        <label for="phone-type">Phone type</label>
+        <select name="phone-type" id="phone-type">
+          <option value="" style="display:none" disabled selected></option>
+          <option value="cell">Cell</option>
+          <option value="home">Home</option>
+          <option value="work">Work</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="standard-phone-number-block" class="usa-grid">
+      <div class="usa-width-one-sixth">
+        <label for="country-code">Country</label>
+        <select name="country-code" id="country-code" class="phone-input">
+          <option value="usa">🇺🇸 +1</option>
+          <option value="gb">🇬🇧 +44</option>
+        </select>
+      </div>
+      <div class="usa-width-one-third">
+        <label for="phone-number">Phone number</label>
+        <input type="text" name="phone-number" class="phone-input">
+      </div>
+      <div class="usa-width-one-sixth">
+        <label for="extension">Extension</label>
+        <input type="text" name="extension" class="phone-input">
+      </div>
+      <div class="usa-width-one-sixth">
+        <label for="phone-type">Phone type</label>
+        <select name="phone-type" id="phone-type">
+          <option value="" style="display:none" disabled selected></option>
+          <option value="cell">Cell</option>
+          <option value="home">Home</option>
+          <option value="work">Work</option>
+        </select>
+      </div>
+    </div>
+    <div class="usa-grid">
+      <div class="usa-width-one-half">
+        <fieldset class="usa-fielset-inputs">
+          <legend class="label-style">Best time to call</legend>
+          <ul class="usa-list-inline">
+            <li>
+              <input id="day" class="phone-input" type="radio" name="time-to-call" value="day">
+          <label for="day"><span>Day</span></label>
+            </li>
+            <li>
+              <input id="night" class="phone-input" type="radio" name="time-to-call" value="night">
+          <label for="night"><span>Night</span></label>
+            </li>
+            <li>
+              <input id="both" class="phone-input" type="radio" name="time-to-call" value="both">
+          <label for="both"><span>Both</span></label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </div>
+  </fieldset>
+</section>
