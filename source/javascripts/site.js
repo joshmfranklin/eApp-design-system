@@ -81,4 +81,11 @@ $(document).ready(function(){
       }
     })
   })
+
+  // Sidenav highligher
+
+  $('#styleguide-sidenav a').click(function(e) {
+    $('#styleguide-sidenav a').removeClass('usa-current');
+    $(this).addClass('usa-current');
+  });
 })

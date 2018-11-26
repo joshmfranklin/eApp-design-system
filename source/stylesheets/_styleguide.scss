@@ -7,6 +7,15 @@ body {
   height: calc(100% - 8rem);
 }
 
+.styleguide-section::before {
+  display: block;
+  content: " ";
+  margin-top: -8rem;
+  height: 8rem;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .site-header {
   background-color: $color-primary-darkest;
 
@@ -54,6 +63,7 @@ body {
   height: 100%;
   padding: 0 0 0 2rem;
   position: fixed;
+  margin-top: 12rem;
 
   nav {
     width: 100%;
@@ -63,7 +73,7 @@ body {
 .main-content {
   width: 80%;
   padding: 0 3rem 0 35rem;
-  margin: 14rem 0;
+  margin: 8rem 0;
 }
 
 .styleguide-section {
