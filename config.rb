@@ -41,7 +41,7 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :build do
-  set :http_prefix, "/eApp-styleguide"
+  set :http_prefix, "/eApp-livestyleguide"
 end
 
 activate :deploy do |deploy|
