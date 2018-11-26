@@ -1,0 +1,42 @@
+.from-to-dates {
+  display: flex;
+  flex-direction: row;
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.m-d-y-block {
+  display: flex;
+  align-items: center;
+
+  .usa-form-control {
+    margin-right: 1rem;
+    margin-bottom: 0;
+    width: 7rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.from-to-date-arrow,
+.or {
+  text-align: center;
+}
+
+.from-to-date-arrow {
+  padding-top: 7.5rem;
+  width: 9rem;
+}
+
+.or {
+  padding-top: 8rem;
+  width: 3rem;
+}
+
+.present {
+  margin-top: 7rem;
+}

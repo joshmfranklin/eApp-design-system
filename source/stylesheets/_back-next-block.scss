@@ -1,0 +1,43 @@
+.next-back-block {
+  border-top: 2px solid $color-gray-lighter;
+  display: flex;
+  justify-content: space-between;
+
+  .usa-button {
+    width: 30%;
+    margin-right: 0;
+    margin-top: 3rem;
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 40%;
+    }
+
+    .direction{
+      margin-bottom: .5rem;
+    }
+
+    .label {
+      font-weight: 400;
+    }
+  }
+}
+
+.back-button {
+  text-align: left;
+  padding: 1.5rem 1.5rem 1.5rem 5rem;
+
+  i {
+    left: 2rem;
+  }
+}
+
+.next-button {
+  text-align: right;
+  padding: 1.5rem 5rem 1.5rem 1.5rem;
+
+  i {
+    right: 2rem;
+  }
+}

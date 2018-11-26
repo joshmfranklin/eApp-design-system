@@ -1,0 +1,100 @@
+// Checkbox/Radio button styles
+
+[type=checkbox]+label,
+[type=radio]+label{
+  padding: 1rem;
+  border: 1px solid $color-primary-alt-light;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $color-gray-lightest;
+  }
+}
+
+[type=checkbox]+label.simple-checkbox,
+[type=radio]+label.simple-checkbox {
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+
+  &:hover {
+    background-color: white;
+  }
+}
+
+[type=checkbox]:checked+label,
+[type=radio]:checked+label {
+  background: $color-primary-alt-lightest;
+  border-color: $color-primary-alt-dark;
+}
+
+[type=checkbox]:checked+label.simple-checkbox,
+[type=radio]:checked+label.simple-checkbox {
+  background: none;
+  border: none;
+}
+
+[type=checkbox]:disabled+label,
+[type=radio]:disabled+label {
+  border-color: $color-gray-lighter;
+  opacity: .35;
+  cursor: not-allowed;
+
+  &:hover {
+    background-color: $color-white;
+  }
+}
+
+[type=checkbox]+label:before,
+[type=radio]+label:before{
+  position: absolute;
+}
+
+[type=radio]+label:before {
+  margin-top: 6px;
+}
+
+[type=checkbox]+label:before {
+  margin-top: 2px;
+}
+
+[type=checkbox]+label span,
+[type=radio]+label span{
+  padding-left: 3rem;
+  display: block;
+}
+
+// Inputs and selects
+
+label {
+  margin-top: 1.5rem;
+}
+
+input,
+select {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  max-width: 64rem;
+}
+
+input:disabled,
+select:disabled {
+  opacity: .35;
+  cursor: not-allowed;
+}
+
+.usa-form-control {
+  margin-bottom: 2rem;
+}
+
+// Field modifiers
+
+.modifiers {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.modifier {
+  margin-left: 1rem;
+}

@@ -1,0 +1,120 @@
+// Accordion
+
+.usa-accordion-header-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.usa-accordion-header {
+  display: flex;
+
+  .title:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.usa-accordion-button {
+  background-image: none;
+  position: relative;
+  color: $color-primary;
+  padding: 2rem 6rem;
+  display: flex;
+  align-items: center;
+
+  .titles {
+    width: 100%;
+  }
+
+  .titles .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .title-right {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.usa-accordion-button:hover {
+  color: $color-primary;
+}
+
+.usa-accordion-close-button {
+  position: absolute;
+  right: 1.5rem;
+  text-align: center;
+  font-weight: normal;
+  display: inline-block;
+  width: 4rem;
+}
+
+.usa-accordion-button[aria-expanded=false] {
+  background-image: none;
+}
+
+.usa-accordion-button .accordion-title {
+  font-weight: normal;
+  margin-right: 1rem;
+}
+
+.usa-accordion-remove-button {
+  margin: 0;
+  border-radius: 0;
+  padding: 0 2rem;
+  background-color: $color-gray-light;
+  font-weight: normal;
+}
+
+.usa-accordion-remove-button:hover {
+  background-color: $color-secondary;
+}
+
+.usa-accordion-content {
+  padding: 4rem;
+}
+
+.usa-accordion-button[aria-expanded="true"] .usa-accordion-close-button::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f077";
+  font-weight: 900;
+}
+
+.usa-accordion-button[aria-expanded="false"] .usa-accordion-close-button::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  font-weight: 900;
+}
+
+// Mobile styles
+
+@media all and (max-width: 575px) {
+  .usa-accordion-button,
+  .usa-accordion-content {
+    padding: 2rem;
+  }
+
+  .usa-accordion-button {
+    width: 85%;
+  }
+
+  .usa-accordion-remove-button {
+    width: 15%;
+
+    .remove {
+      display: none;
+    }
+  }
+
+  .title-right {
+    width: 90%;
+  }
+
+  .title-left {
+    display: none;
+  }
+}

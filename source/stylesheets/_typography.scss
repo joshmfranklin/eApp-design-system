@@ -1,0 +1,45 @@
+// Basics
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+// Lists
+
+.usa-list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.usa-list-inline li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.usa-list-inline li:not(:last-child),
+.usa-list-inline-justified li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.usa-list-inline-justified {
+  display: flex;
+  justify-content: space-between;
+}
+
+.usa-list-inline-justified li {
+  width: 100%;
+}
