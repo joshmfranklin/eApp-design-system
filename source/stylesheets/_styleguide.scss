@@ -10,14 +10,22 @@ body {
 .styleguide-section::before {
   display: block;
   content: " ";
-  margin-top: -8rem;
-  height: 8rem;
+  margin-top: -10rem;
+  height: 10rem;
   visibility: hidden;
   pointer-events: none;
 }
 
 .site-header {
   background-color: $color-primary-darkest;
+
+  .usa-nbis-logo {
+    width: 6rem;
+
+    img {
+      width: 100%;
+    }
+  }
 
   .site-logo {
     margin-left: 3rem;
@@ -71,8 +79,7 @@ body {
 }
 
 .main-content {
-  width: 80%;
-  padding: 0 3rem 0 35rem;
+  padding: 0 3rem 0 30rem;
   margin: 8rem 0;
 }
 
