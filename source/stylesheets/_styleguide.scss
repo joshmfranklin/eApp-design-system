@@ -51,7 +51,7 @@
   }
 }
 
-//Secondary nav
+// Secondary nav
 .styleguide-secondary-nav {
   display: none;
 }
@@ -136,7 +136,7 @@
   width: 80%;
 }
 
-//Sections and subsections
+// Sections and subsections
 
 .styleguide-section {
   max-width: 64rem;
@@ -155,3 +155,20 @@
 .styleguide-subsection-header {
   color: $color-primary-darker;
 }
+
+// Documentation sections
+
+.styleguide-documentation-section {
+  margin: 2rem 0;
+
+  .usa-accordion-button {
+    color: $color-base;
+  }
+
+  .usa-accordion-content {
+    padding: 2rem;
+  }
+}
+
+
+
