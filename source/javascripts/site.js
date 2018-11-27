@@ -82,10 +82,25 @@ $(document).ready(function(){
     })
   })
 
-  // Sidenav highligher
+  // Sidenav highligher design principles
+
+  $(function(){
+    var current = location.pathname;
+    $('nav li a').each(function(){
+      var $this = $(this);
+      console.log($this);
+      // if the current path is like this link, make it active
+      if($this.attr('href').indexOf(current) !== -1){
+          $this.addClass('usa-current');
+      }
+    })
+  })
+
+  // Sidebar highligher UI components
 
   $('#styleguide-sidenav a').click(function(e) {
-    $('#styleguide-sidenav a').removeClass('usa-current');
-    $(this).addClass('usa-current');
+      $('#styleguide-sidenav a').removeClass('usa-current');
+      $(this).addClass('usa-current');
   });
+
 })
