@@ -18,12 +18,12 @@
   <div class="styleguide-secondary-nav sticky">
     <ul>
       <li>
-        <a href="/" class="usa-current">
+        <a href="/">
           <span>UI Components</span>
         </a>
       </li>
       <li>
-        <a href="/design-principals-intro.html">
+        <a href="/design-principals-intro.html" class="usa-current">
           <span>Design Principles</span>
         </a>
       </li>
@@ -31,6 +31,26 @@
   </div>
 
   <body>
-    <%= yield %>
+    <section id="styleguide-sidenav" class="sidenav">
+      <nav>
+        <ul class="usa-sidenav-list">
+          <li>
+            <a href="/design-principals-intro.html" class="usa-current">Introduction</a>
+          </li>
+          <li>
+            <a href="/terminology.html" class="">Terminology</a>
+          </li>
+          <li>
+            <a href="/eapp-should.html" class="">Design Principles</a>
+          </li>
+          <li>
+            <a href="/systems-principles.html" class="">Systems Principles</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section class="main-content">
+      <%= yield %>
+    </section>
   </body>
 </html>
