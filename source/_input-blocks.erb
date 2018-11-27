@@ -1,7 +1,7 @@
 <h2 class="styleguide-section-header">Input Blocks</h2>
 <section id="input-blocks" class="styleguide-section">
   <div class="styleguide-subsection">
-    <h3 class="styleguide-subsection-header">Single/multi line text inputs</h3>
+    <h3 class="styleguide-subsection-header">Single/multi-line text inputs</h3>
     <div class="usa-form-control">
       <label for="first-name">First name</label>
       <input type="text" id="first-name">
@@ -188,6 +188,30 @@
       <label for="success-input">Complete input</label>
       <input type="text">
     </div>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="input-validation-docs">
+          Documentation
+        </button>
+        <div id="input-validation-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Validation is used to signify to the applicant the state of the information they input into the form.</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Untouched: fields that have not had any information added to them.</li>
+            <li>Incomplete: fields that hold invalid information and/or required fields that are empty.</li>
+            <li>Complete: fields that hold valid infomation and/or required fields that are filled in.</li>
+            <li>Validation should be triggered upon exiting a field. For fieldsets like addresses, this may apply to the fieldset as a whole.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
   </div>
 
 </section>
