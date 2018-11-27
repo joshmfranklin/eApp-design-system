@@ -18,14 +18,14 @@
   <div class="styleguide-secondary-nav sticky">
     <ul>
       <li>
-        <a href="/">
+        <% link_to '/index.html' do %>
           <span>UI Components</span>
-        </a>
+        <% end %>
       </li>
       <li>
-        <a href="/design-principals-intro.html" class="usa-current">
+        <% link_to '/design-principals-intro.html', :class => "usa-current" do %>
           <span>Design Principles</span>
-        </a>
+        <% end %>
       </li>
     </ul>
   </div>
@@ -35,16 +35,16 @@
       <nav>
         <ul class="usa-sidenav-list">
           <li>
-            <a href="/design-principals-intro.html">Introduction</a>
+            <%= link_to 'Introduction', '/design-principals-intro.html' %>
           </li>
           <li>
-            <a href="/terminology.html" >Terminology</a>
+            <%= link_to 'Terminology', '/terminology.html' %>
           </li>
           <li>
-            <a href="/eapp-should.html" >Design Principles</a>
+            <%= link_to 'Principles', '/eapp-should.html' %>
           </li>
           <li>
-            <a href="/systems-principles.html">Systems Principles</a>
+            <%= link_to 'System Principles', '/systems-principles.html' %>
           </li>
         </ul>
       </nav>
