@@ -14,68 +14,31 @@
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <body>
-    <header class="usa-header site-header">
-      <div class="usa-navbar site-header-navbar">
-        <div class="usa-logo site-logo">
-          <em class="usa-logo-text">
-            eApp Styleguide
-          </em>
-        </div>
+  <header class="usa-header site-header">
+    <div class="usa-navbar site-header-navbar">
+      <div class="usa-logo site-logo">
+        <em class="usa-logo-text">
+          eApp Styleguide
+        </em>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <section id="styleguide-sidenav" class="sidenav">
-      <nav>
-        <ul class="usa-sidenav-list">
-          <li>
-            <a href="#intro" class="usa-current">Introduction</a>
-          </li>
-          <li>
-            <a href="#typography">Typography</a>
-          </li>
-          <li>
-            <a href="#alert-blocks">Alert blocks</a>
-          </li>
-          <li>
-            <a href="#input-blocks">Input blocks</a>
-          </li>
-          <li>
-            <a href="#checkbox-radio-blocks">Checkbox/radio button blocks</a>
-          </li>
-          <li>
-            <a href="#phone-number-block">Phone number block</a>
-          </li>
-          <li>
-            <a href="#date-blocks">Date blocks</a>
-          </li>
-          <li>
-            <a href="#address-block">Address block</a>
-          </li>
-          <li>
-            <a href="#accordion-block">Accordion block</a>
-          </li>
-          <li>
-            <a href="#back-next-block">Back/next block</a>
-          </li>
-          <li>
-            <a href="#sidenav-block">Sidenav block</a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-    <section class="main-content usa-content">
-      <%= partial "intro" %>
-      <%= partial "typography" %>
-      <%= partial "alert-blocks" %>
-      <%= partial "input-blocks" %>
-      <%= partial "checkbox-radio-blocks" %>
-      <%= partial "phone-number-block" %>
-      <%= partial "date-blocks" %>
-      <%= partial "address-block" %>
-      <%= partial "accordion-block" %>
-      <%= partial "back-next-block" %>
-      <%= partial "sidenav-block" %>
-    </section>
+  <div class="styleguide-secondary-nav sticky">
+    <ul>
+      <li>
+        <a href="/" class="usa-current">
+          <span>UI Components</span>
+        </a>
+      </li>
+      <li>
+        <a href="/design-principals.html">
+          <span>Design Principals</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <body>
+    <%= yield %>
   </body>
 </html>
