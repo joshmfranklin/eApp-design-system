@@ -1,3 +1,5 @@
+// Timeline block
+
 .usa-timeline-block {
 	display: flex;
 	color: $color-gray;
@@ -5,6 +7,7 @@
 
 .usa-timeline-content {
 	width: 80%;
+	margin-right: 1rem;
 }
 
 .usa-timeline-icon {
@@ -27,16 +30,6 @@
 	position: relative;
 }
 
-.usa-timeline-stats {
-	text-align: center;
-	font-weight: bold;
-	margin-left: 1rem;
-}
-
-.usa-timeline-stats-fraction {
-	font-size: 3.5rem;
-}
-
 .usa-timeline-progress-filled {
 	position: absolute;
 	height: 100%;
@@ -44,4 +37,27 @@
 	width: 0;
 	top: 0;
 	left: 0
+}
+
+// Counter block
+
+.usa-counter {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	color: $color-gray;
+}
+
+.usa-counter-fraction {
+	font-size: 3.5rem;
+}
+
+.usa-counter-large {
+	.usa-counter-fraction {
+		font-size: 5rem;
+	}
+
+	.usa-counter-unit {
+		font-size: 2rem;
+	}
 }

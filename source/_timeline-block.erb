@@ -1,28 +1,110 @@
-<h2 class="styleguide-section-header">Timeline Block</h2>
-<section id="timeline-block" class="styleguide-section">
-	<div class="usa-timeline-block">
-		<div class="usa-timeline-content">
-			<span class="usa-timeline-icon">
-				<i class="fas fa-home fa-3x"></i>
-			</span>
-			<span class="usa-timeline-title">
-				<strong>Where have you lived</strong>
-			</span>
-			<div class="usa-timeline-progress">
-				<div class="usa-timeline-progress-filled" style="left: 65%; width: 35%;"></div>
+<h2 class="styleguide-section-header">Timeline and Counter Blocks</h2>
+<section id="timeline-counter-block" class="styleguide-section">
+	<div class="styleguide-subsection">
+		<h3 class="styleguide-subsection-header">Timeline Block</h3>
+		<div class="usa-timeline-block">
+			<div class="usa-timeline-content">
+				<span class="usa-timeline-icon">
+					<i class="fas fa-home fa-3x"></i>
+				</span>
+				<span class="usa-timeline-title">
+					<strong>Where have you lived</strong>
+				</span>
+				<div class="usa-timeline-progress">
+					<div class="usa-timeline-progress-filled" style="left: 65%; width: 35%;"></div>
+				</div>
+			</div>
+			<div class="usa-counter">
+				<div class="usa-counter-fraction">
+					<span class="completed">4</span>
+					<span class="slash">/</span>
+					<span class="total">10</span>
+				</div>
+				<div class="usa-counter-unit">
+					Years covered
+				</div>
 			</div>
 		</div>
-		<div class="usa-timeline-stats">
-			<div class="usa-timeline-stats-fraction">
+
+		<ul class="usa-accordion-bordered styleguide-documentation-section">
+	    <li>
+	      <button class="usa-accordion-button"
+	        aria-expanded="true"
+	        aria-controls="timeline-docs">
+	        Documentation
+	      </button>
+	      <div id="timeline-docs" class="usa-accordion-content">
+	        <strong>When to use</strong>
+	        <ul>
+	          <li>Use a timeline block to show an applicant their progress when filling out information within a designated block of time (e.g. provide all the places you've lived over the past 10 years).</li>
+	        </ul>
+
+	        <strong>Guidance</strong>
+	        <ul>
+	          <li>The timeline progress bar fill amount should be relative to the timespan given for each entry.</li>
+	          <li>The timeline progress bar fill location should be relative to chronological order of entries.
+	          	<ul>
+	          		<li>Entries further in the past should show up farther to the left in the progress bar.</li>
+	          		<li>Entries closer to the present should show up farther to the right in the progress bar.</li>
+	          	</ul>
+	          </li>
+	        </ul>
+	      </div>
+	    </li>
+	  </ul>
+	</div>
+
+	<div class="styleguide-subsection">
+		<h3 class="styleguide-subsection-header">Counter Block</h3>		
+		<div class="usa-counter usa-counter-large">
+			<div class="usa-counter-fraction">
 				<span class="completed">4</span>
 				<span class="slash">/</span>
 				<span class="total">10</span>
 			</div>
-			<div class="usa-timeline-stats-fraction-unit">
+			<div class="usa-counter-unit">
+				Sections complete
+			</div>
+		</div>
+		<div class="usa-counter">
+			<div class="usa-counter-fraction">
+				<span class="completed">4</span>
+				<span class="slash">/</span>
+				<span class="total">10</span>
+			</div>
+			<div class="usa-counter-unit">
 				Years covered
 			</div>
 		</div>
 	</div>
 
-	
+	<ul class="usa-accordion-bordered styleguide-documentation-section">
+	    <li>
+	      <button class="usa-accordion-button"
+	        aria-expanded="true"
+	        aria-controls="counter-docs">
+	        Documentation
+	      </button>
+	      <div id="counter-docs" class="usa-accordion-content">
+	        <strong>When to use</strong>
+	        <ul>
+	          <li>Use a counter block when you want to show an applicant their progress within the entire form, a section, or a subsection.</li>
+	        </ul>
+
+	        <strong>When to consider something different</strong>
+	        <ul>
+	        	<li>Use a timeline block to show an applicant their progress filling out information over a particular period of time.</li>
+	        </ul>
+
+	        <strong>Guidance</strong>
+	        <ul>
+	          <li>Counter come in two sizes, large and default.</li>
+	          <li>Counters can be used as a fraction or a single number.</li>
+	        </ul>
+	      </div>
+	    </li>
+	  </ul>
 </section>
+
+
+
