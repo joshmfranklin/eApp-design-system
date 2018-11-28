@@ -123,4 +123,14 @@ $(document).ready(function(){
       $(this).addClass('usa-current');
   });
 
+  // Input validation toggle
+  $(function() {
+    $("#input-validation-toggle").click(function(){
+      if($(this).is(":checked")) {
+        $("#validation-toggle-example").addClass("usa-input-error");
+      } else {
+        $("#validation-toggle-example").removeClass("usa-input-error");
+      }
+    })
+  })
 })
