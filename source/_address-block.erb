@@ -61,4 +61,41 @@
       </div>
     </div>
   </fieldset>
+
+  <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="address-docs">
+          Documentation
+        </button>
+        <div id="address-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Use an address block when you need to collect a full address from an applicant.</li>
+            <li>Addresses can either be inside or outside the United States</li>
+          </ul>
+
+          <strong>When to consider something else</strong>
+          <ul>
+            <li>Another input should be chosen if you are not collecing a formatted address from an applicant. (e.g. school name)</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Address format should update depending on country chosen.
+              <ul>
+                <li>For addresses within the United States applicants should see fields for street, apt/suite/building/floor, city, state, and zip.</li>
+                <li>For addresses outside the United states applicants should see fields for street, apt/suite/building/floor, and city.</li>
+              </ul>
+            </li>
+            <li>Address format should update if applicant chooses that the address is a APO/FPO/DPO address.
+            </li>
+            <li>Fields may be optionally ommited from the addres block if they are not needed for a particular question.</li>
+            <li>Address blocks should be validated against USPS for accuracy.</li>
+            <li>Validation for address should not occur until all fields are filled in.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
 </section>

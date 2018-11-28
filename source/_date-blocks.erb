@@ -62,10 +62,40 @@
         </div>
       </div>
     </fieldset>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="fromto-date-docs">
+          Documentation
+        </button>
+        <div id="fromto-date-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>The from/to date block is used to collect a date range from an applicant.</li>
+          </ul>
+
+          <strong>When to consider something else</strong>
+          <ul>
+            <li>Use a month/day/year block when you are only collecting a single date from an applicant.</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Don't auto tab between form fields. This could confuse applicants as they are trying to recall a date.</li>
+            <li>Error validation should be triggered if month entered doesn't exist</li>
+            <li>Error validation should be triggered if day entered doesn't exist in given month</li>
+            <li>Error validation should be triggered if year is too far in the past or future.</li>
+            <li>Error validation should be triggered if an applicant enters a "to" date that is before a "from" date in the same entry.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
   </div>
 
   <div class="styleguide-subsection">
-    <h3 class="styleguide-subsection-header">Month/Date/Year Block</h3>
+    <h3 class="styleguide-subsection-header">Month/Day/Year Block</h3>
     <fieldset class="usa-fieldset-inputs">
       <legend>Provide your date of birth</legend>
       <div class="m-d-y-block">
@@ -89,5 +119,35 @@
         </div>
       </div>
     </fieldset>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="mdy-date-docs">
+          Documentation
+        </button>
+        <div id="mdy-date-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>The month/day/year date block is used to collect a single date from an applicant.</li>
+          </ul>
+
+          <strong>When to consider something else</strong>
+          <ul>
+            <li>Use a from/to date block if you are collecting a date range from an applicant.</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Don't auto tab between form fields. This could confuse applicants as they are trying to recall a date.</li>
+            <li>Error validation should be triggered if month entered doesn't exist</li>
+            <li>Error validation should be triggered if day entered doesn't exist in given month</li>
+            <li>Error validation should be triggered if year is too far in the past or future.</li>
+            <li>Day input may be optionally ommited if only the monty and year is needed from an applicant.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>

@@ -144,6 +144,7 @@
           <strong>When to use</strong>
           <ul>
             <li>When applicants need to choose “yes” or “no”</li>
+            <li>When the list of options is less than or equal to 3.</li>
           </ul>
 
           <strong>When to consider something different</strong>
@@ -173,6 +174,33 @@
         <li>
           <input id="no" type="radio" name="other-names" >
           <label for="no"><span>No</span></label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset class="usa-fieldset-inputs usa-sans usa-checkbox-radio-error">
+      <legend>Select your employment activity</legend>
+      <span class="usa-input-error-message" id="input-error-message" role="alert">Your response is required</span>
+      <ul class="usa-unstyled-list">
+        <li>
+          <input id="employer" type="checkbox" name="historical-figures-1" value="truth">
+          <label for="employer"><span>An employer, military commander, or employee assistance program</span></label>
+        </li>
+        <li>
+          <input id="medical" type="checkbox" name="historical-figures-1" value="douglass">
+          <label for="medical"><span>A medical professional</span></label>
+        </li>
+        <li>
+          <input id="mental" type="checkbox" name="historical-figures-1" value="washington">
+          <label for="mental"><span>A mental health professional</span></label>
+        </li>
+        <li>
+          <input id="court" type="checkbox" name="historical-figures-1" >
+          <label for="court"><span>A court official/judge</span></label>
+        </li>
+        <li>
+          <input id="have-not" type="checkbox" name="historical-figures-1" disabled>
+          <label for="have-not"><span>I have not been ordered, advised or asked to seek counseling or treatment by any of the above</span></label>
         </li>
       </ul>
     </fieldset>
