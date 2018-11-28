@@ -1,0 +1,38 @@
+<h2 class="styleguide-section-header">Help Block</h2>
+<section class="styleguide-section">
+	<fieldset class="usa-fieldset-inputs">
+		<legend>
+			<span>Provide your date of birth</span>
+			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+				<i class="fas fa-question-circle"></i>
+			</a>
+		</legend>
+		<div class="usa-alert usa-alert-info usa-help-alert hidden">
+    <div class="usa-alert-body">
+      <h3 class="usa-alert-heading">Check "estimated" if date of birth is uknown</h3>
+      <p class="usa-alert-text">If you are not sure of your exact date of birth estimate it as best you can and check the "Estimated" checkbox.</p>
+      <a class="usa-help-trigger" href="#" onclick="return false;">Close help block</a>
+    </div>
+  </div>
+		<div class="m-d-y-block">
+      <div class="usa-form-control">
+        <label for="month">Month</label>
+        <input type="text" id="month" maxlength="2">
+      </div>
+      <div class="usa-form-control">
+        <label for="day">Day</label>
+        <input type="text" id="day" maxlength="2">
+      </div>
+      <div class="usa-form-control">
+        <label for="year">Year</label>
+        <input type="text" id="year" maxlength="4">
+      </div>
+      <div class="modifiers">
+        <div class="modifier">
+          <input id="estimated" type="checkbox" name="estimated">
+          <label class="simple-checkbox" for="estimated"><span>Estimated</span></label>
+        </div>
+      </div>
+    </div>
+	</fieldset>
+</section>

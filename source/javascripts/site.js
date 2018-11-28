@@ -29,6 +29,14 @@ $(document).ready(function(){
   //   adjustWidth();
   // })
 
+  // Help block
+
+  $(function() {
+    $(".usa-help-trigger").click(function(){
+      $(".usa-help-alert").toggleClass("hidden");
+    })
+  })
+
   // Phone number block
 
   $("#dsn-phone-number-block").hide();

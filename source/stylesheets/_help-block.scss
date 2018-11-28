@@ -1,0 +1,15 @@
+.usa-help-icon,
+.usa-help-icon:visited,
+.usa-help-icon:hover {
+	color: $color-primary-alt;
+	margin-left: .5rem;
+}
+
+.usa-help-icon:hover i {
+	transform: scaleX(1.2) scaleY(1.2);
+  transition: transform 0.3s;
+}
+
+.usa-help-alert {
+	margin: 0 0 2rem 0;
+}
