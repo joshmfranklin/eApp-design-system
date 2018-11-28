@@ -133,4 +133,13 @@ $(document).ready(function(){
       }
     })
   })
+
+  // Save hover
+  $(function() {
+    $(".usa-save-label").hide();
+
+    $("#eapp-save").hover(function() {
+      $(".usa-timeago-label, .usa-save-label").toggle();
+    })
+  })
 })

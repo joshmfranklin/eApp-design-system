@@ -1,0 +1,26 @@
+.usa-eapp-save {
+	text-align: center;
+	background-color: $color-white;
+	border-radius: 3px 0 0 3px;
+	padding: 1rem 2rem;
+	color: $color-gray;
+	width: 14rem;
+	height: 14rem;
+	font-size: 1.4rem;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+
+	&:hover {
+		background-color: $color-white;
+		box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15);
+		color: $color-gray;
+		transition: all .25s;
+	}
+}
+
+.usa-eapp-save-icon {
+	margin-bottom: 1rem;
+
+	.fa-circle {
+		color: $color-primary;
+	}
+}
