@@ -1,0 +1,47 @@
+.usa-timeline-block {
+	display: flex;
+	color: $color-gray;
+}
+
+.usa-timeline-content {
+	width: 80%;
+}
+
+.usa-timeline-icon {
+	color: $color-primary-alt;
+}
+
+.usa-timeline-stats {
+	width: 20%;
+}
+
+.usa-timeline-title {
+	margin-left: 1rem;
+}
+
+.usa-timeline-progress {
+	height: .5rem;
+	width: 100%;
+	background-color: $color-gray-cool-light;
+	margin-top: 1rem;
+	position: relative;
+}
+
+.usa-timeline-stats {
+	text-align: center;
+	font-weight: bold;
+	margin-left: 1rem;
+}
+
+.usa-timeline-stats-fraction {
+	font-size: 3.5rem;
+}
+
+.usa-timeline-progress-filled {
+	position: absolute;
+	height: 100%;
+	background-color: $color-green-light;
+	width: 0;
+	top: 0;
+	left: 0
+}
