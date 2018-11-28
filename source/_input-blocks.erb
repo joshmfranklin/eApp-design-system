@@ -41,7 +41,6 @@
         </div>
       </li>
     </ul>
-
   </div>
 
   <div class="styleguide-subsection">
@@ -56,32 +55,32 @@
       </select>
     </div>
     <ul class="usa-accordion-bordered styleguide-documentation-section">
-        <li>
-          <button class="usa-accordion-button"
-            aria-expanded="true"
-            aria-controls="select-docs">
-            Documentation
-          </button>
-          <div id="select-docs" class="usa-accordion-content">
-            <strong>When to use</strong>
-            <ul>
-              <li>Use sparingly — only when a applicant needs to choose from about seven to 15 possible options and you have limited space to display the options.</li>
-            </ul>
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="select-docs">
+          Documentation
+        </button>
+        <div id="select-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Use sparingly — only when a applicant needs to choose from about seven to 15 possible options and you have limited space to display the options.</li>
+          </ul>
 
-            <strong>When to consider something else</strong>
-            <ul>
-              <li>If the list of options is very short. Use radio buttons instead.</li>
-              <li>If the list of options is very long. Let applicants type the same information into a text input that suggests possible options instead.</li>
-              <li>If you need to allow applicants to select more than one option at once. applicants often don’t understand how to select multiple items from dropdowns. Use checkboxes instead.</li>
-            </ul>
+          <strong>When to consider something else</strong>
+          <ul>
+            <li>If the list of options is very short. Use radio buttons instead.</li>
+            <li>If the list of options is very long. Let applicants type the same information into a text input that suggests possible options instead.</li>
+            <li>If you need to allow applicants to select more than one option at once. applicants often don’t understand how to select multiple items from dropdowns. Use checkboxes instead.</li>
+          </ul>
 
-            <strong>Guidance</strong>
-            <ul>
-              <li>Avoid making options in one dropdown menu change based on the input to another. Applicants often don’t understand how selecting an item in one impacts another.</li>
-            </ul>
-          </div>
-        </li>
-      </ul>
+          <strong>Guidance</strong>
+          <ul>
+            <li>Avoid making options in one dropdown menu change based on the input to another. Applicants often don’t understand how selecting an item in one impacts another.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
   </div>
 
 
@@ -103,6 +102,96 @@
           <ul>
             <li>Use only when collecting an email address from an applicant.</li>
             <li>Email inputs are automatically validated to ensure properly formatted email addresses.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Dollar amount input</h3>
+    <div class="usa-form-control usa-dollar-input usa-medium-input">
+      <span class="dollar-icon">
+        <i class="fas fa-dollar-sign"></i>
+      </span>
+      <input type="number">
+    </div>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="dollar-input-docs">
+          Documentation
+        </button>
+        <div id="dollar-input-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Use when collecting dollar amounts from an applicant</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Dollar amount inputs should use type="number" for proper fomatting.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Input modifiers</h3>
+    <div class="usa-form-control">
+      <label for="middle-name">Middle name</label>
+      <input type="text" id="fmiddle-name">
+      <div class="modifiers">
+        <div class="modifier">
+          <input id="no-middle-name" type="checkbox" name="no-middle-name">
+          <label class="simple-checkbox" for="no-middle-name"><span>No middle name</span></label>
+        </div>
+        <div class="modifier">
+          <input id="first-initial-only" type="checkbox" name="first-initial-only">
+          <label class="simple-checkbox" for="first-initial-only"><span>Initial only</span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="usa-form-control">
+      <label for="person-knew-well-email">Provide an email address for this person</label>
+      <input type="email" id="person-knew-well-email">
+      <div class="modifiers modifiers-left">
+        <div class="modifier">
+          <span>or</span>
+        </div>
+        <div class="modifier">
+          <input id="i-dont-know" type="checkbox" name="i-dont-know">
+          <label for="i-dont-know"><span>I don't know</span></label>
+        </div>
+      </div>
+    </div>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="input-modifier-docs">
+          Documentation
+        </button>
+        <div id="input-modifier-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Use input modifiers when you need to allow an applicant signify additional attributes for a field (e.g. initial only or no middle name).</li>
+            <li>Use input modifiers when allowing an applicant to disable a field if they don't know the information or the information is not applicable.</li>
+          </ul>
+
+          <strong>When to consider something else</strong>
+          <ul>
+            <li>Don't use modifiers to ask an additional question.</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>When an applicant checks "Not applicable" or "I don't know" for a given input, the input should become disabled even if it already has information typed into it.</li>
           </ul>
         </div>
       </li>

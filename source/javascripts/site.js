@@ -1,33 +1,33 @@
 // This is where it all goes :)
 
 $(document).ready(function(){
-  // Accordion
-  function adjustWidth(){
-    var parentwidth = $('#accordion').width();
-    $('.usa-accordion-header').width(parentwidth);
-  }
+  // // Accordion
+  // function adjustWidth(){
+  //   var parentwidth = $('#accordion').width();
+  //   $('.usa-accordion-header').width(parentwidth);
+  // }
 
-  // Fix accordion header if scrolled
+  // // Fix accordion header if scrolled
 
-  $(window).scroll(function(){
-    var scrollTop = $(window).scrollTop();
-    var elementOffset = $('#accordion').offset().top;
-    var distance = (elementOffset - scrollTop);
-    console.log(distance);
+  // $(window).scroll(function(){
+  //   var scrollTop = $(window).scrollTop();
+  //   var elementOffset = $('#accordion').offset().top;
+  //   var distance = (elementOffset - scrollTop);
+  //   console.log(distance);
 
-    if (distance <= 0) {
-      $('.usa-accordion-header').addClass('usa-accordion-header-fixed');
-      adjustWidth();
-    } else {
-      $('.usa-accordion-header').removeClass('usa-accordion-header-fixed');
-    }
-  });
+  //   if (distance <= 0) {
+  //     $('.usa-accordion-header').addClass('usa-accordion-header-fixed');
+  //     adjustWidth();
+  //   } else {
+  //     $('.usa-accordion-header').removeClass('usa-accordion-header-fixed');
+  //   }
+  // });
 
-  // Resize accordion headed if fixed to match accordion width
+  // // Resize accordion headed if fixed to match accordion width
 
-  $(window).resize (function(){
-    adjustWidth();
-  })
+  // $(window).resize (function(){
+  //   adjustWidth();
+  // })
 
   // Phone number block
 
@@ -82,7 +82,19 @@ $(document).ready(function(){
     })
   })
 
-  // Sidenav highligher design principles
+  // I don't know/Not applicable disabler
+
+  $(function() {
+    $("#i-dont-know").click(function(){
+      if($(this).is(":checked")) {
+        $("#person-knew-well-email").attr("disabled", true);
+      } else {
+        $("#person-knew-well-email").removeAttr("disabled");
+      }
+    })
+  })
+
+  // Styleguide sidenav highligher design principles
 
   $(function(){
     var current = location.pathname;
@@ -96,7 +108,7 @@ $(document).ready(function(){
     })
   })
 
-  // Sidebar highligher UI components
+  // Styleguide sidebar highligher UI components
 
   $('#styleguide-sidenav a').click(function(e) {
       $('#styleguide-sidenav a').removeClass('usa-current');

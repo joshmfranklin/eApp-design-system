@@ -49,4 +49,42 @@
         </nav>
     </div>
   </div>
+
+  <ul class="usa-accordion-bordered styleguide-documentation-section">
+    <li>
+      <button class="usa-accordion-button"
+        aria-expanded="true"
+        aria-controls="sidenav-docs">
+        Documentation
+      </button>
+      <div id="sidenav-docs" class="usa-accordion-content">
+        <strong>When to use</strong>
+        <ul>
+          <li>When allowing an applicant to navigate through all sections in the form.</li>
+          <li>When you want to show an applicant their status as they are filling out a form.</li>
+        </ul>
+
+        <strong>Guidance</strong>
+        <ul>
+          <li>Applicant should be able to select any section/subsection of the form at any time from the sidenav.</li>
+          <li>Validation for each section/subsection should only be triggered when an applicant reaches a review page.</li>
+          <li>Subsections
+            <ul>
+              <li>A subsection page should be marked as valid only after all required questions are completed.</li>
+              <li>A subsection page that is partially complete (with all correct responses) should not have an indicator until the review page is hit.</li>
+              <li>A subsection page that has not been visited yet should not have an indicator until the review page is hit.</li>
+              <li>A subsection with a field error should show an error.</li>
+            </ul>
+          </li>
+          <li>Sections
+            <ul>
+              <li>A section should show green only when all subsections and fields are fully and complete.</li>
+              <li>If a subsection shows an error, the section above it should show an error.</li>
+            </ul>
+          </li>
+          <li>Sections and subsections should be fully collapsed by default unless clicked on or navigated to using the back/next buttons.</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
 </section>

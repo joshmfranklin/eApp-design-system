@@ -92,6 +92,19 @@ select:disabled {
   margin-bottom: 2rem;
 }
 
+.usa-dollar-input {
+  display: flex;
+
+  .dollar-icon {
+    background: $color-gray-lightest;
+    height: 4.4rem;
+    margin-top: .5rem;
+    padding: 1rem;
+    border: 1px solid $color-gray;
+    border-right: none;
+  }
+}
+
 // Input sizing
 
 .usa-small-input {
@@ -108,6 +121,11 @@ select:disabled {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
+  align-items: center;
+}
+
+.modifiers-left {
+  justify-content: flex-start;
 }
 
 .modifier {
