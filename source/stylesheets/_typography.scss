@@ -46,16 +46,17 @@ h4 {
 
 // Section header
 
-.section-header {
-  border-bottom: 1px solid $color-gray-light;
+.eapp-section-header {
+  border-bottom: 2px solid $color-gray-lighter;
   padding: 2rem 0;
+  margin-top: 2rem;
 
   .usa-grid {
     padding: 0;
   }
 }
 
-.secondary-heading {
+.eapp-secondary-heading {
   text-align: right;
   margin-bottom: 0;
 }

@@ -1,0 +1,40 @@
+---
+layout: "example-form-layout"
+title: eApp Design System | Example form
+---
+
+<%= partial "sidenav-example-form" %>
+
+<div class="eapp-form-wrapper usa-content">
+	<form action="" class="eapp-form">
+		<h1 class="eapp-section-header">Employment activities</h1>
+		<h2>List where you have worked</h2>
+		<p>List all of your employment activities, including unemployment and self-employment, beginning with the present and working back 10 years. The entire period must be accounted for without breaks. If the employment activity was military duty, list separate employment activity periods to show each change of military duty station.</p>
+		<p>Do not list employment before your 18th birthday unless to provide a minimum of 2 years employment history.</p>
+
+		<div class="usa-timeline-block">
+			<div class="usa-timeline-content">
+				<span class="usa-timeline-icon">
+					<i class="fas fa-briefcase fa-3x"></i>
+				</span>
+				<span class="usa-timeline-title">
+					<strong>Employment activities</strong>
+				</span>
+				<div class="usa-timeline-progress">
+					<div class="usa-timeline-progress-filled"></div>
+				</div>
+			</div>
+			<div class="usa-counter">
+				<div class="usa-counter-fraction">
+					<span class="completed">0</span>
+					<span class="slash">/</span>
+					<span class="total">10</span>
+				</div>
+				<div class="usa-counter-unit">
+					Years covered
+				</div>
+			</div>
+		</div>
+		<%= partial "accordion-example-form" %>
+	</form>
+</div>

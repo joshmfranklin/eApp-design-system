@@ -1,13 +1,19 @@
 .usa-sidenav-wrapper {
 	min-width: 32rem;
 	width: 25%;
+	display: inline-block;
+	float: left;
 }
 
 .usa-sidenav-sub_list {
 	display: none;
 
-	a {
+	a,
+	a.usa-current,
+	a:hover,
+	a.uss-current:hover {
 		position: relative;
+		padding-left: 5rem;
 	}
 }
 

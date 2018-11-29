@@ -76,10 +76,12 @@ label {
 }
 
 input,
-select {
+select,
+textarea {
   margin-top: .5rem;
   margin-bottom: 1rem;
   max-width: 64rem;
+  border-color: $color-gray-light;
 }
 
 input:disabled,
@@ -88,8 +90,9 @@ select:disabled {
   cursor: not-allowed;
 }
 
-.usa-form-control {
-  margin-bottom: 2rem;
+.usa-form-control,
+fieldset {
+  margin-bottom: 6rem;
 }
 
 .usa-dollar-input {
@@ -130,23 +133,28 @@ select:disabled {
 
 .modifier {
   margin-left: 1rem;
+
+  label {
+    margin: 0;
+  }
 }
 
 // Fieldsets
 
 fieldset {
-  margin-bottom: 4rem;
-
   .usa-grid {
     padding-right: 0;
     padding-left: 0;
+    max-width: 64rem;
+    margin: 0;
   }
 }
 
 legend,
 .usa-alt-label {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 900;
+  font-family: "Merriweather";
   line-height: 1.3em;
   margin-bottom: 2rem;
 }

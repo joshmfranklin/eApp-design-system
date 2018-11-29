@@ -1,0 +1,515 @@
+<ul id="accordion" class="usa-accordion-bordered">
+  <li>
+    <div class="usa-accordion-header">
+      <button class="usa-accordion-button"
+        aria-expanded="true"
+        aria-controls="b-a1">
+        <div class="titles">
+          <div class="title">
+            <div class="title-right">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-stack-1x fa-briefcase fa-inverse"></i>
+              </span>
+              <span>Employer 1:</span>
+            </div>
+            <div class="title-left">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="usa-accordion-close-button">
+        </div>
+      </button>
+      <button class="usa-accordion-remove-button">
+        <span class="fas fa-times fa-fw"></span>
+        <span class="remove">Remove</span>
+      </button>
+     </div>
+    <div id="b-a1" class="usa-accordion-content">
+      <fieldset class="usa-fieldset-inputs usa-sans">
+        <legend>Select your employment activity</legend>
+        <p>Government employment</p>
+        <ul class="usa-unstyled-list">
+          <li>
+            <input id="active-military" type="radio" name="employment-activity">
+            <label for="active-military"><span>Active military duty station</span></label>
+          </li>
+          <li>
+            <input id="national-guard" type="radio" name="employment-activity">
+            <label for="national-guard"><span>National Guard/Reserve</span></label>
+          </li>
+          <li>
+            <input id="usphs" type="radio" name="employment-activity">
+            <label for="usphs"><span>USPHS Commissioned Corps</span></label>
+          </li>
+          <li>
+            <input id="other-federal" type="radio" name="employment-activity" >
+            <label for="other-federal"><span>Other fedaral employment</span></label>
+          </li>
+          <li>
+            <input id="state-gov" type="radio" name="employment-activity">
+            <label for="state-gov"><span>State Government</span></label>
+          </li>
+          <li>
+            <input id="fed-contractor" type="radio" name="employment-activity">
+            <label for="fed-contractor"><span>Federal Contractor</span></label>
+          </li>
+        </ul>
+        <p>Other employment</p>
+        <ul class="usa-unstyled-list">
+          <li>
+            <input id="non-gov" type="radio" name="employment-activity">
+            <label for="non-gov"><span>Non-government employee</span></label>
+          </li>
+          <li>
+            <input id="self-employ" type="radio" name="employment-activity">
+            <label for="self-employ"><span>Self-employment</span></label>
+          </li>
+          <li>
+            <input id="unemployment" type="radio" name="employment-activity">
+            <label for="unemployment"><span>Unemployed</span></label>
+          </li>
+          <li>
+            <input id="other-employment" type="radio" name="employment-activity" >
+            <label for="other-employment"><span>Other</span></label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <div class="usa-form-control">
+        <label for="name-of-employer" class="usa-alt-label">Provide the name of your employer</label>
+        <input type="text">
+      </div>
+
+      <div class="usa-form-control">
+        <label for="recent-position" class="usa-alt-label">Provide the most recent position title</label>
+        <input type="text">
+      </div>
+
+      <fieldset class="usa-fieldset-inputs usa-sans">
+        <legend>Select the employment status for this position</legend>
+        <ul class="usa-list-inline-justified usa-list-inline">
+          <li>
+            <input id="full-time" type="radio" name="employment-status" >
+            <label for="full-time"><span>Full-time</span></label>
+          </li>
+          <li>
+            <input id="part-time" type="radio" name="employment-status" >
+            <label for="part-time"><span>Part-time</span></label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset id="from-to-date-block" class="usa-fieldset-inputs">
+        <legend>Provide dates of employment</legend>
+        <div class="from-to-dates">
+          <div class="from-date-container">
+            <p><strong>From date</strong></p>
+            <div class="m-d-y-block">
+              <div class="usa-form-control">
+                <label for="month">Month</label>
+                <input type="text" id="month" maxlength="2">
+              </div>
+              <div class="usa-form-control">
+                <label for="day">Day</label>
+                <input type="text" id="day" maxlength="2">
+              </div>
+              <div class="usa-form-control">
+                <label for="year">Year</label>
+                <input type="text" id="year" maxlength="4">
+              </div>
+            </div>
+            <div class="modifiers">
+              <div class="modifier">
+                <input id="from-estimated" type="checkbox" name="from-estimated">
+                <label class="simple-checkbox" for="from-estimated"><span>Estimated</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="from-to-date-arrow">
+            <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+          </div>
+          <div class="to-date-container">
+            <p><strong>To date</strong></p>
+            <div class="m-d-y-block">
+              <div class="usa-form-control">
+                <label for="month">Month</label>
+                <input type="text" id="month" class="to-date-input" maxlength="2">
+              </div>
+              <div class="usa-form-control">
+                <label for="day">Day</label>
+                <input type="text" id="day" class="to-date-input" maxlength="2">
+              </div>
+              <div class="usa-form-control">
+                <label for="year">Year</label>
+                <input type="text" id="year" class="to-date-input" maxlength="4">
+              </div>
+            </div>
+            <div class="modifiers">
+              <div class="modifier">
+                <input id="to-estimated" class="to-date-input" type="checkbox" name="to-estimated">
+                <label class="simple-checkbox" for="to-estimated"><span>Estimated</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="or">or</div>
+          <div class="present">
+            <input id="present" type="checkbox" name="present">
+            <label for="present"><span>Present</span></label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset id="address-block" class="usa-fieldset-inputs">
+        <legend>Provide the address for this employment</legend>
+        <input id="apo-fpo-dpo-checkbox" type="checkbox" name="APO" value="truth">
+        <label for="apo-fpo-dpo-checkbox"><span>This address is an APO/FPO/DPO</span></label>
+        <label for="country" class="address-block">Country</label>
+        <select name="country" id="country" class="address-block">
+          <option value="United States of America">United States of America</option>
+          <option value="Another country">Another country</option>
+          <option value="Another country">Another country</option>
+        </select>
+
+        <label for="mailing-address-1" class="address-block">Street address</label>
+        <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+
+        <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+        <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+
+
+        <label for="city" class="address-block">City</label>
+        <input id="city" name="city" type="text" class="address-block">
+
+        <div class="usa-grid address-block">
+          <div class="usa-width-one-half">
+            <label for="state">State</label>
+            <input id="state" name="state" type="text">
+          </div>
+
+          <div class="usa-width-one-half">
+            <label for="zip">Zip</label>
+            <input id="zip" name="zip" type="zip">
+          </div>
+        </div>
+
+        <label for="address" class="apo-fpo-dpo-address-block">Address</label>
+        <input type="text" class="apo-fpo-dpo-address-block">
+        <label for="" class="apo-fpo-dpo-address-block">Select APO, FPO, DPO</label>
+        <ul class="usa-list-inline usa-list-inline-justified apo-fpo-dpo-address-block">
+          <li>
+            <input id="apo" type="radio" name="apo-fpo-dpo" value="APO">
+            <label for="apo"><span>APO</span></label>
+          </li>
+          <li>
+            <input id="fpo" type="radio" name="apo-fpo-dpo" value="FPO">
+            <label for="fpo"><span>FPO</span></label>
+          </li>
+           <li>
+            <input id="dpo" type="radio" name="apo-fpo-dpo" value="DPO">
+            <label for="dpo"><span>DPO</span></label>
+          </li>
+        </ul>
+        <div class="usa-grid apo-fpo-dpo-address-block">
+          <div class="usa-width-one-half">
+            <label for="apo-fpo-dpo-code">APO/FPO/DPO State Code</label>
+            <input type="text">
+          </div>
+          <div class="usa-width-one-half">
+            <label for="apo-fpo-dpo-zip-code">Zip Code</label>
+            <input type="text">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="usa-fieldset-inputs">
+        <legend>Provide your employment telephone number</legend>
+        <input id="dns" class="phone-input" type="checkbox" name="dns" value="dns">
+        <label class="simple-checkbox" for="dns"><span>I have a DSN number</span></label>
+
+        <div id="dsn-phone-number-block" class="usa-grid">
+          <div class="usa-width-two-thirds">
+            <label for="">DSN Phone number</label>
+            <ul class="usa-list-inline usa-list-inline-justified">
+              <li>
+                <input type="text">
+              </li>
+              <li id="dsn-dash">-</li>
+              <li>
+                <input type="text">
+              </li>
+            </ul>
+          </div>
+          <div class="usa-width-one-sixth">
+            <label for="phone-type">Phone type</label>
+            <select name="phone-type" id="phone-type">
+              <option value="" style="display:none" disabled selected></option>
+              <option value="cell">Cell</option>
+              <option value="home">Home</option>
+              <option value="work">Work</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="standard-phone-number-block" class="usa-grid">
+          <div class="usa-width-one-sixth">
+            <label for="country-code">Country</label>
+            <select name="country-code" id="country-code" class="phone-input">
+              <option value="usa">🇺🇸 +1</option>
+              <option value="gb">🇬🇧 +44</option>
+            </select>
+          </div>
+          <div class="usa-width-one-third">
+            <label for="phone-number">Phone number</label>
+            <input type="text" name="phone-number" class="phone-input">
+          </div>
+          <div class="usa-width-one-sixth">
+            <label for="extension">Extension</label>
+            <input type="text" name="extension" class="phone-input">
+          </div>
+          <div class="usa-width-one-sixth">
+            <label for="phone-type">Phone type</label>
+            <select name="phone-type" id="phone-type">
+              <option value="" style="display:none" disabled selected></option>
+              <option value="cell">Cell</option>
+              <option value="home">Home</option>
+              <option value="work">Work</option>
+            </select>
+          </div>
+        </div>
+        <div class="usa-grid">
+          <div class="usa-width-one-half">
+            <fieldset class="usa-fielset-inputs">
+              <legend class="label-style">Best time to call</legend>
+              <ul class="usa-list-inline">
+                <li>
+                  <input id="day-phone" class="phone-input" type="radio" name="time-to-call" value="day">
+                  <label for="day-phone"><span>Day</span></label>
+                </li>
+                <li>
+                  <input id="night-phone" class="phone-input" type="radio" name="time-to-call" value="night">
+                  <label for="night-phone"><span>Night</span></label>
+                </li>
+                <li>
+                  <input id="day-night-phone" class="phone-input" type="radio" name="time-to-call" value="both">
+                  <label for="day-night-phone"><span>Both</span></label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="usa-fieldset-inputs usa-sans">
+        <legend>Is/was your physcial work address different than you employer's address</legend>
+        <ul class="usa-list-inline-justified usa-list-inline">
+          <li>
+            <input id="yes" type="radio" name="different-address" >
+            <label for="yes"><span>Yes</span></label>
+          </li>
+          <li>
+            <input id="no" type="radio" name="different-address" >
+            <label for="no"><span>No</span></label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <div class="usa-form-control">
+        <label for="supervisor-name" class="usa-alt-label">Provide the name of your supervisor</label>
+        <input type="text">
+      </div>
+
+      <div class="usa-form-control">
+        <label for="supervisor-position" class="usa-alt-label">Provide the rank/position title of your supervisor</label>
+        <input type="text">
+      </div>
+
+      <div class="usa-form-control">
+        <label for="supervisor-email" class="usa-alt-label">Provide the email address of your supervisor</label>
+        <input type="email">
+        <div class="modifiers modifiers-left">
+          <div class="modifier">or</div>
+          <div class="modifier">
+            <input id="i-dont-know" type="checkbox" name="i-dont-know">
+            <label for="i-dont-know"><span>I don't know</span></label>
+          </div>
+        </div>
+      </div>
+
+      <fieldset id="address-block" class="usa-fieldset-inputs">
+        <legend>Provide the physical work address of your supervisor</legend>
+        <input id="apo-fpo-dpo-checkbox" type="checkbox" name="APO" value="truth">
+        <label for="apo-fpo-dpo-checkbox"><span>This address is an APO/FPO/DPO</span></label>
+        <label for="country" class="address-block">Country</label>
+        <select name="country" id="country" class="address-block">
+          <option value="United States of America">United States of America</option>
+          <option value="Another country">Another country</option>
+          <option value="Another country">Another country</option>
+        </select>
+
+        <label for="mailing-address-1" class="address-block">Street address</label>
+        <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+
+        <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+        <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+
+
+        <label for="city" class="address-block">City</label>
+        <input id="city" name="city" type="text" class="address-block">
+
+        <div class="usa-grid address-block">
+          <div class="usa-width-one-half">
+            <label for="state">State</label>
+            <input id="state" name="state" type="text">
+          </div>
+
+          <div class="usa-width-one-half">
+            <label for="zip">Zip</label>
+            <input id="zip" name="zip" type="zip">
+          </div>
+        </div>
+
+        <label for="address" class="apo-fpo-dpo-address-block">Address</label>
+        <input type="text" class="apo-fpo-dpo-address-block">
+        <label for="" class="apo-fpo-dpo-address-block">Select APO, FPO, DPO</label>
+        <ul class="usa-list-inline usa-list-inline-justified apo-fpo-dpo-address-block">
+          <li>
+            <input id="apo" type="radio" name="apo-fpo-dpo" value="APO">
+            <label for="apo"><span>APO</span></label>
+          </li>
+          <li>
+            <input id="fpo" type="radio" name="apo-fpo-dpo" value="FPO">
+            <label for="fpo"><span>FPO</span></label>
+          </li>
+           <li>
+            <input id="dpo" type="radio" name="apo-fpo-dpo" value="DPO">
+            <label for="dpo"><span>DPO</span></label>
+          </li>
+        </ul>
+        <div class="usa-grid apo-fpo-dpo-address-block">
+          <div class="usa-width-one-half">
+            <label for="apo-fpo-dpo-code">APO/FPO/DPO State Code</label>
+            <input type="text">
+          </div>
+          <div class="usa-width-one-half">
+            <label for="apo-fpo-dpo-zip-code">Zip Code</label>
+            <input type="text">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="usa-fieldset-inputs">
+        <legend>Provide the telephone number for this supervisor</legend>
+        <input id="dns" class="phone-input" type="checkbox" name="dns" value="dns">
+        <label class="simple-checkbox" for="dns"><span>I have a DSN number</span></label>
+
+        <div id="standard-phone-number-block" class="usa-grid">
+          <div class="usa-width-one-sixth">
+            <label for="country-code">Country</label>
+            <select name="country-code" id="country-code" class="phone-input">
+              <option value="usa">🇺🇸 +1</option>
+              <option value="gb">🇬🇧 +44</option>
+            </select>
+          </div>
+          <div class="usa-width-one-third">
+            <label for="phone-number">Phone number</label>
+            <input type="text" name="phone-number" class="phone-input">
+          </div>
+          <div class="usa-width-one-sixth">
+            <label for="extension">Extension</label>
+            <input type="text" name="extension" class="phone-input">
+          </div>
+          <div class="usa-width-one-sixth">
+            <label for="phone-type">Phone type</label>
+            <select name="phone-type" id="phone-type">
+              <option value="" style="display:none" disabled selected></option>
+              <option value="cell">Cell</option>
+              <option value="home">Home</option>
+              <option value="work">Work</option>
+            </select>
+          </div>
+        </div>
+        <div class="usa-grid">
+          <div class="usa-width-one-half">
+            <fieldset class="usa-fielset-inputs">
+              <legend class="label-style">Best time to call</legend>
+              <ul class="usa-list-inline">
+                <li>
+                  <input id="day-phone" class="phone-input" type="radio" name="time-to-call" value="day">
+                  <label for="day-phone"><span>Day</span></label>
+                </li>
+                <li>
+                  <input id="night-phone" class="phone-input" type="radio" name="time-to-call" value="night">
+                  <label for="night-phone"><span>Night</span></label>
+                </li>
+                <li>
+                  <input id="day-night-phone" class="phone-input" type="radio" name="time-to-call" value="both">
+                  <label for="day-night-phone"><span>Both</span></label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="usa-fieldset-inputs usa-sans">
+        <legend>Did/does your supervisor have an APO/FPO address while at this location?</legend>
+        <ul class="usa-list-inline-justified usa-list-inline">
+          <li>
+            <input id="yes" type="radio" name="supervisor-apo-fpo-address" >
+            <label for="yes"><span>Yes</span></label>
+          </li>
+          <li>
+            <input id="no" type="radio" name="supervisor-apo-fpo-address" >
+            <label for="no"><span>No</span></label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <h3>Additional periods of activity with this employer</h3>
+      <p>List all of your employment activities, including unemployment and self-employment, beginning with the present and working back 10 years. The entire period must be accounted for without breaks. If the employment activity was military duty, list separate employment activity periods to show each change of military duty station.</p>
+      <p>Do not list employment before your 18th birthday unless to provide a minimum of 2 years employment history.</p>
+
+      <fieldset class="usa-fieldset-inputs usa-sans">
+        <legend>Do you have any additional periods of activity to add?</legend>
+        <ul class="usa-list-inline-justified usa-list-inline">
+          <li>
+            <input id="yes" type="radio" name="additional-activity-same-job" >
+            <label for="yes"><span>Yes</span></label>
+          </li>
+          <li>
+            <input id="no" type="radio" name="additional-activity-same-job" >
+            <label for="no"><span>No</span></label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <div class="usa-form-control">
+        <label for="reason-to-leave" class="usa-alt-label">Provide the reason for leaving the employment activity</label>
+        <textarea name="" id="reason-to-leave" cols="30" rows="8"></textarea>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<div>
+  <fieldset class="usa-fieldset-inputs usa-sans">
+    <legend>Do you have any additional employment activity to enter?</legend>
+    <ul class="usa-list-inline-justified usa-list-inline">
+      <li>
+        <input id="yes" type="radio" name="additional-activity" >
+        <label for="yes"><span>Yes</span></label>
+      </li>
+      <li>
+        <input id="no" type="radio" name="additional-activity" >
+        <label for="no"><span>No</span></label>
+      </li>
+    </ul>
+  </fieldset>
+</div>
+
+
+
+
