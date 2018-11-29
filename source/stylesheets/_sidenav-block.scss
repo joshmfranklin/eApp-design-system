@@ -1,8 +1,6 @@
 .usa-sidenav-wrapper {
 	min-width: 32rem;
 	width: 25%;
-	display: inline-block;
-	float: left;
 }
 
 .usa-sidenav-sub_list {
@@ -52,6 +50,14 @@
     float: right;
 		margin-right: 3rem;
 	}
+}
+
+.usa-sidenav-section[aria-expanded="true"] {
+	background-color: $color-white;
+}
+
+.usa-sidenav-section[aria-expanded="true"] + .usa-sidenav-sub_list {
+	background-color: $color-white;
 }
 
 .usa-sidenav-section[aria-expanded="false"]:after {
