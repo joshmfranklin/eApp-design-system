@@ -3,12 +3,19 @@
 .usa-timeline-block {
 	display: flex;
 	color: $color-gray;
-	margin: 4rem 0;
+	margin: 4rem 0 2rem 0;
+	padding: 1.5rem;
+	border: 1px solid $color-gray-lighter;
+	border-radius: 4px;
 }
 
 .usa-timeline-content {
 	width: 80%;
 	margin-right: 1rem;
+}
+
+.usa-timeline-block .usa-counter {
+	width: 20%;
 }
 
 .usa-timeline-icon {
