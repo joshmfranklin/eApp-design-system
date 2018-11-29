@@ -21,6 +21,7 @@
 .eapp-sidenav-wrapper {
 	display: table-cell;
 	width: 25%;
+	min-width: 32rem;
 	background: $color-gray-extra-lightest;
 	border-right: 1px solid $color-gray-lightest;
 
@@ -44,4 +45,17 @@
 .eapp-sidenav-wrapper, 
 .eapp-form-wrapper {
 	vertical-align: top;
+}
+
+#eapp-save {
+	position:fixed;
+	right: 0;
+	top: 45vh;
+
+	@media all and (max-width: 1350px) {
+		position: relative;
+		width: 100%;
+		top: initial;
+		border-radius: 6px;
+	}
 }

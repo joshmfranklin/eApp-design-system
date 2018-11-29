@@ -138,7 +138,7 @@ $(document).ready(function(){
   $(function() {
     $(".usa-save-label").hide();
 
-    $("#eapp-save").hover(function() {
+    $(".usa-eapp-save").hover(function() {
       $(".usa-timeago-label, .usa-save-label").toggle();
     })
   })
