@@ -7,7 +7,7 @@
   border-radius: 4px;
 
   &:hover {
-    background-color: $color-gray-lightest;
+    background-color: $color-gray-extra-lightest;
   }
 }
 
@@ -16,9 +16,10 @@
   border: none;
   padding: 0;
   margin-bottom: 0;
+  background-color: $color-white;
 
   &:hover {
-    background-color: white;
+    background-color: $color-white;
   }
 }
 
@@ -165,6 +166,7 @@ legend.label-style {
   font-size: 1.7rem;
   font-weight: 400;
   margin-bottom: 1rem;
+  font-family: "Source Sans Pro"
 }
 
 // Input validation
