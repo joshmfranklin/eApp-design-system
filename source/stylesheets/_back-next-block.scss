@@ -10,6 +10,10 @@
     margin-top: 3rem;
     position: relative;
 
+    @media all and (max-width: 980px) {
+      width: 48%;
+    }
+
     i {
       position: absolute;
       top: 40%;

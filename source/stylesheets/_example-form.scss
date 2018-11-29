@@ -12,6 +12,10 @@
 	display: table;
 	width: 100%;
 	height: 100%;
+
+	@media all and (max-width: 980px) {
+		display: block;
+	}
 }
 
 .eapp-sidenav-wrapper {
@@ -19,12 +23,22 @@
 	width: 25%;
 	background: $color-gray-extra-lightest;
 	border-right: 1px solid $color-gray-lightest;
+
+	@media all and (max-width: 980px) {
+		display: none;
+	}
 }
 
 .eapp-form-wrapper {
 	padding: 5rem;
 	display: table-cell;
 	width: 75%;
+
+	@media all and (max-width: 980px) {
+		display: block;
+		width: 100%;
+		padding: 1.5rem;
+	}
 }
 
 .eapp-sidenav-wrapper, 

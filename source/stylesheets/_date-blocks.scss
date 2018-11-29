@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: row;
 
+  @media all and (max-width: 980px) {
+    display: block;
+  }
+
   p {
     margin-top: 0;
   }
@@ -15,6 +19,10 @@
     margin-right: 1rem;
     margin-bottom: 0;
     width: 7rem;
+
+    @media all and (max-width: 980px) {
+      width: 33.3%;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -30,13 +38,27 @@
 .from-to-date-arrow {
   padding-top: 7.5rem;
   width: 9rem;
+
+  @media all and (max-width: 980px) {
+    display: none;
+  }
 }
 
 .or {
   padding-top: 8rem;
   width: 3rem;
+
+  @media all and (max-width: 980px) {
+    padding-top: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .present {
   margin-top: 7rem;
+
+  @media all and (max-width: 980px) {
+    margin-top: 1rem;
+  }
 }
