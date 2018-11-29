@@ -142,4 +142,22 @@ $(document).ready(function(){
       $(".usa-timeago-label, .usa-save-label").toggle();
     })
   })
+
+  // USA sidenav toggle
+  $('.usa-sidenav-toggle').on('click', function(event){
+    event.preventDefault();
+    // create accordion variables
+    var accordion = $(this);
+    var accordionContent = accordion.next('.usa-sidenav-sub_list');
+    // toggle accordion content
+    accordionContent.toggle();
+    
+    if (accordion.attr( 'aria-expanded') === 'true') {
+      $(this).attr( 'aria-expanded', 'false');
+    } else {
+      $(this).attr( 'aria-expanded', 'true');
+    }
+    
+  });
+
 })

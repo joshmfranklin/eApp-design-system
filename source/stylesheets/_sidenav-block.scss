@@ -1,0 +1,118 @@
+.usa-sidenav-wrapper {
+	min-width: 32rem;
+	width: 25%;
+}
+
+.usa-sidenav-sub_list {
+	display: none;
+
+	a {
+		position: relative;
+	}
+}
+
+.usa-sidenav-number {
+	font-weight: bold;
+	color: $color-gray;
+}
+
+.usa-sidenav-list > li {
+	counter-increment: step-counter;
+}
+
+.usa-sidenav-list > li:last-child > a::before {
+	content: '';
+}
+
+.usa-sidenav-section {
+	position: relative;
+
+	&:before {
+		color: $color-gray;
+		content: counter(step-counter) ".";
+		display: inline-block;
+		font-weight: bold;
+		margin-right: 1rem;
+		text-align: right;
+		vertical-align: top;
+		width: 2rem;
+	}
+
+	&:after {
+		color: $color-gray-lighter;
+    display: inline;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    float: right;
+		margin-right: 3rem;
+	}
+}
+
+.usa-sidenav-section[aria-expanded="false"]:after {
+  content: "\f078";
+}
+
+.usa-sidenav-section[aria-expanded="true"]:after {
+  content: "\f077";
+}
+
+.usa-sidenav-section-name {
+	display: inline-block;
+	width: 70%;
+}
+
+.usa-sidenav-status-icon {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.usa-sidenav-status-icon:before {
+	height: 100%;
+	font-weight: 900;
+	font-family: 'Font Awesome 5 Free';
+	display: flex;
+	width: 2rem;
+	align-items: center;
+	justify-content: center;
+}
+
+// Sidenav status
+
+.usa-sidenav-has-errors {
+	.usa-sidenav-status-icon:before {
+		content: "\f06a";
+		color: $color-secondary;
+	}
+}
+
+.usa-sidenav-list li  a.usa-sidenav-has-errors {
+	border-left-color: $color-secondary;
+}
+
+.usa-sidenav-sub_list .usa-sidenav-has-errors {
+	.usa-sidenav-status-icon:before {
+		content: '\f111';
+		font-size: .75rem;
+		color: $color-secondary;
+	}
+}
+
+.usa-sidenav-is-valid {
+	.usa-sidenav-status-icon:before {
+		content: "\f058";
+		color: $color-green-light;
+	}
+}
+
+.usa-sidenav-sub_list .usa-sidenav-is-valid {
+	.usa-sidenav-status-icon:before {
+		content: '\f111';
+		font-size: .75rem;
+		color: $color-green-light;
+	}
+}
+
+
+
