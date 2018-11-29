@@ -5,6 +5,7 @@
   padding: 1rem;
   border: 1px solid $color-primary-alt-light;
   border-radius: 4px;
+  max-width: 46rem;
 
   &:hover {
     background-color: $color-gray-extra-lightest;
@@ -74,6 +75,7 @@
 
 label {
   margin-top: 1.5rem;
+  width: 100%;
 }
 
 input,
@@ -164,7 +166,7 @@ legend,
   font-family: "Merriweather";
   line-height: 1.3em;
   margin-bottom: 2rem;
-  max-width: 46rem;
+  max-width: 100%;
 }
 
 legend.label-style {
