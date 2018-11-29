@@ -3,38 +3,90 @@ layout: "example-form-layout"
 title: eApp Design System | Example form
 ---
 
-<%= partial "sidenav-example-form" %>
 
-<div class="eapp-form-wrapper usa-content">
-	<form action="" class="eapp-form">
-		<h1 class="eapp-section-header">Employment activities</h1>
-		<h2>List where you have worked</h2>
-		<p>List all of your employment activities, including unemployment and self-employment, beginning with the present and working back 10 years. The entire period must be accounted for without breaks. If the employment activity was military duty, list separate employment activity periods to show each change of military duty station.</p>
-		<p>Do not list employment before your 18th birthday unless to provide a minimum of 2 years employment history.</p>
+<div class="eapp-page-wrapper">
+	<%= partial "sidenav-example-form" %>
+	<div class="eapp-form-wrapper usa-content">
+		<form action="" class="eapp-form">
+			<h1 class="eapp-section-header">Employment activities</h1>
+			<h2>List where you have worked</h2>
+			<p>List all of your employment activities, including unemployment and self-employment, beginning with the present and working back 10 years. The entire period must be accounted for without breaks. If the employment activity was military duty, list separate employment activity periods to show each change of military duty station.</p>
+			<p>Do not list employment before your 18th birthday unless to provide a minimum of 2 years employment history.</p>
 
-		<div class="usa-timeline-block">
-			<div class="usa-timeline-content">
-				<span class="usa-timeline-icon">
-					<i class="fas fa-briefcase fa-3x"></i>
-				</span>
-				<span class="usa-timeline-title">
-					<strong>Employment activities</strong>
-				</span>
-				<div class="usa-timeline-progress">
-					<div class="usa-timeline-progress-filled"></div>
+			<div class="usa-timeline-block">
+				<div class="usa-timeline-content">
+					<span class="usa-timeline-icon">
+						<i class="fas fa-briefcase fa-3x"></i>
+					</span>
+					<span class="usa-timeline-title">
+						<strong>Employment activities</strong>
+					</span>
+					<div class="usa-timeline-progress">
+						<div class="usa-timeline-progress-filled"></div>
+					</div>
+				</div>
+				<div class="usa-counter">
+					<div class="usa-counter-fraction">
+						<span class="completed">0</span>
+						<span class="slash">/</span>
+						<span class="total">10</span>
+					</div>
+					<div class="usa-counter-unit">
+						Years covered
+					</div>
 				</div>
 			</div>
-			<div class="usa-counter">
-				<div class="usa-counter-fraction">
-					<span class="completed">0</span>
-					<span class="slash">/</span>
-					<span class="total">10</span>
+			<div>
+				<%= partial "accordion-example-form" %>
+				<div>
+					<fieldset class="usa-fieldset-inputs usa-sans">
+					  <legend>Do you have an additional employment activity to enter?</legend>
+					  <ul class="usa-list-inline-justified usa-list-inline">
+					    <li>
+					      <input id="yes" type="radio" name="additional-activity" >
+					      <label for="yes"><span>Yes</span></label>
+					    </li>
+					    <li>
+					      <input id="no" type="radio" name="additional-activity" >
+					      <label for="no"><span>No</span></label>
+					    </li>
+					  </ul>
+					</fieldset>
+					<fieldset class="usa-fieldset-inputs">
+						<legend>Have any of the following happened to you in the last seven (7) years at employment activities that you have not previously listed?</legend>
+						<ul>
+							<li>Fired from a job?</li>
+							<li>Quit a job after being told you would be fired?</li>
+							<li>Have you left a job by mutual agreement following charges or allegations of misconduct?</li>
+							<li>Left a job by mutual agreement following notice of unsatisfactory performance?</li>
+							<li>Received a written warning, been officially reprimanded, suspended, or disciplined for misconduct in the workplace, such as violation of security policy?</li>
+						</ul>
+						<p>If you answer "Yes", you will be required to add an additional employment record above.</p>
+						<ul class="usa-list-inline-justified usa-list-inline">
+					    <li>
+					      <input id="yes" type="radio" name="happened-to-you" >
+					      <label for="yes"><span>Yes</span></label>
+					    </li>
+					    <li>
+					      <input id="no" type="radio" name="happened-to-you" >
+					      <label for="no"><span>No</span></label>
+					    </li>
+					  </ul>
+					</fieldset>
 				</div>
-				<div class="usa-counter-unit">
-					Years covered
-				</div>
+				<div class="next-back-block">
+			    <button class="usa-button back-button">
+			      <i class="far fa-arrow-alt-circle-left"></i>
+			      <div class="direction">Back</div>
+			      <div class="label">Places you lived</div>
+			    </button>
+			    <button class="usa-button next-button">
+			      <i class="far fa-arrow-alt-circle-right"></i>
+			      <div class="direction">Next</div>
+			      <div class="label">Schools & diplomas</div>
+			    </button>
+			  </div>
 			</div>
-		</div>
-		<%= partial "accordion-example-form" %>
-	</form>
+		</form>
+	</div>
 </div>
