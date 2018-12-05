@@ -28,7 +28,7 @@
         <% end %>
       </li>
       <li>
-        <% link_to '/example-form.html', :class => "usa-current" do %>
+        <% link_to '/example-form/your-history/employment-activities.html', :class => "usa-current" do %>
           <span>Example form</span>
         <% end %>
       </li>
@@ -36,6 +36,9 @@
   </div>
 
   <body>
-    <%= yield %>
+    <div class="eapp-page-wrapper">
+      <%= partial "/example-form/sidenav-example-form" %>
+      <%= yield %>
+    </div>
   </body>
 </html>
