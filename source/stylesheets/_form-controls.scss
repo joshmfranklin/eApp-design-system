@@ -97,6 +97,7 @@ select:disabled {
 .usa-form-control,
 fieldset {
   margin-bottom: 6rem;
+  max-width: 64rem;
 }
 
 .usa-dollar-input {
@@ -157,6 +158,10 @@ fieldset {
     max-width: 64rem;
     margin: 0;
   }
+
+  .usa-form-control {
+    margin-bottom: 1rem;
+  }
 }
 
 legend,
@@ -174,6 +179,10 @@ legend.label-style {
   font-weight: 400;
   margin-bottom: 1rem;
   font-family: "Source Sans Pro"
+}
+
+legend + p {
+  margin-top: 0;
 }
 
 // Input validation

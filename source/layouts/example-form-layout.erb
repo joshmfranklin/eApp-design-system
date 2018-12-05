@@ -38,7 +38,27 @@
   <body>
     <div class="eapp-page-wrapper">
       <%= partial "/example-form/sidenav-example-form" %>
-      <%= yield %>
+      <div class="eapp-form-wrapper usa-content">
+        <%= yield %>
+        <button id="eapp-save" class="usa-eapp-save">
+        <div class="usa-eapp-save-icon">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="far fa-save fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <span class="usa-eapp-save-label">
+          <div class="usa-timeago-label">
+            <div class="save-label">Saved</div>
+            <div class="timeago-label">4 minutes ago</div>
+          </div>
+          <span class="usa-save-label">
+            <div class="save-label">Save now</div>
+            <div>&nbsp;</div>
+          </span>
+        </span>
+      </button>
+      </div>
     </div>
   </body>
 </html>

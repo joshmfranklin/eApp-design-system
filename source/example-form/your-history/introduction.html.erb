@@ -2,22 +2,19 @@
 layout: "example-form-layout"
 title: eApp Design System | Example form
 ---
-
-<div class="eapp-form-wrapper usa-content">
-	<form action="" class="eapp-form">
-		<h1 class="eapp-section-header">Your History - Introduction</h1>
-		<p>You will be asked questions about your history and be asked to provide details if necessary. This section includes where you have lived, where you have worked, and where you went to school.</p>
-		<div class="next-back-block">
-	    <a class="usa-button back-button">
-	      <i class="far fa-arrow-alt-circle-left"></i>
-	      <div class="direction">Back</div>
-	      <div class="label">Review Identification</div>
-	    </a>
-	    <% link_to '/example-form/your-history/where-you-have-lived.html', :class => "usa-button next-button" do %>
-        <i class="far fa-arrow-alt-circle-right"></i>
-	      <div class="direction">Next</div>
-	      <div class="label">Where you have lived</div>
-      <% end %>
-	  </div>
-	</form>
+<div class="eapp-form">
+	<h1 class="eapp-section-header">Your History - Introduction</h1>
+	<p>You will be asked questions about your history and be asked to provide details if necessary. This section includes where you have lived, where you have worked, and where you went to school.</p>
+	<div class="next-back-block">
+	  <a class="usa-button back-button">
+	    <i class="far fa-arrow-alt-circle-left"></i>
+	    <div class="direction">Back</div>
+	    <div class="label">Review Identification</div>
+	  </a>
+	  <% link_to '/example-form/your-history/where-you-have-lived.html', :class => "usa-button next-button" do %>
+	    <i class="far fa-arrow-alt-circle-right"></i>
+	    <div class="direction">Next</div>
+	    <div class="label">Where you have lived</div>
+	  <% end %>
+	</div>
 </div>

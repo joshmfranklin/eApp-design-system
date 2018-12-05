@@ -3,38 +3,565 @@ layout: "example-form-layout"
 title: eApp Design System | Example form
 ---
 
-<div class="eapp-form-wrapper usa-content">
-	<form action="" class="eapp-form">
-		<h1 class="eapp-section-header">Where You Have Lived</h1>
-		<h2>List the places where you have lived beginning with your present residence and working back 10 years.</h2>
-		<p>Residences for the entire period must be accounted for without breaks.</p>
-		<ul>
-			<li><strong>Indicate the actual physical location of your residence</strong>, not a Post Office box or a permanent residence when you were not physically located there.</li>
-			<li><strong>If you split your time between one or more residences during a time period</strong>, you must list all residences.</li>
-			<li><strong>Do not list residences before your 18th birthday</strong> unless to provide a minimum of 2 years residence history.</li>
-		</ul>
-		<div class="usa-timeline-block">
-			<div class="usa-timeline-content">
-				<span class="usa-timeline-icon">
-					<i class="fas fa-home fa-3x"></i>
-				</span>
-				<span class="usa-timeline-title">
-					<strong>Where you have lived</strong>
-				</span>
-				<div class="usa-timeline-progress">
-					<div class="usa-timeline-progress-filled"></div>
-				</div>
-			</div>
-			<div class="usa-counter">
-				<div class="usa-counter-fraction">
-					<span class="completed">0</span>
-					<span class="slash">/</span>
-					<span class="total">10</span>
-				</div>
-				<div class="usa-counter-unit">
-					Years covered
-				</div>
+<form action="" class="eapp-form">
+	<h1 class="eapp-section-header">Where You Have Lived</h1>
+	<h2>List the places where you have lived beginning with your present residence and working back 10 years.</h2>
+	<p>Residences for the entire period must be accounted for without breaks.</p>
+	<ul>
+		<li><strong>Indicate the actual physical location of your residence</strong>, not a Post Office box or a permanent residence when you were not physically located there.</li>
+		<li><strong>If you split your time between one or more residences during a time period</strong>, you must list all residences.</li>
+		<li><strong>Do not list residences before your 18th birthday</strong> unless to provide a minimum of 2 years residence history.</li>
+	</ul>
+
+	<div class="usa-timeline-block">
+		<div class="usa-timeline-content">
+			<span class="usa-timeline-icon">
+				<i class="fas fa-home fa-3x"></i>
+			</span>
+			<span class="usa-timeline-title">
+				<strong>Where you have lived</strong>
+			</span>
+			<div class="usa-timeline-progress">
+				<div class="usa-timeline-progress-filled"></div>
 			</div>
 		</div>
-	</form>
-</div>
+		<div class="usa-counter">
+			<div class="usa-counter-fraction">
+				<span class="completed">0</span>
+				<span class="slash">/</span>
+				<span class="total">10</span>
+			</div>
+			<div class="usa-counter-unit">
+				Years covered
+			</div>
+		</div>
+	</div>
+
+	<ul id="accordion" class="usa-accordion-bordered">
+	  <li>
+	    <div class="usa-accordion-header">
+	      <button class="usa-accordion-button"
+	        aria-expanded="true"
+	        aria-controls="b-a1">
+	        <div class="titles">
+	          <div class="title">
+	            <div class="title-right">
+	              <span class="fa-stack">
+	                <i class="fas fa-circle fa-stack-2x"></i>
+	                <i class="fas fa-stack-1x fa-home fa-inverse"></i>
+	              </span>
+	              <span>Address 1:</span>
+	            </div>
+	            <div class="title-left">
+	              <span></span>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="usa-accordion-close-button">
+	        </div>
+	      </button>
+	      <button class="usa-accordion-remove-button">
+	        <span class="fas fa-times fa-fw"></span>
+	        <span class="remove">Remove</span>
+	      </button>
+	     </div>
+	    <div id="b-a1" class="usa-accordion-content">
+				<!-- Address block -->
+				<fieldset id="address-block" class="usa-fieldset-inputs">
+			    <legend>Provide the street address</legend>
+			    <input id="apo-fpo-dpo-checkbox" type="checkbox" name="APO" value="truth">
+			    <label for="apo-fpo-dpo-checkbox"><span>This address is an APO/FPO/DPO</span></label>
+			    <label for="country" class="address-block">Country</label>
+			    <select name="country" id="country" class="address-block">
+			      <option value="United States of America">United States of America</option>
+			      <option value="Another country">Another country</option>
+			      <option value="Another country">Another country</option>
+			    </select>
+
+			    <label for="mailing-address-1" class="address-block">Street address</label>
+			    <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+
+			    <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+			    <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+
+
+			    <label for="city" class="address-block">City</label>
+			    <input id="city" name="city" type="text" class="address-block">
+
+			    <div class="usa-grid address-block">
+			      <div class="usa-width-one-half">
+			        <label for="state">State</label>
+			        <input id="state" name="state" type="text">
+			      </div>
+
+			      <div class="usa-width-one-half">
+			        <label for="zip">Zip</label>
+			        <input id="zip" name="zip" type="zip">
+			      </div>
+			    </div>
+
+			    <label for="address" class="apo-fpo-dpo-address-block">Address</label>
+			    <input type="text" class="apo-fpo-dpo-address-block">
+			    <label for="" class="apo-fpo-dpo-address-block">Select APO, FPO, DPO</label>
+			    <ul class="usa-list-inline usa-list-inline-justified apo-fpo-dpo-address-block">
+			      <li>
+			        <input id="apo" type="radio" name="apo-fpo-dpo" value="APO">
+			        <label for="apo"><span>APO</span></label>
+			      </li>
+			      <li>
+			        <input id="fpo" type="radio" name="apo-fpo-dpo" value="FPO">
+			        <label for="fpo"><span>FPO</span></label>
+			      </li>
+			       <li>
+			        <input id="dpo" type="radio" name="apo-fpo-dpo" value="DPO">
+			        <label for="dpo"><span>DPO</span></label>
+			      </li>
+			    </ul>
+			    <div class="usa-grid apo-fpo-dpo-address-block">
+			      <div class="usa-width-one-half">
+			        <label for="apo-fpo-dpo-code">APO/FPO/DPO State Code</label>
+			        <input type="text">
+			      </div>
+			      <div class="usa-width-one-half">
+			        <label for="apo-fpo-dpo-zip-code">Zip Code</label>
+			        <input type="text">
+			      </div>
+			    </div>
+			  </fieldset>
+			  <!-- Address block end -->
+			  <!-- APO/FPO y/n block -->
+			  <fieldset class="usa-fieldset-inputs usa-sans">
+		      <legend>Did you have an APO/FPO address while at this location?</legend>
+		      <ul class="usa-list-inline-justified usa-list-inline">
+		        <li>
+		          <input id="yes" type="radio" name="other-names" >
+		          <label for="yes"><span>Yes</span></label>
+		        </li>
+		        <li>
+		          <input id="no" type="radio" name="other-names" >
+		          <label for="no"><span>No</span></label>
+		        </li>
+		      </ul>
+		    </fieldset>
+		    <!-- APO/FPO y/n block end -->
+		    <!-- Dates of residence -->
+		    <fieldset id="from-to-date-block" class="usa-fieldset-inputs">
+		      <legend>Provide dates of residence</legend>
+		      <p>You are not required to list temporary locations of less than 90 days that did not serve as your permanent or mailing address.</p>
+		      <div class="from-to-dates">
+		        <div class="from-date-container">
+		          <p><strong>From date</strong></p>
+		          <div class="m-d-y-block">
+		            <div class="usa-form-control">
+		              <label for="month">Month</label>
+		              <input type="text" id="month" maxlength="2">
+		            </div>
+		            <div class="usa-form-control">
+		              <label for="day">Day</label>
+		              <input type="text" id="day" maxlength="2">
+		            </div>
+		            <div class="usa-form-control">
+		              <label for="year">Year</label>
+		              <input type="text" id="year" maxlength="4">
+		            </div>
+		          </div>
+		          <div class="modifiers">
+		            <div class="modifier">
+		              <input id="from-estimated" type="checkbox" name="from-estimated">
+		              <label class="simple-checkbox" for="from-estimated"><span>Estimated</span></label>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="from-to-date-arrow">
+		          <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+		        </div>
+		        <div class="to-date-container">
+		          <p><strong>To date</strong></p>
+		          <div class="m-d-y-block">
+		            <div class="usa-form-control">
+		              <label for="month">Month</label>
+		              <input type="text" id="month" class="to-date-input" maxlength="2">
+		            </div>
+		            <div class="usa-form-control">
+		              <label for="day">Day</label>
+		              <input type="text" id="day" class="to-date-input" maxlength="2">
+		            </div>
+		            <div class="usa-form-control">
+		              <label for="year">Year</label>
+		              <input type="text" id="year" class="to-date-input" maxlength="4">
+		            </div>
+		          </div>
+		          <div class="modifiers">
+		            <div class="modifier">
+		              <input id="to-estimated" class="to-date-input" type="checkbox" name="to-estimated">
+		              <label class="simple-checkbox" for="to-estimated"><span>Estimated</span></label>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="or">or</div>
+		        <div class="present">
+		          <input id="present" type="checkbox" name="present">
+		          <label for="present"><span>Present</span></label>
+		        </div>
+		      </div>
+		    </fieldset>
+		    <!-- Dates of residence end -->
+		    <!-- Residence type -->
+		    <fieldset class="usa-fieldset-inputs usa-sans">
+		      <legend>Is/was this residence</legend>
+		      <ul class="usa-unstyled-list">
+		        <li>
+		          <input id="owned" type="radio" name="residence-type">
+		          <label for="owned"><span>Owned by you</span></label>
+		        </li>
+		        <li>
+		          <input id="rented-leased" type="radio" name="residence-type">
+		          <label for="rented-leased"><span>Rented or leased by you</span></label>
+		        </li>
+		        <li>
+		          <input id="military-housing" type="radio" name="residence-type">
+		          <label for="military-housing"><span>Military housing</span></label>
+		        </li>
+		        <li>
+		          <input id="other" type="radio" name="residence-type" >
+		          <label for="other"><span>Other</span></label>
+		        </li>
+		      </ul>
+		    </fieldset>
+		    <!-- Residence type end -->
+		    <!-- Person who knows you -->
+		    <h2>Add a person that knows you</h2>
+		    <p>For any address in the last 3 years, provide a person who knew you at the address, and who preferably still lives in that area. Do not list people who knew you well for residences completely outside this 3-year period, and do not list your spouse, cohabitant or other relatives.</p>
+
+		    <!-- Persons name -->
+		    <fieldset class="usa-fieldset-inputs">
+		    	<legend>Provide the person's full name</legend>
+		    	<div class="usa-form-control">
+			    	<label for="firs-name">First name</label>
+			    	<input type="text" id="first-name">
+			    	<div class="modifiers">
+			    		<div class="modifier">
+			    			<input id="initial-only-first" type="checkbox">
+			          <label class="simple-checkbox" for="initial-only-first"><span>Initial only</span></label>
+			    		</div>
+			    	</div>
+		    	</div>
+		    	<div class="usa-form-control">
+			    	<label for="firs-name">Middle name</label>
+			    	<input type="text" id="middle-name">
+			    	<div class="modifiers">
+			    		<div class="modifier">
+			    			<input id="no-middle" type="checkbox">
+			          <label class="simple-checkbox" for="no-middle"><span>No middle name</span></label>
+			    		</div>
+			    		<div class="modifier">
+			    			<input id="initial-only-middle" type="checkbox">
+			          <label class="simple-checkbox" for="initial-only-middle"><span>Initial only</span></label>
+			    		</div>
+			    	</div>
+		    	</div>
+		    	<div class="usa-form-control">
+			    	<label for="firs-name">Last name</label>
+			    	<input type="text" id="last-name">
+			    	<div class="modifiers">
+			    		<div class="modifier">
+			    			<input id="initial-only-last" type="checkbox">
+			          <label class="simple-checkbox" for="initial-only-last"><span>Initial only</span></label>
+			    		</div>
+			    	</div>
+		    	</div>
+		    	<div class="usa-form-control">
+		    		<label for="suffix">Suffix</label>
+		    		<select class="usa-small-input" name="suffidx" id="suffix">
+		    			<option value="jr">Jr</option>
+		    			<option value="sr">Sr</option>
+		    			<option value="i">I</option>
+		    			<option value="ii">II</option>
+		    			<option value="iii">III</option>
+		    			<option value="iv">IV</option>
+		    			<option value="v">V</option>
+		    			<option value="vii">VII</option>
+		    			<option value="ix">IX</option>
+		    			<option value="x">X</option>
+		    			<option value="other">Other</option>
+		    		</select>
+		    	</div>
+		    </fieldset>
+		    <!-- Persons name end -->
+		    <!-- Date last contact -->
+		    <fieldset class="usa-fieldset-inputs">
+		      <legend>Provide date of last contact</legend>
+		      <div class="m-d-y-block">
+		        <div class="usa-form-control">
+		          <label for="month">Month</label>
+		          <input type="text" id="month" maxlength="2">
+		        </div>
+		        <div class="usa-form-control">
+		          <label for="day">Day</label>
+		          <input type="text" id="day" maxlength="2">
+		        </div>
+		        <div class="usa-form-control">
+		          <label for="year">Year</label>
+		          <input type="text" id="year" maxlength="4">
+		        </div>
+		        <div class="modifiers">
+		          <div class="modifier">
+		            <input id="estimated" type="checkbox" name="estimated">
+		            <label class="simple-checkbox" for="estimated"><span>Estimated</span></label>
+		          </div>
+		        </div>
+		      </div>
+		    </fieldset>
+				<!-- Date last contact end -->
+				<!-- Relationship type -->
+				<fieldset class="usa-fieldset-inputs usa-sans">
+		      <legend>Relationship</legend>
+		      <p>Provide you relationship to this person (check all that apply):</p>
+		      <ul class="usa-unstyled-list">
+		        <li>
+		          <input id="neighbor" type="checkbox" name="relationship-type">
+		          <label for="neighbor"><span>Neighbor</span></label>
+		        </li>
+		        <li>
+		          <input id="friend" type="checkbox" name="relationship-type">
+		          <label for="friend"><span>Friend</span></label>
+		        </li>
+		        <li>
+		          <input id="landlord" type="checkbox" name="relationship-type">
+		          <label for="landlord"><span>Landlord</span></label>
+		        </li>
+		        <li>
+		          <input id="business-associate" type="checkbox" name="relationship-type" >
+		          <label for="business-associate"><span>Business Associate</span></label>
+		        </li>
+		        <li>
+		          <input id="other-relationship" type="checkbox" name="relationship-type" >
+		          <label for="other-relationship"><span>Other</span></label>
+		        </li>
+		      </ul>
+		    </fieldset>
+		    <!-- Relationship type end -->
+		    <!-- Person who knows you end -->
+
+		    <!-- Person contact information -->
+				<h2>Their contact information</h2>
+				<p>Provide the following information for this person.</p>
+
+				<!-- Daytime phone -->
+				<fieldset class="usa-fieldset-inputs">
+			    <legend>Provide this person's daytime phone number</legend>
+			    <input id="dns" class="phone-input" type="checkbox" name="dns" value="dns">
+			    <label class="simple-checkbox" for="dns"><span>I have a DSN number</span></label>
+
+			    <div id="dsn-phone-number-block" class="usa-grid">
+			      <div class="usa-width-two-thirds">
+			        <label for="">DSN Phone number</label>
+			        <ul class="usa-list-inline usa-list-inline-justified">
+			          <li>
+			            <input type="text">
+			          </li>
+			          <li id="dsn-dash">-</li>
+			          <li>
+			            <input type="text">
+			          </li>
+			        </ul>
+			      </div>
+			      <div class="usa-width-one-sixth">
+			        <label for="phone-type-1">Phone type</label>
+			        <select name="phone-type-1" id="phone-type-1">
+			          <option value="" style="display:none" disabled selected></option>
+			          <option value="cell">Cell</option>
+			          <option value="home">Home</option>
+			          <option value="work">Work</option>
+			        </select>
+			      </div>
+			    </div>
+
+			    <div id="standard-phone-number-block" class="usa-grid">
+			      <div class="usa-width-one-sixth">
+			        <label for="country-code">Country</label>
+			        <select name="country-code" id="country-code" class="phone-input">
+			          <option value="usa">🇺🇸 +1</option>
+			          <option value="gb">🇬🇧 +44</option>
+			        </select>
+			      </div>
+			      <div class="usa-width-one-third">
+			        <label for="phone-number">Phone number</label>
+			        <input type="text" name="phone-number" class="phone-input">
+			      </div>
+			      <div class="usa-width-one-sixth">
+			        <label for="extension">Extension</label>
+			        <input type="text" name="extension" class="phone-input">
+			      </div>
+			      <div class="usa-width-one-sixth">
+			        <label for="phone-type-1">Phone type</label>
+			        <select name="phone-type-1" id="phone-type-1">
+			          <option value="" style="display:none" disabled selected></option>
+			          <option value="cell">Cell</option>
+			          <option value="home">Home</option>
+			          <option value="work">Work</option>
+			        </select>
+			      </div>
+			    </div>
+			    <div class="usa-grid">
+			      <div class="usa-width-one-half">
+			        <fieldset class="usa-fielset-inputs">
+			          <legend class="label-style">Best time to call</legend>
+			          <ul class="usa-list-inline">
+			            <li>
+			              <input id="day-phone" class="phone-input" type="radio" name="time-to-call-1" value="day">
+			              <label for="day-phone"><span>Day</span></label>
+			            </li>
+			            <li>
+			              <input id="night-phone" class="phone-input" type="radio" name="time-to-call-1" value="night">
+			              <label for="night-phone"><span>Night</span></label>
+			            </li>
+			            <li>
+			              <input id="day-night-phone" class="phone-input" type="radio" name="time-to-call-1" value="both">
+			              <label for="day-night-phone"><span>Both</span></label>
+			            </li>
+			          </ul>
+			        </fieldset>
+			      </div>
+			    </div>
+			  </fieldset>
+			  <!-- Daytime phone end -->
+			  <!-- Mobile phone -->
+			  <fieldset class="usa-fieldset-inputs">
+			    <legend>Provide this person's cell/mobile phone number</legend>
+			    <input id="dns" class="phone-input" type="checkbox" name="dns" value="dns">
+			    <label class="simple-checkbox" for="dns"><span>I have a DSN number</span></label>
+
+			    <div id="standard-phone-number-block" class="usa-grid">
+			      <div class="usa-width-one-sixth">
+			        <label for="country-code">Country</label>
+			        <select name="country-code" id="country-code" class="phone-input">
+			          <option value="usa">🇺🇸 +1</option>
+			          <option value="gb">🇬🇧 +44</option>
+			        </select>
+			      </div>
+			      <div class="usa-width-one-third">
+			        <label for="phone-number">Phone number</label>
+			        <input type="text" name="phone-number" class="phone-input">
+			      </div>
+			      <div class="usa-width-one-sixth">
+			        <label for="extension">Extension</label>
+			        <input type="text" name="extension" class="phone-input">
+			      </div>
+			      <div class="usa-width-one-sixth">
+			        <label for="phone-type-2">Phone type</label>
+			        <select name="phone-type-2" id="phone-type-2">
+			          <option value="" style="display:none" disabled selected></option>
+			          <option value="cell">Cell</option>
+			          <option value="home">Home</option>
+			          <option value="work">Work</option>
+			        </select>
+			      </div>
+			    </div>
+			    <div class="usa-grid">
+			      <div class="usa-width-one-half">
+			        <fieldset class="usa-fielset-inputs">
+			          <legend class="label-style">Best time to call</legend>
+			          <ul class="usa-list-inline">
+			            <li>
+			              <input id="day-phone-2" class="phone-input" type="radio" name="time-to-call-2" value="day">
+			              <label for="day-phone-2"><span>Day</span></label>
+			            </li>
+			            <li>
+			              <input id="night-phone-2" class="phone-input" type="radio" name="time-to-call-2" value="night">
+			              <label for="night-phone-2"><span>Night</span></label>
+			            </li>
+			            <li>
+			              <input id="day-night-phone-2" class="phone-input" type="radio" name="time-to-call-2" value="both">
+			              <label for="day-night-phone-2"><span>Both</span></label>
+			            </li>
+			          </ul>
+			        </fieldset>
+			      </div>
+			    </div>
+			  </fieldset>
+			  <!-- Mobile phone end -->
+			  <!-- Email address -->
+			  <div class="usa-form-control">
+			  	<label for="email-address" class="usa-alt-label">Provide this person's email address</label>
+			  	<input type="email">
+			  	<div class="modifiers modifiers-left">
+			  		<div class="modifier">
+			  			<span>or</span>
+			  		</div>
+			  		<div class="modifier">
+			  			<input id="dont-know-phone" type="checkbox" name="dont-know-phone">
+		          <label for="dont-know-phone"><span>I don't know</span></label>
+			  		</div>
+			  	</div>
+			  </div>
+			  <!-- Email address end -->
+			  <!-- Persons address -->
+			  <fieldset id="address-block" class="usa-fieldset-inputs">
+			    <legend>Provide this person's street address</legend>
+			    <p>The address of your contact during this time period.</p>
+			    <input id="apo-fpo-dpo-checkbox" type="checkbox" name="APO" value="truth">
+			    <label for="apo-fpo-dpo-checkbox"><span>This address is an APO/FPO/DPO</span></label>
+			    <label for="country" class="address-block">Country</label>
+			    <select name="country" id="country" class="address-block">
+			      <option value="United States of America">United States of America</option>
+			      <option value="Another country">Another country</option>
+			      <option value="Another country">Another country</option>
+			    </select>
+
+			    <label for="mailing-address-1" class="address-block">Street address</label>
+			    <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+
+			    <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+			    <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+
+
+			    <label for="city" class="address-block">City</label>
+			    <input id="city" name="city" type="text" class="address-block">
+
+			    <div class="usa-grid address-block">
+			      <div class="usa-width-one-half">
+			        <label for="state">State</label>
+			        <input id="state" name="state" type="text">
+			      </div>
+
+			      <div class="usa-width-one-half">
+			        <label for="zip">Zip</label>
+			        <input id="zip" name="zip" type="zip">
+			      </div>
+			    </div>
+			  </fieldset>
+			  <!-- Persons address end -->
+	    </div>
+	  </li>
+	</ul>
+
+	<!-- Additional residences -->
+	<fieldset class="usa-fieldset-inputs usa-sans">
+    <legend>Do you have an additional residence to report?</legend>
+    <ul class="usa-list-inline-justified usa-list-inline">
+      <li>
+        <input id="yes-2" type="radio" name="additional-residence" >
+        <label for="yes-2"><span>Yes</span></label>
+      </li>
+      <li>
+        <input id="no-2" type="radio" name="additional-residences" >
+        <label for="no-2"><span>No</span></label>
+      </li>
+    </ul>
+  </fieldset>
+  <!-- Additional residences end -->
+  <!-- Back/next block -->
+  <div class="next-back-block">
+  	<% link_to '/example-form/your-history/introduction.html', :class => "usa-button back-button" do %>
+      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">Introduction</div>
+    <% end %>
+    <% link_to '/example-form/your-history/employment-activities.html', :class => "usa-button next-button" do %>
+      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">Employment activiies</div>
+    <% end %>
+  </div>
+</form>
