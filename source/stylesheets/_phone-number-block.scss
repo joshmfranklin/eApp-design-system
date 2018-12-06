@@ -3,7 +3,10 @@
 .usa-phone-number-block {
 	margin-bottom: .5rem;
 	display: flex;
-	flex-flow: row wrap;
+
+	@media all and (max-width: 980px) {
+	  flex-flow: row wrap;
+  }
 
 	.usa-phone-number-input,
 	.usa-extension-input,
@@ -37,7 +40,8 @@
 }
 
 .usa-phone-dont-know {
-	margin-top: 4rem;
+	margin-top: 3rem;
+	width: 35%;
 
 	@media all and (max-width: 980px) {
 		margin: 2rem 0;
