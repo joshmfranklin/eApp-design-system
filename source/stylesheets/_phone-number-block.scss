@@ -1,18 +1,53 @@
 // Phone number block
 
-#standard-phone-number-block,
-#dsn-phone-number-block {
-  margin: 2rem 0 1rem 0;
+.usa-phone-number-block {
+	margin-bottom: .5rem;
+	display: flex;
+	flex-flow: row wrap;
+
+	.usa-phone-number-input,
+	.usa-extension-input,
+	.usa-phone-type-input {
+		margin-right: 1rem;
+	}
+
+	.usa-phone-number-input {
+		width: 40%;
+		
+		@media all and (max-width: 980px) {
+		  width: 100%;
+	  }
+	}
+
+	.usa-extension-input {
+		width: 15%;
+
+		@media all and (max-width: 980px) {
+		  width: 100%;
+	  }
+	}
+
+	.usa-phone-type-input {
+		width: 15%;
+
+		@media all and (max-width: 980px) {
+		  width: 100%;
+	  }
+	}
 }
 
-#dsn-phone-number-block ul li input {
-    margin-bottom: 0;
+.usa-phone-dont-know {
+	margin-top: 4rem;
+
+	@media all and (max-width: 980px) {
+		margin: 2rem 0;
+	  width: 100%;
+  }
 }
 
-#dsn-dash {
-  width: 2rem;
-  padding-top: 1.5rem;
-  text-align: center;
+.usa-phone-number-block + .modifiers {
+	margin-bottom: 3rem;
+	width: 100%;
 }
 
 #phone-time {

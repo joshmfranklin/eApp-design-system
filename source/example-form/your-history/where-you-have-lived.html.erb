@@ -346,54 +346,20 @@ title: eApp Design System | Example form
 		    <!-- Person contact information -->
 				<h2>Their contact information</h2>
 				<p>Provide the following information for this person.</p>
-
-				<!-- Daytime phone -->
+				
+				<!-- Evening phone -->
 				<fieldset class="usa-fieldset-inputs">
-			    <legend>Provide this person's daytime phone number</legend>
-			    <input id="dns" class="phone-input" type="checkbox" name="dns" value="dns">
-			    <label class="simple-checkbox" for="dns"><span>I have a DSN number</span></label>
-
-			    <div id="dsn-phone-number-block" class="usa-grid">
-			      <div class="usa-width-two-thirds">
-			        <label for="">DSN Phone number</label>
-			        <ul class="usa-list-inline usa-list-inline-justified">
-			          <li>
-			            <input type="text">
-			          </li>
-			          <li id="dsn-dash">-</li>
-			          <li>
-			            <input type="text">
-			          </li>
-			        </ul>
-			      </div>
-			      <div class="usa-width-one-sixth">
-			        <label for="phone-type-1">Phone type</label>
-			        <select name="phone-type-1" id="phone-type-1">
-			          <option value="" style="display:none" disabled selected></option>
-			          <option value="cell">Cell</option>
-			          <option value="home">Home</option>
-			          <option value="work">Work</option>
-			        </select>
-			      </div>
-			    </div>
-
-			    <div id="standard-phone-number-block" class="usa-grid">
-			      <div class="usa-width-one-sixth">
-			        <label for="country-code">Country</label>
-			        <select name="country-code" id="country-code" class="phone-input">
-			          <option value="usa">🇺🇸 +1</option>
-			          <option value="gb">🇬🇧 +44</option>
-			        </select>
-			      </div>
-			      <div class="usa-width-one-third">
+			    <legend>Provide this person's evening phone number</legend>
+					<div class="usa-phone-number-block">
+			      <div class="usa-phone-number-input">
 			        <label for="phone-number">Phone number</label>
 			        <input type="text" name="phone-number" class="phone-input">
 			      </div>
-			      <div class="usa-width-one-sixth">
+			      <div class="usa-extension-input">
 			        <label for="extension">Extension</label>
 			        <input type="text" name="extension" class="phone-input">
 			      </div>
-			      <div class="usa-width-one-sixth">
+			      <div class="usa-phone-type-input">
 			        <label for="phone-type-1">Phone type</label>
 			        <select name="phone-type-1" id="phone-type-1">
 			          <option value="" style="display:none" disabled selected></option>
@@ -402,6 +368,16 @@ title: eApp Design System | Example form
 			          <option value="work">Work</option>
 			        </select>
 			      </div>
+			      <div class="usa-phone-dont-know">
+				      <input id="phone-dont-know" type="checkbox" name="phone-dont-know" value="phone-dont-know">
+					    <label class="simple-checkbox" for="phone-dont-know"><span>I don't know</span></label>
+			      </div>
+					</div>
+			    <div class="modifiers modifiers-left">
+			    	<div class="modifier">
+			    		<input id="international-dsn" type="checkbox" name="international-dsn" value="dns">
+					    <label class="simple-checkbox" for="international-dsn"><span>This is an international or DSN phone number</span></label>
+			    	</div>
 			    </div>
 			    <div class="usa-grid">
 			      <div class="usa-width-one-half">
@@ -409,54 +385,54 @@ title: eApp Design System | Example form
 			          <legend class="label-style">Best time to call</legend>
 			          <ul class="usa-list-inline">
 			            <li>
-			              <input id="day-phone" class="phone-input" type="radio" name="time-to-call-1" value="day">
-			              <label for="day-phone"><span>Day</span></label>
+			              <input id="day-phone-1" class="phone-input" type="radio" name="time-to-call-1" value="day">
+			              <label for="day-phone-1"><span>Day</span></label>
 			            </li>
 			            <li>
-			              <input id="night-phone" class="phone-input" type="radio" name="time-to-call-1" value="night">
-			              <label for="night-phone"><span>Night</span></label>
+			              <input id="night-phone-1" class="phone-input" type="radio" name="time-to-call-1" value="night">
+			              <label for="night-phone-1"><span>Night</span></label>
 			            </li>
 			            <li>
-			              <input id="day-night-phone" class="phone-input" type="radio" name="time-to-call-1" value="both">
-			              <label for="day-night-phone"><span>Both</span></label>
+			              <input id="day-night-phone-1" class="phone-input" type="radio" name="time-to-call-1" value="both">
+			              <label for="day-night-phone-1"><span>Both</span></label>
 			            </li>
 			          </ul>
 			        </fieldset>
 			      </div>
 			    </div>
 			  </fieldset>
-			  <!-- Daytime phone end -->
-			  <!-- Mobile phone -->
-			  <fieldset class="usa-fieldset-inputs">
-			    <legend>Provide this person's cell/mobile phone number</legend>
-			    <input id="dns" class="phone-input" type="checkbox" name="dns" value="dns">
-			    <label class="simple-checkbox" for="dns"><span>I have a DSN number</span></label>
-
-			    <div id="standard-phone-number-block" class="usa-grid">
-			      <div class="usa-width-one-sixth">
-			        <label for="country-code">Country</label>
-			        <select name="country-code" id="country-code" class="phone-input">
-			          <option value="usa">🇺🇸 +1</option>
-			          <option value="gb">🇬🇧 +44</option>
-			        </select>
-			      </div>
-			      <div class="usa-width-one-third">
+			  <!-- Evening phone end -->
+				<!-- Daytime phone -->
+				<fieldset class="usa-fieldset-inputs">
+			    <legend>Provide this person's daytime phone number</legend>
+					<div class="usa-phone-number-block">
+			      <div class="usa-phone-number-input">
 			        <label for="phone-number">Phone number</label>
 			        <input type="text" name="phone-number" class="phone-input">
 			      </div>
-			      <div class="usa-width-one-sixth">
+			      <div class="usa-extension-input">
 			        <label for="extension">Extension</label>
 			        <input type="text" name="extension" class="phone-input">
 			      </div>
-			      <div class="usa-width-one-sixth">
-			        <label for="phone-type-2">Phone type</label>
-			        <select name="phone-type-2" id="phone-type-2">
+			      <div class="usa-phone-type-input">
+			        <label for="phone-type-1">Phone type</label>
+			        <select name="phone-type-1" id="phone-type-1">
 			          <option value="" style="display:none" disabled selected></option>
 			          <option value="cell">Cell</option>
 			          <option value="home">Home</option>
 			          <option value="work">Work</option>
 			        </select>
 			      </div>
+			      <div class="usa-phone-dont-know">
+				      <input id="phone-dont-know-2" type="checkbox" name="phone-dont-know-2" value="phone-dont-know-2">
+					    <label class="simple-checkbox" for="phone-dont-know-2"><span>I don't know</span></label>
+			      </div>
+					</div>
+			    <div class="modifiers modifiers-left">
+			    	<div class="modifier">
+			    		<input id="international-dsn-2" type="checkbox" name="international-dsn-2" value="dns">
+					    <label class="simple-checkbox" for="international-dsn-2"><span>This is an international or DSN phone number</span></label>
+			    	</div>
 			    </div>
 			    <div class="usa-grid">
 			      <div class="usa-width-one-half">
@@ -480,6 +456,61 @@ title: eApp Design System | Example form
 			      </div>
 			    </div>
 			  </fieldset>
+			  <!-- Daytime phone end -->
+			  <!-- Mobile phone -->
+			  <fieldset class="usa-fieldset-inputs">
+			    <legend>Provide this person's mobile/cell phone number</legend>
+					<div class="usa-phone-number-block">
+			      <div class="usa-phone-number-input">
+			        <label for="phone-number">Phone number</label>
+			        <input type="text" name="phone-number" class="phone-input">
+			      </div>
+			      <div class="usa-extension-input">
+			        <label for="extension">Extension</label>
+			        <input type="text" name="extension" class="phone-input">
+			      </div>
+			      <div class="usa-phone-type-input">
+			        <label for="phone-type-1">Phone type</label>
+			        <select name="phone-type-1" id="phone-type-1">
+			          <option value="" style="display:none" disabled selected></option>
+			          <option value="cell">Cell</option>
+			          <option value="home">Home</option>
+			          <option value="work">Work</option>
+			        </select>
+			      </div>
+			      <div class="usa-phone-dont-know">
+				      <input id="phone-dont-know-3" type="checkbox" name="phone-dont-know-3" value="phone-dont-know-3">
+					    <label class="simple-checkbox" for="phone-dont-know-2"><span>I don't know</span></label>
+			      </div>
+					</div>
+			    <div class="modifiers modifiers-left">
+			    	<div class="modifier">
+			    		<input id="international-dsn-3" type="checkbox" name="international-dsn-3" value="dns">
+					    <label class="simple-checkbox" for="international-dsn-3"><span>This is an international or DSN phone number</span></label>
+			    	</div>
+			    </div>
+			    <div class="usa-grid">
+			      <div class="usa-width-one-half">
+			        <fieldset class="usa-fielset-inputs">
+			          <legend class="label-style">Best time to call</legend>
+			          <ul class="usa-list-inline">
+			            <li>
+			              <input id="day-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="day">
+			              <label for="day-phone-3"><span>Day</span></label>
+			            </li>
+			            <li>
+			              <input id="night-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="night">
+			              <label for="night-phone-3"><span>Night</span></label>
+			            </li>
+			            <li>
+			              <input id="day-night-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="both">
+			              <label for="day-night-phone-3"><span>Both</span></label>
+			            </li>
+			          </ul>
+			        </fieldset>
+			      </div>
+			    </div>
+			  </fieldset>
 			  <!-- Mobile phone end -->
 			  <!-- Email address -->
 			  <div class="usa-form-control">
@@ -487,11 +518,8 @@ title: eApp Design System | Example form
 			  	<input type="email">
 			  	<div class="modifiers modifiers-left">
 			  		<div class="modifier">
-			  			<span>or</span>
-			  		</div>
-			  		<div class="modifier">
 			  			<input id="dont-know-phone" type="checkbox" name="dont-know-phone">
-		          <label for="dont-know-phone"><span>I don't know</span></label>
+		          <label class="simple-checkbox" for="dont-know-phone"><span>I don't know</span></label>
 			  		</div>
 			  	</div>
 			  </div>

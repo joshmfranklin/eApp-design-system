@@ -139,6 +139,11 @@ fieldset {
 
 .modifiers-left {
   justify-content: flex-start;
+
+  .modifier {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
 }
 
 .modifier {
