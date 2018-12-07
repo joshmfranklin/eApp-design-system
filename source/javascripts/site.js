@@ -165,4 +165,16 @@ $(document).ready(function(){
         $(this).closest('.usa-question-group').removeClass('usa-question-highlighted');
     });
 
+  // yes/no toggle
+  $(".yes-radio").click(function(){
+    var yesBlock = $(this).attr("data-id");
+    $('.'+yesBlock).show();
+  })
+
+  $(".no-radio").click(function(){
+    var yesBlock = $(this).attr("data-id");
+    $('.'+yesBlock).hide();
+  })
+
+
 })

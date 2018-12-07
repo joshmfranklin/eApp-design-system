@@ -13,18 +13,18 @@ title: eApp Design System | Example form
 		<legend>Have you attended any schools in the last 5 years?</legend>
 		<ul class="usa-list-inline usa-list-inline-justified">
 			<li>
-        <input id="yes" type="radio" name="other-names" >
+        <input class="yes-radio" id="yes" type="radio" name="other-names" data-id="attended-school">
         <label for="yes"><span>Yes</span></label>
       </li>
       <li>
-        <input id="no" type="radio" name="other-names" >
+        <input class="no-radio" id="no" type="radio" name="other-names" data-id="attended-school">
         <label for="no"><span>No</span></label>
       </li>
 		</ul>
 	</fieldset>
 	<!-- Attended school in last 5 years end -->
 	<!-- School/diploma counters -->
-	<div class="usa-timeline-block">
+	<div class="attended-school usa-timeline-block" style="display: none;">
 		<div class="usa-timeline-content">
 			<span class="usa-timeline-icon">
 				<i class="fas fa-graduation-cap fa-3x"></i>
@@ -51,7 +51,7 @@ title: eApp Design System | Example form
 		</div>
 	</div>
 	<!-- School accordion -->
-	<ul id="accordion" class="usa-accordion-bordered">
+	<ul id="accordion" class="attended-school usa-accordion-bordered" style="display: none;">
 	  <li>
 	    <div class="usa-accordion-header">
 	      <button class="usa-accordion-button"
@@ -299,93 +299,95 @@ title: eApp Design System | Example form
 					<legend>Did you receive a degree/diploma?</legend>
 					<ul class="usa-list-inline usa-list-inline-justified">
 						<li>
-			        <input id="yes-2" type="radio" name="degree-diploma" >
+			        <input class="yes-radio" id="yes-2" type="radio" name="degree-diploma" data-id="recieved-diploma">
 			        <label for="yes-2"><span>Yes</span></label>
 			      </li>
 			      <li>
-			        <input id="no-2" type="radio" name="degree-diploma" >
+			        <input class="no-radio" id="no-2" type="radio" name="degree-diploma" data-id="recieved-diploma">
 			        <label for="no-2"><span>No</span></label>
 			      </li>
 					</ul>
 				</fieldset>
 				<!-- Recieve a degree end -->
+				<div class="recieved-diploma" style="display: none;">
 				<!-- Type of degree -->
-				<fieldset class="usa-fieldset-inputs">
-			  	<legend>Provide type of degrees(s)/diploma(s) received</legend>
-			  	<ul class="usa-unstyled-list">
-			  		<li>
-			  			<input id="high-school-diploma" type="radio" name="degree-type" >
-			        <label for="high-school-diploma"><span>High School Diploma</span></label>
-			  		</li>
-			  		<li>
-			  			<input id="associates-degree" type="radio" name="degree-type" >
-			        <label for="associates-degree"><span>Associate's</span></label>
-			  		</li>
-			  		<li>
-			  			<input id="bachelors" type="radio" name="degree-type" >
-			        <label for="bachelors"><span>Bachelor's</span></label>
-			  		</li>
-			  		<li>
-			  			<input id="masters" type="radio" name="degree-type" >
-			        <label for="masters"><span>Master's</span></label>
-			  		</li>
-			  		<li>
-			  			<input id="doctorate" type="radio" name="degree-type" >
-			        <label for="doctorate"><span>Doctorate</span></label>
-			  		</li>
-			  		<li>
-			  			<input id="professional" type="radio" name="degree-type" >
-			        <label for="professional"><span>Professional Degree (eg. MD, DVM, JD)</span></label>
-			  		</li>
-			  		<li>
-			  			<input id="other" type="radio" name="degree-type" >
-			        <label for="other"><span>Other</span></label>
-			  		</li>
-			  	</ul>
-			  </fieldset>
-			  <!-- Type of degree end -->
-				<!-- Degree date awarded -->
-				<fieldset class="usa-fieldset-inputs">
-					<legend>Date awarded</legend>
-					<div class="m-d-y-block">
-		        <div class="usa-form-control">
-		          <label for="month">Month</label>
-		          <input type="text" id="month" maxlength="2">
-		        </div>
-		        <div class="usa-form-control">
-		          <label for="year">Year</label>
-		          <input type="text" id="year" maxlength="4">
-		        </div>
-		        <div class="modifiers">
-		          <div class="modifier">
-		            <input id="estimated" type="checkbox" name="estimated">
-		            <label class="simple-checkbox" for="estimated"><span>Estimated</span></label>
-		          </div>
-		        </div>
-		      </div>
-				</fieldset>
-				<!-- Degree date awarded end -->
-				<!-- Another degree -->
-				<fieldset class="usa-fieldset-inputs">
-					<legend>Do you have another degree/diploma from this school to add?</legend>
-					<ul class="usa-list-inline usa-list-inline-justified">
-						<li>
-			        <input id="yes-3" type="radio" name="another-degree-diploma" >
-			        <label for="yes-3"><span>Yes</span></label>
-			      </li>
-			      <li>
-			        <input id="no-3" type="radio" name="another-degree-diploma" >
-			        <label for="no-3"><span>No</span></label>
-			      </li>
-					</ul>
-				</fieldset>
+					<fieldset class="usa-fieldset-inputs">
+				  	<legend>Provide type of degrees(s)/diploma(s) received</legend>
+				  	<ul class="usa-unstyled-list">
+				  		<li>
+				  			<input id="high-school-diploma" type="radio" name="degree-type" >
+				        <label for="high-school-diploma"><span>High School Diploma</span></label>
+				  		</li>
+				  		<li>
+				  			<input id="associates-degree" type="radio" name="degree-type" >
+				        <label for="associates-degree"><span>Associate's</span></label>
+				  		</li>
+				  		<li>
+				  			<input id="bachelors" type="radio" name="degree-type" >
+				        <label for="bachelors"><span>Bachelor's</span></label>
+				  		</li>
+				  		<li>
+				  			<input id="masters" type="radio" name="degree-type" >
+				        <label for="masters"><span>Master's</span></label>
+				  		</li>
+				  		<li>
+				  			<input id="doctorate" type="radio" name="degree-type" >
+				        <label for="doctorate"><span>Doctorate</span></label>
+				  		</li>
+				  		<li>
+				  			<input id="professional" type="radio" name="degree-type" >
+				        <label for="professional"><span>Professional Degree (eg. MD, DVM, JD)</span></label>
+				  		</li>
+				  		<li>
+				  			<input id="other" type="radio" name="degree-type" >
+				        <label for="other"><span>Other</span></label>
+				  		</li>
+				  	</ul>
+				  </fieldset>
+				  <!-- Type of degree end -->
+					<!-- Degree date awarded -->
+					<fieldset class="usa-fieldset-inputs">
+						<legend>Date awarded</legend>
+						<div class="m-d-y-block">
+			        <div class="usa-form-control">
+			          <label for="month">Month</label>
+			          <input type="text" id="month" maxlength="2">
+			        </div>
+			        <div class="usa-form-control">
+			          <label for="year">Year</label>
+			          <input type="text" id="year" maxlength="4">
+			        </div>
+			        <div class="modifiers">
+			          <div class="modifier">
+			            <input id="estimated" type="checkbox" name="estimated">
+			            <label class="simple-checkbox" for="estimated"><span>Estimated</span></label>
+			          </div>
+			        </div>
+			      </div>
+					</fieldset>
+					<!-- Degree date awarded end -->
+					<!-- Another degree -->
+					<fieldset class="usa-fieldset-inputs">
+						<legend>Do you have another degree/diploma from this school to add?</legend>
+						<ul class="usa-list-inline usa-list-inline-justified">
+							<li>
+				        <input id="yes-3" type="radio" name="another-degree-diploma" >
+				        <label for="yes-3"><span>Yes</span></label>
+				      </li>
+				      <li>
+				        <input id="no-3" type="radio" name="another-degree-diploma" >
+				        <label for="no-3"><span>No</span></label>
+				      </li>
+						</ul>
+					</fieldset>
+				</div>
 				<!-- Another degree end -->
 	    </div>
 	  </li>
 	</ul>
 	<!-- School accordion end -->
 	<!-- Another school -->
-	<fieldset class="usa-fieldset-inputs">
+	<fieldset class="attended-school usa-fieldset-inputs" style="display: none;">
 		<legend>Do you have additional education to enter (include education within the last 5 years, as well as degrees or diplomas more than 5 years ago)?</legend>
 		<ul class="usa-list-inline usa-list-inline-justified">
 			<li>
