@@ -267,7 +267,7 @@ title: eApp Design System | Example form
 		        </div>
 		        <div class="or">or</div>
 		        <div class="present">
-		          <input id="present" type="checkbox" name="present">
+		          <input class="disabled-toggle" id="present" type="checkbox" name="present" data-id="to-date-input">
 		          <label for="present"><span>Present</span></label>
 		        </div>
 		      </div>
@@ -450,15 +450,15 @@ title: eApp Design System | Example form
 					<div class="usa-phone-number-block">
 			      <div class="usa-phone-number-input">
 			        <label for="phone-number">Phone number</label>
-			        <input type="text" name="phone-number" class="phone-input">
+			        <input type="text" name="phone-number" class="evening-phone">
 			      </div>
 			      <div class="usa-extension-input">
 			        <label for="extension">Extension</label>
-			        <input type="text" name="extension" class="phone-input">
+			        <input type="text" name="extension" class="evening-phone">
 			      </div>
 			      <div class="usa-phone-type-input">
 			        <label for="phone-type-1">Phone type</label>
-			        <select name="phone-type-1" id="phone-type-1">
+			        <select name="phone-type-1" id="phone-type-1" class="evening-phone">
 			          <option value="" style="display:none" disabled selected></option>
 			          <option value="cell">Cell</option>
 			          <option value="home">Home</option>
@@ -469,7 +469,7 @@ title: eApp Design System | Example form
 			      	<ul class="usa-list-inline">
 			      		<li><span>or</span></li>
 			      		<li>
-						      <input id="phone-dont-know" type="checkbox" name="phone-dont-know" value="phone-dont-know">
+						      <input class="disabled-toggle" id="phone-dont-know" type="checkbox" name="phone-dont-know" value="phone-dont-know" data-id="evening-phone">
 							    <label for="phone-dont-know"><span>I don't know</span></label>
 			      		</li>
 			      	</ul>
@@ -477,7 +477,7 @@ title: eApp Design System | Example form
 					</div>
 			    <div class="modifiers modifiers-left">
 			    	<div class="modifier">
-			    		<input id="international-dsn" type="checkbox" name="international-dsn" value="dns">
+			    		<input id="international-dsn" type="checkbox" name="international-dsn" value="dns" class="evening-phone">
 					    <label class="simple-checkbox" for="international-dsn"><span>This is an international or DSN phone number</span></label>
 			    	</div>
 			    </div>
@@ -487,15 +487,15 @@ title: eApp Design System | Example form
 			          <legend class="label-style">Best time to call</legend>
 			          <ul class="usa-list-inline">
 			            <li>
-			              <input id="day-phone-1" class="phone-input" type="radio" name="time-to-call-1" value="day">
+			              <input id="day-phone-1" class="evening-phone" type="radio" name="time-to-call-1" value="day">
 			              <label for="day-phone-1"><span>Day</span></label>
 			            </li>
 			            <li>
-			              <input id="night-phone-1" class="phone-input" type="radio" name="time-to-call-1" value="night">
+			              <input id="night-phone-1" class="evening-phone" type="radio" name="time-to-call-1" value="night">
 			              <label for="night-phone-1"><span>Night</span></label>
 			            </li>
 			            <li>
-			              <input id="day-night-phone-1" class="phone-input" type="radio" name="time-to-call-1" value="both">
+			              <input id="day-night-phone-1" class="evening-phone" type="radio" name="time-to-call-1" value="both">
 			              <label for="day-night-phone-1"><span>Both</span></label>
 			            </li>
 			          </ul>
@@ -515,15 +515,15 @@ title: eApp Design System | Example form
 					<div class="usa-phone-number-block">
 			      <div class="usa-phone-number-input">
 			        <label for="phone-number">Phone number</label>
-			        <input type="text" name="phone-number" class="phone-input">
+			        <input type="text" name="phone-number" class="day-phone">
 			      </div>
 			      <div class="usa-extension-input">
 			        <label for="extension">Extension</label>
-			        <input type="text" name="extension" class="phone-input">
+			        <input type="text" name="extension" class="day-phone">
 			      </div>
 			      <div class="usa-phone-type-input">
 			        <label for="phone-type-1">Phone type</label>
-			        <select name="phone-type-1" id="phone-type-1">
+			        <select name="phone-type-1" id="phone-type-1" class="day-phone">
 			          <option value="" style="display:none" disabled selected></option>
 			          <option value="cell">Cell</option>
 			          <option value="home">Home</option>
@@ -534,7 +534,7 @@ title: eApp Design System | Example form
 			      	<ul class="usa-list-inline">
 			      		<li><span>or</span></li>
 			      		<li>
-						      <input id="phone-dont-know-2" type="checkbox" name="phone-dont-know-2" value="phone-dont-know-2">
+						      <input class="disabled-toggle" id="phone-dont-know-2" type="checkbox" name="phone-dont-know-2" value="phone-dont-know-2" data-id="day-phone">
 							    <label for="phone-dont-know-2"><span>I don't know</span></label>
 			      		</li>
 			      	</ul>
@@ -542,7 +542,7 @@ title: eApp Design System | Example form
 					</div>
 			    <div class="modifiers modifiers-left">
 			    	<div class="modifier">
-			    		<input id="international-dsn-2" type="checkbox" name="international-dsn-2" value="dns">
+			    		<input id="international-dsn-2" type="checkbox" name="international-dsn-2" value="dns" class="day-phone">
 					    <label class="simple-checkbox" for="international-dsn-2"><span>This is an international or DSN phone number</span></label>
 			    	</div>
 			    </div>
@@ -552,15 +552,15 @@ title: eApp Design System | Example form
 			          <legend class="label-style">Best time to call</legend>
 			          <ul class="usa-list-inline">
 			            <li>
-			              <input id="day-phone-2" class="phone-input" type="radio" name="time-to-call-2" value="day">
+			              <input id="day-phone-2" class="day-phone" type="radio" name="time-to-call-2" value="day">
 			              <label for="day-phone-2"><span>Day</span></label>
 			            </li>
 			            <li>
-			              <input id="night-phone-2" class="phone-input" type="radio" name="time-to-call-2" value="night">
+			              <input id="night-phone-2" class="day-phone" type="radio" name="time-to-call-2" value="night">
 			              <label for="night-phone-2"><span>Night</span></label>
 			            </li>
 			            <li>
-			              <input id="day-night-phone-2" class="phone-input" type="radio" name="time-to-call-2" value="both">
+			              <input id="day-night-phone-2" class="day-phone" type="radio" name="time-to-call-2" value="both">
 			              <label for="day-night-phone-2"><span>Both</span></label>
 			            </li>
 			          </ul>
@@ -580,15 +580,15 @@ title: eApp Design System | Example form
 					<div class="usa-phone-number-block">
 			      <div class="usa-phone-number-input">
 			        <label for="phone-number">Phone number</label>
-			        <input type="text" name="phone-number" class="phone-input">
+			        <input type="text" name="phone-number" class="mobile-phone">
 			      </div>
 			      <div class="usa-extension-input">
 			        <label for="extension">Extension</label>
-			        <input type="text" name="extension" class="phone-input">
+			        <input type="text" name="extension" class="mobile-phone">
 			      </div>
 			      <div class="usa-phone-type-input">
 			        <label for="phone-type-1">Phone type</label>
-			        <select name="phone-type-1" id="phone-type-1">
+			        <select name="phone-type-1" id="phone-type-1" class="mobile-phone">
 			          <option value="" style="display:none" disabled selected></option>
 			          <option value="cell">Cell</option>
 			          <option value="home">Home</option>
@@ -599,7 +599,7 @@ title: eApp Design System | Example form
 			      	<ul class="usa-list-inline">
 			      		<li><span>or</span></li>
 			      		<li>
-						      <input id="phone-dont-know-3" type="checkbox" name="phone-dont-know-3" value="phone-dont-know-3">
+						      <input class="disabled-toggle" id="phone-dont-know-3" type="checkbox" name="phone-dont-know-3" value="phone-dont-know-3" data-id="mobile-phone">
 							    <label for="phone-dont-know-3"><span>I don't know</span></label>
 			      		</li>
 			      	</ul>
@@ -607,7 +607,7 @@ title: eApp Design System | Example form
 					</div>
 			    <div class="modifiers modifiers-left">
 			    	<div class="modifier">
-			    		<input id="international-dsn-3" type="checkbox" name="international-dsn-3" value="dns">
+			    		<input id="international-dsn-3" type="checkbox" name="international-dsn-3" value="dns" class="mobile-phone">
 					    <label class="simple-checkbox" for="international-dsn-3"><span>This is an international or DSN phone number</span></label>
 			    	</div>
 			    </div>
@@ -617,15 +617,15 @@ title: eApp Design System | Example form
 			          <legend class="label-style">Best time to call</legend>
 			          <ul class="usa-list-inline">
 			            <li>
-			              <input id="day-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="day">
+			              <input id="day-phone-3" class="mobile-phone" type="radio" name="time-to-call-3" value="day">
 			              <label for="day-phone-3"><span>Day</span></label>
 			            </li>
 			            <li>
-			              <input id="night-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="night">
+			              <input id="night-phone-3" class="mobile-phone" type="radio" name="time-to-call-3" value="night">
 			              <label for="night-phone-3"><span>Night</span></label>
 			            </li>
 			            <li>
-			              <input id="day-night-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="both">
+			              <input id="day-night-phone-3" class="mobile-phone" type="radio" name="time-to-call-3" value="both">
 			              <label for="day-night-phone-3"><span>Both</span></label>
 			            </li>
 			          </ul>
@@ -642,13 +642,13 @@ title: eApp Design System | Example form
 	            <i class="fas fa-question-circle"></i>
 	          </a>
 			  	</label>
-			  	<input type="email">
+			  	<input type="email" class="person-know-well-email">
 			  	<div class="modifiers modifiers-left">
 			  		<div class="modifier">
 			  			<span>or</span>
 			  		</div>
 			  		<div class="modifier">
-			  			<input id="dont-know-phone" type="checkbox" name="dont-know-phone">
+			  			<input class="disabled-toggle" id="dont-know-phone" type="checkbox" name="dont-know-phone" data-id="person-know-well-email">
 		          <label for="dont-know-phone"><span>I don't know</span></label>
 			  		</div>
 			  	</div>

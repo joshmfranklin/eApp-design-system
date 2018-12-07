@@ -74,25 +74,16 @@ $(document).ready(function(){
     })
   })
 
-  // Date blocks
-  $(function() {
-    $("#present").click(function(){
-      if($(this).is(":checked")) {
-        $(".to-date-input").attr("disabled", true);
-      } else {
-        $(".to-date-input").removeAttr("disabled");
-      }
-    })
-  })
-
   // I don't know/Not applicable disabler
 
   $(function() {
-    $("#i-dont-know").click(function(){
+    $(".disabled-toggle").click(function(){
+      var disabledInput = $(this).attr("data-id");
+
       if($(this).is(":checked")) {
-        $("#person-knew-well-email").attr("disabled", true);
+        $('.'+disabledInput).attr("disabled", true);
       } else {
-        $("#person-knew-well-email").removeAttr("disabled");
+        $('.'+disabledInput).removeAttr("disabled");
       }
     })
   })
@@ -154,16 +145,6 @@ $(document).ready(function(){
     }
     
   });
-
-  // Question highligher
-
-  $('input, select').focus(
-    function(){
-        $(this).closest('.usa-question-group').addClass('usa-question-highlighted');
-    }).blur(
-    function(){
-        $(this).closest('.usa-question-group').removeClass('usa-question-highlighted');
-    });
 
   // yes/no toggle
   $(".yes-radio").click(function(){

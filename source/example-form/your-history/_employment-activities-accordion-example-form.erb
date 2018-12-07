@@ -168,7 +168,7 @@
           </div>
           <div class="or">or</div>
           <div class="present">
-            <input id="present" type="checkbox" name="present">
+            <input class="disabled-toggle" id="present" type="checkbox" name="present" data-id="to-date-input">
             <label for="present"><span>Present</span></label>
           </div>
         </div>
@@ -300,15 +300,15 @@
         <div class="usa-phone-number-block">
           <div class="usa-phone-number-input">
             <label for="phone-number">Phone number</label>
-            <input type="text" name="phone-number" class="phone-input">
+            <input type="text" name="phone-number" class="employer-phone">
           </div>
           <div class="usa-extension-input">
             <label for="extension">Extension</label>
-            <input type="text" name="extension" class="phone-input">
+            <input type="text" name="extension" class="employer-phone">
           </div>
           <div class="usa-phone-type-input">
             <label for="phone-type-1">Phone type</label>
-            <select name="phone-type-1" id="phone-type-1">
+            <select name="phone-type-1" id="phone-type-1" class="employer-phone">
               <option value="" style="display:none" disabled selected></option>
               <option value="cell">Cell</option>
               <option value="home">Home</option>
@@ -319,7 +319,7 @@
             <ul class="usa-list-inline">
               <li><span>or</span></li>
               <li>
-                <input id="phone-dont-know" type="checkbox" name="phone-dont-know" value="phone-dont-know">
+                <input class="disabled-toggle" id="phone-dont-know" type="checkbox" name="phone-dont-know" value="phone-dont-know" data-id="employer-phone">
                 <label for="phone-dont-know"><span>I don't know</span></label>
               </li>
             </ul>
@@ -327,7 +327,7 @@
         </div>
         <div class="modifiers modifiers-left">
           <div class="modifier">
-            <input id="international-dsn" type="checkbox" name="international-dsn" value="dns">
+            <input class="employer-phone" id="international-dsn" type="checkbox" name="international-dsn" value="dns">
             <label class="simple-checkbox" for="international-dsn"><span>This is an international or DSN phone number</span></label>
           </div>
         </div>
@@ -337,15 +337,15 @@
               <legend class="label-style">Best time to call</legend>
               <ul class="usa-list-inline">
                 <li>
-                  <input id="day-phone-1" class="phone-input" type="radio" name="time-to-call-1" value="day">
+                  <input id="day-phone-1" class="employer-phone" type="radio" name="time-to-call-1" value="day">
                   <label for="day-phone-1"><span>Day</span></label>
                 </li>
                 <li>
-                  <input id="night-phone-1" class="phone-input" type="radio" name="time-to-call-1" value="night">
+                  <input id="night-phone-1" class="employer-phone" type="radio" name="time-to-call-1" value="night">
                   <label for="night-phone-1"><span>Night</span></label>
                 </li>
                 <li>
-                  <input id="day-night-phone-1" class="phone-input" type="radio" name="time-to-call-1" value="both">
+                  <input id="day-night-phone-1" class="employer-phone" type="radio" name="time-to-call-1" value="both">
                   <label for="day-night-phone-1"><span>Both</span></label>
                 </li>
               </ul>
@@ -389,11 +389,11 @@
       <!-- Email of supervisor -->
       <div class="usa-form-control">
         <label for="supervisor-email" class="usa-alt-label">Provide the email address of your supervisor</label>
-        <input type="email">
+        <input type="email" class="super-email">
         <div class="modifiers modifiers-left">
           <div class="modifier">or</div>
           <div class="modifier">
-            <input id="i-dont-know" type="checkbox" name="i-dont-know">
+            <input class="disabled-toggle" id="i-dont-know" type="checkbox" name="i-dont-know" data-id="super-email">
             <label for="i-dont-know"><span>I don't know</span></label>
           </div>
         </div>
