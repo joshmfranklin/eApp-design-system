@@ -64,6 +64,7 @@
     height: 5rem;
     padding-left: 1.5rem;
     z-index: 9000;
+    position: relative;
   }
 }
 .styleguide-secondary-nav ul {
@@ -101,12 +102,6 @@
   border-bottom: 0.7rem solid $color-primary;
   padding-bottom: 0.9rem;
   color: $color-base;
-}
-
-.styleguide-secondary-nav.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 
 // Sidenav and main content

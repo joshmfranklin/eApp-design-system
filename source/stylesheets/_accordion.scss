@@ -4,14 +4,11 @@
   margin-bottom: 5rem;
 }
 
-.usa-accordion-header-fixed {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-}
-
 .usa-accordion-header {
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 
   .title:not(:last-child) {
     margin-bottom: 1.5rem;
