@@ -1,0 +1,402 @@
+---
+layout: "example-form-layout"
+title: eApp Design System | Example form
+---
+
+<form action="" class="eapp-form">
+	<h1 class="eapp-section-header">Where You Went to School</h1>
+	<h2>List the places you went to school</h2>
+	<p>Do not list education before your 18th birthday, unless to provide a minimum of two years education history.</p>
+	
+	<!-- Attended school in last 5 years -->
+	<fieldset class="usa-fieldset-inputs">
+		<legend>Have you attended any schools in the last 5 years?</legend>
+		<ul class="usa-list-inline usa-list-inline-justified">
+			<li>
+        <input id="yes" type="radio" name="other-names" >
+        <label for="yes"><span>Yes</span></label>
+      </li>
+      <li>
+        <input id="no" type="radio" name="other-names" >
+        <label for="no"><span>No</span></label>
+      </li>
+		</ul>
+	</fieldset>
+	<!-- Attended school in last 5 years end -->
+	<!-- School/diploma counters -->
+	<div class="usa-timeline-block">
+		<div class="usa-timeline-content">
+			<span class="usa-timeline-icon">
+				<i class="fas fa-graduation-cap fa-3x"></i>
+			</span>
+			<span class="usa-timeline-title">
+				<strong>Where you went to school</strong>
+			</span>
+		</div>
+		<div class="usa-counter">
+			<div class="usa-counter-fraction">
+				<span class="completed">0</span>
+			</div>
+			<div class="usa-counter-unit">
+				Schools attended
+			</div>
+		</div>
+		<div class="usa-counter">
+			<div class="usa-counter-fraction">
+				<span class="completed">0</span>
+			</div>
+			<div class="usa-counter-unit">
+				Degrees / diplomas earned
+			</div>
+		</div>
+	</div>
+	<!-- School accordion -->
+	<ul id="accordion" class="usa-accordion-bordered">
+	  <li>
+	    <div class="usa-accordion-header">
+	      <button class="usa-accordion-button"
+	        aria-expanded="true"
+	        aria-controls="b-a1">
+	        <div class="titles">
+	          <div class="title">
+	            <div class="title-right">
+	              <span class="fa-stack">
+	                <i class="fas fa-circle fa-stack-2x"></i>
+	                <i class="fas fa-stack-1x fa-graduation-cap fa-inverse"></i>
+	              </span>
+	              <span>School 1:</span>
+	            </div>
+	            <div class="title-left">
+	              <span></span>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="usa-accordion-close-button">
+	        </div>
+	      </button>
+	      <button class="usa-accordion-remove-button">
+	        <span class="fas fa-times fa-fw"></span>
+	        <span class="remove">Remove</span>
+	      </button>
+	     </div>
+	    <div id="b-a1" class="usa-accordion-content">
+	    	<!-- Name of school -->
+	    	<div class="usa-form-control">
+	    		<label class="usa-alt-label" for="name-of-school">Provide the name of the school</label>
+	    		<input type="text" id="name-of-school">
+	    	</div>
+	    	<!-- Name of school end -->
+	    	<!-- Dates of attendance -->
+	    	<fieldset id="from-to-date-block" class="usa-fieldset-inputs">
+		      <legend>Provide the dates of attendance</legend>
+		      <div class="from-to-dates">
+		        <div class="from-date-container">
+		          <p><strong>From date</strong></p>
+		          <div class="m-d-y-block">
+		            <div class="usa-form-control">
+		              <label for="month">Month</label>
+		              <input type="text" id="month" maxlength="2">
+		            </div>
+		            <div class="usa-form-control">
+		              <label for="day">Day</label>
+		              <input type="text" id="day" maxlength="2">
+		            </div>
+		            <div class="usa-form-control">
+		              <label for="year">Year</label>
+		              <input type="text" id="year" maxlength="4">
+		            </div>
+		          </div>
+		          <div class="modifiers">
+		            <div class="modifier">
+		              <input id="from-estimated" type="checkbox" name="from-estimated">
+		              <label class="simple-checkbox" for="from-estimated"><span>Estimated</span></label>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="from-to-date-arrow">
+		          <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+		        </div>
+		        <div class="to-date-container">
+		          <p><strong>To date</strong></p>
+		          <div class="m-d-y-block">
+		            <div class="usa-form-control">
+		              <label for="month">Month</label>
+		              <input type="text" id="month" class="to-date-input" maxlength="2">
+		            </div>
+		            <div class="usa-form-control">
+		              <label for="day">Day</label>
+		              <input type="text" id="day" class="to-date-input" maxlength="2">
+		            </div>
+		            <div class="usa-form-control">
+		              <label for="year">Year</label>
+		              <input type="text" id="year" class="to-date-input" maxlength="4">
+		            </div>
+		          </div>
+		          <div class="modifiers">
+		            <div class="modifier">
+		              <input id="to-estimated" class="to-date-input" type="checkbox" name="to-estimated">
+		              <label class="simple-checkbox" for="to-estimated"><span>Estimated</span></label>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="or">or</div>
+		        <div class="present">
+		          <input id="present" type="checkbox" name="present">
+		          <label for="present"><span>Present</span></label>
+		        </div>
+		      </div>
+		    </fieldset>
+	    	<!-- Dates of attendance end -->
+	    	<!-- School address -->
+	    	<fieldset id="address-block" class="usa-fieldset-inputs">
+			    <legend>
+			    	<span>Provide the street address of the school</span>
+			    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	            <i class="fas fa-question-circle"></i>
+	          </a>
+			    </legend>
+			    <fieldset class="usa-fieldset-inputs">
+			      <legend class="label-style">This address is</legend>
+			      <ul class="usa-list-inline usa-list-inline-justified">
+			        <li>
+			          <input id="inside-us-radio" type="radio" name="address-type" value="inside-us-radio" checked>
+			          <label for="inside-us-radio"><span>In the U.S.</span></label>
+			        </li>
+			        <li>
+			          <input id="outside-us-radio" type="radio" name="address-type" value="outside-us-radio">
+			          <label for="outside-us-radio"><span>Outside the U.S.</span></label>
+			        </li>
+			        <li>
+			          <input id="apo-fpo-dpo-radio" type="radio" name="address-type" value="apo-fpo-dpo-radio">
+			          <label for="apo-fpo-dpo-radio"><span>APO/FPO/DPO</span></label>
+			        </li>
+			      </ul>
+			    </fieldset>
+
+			    <!-- Inside U.S. fields -->
+			    <div class="inside-us-fields">
+			      <div class="usa-form-control">
+			        <label for="mailing-address-1" class="address-block">Street address</label>
+			        <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+			      </div>
+			      <div class="usa-form-control">
+			        <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+			        <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+			      </div>
+			      <div class="usa-form-control">
+			        <label for="city" class="address-block">City</label>
+			        <input id="city" name="city" type="text" class="address-block">
+			      </div>
+			      <div class="usa-grid address-block">
+			        <div class="usa-width-one-half">
+			          <div class="usa-form-control">
+			            <label for="state">State</label>
+			            <input id="state" name="state" type="text">
+			          </div>
+			        </div>
+			        <div class="usa-width-one-half">
+			          <div class="usa-form-control">
+			            <label for="zip">Zip</label>
+			            <input id="zip" name="zip" type="zip">
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			    <!-- Inside U.S. fields end -->
+			    <!-- Outside U.S. fields -->
+			    <div class="outside-us-fields">
+			      <div class="usa-form-control">
+			        <label for="mailing-address-1" class="address-block">Street address</label>
+			        <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+			      </div>
+			      <div class="usa-form-control">
+			        <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+			        <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+			      </div>
+			      <div class="usa-form-control">
+			        <label for="city" class="address-block">City</label>
+			        <input id="city" name="city" type="text" class="address-block">
+			      </div>
+			      <div class="usa-form-control">
+			        <label for="country" class="address-block">Country</label>
+			        <select name="country" id="country" class="address-block">
+			          <option value="United States of America">United States of America</option>
+			          <option value="Another country">Another country</option>
+			          <option value="Another country">Another country</option>
+			        </select>
+			      </div>
+			    </div>
+			    <!-- Outside U.S. fields end -->
+			    <!-- APO/FPO/DPO fields -->
+			    <div class="apo-fpo-dpo-fields">
+			      <div class="usa-form-control">
+			        <label for="address" class="apo-fpo-dpo-address-block">Address</label>
+			        <input type="text" class="apo-fpo-dpo-address-block">
+			      </div>
+			      <label for="" class="apo-fpo-dpo-address-block">Select APO, FPO, DPO</label>
+			      <ul class="usa-list-inline usa-list-inline-justified apo-fpo-dpo-address-block">
+			        <li>
+			          <div class="usa-form-controlk">
+			            <input id="apo" type="radio" name="apo-fpo-dpo" value="APO">
+			            <label for="apo"><span>APO</span></label>
+			          </div>
+			        </li>
+			        <li>
+			          <div class="usa-form-control">
+			            <input id="fpo" type="radio" name="apo-fpo-dpo" value="FPO">
+			            <label for="fpo"><span>FPO</span></label>
+			          </div>
+			        </li>
+			         <li>
+			          <div class="usa-form-control">
+			            <input id="dpo" type="radio" name="apo-fpo-dpo" value="DPO">
+			            <label for="dpo"><span>DPO</span></label>
+			          </div>
+			        </li>
+			      </ul>
+			      <div class="usa-grid apo-fpo-dpo-address-block">
+			        <div class="usa-width-one-half">
+			          <div class="usa-form-control">
+			            <label for="apo-fpo-dpo-code">APO/FPO/DPO State Code</label>
+			            <input type="text">
+			          </div>
+			        </div>
+			        <div class="usa-width-one-half">
+			          <div class="usa-form-control">
+			            <label for="apo-fpo-dpo-zip-code">Zip Code</label>
+			            <input type="text">
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			    <!-- APO/FPO/DPO fields end -->
+			  </fieldset>
+				<!-- Type of school -->
+			  <fieldset class="usa-fieldset-inputs">
+			  	<legend>Select the most appropriate box to describe your school</legend>
+			  	<ul class="usa-unstyled-list">
+			  		<li>
+			  			<input id="high-school" type="radio" name="school-type" >
+			        <label for="high-school"><span>High School</span></label>
+			  		</li>
+			  		<li>
+			  			<input id="college-university" type="radio" name="school-type" >
+			        <label for="college-university"><span>College, university, or military college</span></label>
+			  		</li>
+			  		<li>
+			  			<input id="vocational-technical" type="radio" name="school-type" >
+			        <label for="vocational-technical"><span>Vocational, technical, or trade school</span></label>
+			  		</li>
+			  		<li>
+			  			<input id="online-school" type="radio" name="school-type" >
+			        <label for="online-school"><span>Correspondence, distance, extension, or online school</span></label>
+			  		</li>
+			  	</ul>
+			  </fieldset>
+				<!-- Type of school end -->
+				<!-- Recieve a degree -->
+				<fieldset class="usa-fieldset-inputs">
+					<legend>Did you receive a degree/diploma?</legend>
+					<ul class="usa-list-inline usa-list-inline-justified">
+						<li>
+			        <input id="yes-2" type="radio" name="degree-diploma" >
+			        <label for="yes-2"><span>Yes</span></label>
+			      </li>
+			      <li>
+			        <input id="no-2" type="radio" name="degree-diploma" >
+			        <label for="no-2"><span>No</span></label>
+			      </li>
+					</ul>
+				</fieldset>
+				<!-- Recieve a degree end -->
+				<!-- Type of degree -->
+				<fieldset class="usa-fieldset-inputs">
+			  	<legend>Provide type of degrees(s)/diploma(s) received</legend>
+			  	<ul class="usa-unstyled-list">
+			  		<li>
+			  			<input id="high-school-diploma" type="radio" name="degree-type" >
+			        <label for="high-school-diploma"><span>High School Diploma</span></label>
+			  		</li>
+			  		<li>
+			  			<input id="associates-degree" type="radio" name="degree-type" >
+			        <label for="associates-degree"><span>Associate's</span></label>
+			  		</li>
+			  		<li>
+			  			<input id="bachelors" type="radio" name="degree-type" >
+			        <label for="bachelors"><span>Bachelor's</span></label>
+			  		</li>
+			  		<li>
+			  			<input id="masters" type="radio" name="degree-type" >
+			        <label for="masters"><span>Master's</span></label>
+			  		</li>
+			  		<li>
+			  			<input id="doctorate" type="radio" name="degree-type" >
+			        <label for="doctorate"><span>Doctorate</span></label>
+			  		</li>
+			  		<li>
+			  			<input id="professional" type="radio" name="degree-type" >
+			        <label for="professional"><span>Professional Degree (eg. MD, DVM, JD)</span></label>
+			  		</li>
+			  		<li>
+			  			<input id="other" type="radio" name="degree-type" >
+			        <label for="other"><span>Other</span></label>
+			  		</li>
+			  	</ul>
+			  </fieldset>
+			  <!-- Type of degree end -->
+				<!-- Degree date awarded -->
+				<fieldset class="usa-fieldset-inputs">
+					<legend>Date awarded</legend>
+					<div class="m-d-y-block">
+		        <div class="usa-form-control">
+		          <label for="month">Month</label>
+		          <input type="text" id="month" maxlength="2">
+		        </div>
+		        <div class="usa-form-control">
+		          <label for="year">Year</label>
+		          <input type="text" id="year" maxlength="4">
+		        </div>
+		        <div class="modifiers">
+		          <div class="modifier">
+		            <input id="estimated" type="checkbox" name="estimated">
+		            <label class="simple-checkbox" for="estimated"><span>Estimated</span></label>
+		          </div>
+		        </div>
+		      </div>
+				</fieldset>
+				<!-- Degree date awarded end -->
+				<!-- Another degree -->
+				<fieldset class="usa-fieldset-inputs">
+					<legend>Do you have another degree/diploma from this school to add?</legend>
+					<ul class="usa-list-inline usa-list-inline-justified">
+						<li>
+			        <input id="yes-3" type="radio" name="another-degree-diploma" >
+			        <label for="yes-3"><span>Yes</span></label>
+			      </li>
+			      <li>
+			        <input id="no-3" type="radio" name="another-degree-diploma" >
+			        <label for="no-3"><span>No</span></label>
+			      </li>
+					</ul>
+				</fieldset>
+				<!-- Another degree end -->
+	    </div>
+	  </li>
+	</ul>
+	<!-- School accordion end -->
+	<!-- Another school -->
+	<fieldset class="usa-fieldset-inputs">
+		<legend>Do you have additional education to enter (include education within the last 5 years, as well as degrees or diplomas more than 5 years ago)?</legend>
+		<ul class="usa-list-inline usa-list-inline-justified">
+			<li>
+        <input id="yes-4" type="radio" name="another-school" >
+        <label for="yes-4"><span>Yes</span></label>
+      </li>
+      <li>
+        <input id="no-4" type="radio" name="another-school" >
+        <label for="no-4"><span>No</span></label>
+      </li>
+		</ul>
+	</fieldset>
+	<!-- Another school end -->
+</form>

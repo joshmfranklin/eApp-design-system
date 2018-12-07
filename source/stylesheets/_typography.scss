@@ -28,6 +28,10 @@ h4 {
 .usa-list-inline li {
   display: inline-block;
   margin-bottom: 0;
+
+  @media all and (max-width: 980px) {
+    display: block;
+  }
 }
 
 .usa-list-inline li:not(:last-child),
@@ -38,6 +42,10 @@ h4 {
 .usa-list-inline-justified {
   display: flex;
   justify-content: space-between;
+
+  @media all and (max-width: 980px) {
+    display: block;
+  }
 }
 
 .usa-list-inline-justified li {
