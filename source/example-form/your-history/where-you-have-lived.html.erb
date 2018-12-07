@@ -68,65 +68,122 @@ title: eApp Design System | Example form
 	    <div id="b-a1" class="usa-accordion-content">
 				<!-- Address block -->
 				<fieldset id="address-block" class="usa-fieldset-inputs">
-			    <legend>Provide the street address</legend>
-			    <input id="apo-fpo-dpo-checkbox" type="checkbox" name="APO" value="truth">
-			    <label for="apo-fpo-dpo-checkbox"><span>This address is an APO/FPO/DPO</span></label>
-			    <label for="country" class="address-block">Country</label>
-			    <select name="country" id="country" class="address-block">
-			      <option value="United States of America">United States of America</option>
-			      <option value="Another country">Another country</option>
-			      <option value="Another country">Another country</option>
-			    </select>
+			    <legend>Provide your address</legend>
+			    <fieldset class="usa-fieldset-inputs">
+			      <legend class="label-style">This address is</legend>
+			      <ul class="usa-list-inline usa-list-inline-justified">
+			        <li>
+			          <input id="inside-us-radio" type="radio" name="address-type" value="inside-us-radio" checked>
+			          <label for="inside-us-radio"><span>In the U.S.</span></label>
+			        </li>
+			        <li>
+			          <input id="outside-us-radio" type="radio" name="address-type" value="outside-us-radio">
+			          <label for="outside-us-radio"><span>Outside the U.S.</span></label>
+			        </li>
+			        <li>
+			          <input id="apo-fpo-dpo-radio" type="radio" name="address-type" value="apo-fpo-dpo-radio">
+			          <label for="apo-fpo-dpo-radio"><span>APO/FPO/DPO</span></label>
+			        </li>
+			      </ul>
+			    </fieldset>
 
-			    <label for="mailing-address-1" class="address-block">Street address</label>
-			    <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
-
-			    <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
-			    <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
-
-
-			    <label for="city" class="address-block">City</label>
-			    <input id="city" name="city" type="text" class="address-block">
-
-			    <div class="usa-grid address-block">
-			      <div class="usa-width-one-half">
-			        <label for="state">State</label>
-			        <input id="state" name="state" type="text">
+			    <!-- Inside U.S. fields -->
+			    <div class="inside-us-fields">
+			      <div class="usa-form-control">
+			        <label for="mailing-address-1" class="address-block">Street address</label>
+			        <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
 			      </div>
-
-			      <div class="usa-width-one-half">
-			        <label for="zip">Zip</label>
-			        <input id="zip" name="zip" type="zip">
+			      <div class="usa-form-control">
+			        <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+			        <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
 			      </div>
-			    </div>
-
-			    <label for="address" class="apo-fpo-dpo-address-block">Address</label>
-			    <input type="text" class="apo-fpo-dpo-address-block">
-			    <label for="" class="apo-fpo-dpo-address-block">Select APO, FPO, DPO</label>
-			    <ul class="usa-list-inline usa-list-inline-justified apo-fpo-dpo-address-block">
-			      <li>
-			        <input id="apo" type="radio" name="apo-fpo-dpo" value="APO">
-			        <label for="apo"><span>APO</span></label>
-			      </li>
-			      <li>
-			        <input id="fpo" type="radio" name="apo-fpo-dpo" value="FPO">
-			        <label for="fpo"><span>FPO</span></label>
-			      </li>
-			       <li>
-			        <input id="dpo" type="radio" name="apo-fpo-dpo" value="DPO">
-			        <label for="dpo"><span>DPO</span></label>
-			      </li>
-			    </ul>
-			    <div class="usa-grid apo-fpo-dpo-address-block">
-			      <div class="usa-width-one-half">
-			        <label for="apo-fpo-dpo-code">APO/FPO/DPO State Code</label>
-			        <input type="text">
+			      <div class="usa-form-control">
+			        <label for="city" class="address-block">City</label>
+			        <input id="city" name="city" type="text" class="address-block">
 			      </div>
-			      <div class="usa-width-one-half">
-			        <label for="apo-fpo-dpo-zip-code">Zip Code</label>
-			        <input type="text">
+			      <div class="usa-grid address-block">
+			        <div class="usa-width-one-half">
+			          <div class="usa-form-control">
+			            <label for="state">State</label>
+			            <input id="state" name="state" type="text">
+			          </div>
+			        </div>
+			        <div class="usa-width-one-half">
+			          <div class="usa-form-control">
+			            <label for="zip">Zip</label>
+			            <input id="zip" name="zip" type="zip">
+			          </div>
+			        </div>
 			      </div>
 			    </div>
+			    <!-- Inside U.S. fields end -->
+			    <!-- Outside U.S. fields -->
+			    <div class="outside-us-fields">
+			      <div class="usa-form-control">
+			        <label for="mailing-address-1" class="address-block">Street address</label>
+			        <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+			      </div>
+			      <div class="usa-form-control">
+			        <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+			        <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+			      </div>
+			      <div class="usa-form-control">
+			        <label for="city" class="address-block">City</label>
+			        <input id="city" name="city" type="text" class="address-block">
+			      </div>
+			      <div class="usa-form-control">
+			        <label for="country" class="address-block">Country</label>
+			        <select name="country" id="country" class="address-block">
+			          <option value="United States of America">United States of America</option>
+			          <option value="Another country">Another country</option>
+			          <option value="Another country">Another country</option>
+			        </select>
+			      </div>
+			    </div>
+			    <!-- Outside U.S. fields end -->
+			    <!-- APO/FPO/DPO fields -->
+			    <div class="apo-fpo-dpo-fields">
+			      <div class="usa-form-control">
+			        <label for="address" class="apo-fpo-dpo-address-block">Address</label>
+			        <input type="text" class="apo-fpo-dpo-address-block">
+			      </div>
+			      <label for="" class="apo-fpo-dpo-address-block">Select APO, FPO, DPO</label>
+			      <ul class="usa-list-inline usa-list-inline-justified apo-fpo-dpo-address-block">
+			        <li>
+			          <div class="usa-form-controlk">
+			            <input id="apo" type="radio" name="apo-fpo-dpo" value="APO">
+			            <label for="apo"><span>APO</span></label>
+			          </div>
+			        </li>
+			        <li>
+			          <div class="usa-form-control">
+			            <input id="fpo" type="radio" name="apo-fpo-dpo" value="FPO">
+			            <label for="fpo"><span>FPO</span></label>
+			          </div>
+			        </li>
+			         <li>
+			          <div class="usa-form-control">
+			            <input id="dpo" type="radio" name="apo-fpo-dpo" value="DPO">
+			            <label for="dpo"><span>DPO</span></label>
+			          </div>
+			        </li>
+			      </ul>
+			      <div class="usa-grid apo-fpo-dpo-address-block">
+			        <div class="usa-width-one-half">
+			          <div class="usa-form-control">
+			            <label for="apo-fpo-dpo-code">APO/FPO/DPO State Code</label>
+			            <input type="text">
+			          </div>
+			        </div>
+			        <div class="usa-width-one-half">
+			          <div class="usa-form-control">
+			            <label for="apo-fpo-dpo-zip-code">Zip Code</label>
+			            <input type="text">
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			    <!-- APO/FPO/DPO fields end -->
 			  </fieldset>
 			  <!-- Address block end -->
 			  <!-- APO/FPO y/n block -->
@@ -544,38 +601,122 @@ title: eApp Design System | Example form
 			  <!-- Email address end -->
 			  <!-- Persons address -->
 			  <fieldset id="address-block" class="usa-fieldset-inputs">
-			    <legend>Provide this person's street address</legend>
-			    <p>The address of your contact during this time period.</p>
-			    <input id="apo-fpo-dpo-checkbox" type="checkbox" name="APO" value="truth">
-			    <label for="apo-fpo-dpo-checkbox"><span>This address is an APO/FPO/DPO</span></label>
-			    <label for="country" class="address-block">Country</label>
-			    <select name="country" id="country" class="address-block">
-			      <option value="United States of America">United States of America</option>
-			      <option value="Another country">Another country</option>
-			      <option value="Another country">Another country</option>
-			    </select>
+			    <legend>Provide your address</legend>
+			    <fieldset class="usa-fieldset-inputs">
+			      <legend class="label-style">This address is</legend>
+			      <ul class="usa-list-inline usa-list-inline-justified">
+			        <li>
+			          <input id="inside-us-radio-2" type="radio" name="address-type-2" value="inside-us-radio-2" checked>
+			          <label for="inside-us-radio-2"><span>In the U.S.</span></label>
+			        </li>
+			        <li>
+			          <input id="outside-us-radio-2" type="radio" name="address-type-2" value="outside-us-radio-2">
+			          <label for="outside-us-radio-2"><span>Outside the U.S.</span></label>
+			        </li>
+			        <li>
+			          <input id="apo-fpo-dpo-radio-2" type="radio" name="address-type-2" value="apo-fpo-dpo-radio-2">
+			          <label for="apo-fpo-dpo-radio-2"><span>APO/FPO/DPO</span></label>
+			        </li>
+			      </ul>
+			    </fieldset>
 
-			    <label for="mailing-address-1" class="address-block">Street address</label>
-			    <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
-
-			    <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
-			    <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
-
-
-			    <label for="city" class="address-block">City</label>
-			    <input id="city" name="city" type="text" class="address-block">
-
-			    <div class="usa-grid address-block">
-			      <div class="usa-width-one-half">
-			        <label for="state">State</label>
-			        <input id="state" name="state" type="text">
+			    <!-- Inside U.S. fields -->
+			    <div class="inside-us-fields">
+			      <div class="usa-form-control">
+			        <label for="mailing-address-1" class="address-block">Street address</label>
+			        <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
 			      </div>
-
-			      <div class="usa-width-one-half">
-			        <label for="zip">Zip</label>
-			        <input id="zip" name="zip" type="zip">
+			      <div class="usa-form-control">
+			        <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+			        <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+			      </div>
+			      <div class="usa-form-control">
+			        <label for="city" class="address-block">City</label>
+			        <input id="city" name="city" type="text" class="address-block">
+			      </div>
+			      <div class="usa-grid address-block">
+			        <div class="usa-width-one-half">
+			          <div class="usa-form-control">
+			            <label for="state">State</label>
+			            <input id="state" name="state" type="text">
+			          </div>
+			        </div>
+			        <div class="usa-width-one-half">
+			          <div class="usa-form-control">
+			            <label for="zip">Zip</label>
+			            <input id="zip" name="zip" type="zip">
+			          </div>
+			        </div>
 			      </div>
 			    </div>
+			    <!-- Inside U.S. fields end -->
+			    <!-- Outside U.S. fields -->
+			    <div class="outside-us-fields">
+			      <div class="usa-form-control">
+			        <label for="mailing-address-1" class="address-block">Street address</label>
+			        <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+			      </div>
+			      <div class="usa-form-control">
+			        <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+			        <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+			      </div>
+			      <div class="usa-form-control">
+			        <label for="city" class="address-block">City</label>
+			        <input id="city" name="city" type="text" class="address-block">
+			      </div>
+			      <div class="usa-form-control">
+			        <label for="country" class="address-block">Country</label>
+			        <select name="country" id="country" class="address-block">
+			          <option value="United States of America">United States of America</option>
+			          <option value="Another country">Another country</option>
+			          <option value="Another country">Another country</option>
+			        </select>
+			      </div>
+			    </div>
+			    <!-- Outside U.S. fields end -->
+			    <!-- APO/FPO/DPO fields -->
+			    <div class="apo-fpo-dpo-fields">
+			      <div class="usa-form-control">
+			        <label for="address" class="apo-fpo-dpo-address-block">Address</label>
+			        <input type="text" class="apo-fpo-dpo-address-block">
+			      </div>
+			      <label for="" class="apo-fpo-dpo-address-block">Select APO, FPO, DPO</label>
+			      <ul class="usa-list-inline usa-list-inline-justified apo-fpo-dpo-address-block">
+			        <li>
+			          <div class="usa-form-controlk">
+			            <input id="apo" type="radio" name="apo-fpo-dpo" value="APO">
+			            <label for="apo"><span>APO</span></label>
+			          </div>
+			        </li>
+			        <li>
+			          <div class="usa-form-control">
+			            <input id="fpo" type="radio" name="apo-fpo-dpo" value="FPO">
+			            <label for="fpo"><span>FPO</span></label>
+			          </div>
+			        </li>
+			         <li>
+			          <div class="usa-form-control">
+			            <input id="dpo" type="radio" name="apo-fpo-dpo" value="DPO">
+			            <label for="dpo"><span>DPO</span></label>
+			          </div>
+			        </li>
+			      </ul>
+			      <div class="usa-grid apo-fpo-dpo-address-block">
+			        <div class="usa-width-one-half">
+			          <div class="usa-form-control">
+			            <label for="apo-fpo-dpo-code">APO/FPO/DPO State Code</label>
+			            <input type="text">
+			          </div>
+			        </div>
+			        <div class="usa-width-one-half">
+			          <div class="usa-form-control">
+			            <label for="apo-fpo-dpo-zip-code">Zip Code</label>
+			            <input type="text">
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			    <!-- APO/FPO/DPO fields end -->
 			  </fieldset>
 			  <!-- Persons address end -->
 	    </div>

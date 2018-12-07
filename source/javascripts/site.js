@@ -39,20 +39,6 @@ $(document).ready(function(){
 
   // Phone number block
 
-  $("#dsn-phone-number-block").hide();
-
-  $(function() {
-    $("#dns").click(function () {
-      if($(this).is(":checked")) {
-        $("#dsn-phone-number-block").show();
-        $("#standard-phone-number-block").hide();
-      } else {
-        $("#dsn-phone-number-block").hide();
-        $("#standard-phone-number-block").show();
-      }
-    })
-  })
-
   $(function() {
     $("#dont-know").click(function(){
       if($(this).is(":checked")) {
@@ -65,17 +51,26 @@ $(document).ready(function(){
 
   // Full address block
 
-  $(".apo-fpo-dpo-address-block").hide();
+  $(".apo-fpo-dpo-fields").hide();
+  $(".outside-us-fields").hide();
 
   $(function() {
-    $("#apo-fpo-dpo-checkbox").click(function () {
-      if($(this).is(":checked")) {
-        $(".apo-fpo-dpo-address-block").show();
-        $(".address-block").hide();
-      } else {
-        $(".apo-fpo-dpo-address-block").hide();
-        $(".address-block").show();
-      }
+    $("#apo-fpo-dpo-radio").click(function () {
+      $(".apo-fpo-dpo-fields").show();
+      $(".outside-us-fields").hide();
+      $(".inside-us-fields").hide();
+    })
+
+    $("#inside-us-radio").click(function () {
+      $(".apo-fpo-dpo-fields").hide();
+      $(".outside-us-fields").hide();
+      $(".inside-us-fields").show();
+    })
+
+    $("#outside-us-radio").click(function () {
+      $(".apo-fpo-dpo-fields").hide();
+      $(".outside-us-fields").show();
+      $(".inside-us-fields").hide();
     })
   })
 
@@ -159,5 +154,15 @@ $(document).ready(function(){
     }
     
   });
+
+  // Question highligher
+
+  $('input, select').focus(
+    function(){
+        $(this).closest('.usa-question-group').addClass('usa-question-highlighted');
+    }).blur(
+    function(){
+        $(this).closest('.usa-question-group').removeClass('usa-question-highlighted');
+    });
 
 })

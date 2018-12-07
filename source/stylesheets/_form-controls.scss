@@ -6,6 +6,7 @@
   border: 1px solid $color-primary-alt-light;
   border-radius: 4px;
   max-width: 46rem;
+  background-color: $color-white;
 
   &:hover {
     background-color: $color-gray-extra-lightest;
@@ -17,10 +18,10 @@
   border: none;
   padding: 0;
   margin-bottom: 0;
-  background-color: $color-white;
+  background-color: transparent;
 
   &:hover {
-    background-color: $color-white;
+    background-color: transparent;
   }
 }
 
@@ -96,7 +97,7 @@ select:disabled {
 
 .usa-form-control,
 fieldset {
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
   max-width: 64rem;
 }
 
@@ -157,15 +158,17 @@ fieldset {
 // Fieldsets
 
 fieldset {
+
   .usa-grid {
     padding-right: 0;
     padding-left: 0;
     max-width: 64rem;
     margin: 0;
   }
-
+  
+  fieldset,
   .usa-form-control {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
   }
 }
 
@@ -235,4 +238,17 @@ legend + p {
   padding: 5px 8px;
   background: $color-secondary-lightest;
   margin: .5rem 0 1rem 0;
+}
+
+// Question highligher
+
+.usa-question-group.usa-question-highlighted {
+  border: 2px solid $color-primary-alt-lightest;
+  background-color: lighten($color-primary-alt-lightest, 5%);
+  border-radius: 8px;
+}
+
+.usa-question-group {
+  padding: 1rem;
+  border: 2px solid transparent;
 }
