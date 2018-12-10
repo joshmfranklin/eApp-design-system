@@ -1,33 +1,6 @@
 // This is where it all goes :)
 
 $(document).ready(function(){
-  // // Accordion
-  // function adjustWidth(){
-  //   var parentwidth = $('#accordion').width();
-  //   $('.usa-accordion-header').width(parentwidth);
-  // }
-
-  // // Fix accordion header if scrolled
-
-  // $(window).scroll(function(){
-  //   var scrollTop = $(window).scrollTop();
-  //   var elementOffset = $('#accordion').offset().top;
-  //   var distance = (elementOffset - scrollTop);
-  //   console.log(distance);
-
-  //   if (distance <= 0) {
-  //     $('.usa-accordion-header').addClass('usa-accordion-header-fixed');
-  //     adjustWidth();
-  //   } else {
-  //     $('.usa-accordion-header').removeClass('usa-accordion-header-fixed');
-  //   }
-  // });
-
-  // // Resize accordion headed if fixed to match accordion width
-
-  // $(window).resize (function(){
-  //   adjustWidth();
-  // })
 
   // Help block
 
