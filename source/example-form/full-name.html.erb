@@ -1,0 +1,96 @@
+---
+layout: "example-form-layout"
+title: eApp Design System | Example form
+---
+
+<form action="" class="eapp-form">
+	<h1 class="eapp-section-header">Full Name</h1>
+	<!-- Full name -->
+	<fieldset class="usa-fieldset-inputs">
+  	<legend>Provide your full name</legend>
+  	<div class="usa-form-control">
+    	<label for="firs-name">
+    		<span>First name</span>
+    		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+        <i class="fas fa-question-circle"></i>
+      </a>
+    	</label>
+    	<input type="text" id="first-name">
+    	<div class="modifiers">
+    		<div class="modifier">
+    			<input id="initial-only-first" type="checkbox">
+          <label class="simple-checkbox" for="initial-only-first"><span>Initial only</span></label>
+    		</div>
+    	</div>
+  	</div>
+  	<div class="usa-form-control">
+    	<label for="firs-name">
+	    	<span>Middle name</span>
+	    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+          <i class="fas fa-question-circle"></i>
+        </a>
+	    </label>
+    	<input type="text" id="middle-name">
+    	<div class="modifiers">
+    		<div class="modifier">
+    			<input id="no-middle" type="checkbox">
+          <label class="simple-checkbox" for="no-middle"><span>No middle name</span></label>
+    		</div>
+    		<div class="modifier">
+    			<input id="initial-only-middle" type="checkbox">
+          <label class="simple-checkbox" for="initial-only-middle"><span>Initial only</span></label>
+    		</div>
+    	</div>
+  	</div>
+  	<div class="usa-form-control">
+    	<label for="firs-name">
+	    	<span>Last name</span>
+	    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+          <i class="fas fa-question-circle"></i>
+        </a>
+	    </label>
+    	<input type="text" id="last-name">
+    	<div class="modifiers">
+    		<div class="modifier">
+    			<input id="initial-only-last" type="checkbox">
+          <label class="simple-checkbox" for="initial-only-last"><span>Initial only</span></label>
+    		</div>
+    	</div>
+  	</div>
+  	<div class="usa-form-control">
+  		<label for="suffix">
+  			<span>Suffix</span>
+  			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+          <i class="fas fa-question-circle"></i>
+        </a>
+  		</label>
+  		<select class="usa-small-input" name="suffidx" id="suffix">
+  			<option value="jr">Jr</option>
+  			<option value="sr">Sr</option>
+  			<option value="i">I</option>
+  			<option value="ii">II</option>
+  			<option value="iii">III</option>
+  			<option value="iv">IV</option>
+  			<option value="v">V</option>
+  			<option value="vii">VII</option>
+  			<option value="ix">IX</option>
+  			<option value="x">X</option>
+  			<option value="other">Other</option>
+  		</select>
+  	</div>
+  </fieldset>
+	<!-- Full name end -->
+	<!-- Back/next -->
+	<div class="next-back-block">
+  	<% link_to '/example-form/about-you-introduction.html', :class => "usa-button back-button" do %>
+      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">Introduction</div>
+    <% end %>
+    <% link_to '/example-form/other-names-used.html', :class => "usa-button next-button" do %>
+      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">Other names used</div>
+    <% end %>
+  </div>
+</form>

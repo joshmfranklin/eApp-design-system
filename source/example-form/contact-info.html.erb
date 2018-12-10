@@ -1,0 +1,151 @@
+---
+layout: "example-form-layout"
+title: eApp Design System | Example form
+---
+
+<form action="" class="eapp-form">
+	<h1 class="eapp-section-header">Your Contact Information</h1>
+	<!-- Email addresses -->
+	<fieldset class="usa-fieldset-inputs">
+		<legend>
+			<span>Your email addresses</span>
+			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	      <i class="fas fa-question-circle"></i>
+	    </a>
+		</legend>
+		<p>Providing email addresses may assist in the completion of your background investigation. Email addresses may be used as contact method, and identify subject in records.</p>
+		<div class="usa-form-control">
+			<label for="home-email">Home email address</label>
+			<input type="text" id="home-email">
+		</div>
+		<div class="usa-form-control">
+			<label for="work-email">Work email address</label>
+			<input type="text" id="work-email">
+		</div>
+	</fieldset>
+	<!-- Email addresses end -->
+	<!-- Phone numbers intro -->
+	<h4>
+		<span>Your phone numbers</span>
+		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+      <i class="fas fa-question-circle"></i>
+    </a>
+	</h4>
+	<p>Provide three contact numbers. <strong>At least one number is required</strong>. Additional numbers may assist in the completion of your background investigation.</p>
+	<!-- Phone numbers intro end -->
+	<!-- Phone number accordion -->
+	<ul id="accordion" class="usa-accordion-bordered">
+	  <li>
+	    <div class="usa-accordion-header">
+	      <button class="usa-accordion-button"
+	        aria-expanded="true"
+	        aria-controls="b-a1">
+	        <div class="titles">
+	          <div class="title">
+	            <div class="title-right">
+	              <span class="fa-stack">
+	                <i class="fas fa-circle fa-stack-2x"></i>
+	                <i class="fas fa-stack-1x fa-phone fa-inverse"></i>
+	              </span>
+	              <span>Phone 1:</span>
+	            </div>
+	            <div class="title-left">
+	              <span></span>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="usa-accordion-close-button">
+	        </div>
+	      </button>
+	      <button class="usa-accordion-remove-button">
+	        <span class="fas fa-times fa-fw"></span>
+	        <span class="remove">Remove</span>
+	      </button>
+	     </div>
+	    <div id="b-a1" class="usa-accordion-content">
+				<!-- Phone number -->
+				<fieldset class="usa-fieldset-inputs">
+			    <legend>
+			    	<span>Phone number 1</span>
+			    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	            <i class="fas fa-question-circle"></i>
+	          </a>
+			    </legend>
+					<div class="usa-phone-number-block">
+			      <div class="usa-phone-number-input">
+			        <label for="phone-number">Phone number</label>
+			        <input type="text" name="phone-number" class="evening-phone">
+			      </div>
+			      <div class="usa-extension-input">
+			        <label for="extension">Extension</label>
+			        <input type="text" name="extension" class="evening-phone">
+			      </div>
+			      <div class="usa-phone-type-input">
+			        <label for="phone-type-1">Phone type</label>
+			        <select name="phone-type-1" id="phone-type-1" class="evening-phone">
+			          <option value="" style="display:none" disabled selected></option>
+			          <option value="cell">Cell</option>
+			          <option value="home">Home</option>
+			          <option value="work">Work</option>
+			        </select>
+			      </div>
+			      <div class="usa-phone-dont-know">
+			      	<ul class="usa-list-inline">
+			      		<li><span>or</span></li>
+			      		<li>
+						      <input class="disabled-toggle" id="phone-dont-know" type="checkbox" name="phone-dont-know" value="phone-dont-know" data-id="evening-phone">
+							    <label for="phone-dont-know"><span>I don't know</span></label>
+			      		</li>
+			      	</ul>
+			      </div>
+					</div>
+			    <div class="modifiers modifiers-left">
+			    	<div class="modifier">
+			    		<input id="international-dsn" type="checkbox" name="international-dsn" value="dns" class="evening-phone">
+					    <label class="simple-checkbox" for="international-dsn"><span>This is an international or DSN phone number</span></label>
+			    	</div>
+			    </div>
+			    <div class="usa-grid">
+			      <div class="usa-width-one-half">
+			        <fieldset class="usa-fielset-inputs">
+			          <legend class="label-style">Best time to call</legend>
+			          <ul class="usa-list-inline">
+			            <li>
+			              <input id="day-phone-1" class="evening-phone" type="radio" name="time-to-call-1" value="day">
+			              <label for="day-phone-1"><span>Day</span></label>
+			            </li>
+			            <li>
+			              <input id="night-phone-1" class="evening-phone" type="radio" name="time-to-call-1" value="night">
+			              <label for="night-phone-1"><span>Night</span></label>
+			            </li>
+			            <li>
+			              <input id="day-night-phone-1" class="evening-phone" type="radio" name="time-to-call-1" value="both">
+			              <label for="day-night-phone-1"><span>Both</span></label>
+			            </li>
+			          </ul>
+			        </fieldset>
+			      </div>
+			    </div>
+			  </fieldset>
+			  <!-- Phone number end -->
+	    </div>
+	  </li>
+	</ul>
+	<!-- Phone number accordion end -->
+	<!-- Add another phone number -->
+	<button class="usa-button-secondary">Add another phone number</button>
+	<!-- Add another phone number end -->
+	<!-- Back/next -->
+	<div class="next-back-block">
+  	<% link_to '/example-form/other-names-used.html', :class => "usa-button back-button" do %>
+      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">Other names used</div>
+    <% end %>
+    <% link_to '/example-form/date-of-birth.html', :class => "usa-button next-button" do %>
+      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">Date of birth</div>
+    <% end %>
+  </div>
+</form>

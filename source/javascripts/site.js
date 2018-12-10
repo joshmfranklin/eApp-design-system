@@ -67,7 +67,6 @@ $(document).ready(function(){
     var current = location.pathname;
     $('nav li a').each(function(){
       var $this = $(this);
-      console.log($this);
       // if the current path is like this link, make it active
       if($this.attr('href').indexOf(current) !== -1){
           $this.addClass('usa-current');
@@ -118,6 +117,8 @@ $(document).ready(function(){
     }
     
   });
+
+  // Expand sidenav if subsection is active
 
   // yes/no toggle
   $(".yes-radio").click(function(){

@@ -1,0 +1,263 @@
+---
+layout: "example-form-layout"
+title: eApp Design System | Example form
+---
+
+<form action="" class="eapp-form">
+	<h1 class="eapp-section-header">Other Names Used</h1>
+	<fieldset class="usa-fieldset-inputs">
+		<legend>Have your used any other names?</legend>
+		<p>For example: your maiden name, name(s) by a former marriage, former name(s), alias(es), or nickname(s).</p>
+		<ul class="usa-list-inline usa-list-inline-justified">
+			<li>
+        <input class="yes-radio" id="yes" type="radio" name="your-other-names" data-id="your-other-names">
+        <label for="yes"><span>Yes</span></label>
+      </li>
+      <li>
+        <input class="no-radio" id="no" type="radio" name="your-other-names" data-id="your-other-names">
+        <label for="no"><span>No</span></label>
+      </li>
+		</ul>
+	</fieldset>
+	<div class="your-other-names" style="display: none;">
+		<h4>
+			<span>Provide your other names used and the period of time you used them</span>
+			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	      <i class="fas fa-question-circle"></i>
+	    </a>
+		</h4>
+		<ul id="accordion" class="usa-accordion-bordered">
+		  <li>
+		    <div class="usa-accordion-header">
+		      <button class="usa-accordion-button"
+		        aria-expanded="true"
+		        aria-controls="b-a1">
+		        <div class="titles">
+		          <div class="title">
+		            <div class="title-right">
+		              <span class="fa-stack">
+		                <i class="fas fa-circle fa-stack-2x"></i>
+		                <i class="fas fa-stack-1x fa-user fa-inverse"></i>
+		              </span>
+		              <span>Name 1:</span>
+		            </div>
+		            <div class="title-left">
+		              <span></span>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="usa-accordion-close-button">
+		        </div>
+		      </button>
+		      <button class="usa-accordion-remove-button">
+		        <span class="fas fa-times fa-fw"></span>
+		        <span class="remove">Remove</span>
+		      </button>
+		     </div>
+		    <div id="b-a1" class="usa-accordion-content">
+		    	<!-- Other name -->
+		    	<fieldset class="usa-fieldset-inputs">
+				  	<legend>Provide other name used</legend>
+				  	<div class="usa-form-control">
+				    	<label for="firs-name">
+				    		<span>First name</span>
+				    		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+					        <i class="fas fa-question-circle"></i>
+					      </a>
+				    	</label>
+				    	<input type="text" id="first-name">
+				    	<div class="modifiers">
+				    		<div class="modifier">
+				    			<input id="initial-only-first" type="checkbox">
+				          <label class="simple-checkbox" for="initial-only-first"><span>Initial only</span></label>
+				    		</div>
+				    	</div>
+				  	</div>
+				  	<div class="usa-form-control">
+				    	<label for="firs-name">
+					    	<span>Middle name</span>
+					    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+				          <i class="fas fa-question-circle"></i>
+				        </a>
+					    </label>
+				    	<input type="text" id="middle-name">
+				    	<div class="modifiers">
+				    		<div class="modifier">
+				    			<input id="no-middle" type="checkbox">
+				          <label class="simple-checkbox" for="no-middle"><span>No middle name</span></label>
+				    		</div>
+				    		<div class="modifier">
+				    			<input id="initial-only-middle" type="checkbox">
+				          <label class="simple-checkbox" for="initial-only-middle"><span>Initial only</span></label>
+				    		</div>
+				    	</div>
+				  	</div>
+				  	<div class="usa-form-control">
+				    	<label for="firs-name">
+					    	<span>Last name</span>
+					    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+				          <i class="fas fa-question-circle"></i>
+				        </a>
+					    </label>
+				    	<input type="text" id="last-name">
+				    	<div class="modifiers">
+				    		<div class="modifier">
+				    			<input id="initial-only-last" type="checkbox">
+				          <label class="simple-checkbox" for="initial-only-last"><span>Initial only</span></label>
+				    		</div>
+				    	</div>
+				  	</div>
+				  	<div class="usa-form-control">
+				  		<label for="suffix">
+				  			<span>Suffix</span>
+				  			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+				          <i class="fas fa-question-circle"></i>
+				        </a>
+				  		</label>
+				  		<select class="usa-small-input" name="suffidx" id="suffix">
+				  			<option value="jr">Jr</option>
+				  			<option value="sr">Sr</option>
+				  			<option value="i">I</option>
+				  			<option value="ii">II</option>
+				  			<option value="iii">III</option>
+				  			<option value="iv">IV</option>
+				  			<option value="v">V</option>
+				  			<option value="vii">VII</option>
+				  			<option value="ix">IX</option>
+				  			<option value="x">X</option>
+				  			<option value="other">Other</option>
+				  		</select>
+				  	</div>
+				  </fieldset>
+				  <!-- Other name end -->
+				  <!-- Maiden name? -->
+				  <fieldset class="usa-fieldset-inputs">
+						<legend>
+							<span>Was this your maiden name</span>
+							<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+			          <i class="fas fa-question-circle"></i>
+			        </a>
+						</legend>
+						<ul class="usa-list-inline usa-list-inline-justified">
+							<li>
+				        <input class="yes" id="yes-2" type="radio" name="maiden-name">
+				        <label for="yes-2"><span>Yes</span></label>
+				      </li>
+				      <li>
+				        <input class="no" id="no-2" type="radio" name="maiden-name">
+				        <label for="no-2"><span>No</span></label>
+				      </li>
+						</ul>
+					</fieldset>
+					<!-- Maiden name? end -->
+					<!-- Dates used -->
+					<fieldset id="from-to-date-block" class="usa-fieldset-inputs">
+			      <legend>
+			      	<span>Dates used</span>
+			      	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+			          <i class="fas fa-question-circle"></i>
+			        </a>
+			      </legend>
+			      <div class="from-to-dates">
+			        <div class="from-date-container">
+			          <p><strong>From date</strong></p>
+			          <div class="m-d-y-block">
+			            <div class="usa-form-control">
+			              <label for="month">Month</label>
+			              <input type="text" id="month" maxlength="2">
+			            </div>
+			            <div class="usa-form-control">
+			              <label for="day">Day</label>
+			              <input type="text" id="day" maxlength="2">
+			            </div>
+			            <div class="usa-form-control">
+			              <label for="year">Year</label>
+			              <input type="text" id="year" maxlength="4">
+			            </div>
+			          </div>
+			          <div class="modifiers">
+			            <div class="modifier">
+			              <input id="from-estimated" type="checkbox" name="from-estimated">
+			              <label class="simple-checkbox" for="from-estimated"><span>Estimated</span></label>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="from-to-date-arrow">
+			          <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+			        </div>
+			        <div class="to-date-container">
+			          <p><strong>To date</strong></p>
+			          <div class="m-d-y-block">
+			            <div class="usa-form-control">
+			              <label for="month">Month</label>
+			              <input type="text" id="month" class="to-date-input" maxlength="2">
+			            </div>
+			            <div class="usa-form-control">
+			              <label for="day">Day</label>
+			              <input type="text" id="day" class="to-date-input" maxlength="2">
+			            </div>
+			            <div class="usa-form-control">
+			              <label for="year">Year</label>
+			              <input type="text" id="year" class="to-date-input" maxlength="4">
+			            </div>
+			          </div>
+			          <div class="modifiers">
+			            <div class="modifier">
+			              <input id="to-estimated" class="to-date-input" type="checkbox" name="to-estimated">
+			              <label class="simple-checkbox" for="to-estimated"><span>Estimated</span></label>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="or">or</div>
+			        <div class="present">
+			          <input class="disabled-toggle" id="present" type="checkbox" name="present" data-id="to-date-input">
+			          <label for="present"><span>Present</span></label>
+			        </div>
+			      </div>
+			    </fieldset>
+			    <!-- Dates used -->
+			    <!-- Reason name changed -->
+			    <div class="usa-form-control">
+			      <label class="usa-alt-label" for="reason-why-name-changed">
+			      	<span>Reason(s) why the name changed</span>
+			      	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+			          <i class="fas fa-question-circle"></i>
+			        </a>
+			      </label>
+			      <textarea name="" id="reason-why-name-changed" cols="30" rows="10"></textarea>
+			    </div>
+			    <!-- Reason name changed end -->
+		    </div>
+		  </li>
+		</ul>
+		<!-- Additional other names -->
+		<fieldset class="usa-fieldset-inputs">
+			<legend>Do your have additional names to enter?</legend>
+			<ul class="usa-list-inline usa-list-inline-justified">
+				<li>
+	        <input class="yes" id="yes-3" type="radio" name="maiden-name">
+	        <label for="yes-3"><span>Yes</span></label>
+	      </li>
+	      <li>
+	        <input class="no" id="no-3" type="radio" name="maiden-name">
+	        <label for="no-3"><span>No</span></label>
+	      </li>
+			</ul>
+		</fieldset>
+		<!-- Additional other names end -->
+	</div>
+	<!-- Back/next -->
+	<div class="next-back-block">
+  	<% link_to '/example-form/full-name.html', :class => "usa-button back-button" do %>
+      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">Full name</div>
+    <% end %>
+    <% link_to '/example-form/contact-info.html', :class => "usa-button next-button" do %>
+      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">Contact information</div>
+    <% end %>
+  </div>
+  <!-- Back/next end -->
+</form>
