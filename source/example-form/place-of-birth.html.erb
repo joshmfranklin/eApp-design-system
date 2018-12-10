@@ -1,0 +1,72 @@
+---
+layout: "example-form-layout"
+title: eApp Design System | Example form
+---
+
+<form action="" class="eapp-form">
+	<h1 class="eapp-section-header">Place of Birth</h1>
+	<fieldset class="usa-fieldset-inputs">
+		<legend>Provide your place of birth</legend>
+		<fieldset class="usa-fieldset-inputs">
+      <legend class="label-style">This address is</legend>
+      <ul class="usa-list-inline usa-list-inline-justified">
+        <li>
+          <input id="inside-us-radio" type="radio" name="address-type" value="inside-us-radio" checked>
+          <label for="inside-us-radio"><span>In the U.S.</span></label>
+        </li>
+        <li>
+          <input id="outside-us-radio" type="radio" name="address-type" value="outside-us-radio">
+          <label for="outside-us-radio"><span>Outside the U.S.</span></label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <!-- Inside U.S. fields -->
+    <div class="inside-us-fields">
+      <div class="usa-form-control">
+        <label for="city" class="address-block">City</label>
+        <input id="city" name="city" type="text" class="address-block">
+      </div>
+      <div class="usa-form-control">
+        <label for="state">State</label>
+        <input id="state" name="state" type="text">
+      </div>
+      <div class="usa-form-control">
+        <label for="county">County</label>
+        <input id="county" name="county" type="text">
+      </div>
+    </div>
+    <!-- Inside U.S. fields end -->
+    <!-- Outside U.S. fields -->
+    <div class="outside-us-fields">
+      <div class="usa-form-control">
+        <label for="city" class="address-block">City</label>
+        <input id="city" name="city" type="text" class="address-block">
+      </div>
+      <div class="usa-form-control">
+        <label for="country" class="address-block">Country</label>
+        <select name="country" id="country" class="address-block">
+          <option value="United States of America">United States of America</option>
+          <option value="Another country">Another country</option>
+          <option value="Another country">Another country</option>
+        </select>
+      </div>
+    </div>
+    <!-- Outside U.S. fields end -->
+	</fieldset>
+	
+	<!-- Back/next -->
+	<div class="next-back-block">
+  	<% link_to '/example-form/date-of-birth.html', :class => "usa-button back-button" do %>
+      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">Date of birth</div>
+    <% end %>
+    <% link_to '/example-form/social-security-number.html', :class => "usa-button next-button" do %>
+      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">Social security number</div>
+    <% end %>
+  </div>
+  <!-- Back/next end -->
+</form>

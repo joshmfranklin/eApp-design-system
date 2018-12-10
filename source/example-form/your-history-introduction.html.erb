@@ -6,11 +6,11 @@ title: eApp Design System | Example form
 	<h1 class="eapp-section-header">Your History - Introduction</h1>
 	<p>You will be asked questions about your history and be asked to provide details if necessary. This section includes where you have lived, where you have worked, and where you went to school.</p>
 	<div class="next-back-block">
-	  <a class="usa-button back-button">
+	  <% link_to '/example-form/identifying-info.html', :class => "usa-button back-button" do %>
 	    <i class="far fa-arrow-alt-circle-left"></i>
 	    <div class="direction">Back</div>
-	    <div class="label">Review Identification</div>
-	  </a>
+	    <div class="label">Your identifying information</div>
+	  <% end %>
 	  <% link_to '/example-form/where-you-have-lived.html', :class => "usa-button next-button" do %>
 	    <i class="far fa-arrow-alt-circle-right"></i>
 	    <div class="direction">Next</div>

@@ -1,6 +1,6 @@
 // This is where it all goes :)
 
-$(document).ready(function(){
+$(window).on('load', function(){
 
   // Help block
 
@@ -67,9 +67,13 @@ $(document).ready(function(){
     var current = location.pathname;
     $('nav li a').each(function(){
       var $this = $(this);
+      var closestSidenavSection = $(this).closest('.usa-sidenav-section-container').children('a');
       // if the current path is like this link, make it active
       if($this.attr('href').indexOf(current) !== -1){
           $this.addClass('usa-current');
+          closestSidenavSection.addClass('usa-current');
+          $(this).closest('.usa-sidenav-sub_list').toggle();
+          closestSidenavSection.attr( 'aria-expanded', 'true');
       }
     })
   })
@@ -118,7 +122,6 @@ $(document).ready(function(){
     
   });
 
-  // Expand sidenav if subsection is active
 
   // yes/no toggle
   $(".yes-radio").click(function(){

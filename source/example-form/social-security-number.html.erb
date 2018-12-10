@@ -1,0 +1,48 @@
+---
+layout: "example-form-layout"
+title: eApp Design System | Example form
+---
+
+<form action="" class="eapp-form">
+	<h1 class="eapp-section-header">Social Security Number</h1>
+	<!-- Social security number -->
+	<h4>Provide your U.S. Social Security Number</h4>
+	<div class="usa-form-control">
+		<label for="ssn">
+			<span>Social Security Number</span>
+			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+      <i class="fas fa-question-circle"></i>
+    </a>
+		</label>
+		<input type="text" id="ssn" class="ssn">
+		<div class="modifiers modifiers-left">
+      <div class="modifier">
+        <span>or</span>
+      </div>
+      <div class="modifier">
+        <input class="disabled-toggle" id="i-dont-know" type="checkbox" name="i-dont-know" data-id="ssn">
+        <label for="i-dont-know"><span>Not applicable</span></label>
+      </div>
+    </div>
+	</div>
+	
+	<div class="usa-form-control">
+		<label for="ssn-confirm">Please confirm your Social Security Number</label>
+		<input type="text" id="ssn-confirm">
+	</div>
+	<!-- Social security number end -->
+	<!-- Back/next -->
+	<div class="next-back-block">
+  	<% link_to '/example-form/place-of-birth.html', :class => "usa-button back-button" do %>
+      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">Place of birth</div>
+    <% end %>
+    <% link_to '/example-form/identifying-info.html', :class => "usa-button next-button" do %>
+      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">Your identifying information</div>
+    <% end %>
+  </div>
+  <!-- Back/next end -->
+</form>

@@ -1,0 +1,128 @@
+---
+layout: "example-form-layout"
+title: eApp Design System | Example form
+---
+
+<form action="" class="eapp-form">
+	<h1 class="eapp-section-header">Your Identifying Information</h1>
+	<!-- Height -->
+	<fieldset class="usa-fieldset-inputs">
+		<legend>
+			<span>Height</span>
+			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	      <i class="fas fa-question-circle"></i>
+	    </a>
+		</legend>
+		<ul class="usa-list-inline">
+			<li>
+				<div class="usa-form-control">
+					<label for="feet">Feet</label>
+					<input type="text" id="feet" class="usa-small-input">
+				</div>
+			</li>
+			<li>
+				<div class="usa-form-control">
+					<label for="inches">Inches</label>
+					<input type="text" id="inches" class="usa-small-input">
+				</div>
+			</li>
+		</ul>
+	</fieldset>
+	<!-- Height end -->
+	<!-- Weight -->
+	<fieldset class="usa-fieldset-inputs">
+		<legend>
+			<span>Weight</span>
+			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	      <i class="fas fa-question-circle"></i>
+	    </a>
+		</legend>
+		<div class="usa-form-control">
+			<label for="pounds">Pounds</label>
+			<input type="text" class="usa-small-input" id="pounds">
+		</div>
+	</fieldset>
+	<!-- Weight end -->
+	<!-- Hair color -->
+	<div class="usa-form-control">
+		<label for="hair-color" class="usa-alt-label">
+			<span>Hair color</span>
+			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	      <i class="fas fa-question-circle"></i>
+	    </a>
+		</label>
+		<select name="hair-color" id="hair-color" class="usa-medium-input">
+			<option value="" style="display:none" disabled selected></option>
+			<option value="black">Black</option>
+			<option value="brown">Brown</option>
+			<option value="red">Red or auburn</option>
+			<option value="blonde">Blonde or strawberry</option>
+			<option value="sandy">Sandy</option>
+			<option value="gray">Gray or partially gray</option>
+			<option value="white">White</option>
+			<option value="bald">Bald</option>
+			<option value="blue">Blue</option>
+			<option value="green">Green</option>
+			<option value="orange">Orange</option>
+			<option value="pink">Pink</option>
+			<option value="purple">Purple</option>
+			<option value="unspecified">Unspecified or uknown</option>
+		</select>
+	</div>
+	<!-- Hair color end -->
+	<!-- Eye color -->
+	<div class="usa-form-control">
+		<label for="eye-color" class="usa-alt-label">
+			<span>Eye color</span>
+			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	      <i class="fas fa-question-circle"></i>
+	    </a>
+		</label>
+		<select name="eye-color" id="eye-color" class="usa-medium-input">
+			<option value="" style="display:none" disabled selected></option>
+			<option value="brown">Brown</option>
+			<option value="hazel">Hazel</option>
+			<option value="blue">Blue</option>
+			<option value="green">Green</option>
+			<option value="gray">Gray</option>
+			<option value="maroon">Maroon</option>
+			<option value="multicolored">Multicolored</option>
+			<option value="pink">Pink</option>
+			<option value="unknown">Unknown</option>
+		</select>
+	</div>
+	<!-- Eye color end -->
+	<!-- Sex -->
+	<fieldset class="usa-fieldset-inputs">
+		<legend>
+			<span>Selec your sex</span>
+			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	      <i class="fas fa-question-circle"></i>
+	    </a>
+		</legend>
+		<ul class="usa-list-inline usa-list-inline-justified">
+			<li>
+        <input id="male" type="radio" name="select-sex">
+        <label for="male"><span>Male</span></label>
+      </li>
+      <li>
+        <input id="female" type="radio" name="select-sex">
+        <label for="female"><span>Female</span></label>
+      </li>
+		</ul>
+	</fieldset>
+	<!-- Sex end -->
+	<!-- Back/next -->
+	<div class="next-back-block">
+  	<% link_to '/example-form/social-security-number.html', :class => "usa-button back-button" do %>
+      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">Social security number</div>
+    <% end %>
+    <% link_to '/example-form/your-history-introduction.html', :class => "usa-button next-button" do %>
+      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">Your history: introduction</div>
+    <% end %>
+  </div>
+</form>
