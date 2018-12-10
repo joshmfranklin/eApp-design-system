@@ -134,5 +134,28 @@ $(window).on('load', function(){
     $('.'+yesBlock).hide();
   })
 
+  // Header shrink on scroll
+  $(document).on("scroll", function(){
+    if
+      ($(document).scrollTop() > 300){
+      $(".eapp-header").addClass("eapp-header-shrink");
+    }
+    else
+    {
+      $(".eapp-header").removeClass("eapp-header-shrink");
+    }
+  });
 
+  // Set header title based on page
+  var pageTitle = $('.eapp-form').attr('data-id');
+  console.log(pageTitle);
+  $('.eapp-header-section-title').text(pageTitle);
+
+  // Toggle mobile sidenav
+  
+  $('.eapp-sidenav-mobile-toggle').on('click', function(event) {
+    event.preventDefault();
+    $('.eapp-sidenav-wrapper, .eapp-form-wrapper').toggle();
+    $('.eapp-sidenav-mobile-toggle i').toggleClass('fa-bars fa-times')
+  })
 })

@@ -13,26 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <%= stylesheet_link_tag "site" %>
   </head>
-  <%= partial "main-nav" %>
-  <div class="styleguide-secondary-nav sticky">
-    <ul>
-      <li>
-        <% link_to '/index.html' do %>
-          <span>UI Components</span>
-        <% end %>
-      </li>
-      <li>
-        <% link_to '/design-principals-intro.html' do %>
-          <span>Design Principles</span>
-        <% end %>
-      </li>
-      <li>
-        <% link_to '/example-form/your-history/introduction.html', :class => "usa-current" do %>
-          <span>Example form</span>
-        <% end %>
-      </li>
-    </ul>
-  </div>
+  <%= partial "example-form-header" %>
 
   <body>
     <div class="eapp-page-wrapper">
