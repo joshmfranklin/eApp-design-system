@@ -41,6 +41,10 @@ p {
 .usa-list-inline li:not(:last-child),
 .usa-list-inline-justified li:not(:last-child) {
   margin-right: 1rem;
+
+  @media all and (max-width: 980px) {
+    margin-right: 0;
+  }
 }
 
 .usa-list-inline-justified {

@@ -129,6 +129,13 @@ fieldset {
   width: 30rem;
 }
 
+@media all and (max-width: 980px) {
+  .usa-medium-input,
+  .usa-small-input {
+    width: 100%;
+  }
+}
+
 // Input modifiers
 
 .modifiers {
