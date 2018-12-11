@@ -1,0 +1,331 @@
+---
+layout: "example-form-layout"
+title: eApp Design System | Example form
+---
+
+<form action="" class="eapp-form">
+	<h1 class="eapp-section-header">Citizenship Status</h1>
+	<!-- Citizenship type -->
+	<fieldset class="usa-fieldset-inputs">
+		<legend>Select the box that best reflects your citizenship status</legend>
+		<ul class="usa-unstyled-list">
+			<li>
+				<input class="no-radio" id="us-citizen" type="radio" name="citizenship-status" value="us-citizen" data-id="us-citizen-foreign-parents-section">
+        <label for="us-citizen"><span>I am a U.S. citizen or national by birth in the U.S. or U.S. territory/commonwealth</span></label>
+			</li>
+			<li>
+				<input class="yes-radio" id="us-citizen-foreign-parents" type="radio" name="citizenship-status" value="us-citizen-foreign-parents" data-id="us-citizen-foreign-parents-section">
+        <label for="us-citizen-foreign-parents"><span>I am a U.S. citizen or national by birth, born to U.S. parent(s), in a foreign country</span></label>
+			</li>
+			<li>
+				<input class="no-radio" id="naturalized" type="radio" name="citizenship-status" value="naturalized" data-id="us-citizen-foreign-parents-section">
+        <label for="naturalized"><span>I am a naturalized U.S. citizen</span></label>
+			</li>
+			<li>
+				<input class="no-radio" id="derived" type="radio" name="citizenship-status" value="derived" data-id="us-citizen-foreign-parents-section">
+        <label for="derived"><span>I am a derived U.S. citizen</span></label>
+			</li>
+			<li>
+				<input class="no-radio" id="not-us-citizen" type="radio" name="citizenship-status" value="not-us-citizen" data-id="us-citizen-foreign-parents-section">
+        <label for="not-us-citizen"><span>I am not a U.S. citizen</span></label>
+			</li>
+		</ul>
+	</fieldset>
+	<!-- Citizenship type end -->
+	<!-- U.S. citizen foreign parents section -->
+	<div class="us-citizen-foreign-parents-section" style="display:none;">
+		<!-- Type of documentation -->
+		<fieldset class="usa-fieldset-inputs">
+			<legend>Provide type of documentation of U.S. citizen born abroad</legend>
+			<ul class="usa-list-inline">
+				<li>
+					<input id="fs240" type="radio" name="citizenship-type" value="fs240">
+	        <label for="fs240"><span>(FS) 240</span></label>
+				</li>
+				<li>
+					<input id="ds1350" type="radio" name="citizenship-type" value="ds1350">
+	        <label for="ds1350"><span>DS 1350</span></label>
+				</li>
+				<li>
+					<input id="fs545" type="radio" name="citizenship-type" value="fs545">
+	        <label for="fs545"><span>FS 545</span></label>
+				</li>
+				<li>
+					<input id="other" type="radio" name="citizenship-type" value="other">
+	        <label for="other"><span>Other</span></label>
+				</li>
+			</ul>
+		</fieldset>
+		<!-- Type of documentation end -->
+		<!-- Document number -->
+		<div class="usa-form-control">
+			<label class="usa-alt-label" for="document-number">Provide document number for U.S. citizen born abroad</label>
+			<input type="text" id="document-number">
+		</div>
+		<!-- Document number end -->
+		<!-- Document issue date -->
+		<fieldset class="usa-fieldset-inputs">
+			<legend>Provide the date the document was issued</legend>
+			<div class="m-d-y-block">
+        <div class="usa-form-control">
+          <label for="month">Month</label>
+          <input type="text" id="month" maxlength="2">
+        </div>
+        <div class="usa-form-control">
+          <label for="day">Day</label>
+          <input type="text" id="day" maxlength="2">
+        </div>
+        <div class="usa-form-control">
+          <label for="year">Year</label>
+          <input type="text" id="year" maxlength="4">
+        </div>
+      </div>
+      <div class="modifiers modifiers-left">
+        <div class="modifier">
+          <input id="estimated" type="checkbox" name="estimated">
+          <label class="simple-checkbox" for="estimated"><span>Estimated</span></label>
+        </div>
+      </div>
+		</fieldset>
+		<!-- Document issue date end -->
+		<!-- Place of issuance -->
+		<fieldset class="usa-fieldset-inputs">
+			<legend>Provide the place of issuance</legend>
+			<div class="usa-form-control">
+        <label for="city-issuance">City</label>
+        <input id="city-issuance" name="city-issuance" type="text">
+      </div>
+      <div class="usa-form-control">
+        <label for="state">State</label>
+        <input id="state" name="state" type="text">
+      </div>
+      <div class="usa-form-control">
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="United States of America">United States of America</option>
+          <option value="Another country">Another country</option>
+          <option value="Another country">Another country</option>
+        </select>
+      </div>
+		</fieldset>
+		<!-- Place of issuance end -->
+		<!-- Name document was issued -->
+		<fieldset class="usa-fieldset-inputs">
+			<legend>Provide the name in which document was issued</legend>
+			<div class="usa-form-control">
+	    	<label for="first-name">
+	    		<span>First name</span>
+	    		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	        <i class="fas fa-question-circle"></i>
+	      </a>
+	    	</label>
+	    	<input type="text" id="first-name">
+	    	<div class="modifiers">
+	    		<div class="modifier">
+	    			<input id="initial-only-first" type="checkbox">
+	          <label class="simple-checkbox" for="initial-only-first"><span>Initial only</span></label>
+	    		</div>
+	    	</div>
+	  	</div>
+	  	<div class="usa-form-control">
+	    	<label for="firs-name">
+		    	<span>Middle name</span>
+		    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	          <i class="fas fa-question-circle"></i>
+	        </a>
+		    </label>
+	    	<input type="text" id="middle-name">
+	    	<div class="modifiers">
+	    		<div class="modifier">
+	    			<input id="no-middle" type="checkbox">
+	          <label class="simple-checkbox" for="no-middle"><span>No middle name</span></label>
+	    		</div>
+	    		<div class="modifier">
+	    			<input id="initial-only-middle" type="checkbox">
+	          <label class="simple-checkbox" for="initial-only-middle"><span>Initial only</span></label>
+	    		</div>
+	    	</div>
+	  	</div>
+	  	<div class="usa-form-control">
+	    	<label for="firs-name">
+		    	<span>Last name</span>
+		    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	          <i class="fas fa-question-circle"></i>
+	        </a>
+		    </label>
+	    	<input type="text" id="last-name">
+	    	<div class="modifiers">
+	    		<div class="modifier">
+	    			<input id="initial-only-last" type="checkbox">
+	          <label class="simple-checkbox" for="initial-only-last"><span>Initial only</span></label>
+	    		</div>
+	    	</div>
+	  	</div>
+	  	<div class="usa-form-control">
+	  		<label for="suffix">
+	  			<span>Suffix</span>
+	  			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	          <i class="fas fa-question-circle"></i>
+	        </a>
+	  		</label>
+	  		<select class="usa-small-input" name="suffidx" id="suffix">
+	  			<option value="jr">Jr</option>
+	  			<option value="sr">Sr</option>
+	  			<option value="i">I</option>
+	  			<option value="ii">II</option>
+	  			<option value="iii">III</option>
+	  			<option value="iv">IV</option>
+	  			<option value="v">V</option>
+	  			<option value="vii">VII</option>
+	  			<option value="ix">IX</option>
+	  			<option value="x">X</option>
+	  			<option value="other">Other</option>
+	  		</select>
+	  	</div>
+		</fieldset>
+		<!-- Name document was issued end -->
+		<!-- Certificate of citizenship number -->
+		<div class="usa-form-control">
+			<label for="citizenship-number" class="usa-alt-label">Provide your Certificate of Citizenship number</label>
+			<input type="text" id="citizenship-number">
+		</div>
+		<!-- Certificate of citizenship number end -->
+		<!-- Certificate issue date -->
+		<fieldset class="usa-fieldset-inputs">
+			<legend>Provide the date the certificate was issued</legend>
+			<div class="m-d-y-block">
+        <div class="usa-form-control">
+          <label for="month">Month</label>
+          <input type="text" id="month" maxlength="2">
+        </div>
+        <div class="usa-form-control">
+          <label for="day">Day</label>
+          <input type="text" id="day" maxlength="2">
+        </div>
+        <div class="usa-form-control">
+          <label for="year">Year</label>
+          <input type="text" id="year" maxlength="4">
+        </div>
+      </div>
+      <div class="modifiers modifiers-left">
+        <div class="modifier">
+          <input id="estimated" type="checkbox" name="estimated">
+          <label class="simple-checkbox" for="estimated"><span>Estimated</span></label>
+        </div>
+      </div>
+		</fieldset>
+		<!-- Certificate issue date end -->
+		<!-- Certificate name -->
+		<fieldset class="usa-fieldset-inputs">
+			<legend>Provide the name in which the certificate was issued</legend>
+			<div class="usa-form-control">
+	    	<label for="first-name">
+	    		<span>First name</span>
+	    		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	        <i class="fas fa-question-circle"></i>
+	      </a>
+	    	</label>
+	    	<input type="text" id="first-name">
+	    	<div class="modifiers">
+	    		<div class="modifier">
+	    			<input id="initial-only-first" type="checkbox">
+	          <label class="simple-checkbox" for="initial-only-first"><span>Initial only</span></label>
+	    		</div>
+	    	</div>
+	  	</div>
+	  	<div class="usa-form-control">
+	    	<label for="firs-name">
+		    	<span>Middle name</span>
+		    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	          <i class="fas fa-question-circle"></i>
+	        </a>
+		    </label>
+	    	<input type="text" id="middle-name">
+	    	<div class="modifiers">
+	    		<div class="modifier">
+	    			<input id="no-middle" type="checkbox">
+	          <label class="simple-checkbox" for="no-middle"><span>No middle name</span></label>
+	    		</div>
+	    		<div class="modifier">
+	    			<input id="initial-only-middle" type="checkbox">
+	          <label class="simple-checkbox" for="initial-only-middle"><span>Initial only</span></label>
+	    		</div>
+	    	</div>
+	  	</div>
+	  	<div class="usa-form-control">
+	    	<label for="firs-name">
+		    	<span>Last name</span>
+		    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	          <i class="fas fa-question-circle"></i>
+	        </a>
+		    </label>
+	    	<input type="text" id="last-name">
+	    	<div class="modifiers">
+	    		<div class="modifier">
+	    			<input id="initial-only-last" type="checkbox">
+	          <label class="simple-checkbox" for="initial-only-last"><span>Initial only</span></label>
+	    		</div>
+	    	</div>
+	  	</div>
+	  	<div class="usa-form-control">
+	  		<label for="suffix">
+	  			<span>Suffix</span>
+	  			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	          <i class="fas fa-question-circle"></i>
+	        </a>
+	  		</label>
+	  		<select class="usa-small-input" name="suffidx" id="suffix">
+	  			<option value="jr">Jr</option>
+	  			<option value="sr">Sr</option>
+	  			<option value="i">I</option>
+	  			<option value="ii">II</option>
+	  			<option value="iii">III</option>
+	  			<option value="iv">IV</option>
+	  			<option value="v">V</option>
+	  			<option value="vii">VII</option>
+	  			<option value="ix">IX</option>
+	  			<option value="x">X</option>
+	  			<option value="other">Other</option>
+	  		</select>
+	  	</div>
+		</fieldset>
+		<!-- Certificate name end -->
+		<!-- Born on military installation -->
+		<fieldset class="usa-fieldset-inputs">
+			<legend>Were you born on a U.S military installation?</legend>
+			<ul class="usa-list-inline usa-list-inline-justified">
+				<li>
+	        <input class="yes-radio" id="yes-1" type="radio" name="other-names" data-id="born-military-installation">
+	        <label for="yes-1"><span>Yes</span></label>
+	      </li>
+	      <li>
+	        <input class="no-radio" id="no-1" type="radio" name="other-names" data-id="born-military-installation">
+	        <label for="no-1"><span>No</span></label>
+	      </li>
+			</ul>
+		</fieldset>
+		<!-- Born on military installation end -->
+		<div class="born-military-installation" style="display:none;">
+			<!-- Name of base -->
+			<div class="usa-form-control">
+				<label for="name-of-base" class="usa-alt-label">Provide the name of the base</label>
+				<input type="text" id="name-of-base">
+			</div>
+			<!-- Name of base end -->
+		</div>
+	</div>
+	<!-- Back/next -->
+	<div class="next-back-block">
+  	<% link_to '/example-form/citizenship-introduction.html', :class => "usa-button back-button" do %>
+      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">Citizenship: Introduction</div>
+    <% end %>
+    <% link_to '/example-form/dual-citizenship.html', :class => "usa-button next-button" do %>
+      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">Dual/multiple citizenship</div>
+    <% end %>
+  </div>
+  <!-- Back/next end -->
+</form>

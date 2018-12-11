@@ -1,0 +1,20 @@
+---
+layout: "example-form-layout"
+title: eApp Design System | Example form
+---
+<div class="eapp-form" data-id="Section 3: Citizenship - Introduction">
+	<h1 class="eapp-section-header">Section 3: Citizenship</h1>
+	<p>You will be asked questions about your citizenship status and history and be asked to provide details if necessary.</p>
+	<div class="next-back-block">
+	  <% link_to '/example-form/where-you-went-school.html', :class => "usa-button back-button" do %>
+	    <i class="far fa-arrow-alt-circle-left"></i>
+	    <div class="direction">Back</div>
+	    <div class="label">Where you went to school</div>
+	  <% end %>
+	  <% link_to '/example-form/citizenship-status.html', :class => "usa-button next-button" do %>
+	    <i class="far fa-arrow-alt-circle-right"></i>
+	    <div class="direction">Next</div>
+	    <div class="label">Citizenship status</div>
+	  <% end %>
+	</div>
+</div>
