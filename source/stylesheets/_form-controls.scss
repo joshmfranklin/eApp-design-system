@@ -247,3 +247,26 @@ legend.label-style {
   background: $color-secondary-lightest;
   margin: .5rem 0 1rem 0;
 }
+
+// Jquery UI type ahead
+
+.ui-menu {
+  max-width: 64rem;
+  background: $color-white;
+  border: 1px solid $color-gray-lighter;
+  border-radius: 6px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.ui-menu-item {
+  margin-bottom: 0;
+}
+
+.ui-menu-item-wrapper {
+  padding: 1rem;
+}
+
+.ui-state-active {
+  background-color: $color-gray-extra-lightest;
+}
