@@ -3,7 +3,7 @@ layout: "example-form-layout"
 title: eApp Design System | Example form
 ---
 
-<form action="" class="eapp-form" data-id="Section 1: Information about you">
+<form action="" class="eapp-form" data-id="Section 1: Information About You - Your Contact Information">
 	<h1 class="eapp-section-header">Your Contact Information</h1>
 	<!-- Email addresses -->
 	<fieldset class="usa-fieldset-inputs">
@@ -33,99 +33,132 @@ title: eApp Design System | Example form
 	</h4>
 	<p>Provide three contact numbers. <strong>At least one number is required</strong>. Additional numbers may assist in the completion of your background investigation.</p>
 	<!-- Phone numbers intro end -->
-	<!-- Phone number accordion -->
-	<ul id="accordion" class="usa-accordion-bordered">
-	  <li>
-	    <div class="usa-accordion-header">
-	      <button class="usa-accordion-button"
-	        aria-expanded="true"
-	        aria-controls="b-a1">
-	        <div class="titles">
-	          <div class="title">
-	            <div class="title-right">
-	              <span class="fa-stack">
-	                <i class="fas fa-circle fa-stack-2x"></i>
-	                <i class="fas fa-stack-1x fa-phone fa-inverse"></i>
-	              </span>
-	              <span>Phone 1:</span>
-	            </div>
-	            <div class="title-left">
-	              <span></span>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="usa-accordion-close-button">
-	        </div>
-	      </button>
-	      <button class="usa-accordion-remove-button">
-	        <span class="fas fa-times fa-fw"></span>
-	        <span class="remove">Remove</span>
-	      </button>
-	     </div>
-	    <div id="b-a1" class="usa-accordion-content">
-				<!-- Phone number -->
-				<fieldset class="usa-fieldset-inputs">
-			    <legend>
-			    	<span>Phone number 1</span>
-			    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
-	            <i class="fas fa-question-circle"></i>
-	          </a>
-			    </legend>
-					<div class="usa-phone-number-block">
-			      <div class="usa-phone-number-input">
-			        <label for="phone-number">Phone number</label>
-			        <input type="text" name="phone-number" class="evening-phone">
-			      </div>
-			      <div class="usa-extension-input">
-			        <label for="extension">Extension</label>
-			        <input type="text" name="extension" class="evening-phone">
-			      </div>
-			      <div class="usa-phone-type-input">
-			        <label for="phone-type-1">Phone type</label>
-			        <select name="phone-type-1" id="phone-type-1" class="evening-phone">
-			          <option value="" style="display:none" disabled selected></option>
-			          <option value="cell">Cell</option>
-			          <option value="home">Home</option>
-			          <option value="work">Work</option>
-			        </select>
-			      </div>
-					</div>
-			    <div class="modifiers modifiers-left">
-			    	<div class="modifier">
-			    		<input id="international-dsn" type="checkbox" name="international-dsn" value="dns" class="evening-phone">
-					    <label class="simple-checkbox" for="international-dsn"><span>This is an international or DSN phone number</span></label>
-			    	</div>
-			    </div>
-			    <div class="usa-grid">
-			      <div class="usa-width-one-half">
-			        <fieldset class="usa-fielset-inputs">
-			          <legend class="label-style">Best time to call</legend>
-			          <ul class="usa-list-inline">
-			            <li>
-			              <input id="day-phone-1" class="evening-phone" type="radio" name="time-to-call-1" value="day">
-			              <label for="day-phone-1"><span>Day</span></label>
-			            </li>
-			            <li>
-			              <input id="night-phone-1" class="evening-phone" type="radio" name="time-to-call-1" value="night">
-			              <label for="night-phone-1"><span>Night</span></label>
-			            </li>
-			            <li>
-			              <input id="day-night-phone-1" class="evening-phone" type="radio" name="time-to-call-1" value="both">
-			              <label for="day-night-phone-1"><span>Both</span></label>
-			            </li>
-			          </ul>
-			        </fieldset>
-			      </div>
-			    </div>
-			  </fieldset>
-			  <!-- Phone number end -->
-	    </div>
-	  </li>
-	</ul>
-	<!-- Phone number accordion end -->
-	<!-- Add another phone number -->
-	<button class="usa-button-secondary">Add another phone number</button>
-	<!-- Add another phone number end -->
+	<!-- Home phone -->
+	<fieldset class="usa-fieldset-inputs">
+    <legend>Home telephone number</legend>
+    <div class="usa-phone-number-block">
+      <div class="usa-phone-number-input">
+        <label for="phone-number">Phone number</label>
+        <input type="text" name="phone-number" class="phone-input">
+      </div>
+      <div class="usa-extension-input">
+        <label for="extension">Extension</label>
+        <input type="text" name="extension" class="phone-input">
+      </div>
+    </div>
+    <div class="modifiers modifiers-left">
+      <div class="modifier">
+        <input id="international-dsn-3" type="checkbox" name="international-dsn-3" value="dns" class="phone-input">
+        <label class="simple-checkbox" for="international-dsn-3"><span>This is an international or DSN phone number</span></label>
+      </div>
+    </div>
+    <div class="usa-grid">
+      <div class="usa-width-one-half">
+        <fieldset class="usa-fielset-inputs">
+          <legend class="label-style">Best time to call</legend>
+          <ul class="usa-list-inline">
+            <li>
+              <input id="day-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="day">
+              <label for="day-phone-3"><span>Day</span></label>
+            </li>
+            <li>
+              <input id="night-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="night">
+              <label for="night-phone-3"><span>Night</span></label>
+            </li>
+            <li>
+              <input id="day-night-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="both">
+              <label for="day-night-phone-3"><span>Both</span></label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </div>
+  </fieldset>
+  <!-- Home phone end -->
+  <!-- Work phone -->
+  <fieldset class="usa-fieldset-inputs">
+    <legend>Work telephone number</legend>
+    <div class="usa-phone-number-block">
+      <div class="usa-phone-number-input">
+        <label for="phone-number">Phone number</label>
+        <input type="text" name="phone-number" class="phone-input">
+      </div>
+      <div class="usa-extension-input">
+        <label for="extension">Extension</label>
+        <input type="text" name="extension" class="phone-input">
+      </div>
+    </div>
+    <div class="modifiers modifiers-left">
+      <div class="modifier">
+        <input id="international-dsn-3" type="checkbox" name="international-dsn-3" value="dns" class="phone-input">
+        <label class="simple-checkbox" for="international-dsn-3"><span>This is an international or DSN phone number</span></label>
+      </div>
+    </div>
+    <div class="usa-grid">
+      <div class="usa-width-one-half">
+        <fieldset class="usa-fielset-inputs">
+          <legend class="label-style">Best time to call</legend>
+          <ul class="usa-list-inline">
+            <li>
+              <input id="day-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="day">
+              <label for="day-phone-3"><span>Day</span></label>
+            </li>
+            <li>
+              <input id="night-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="night">
+              <label for="night-phone-3"><span>Night</span></label>
+            </li>
+            <li>
+              <input id="day-night-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="both">
+              <label for="day-night-phone-3"><span>Both</span></label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </div>
+  </fieldset>
+  <!-- Work phone end -->
+  <!-- Mobile phone -->
+  <fieldset class="usa-fieldset-inputs">
+    <legend>Mobile/cell telephone number</legend>
+    <div class="usa-phone-number-block">
+      <div class="usa-phone-number-input">
+        <label for="phone-number">Phone number</label>
+        <input type="text" name="phone-number" class="phone-input">
+      </div>
+      <div class="usa-extension-input">
+        <label for="extension">Extension</label>
+        <input type="text" name="extension" class="phone-input">
+      </div>
+    </div>
+    <div class="modifiers modifiers-left">
+      <div class="modifier">
+        <input id="international-dsn-3" type="checkbox" name="international-dsn-3" value="dns" class="phone-input">
+        <label class="simple-checkbox" for="international-dsn-3"><span>This is an international or DSN phone number</span></label>
+      </div>
+    </div>
+    <div class="usa-grid">
+      <div class="usa-width-one-half">
+        <fieldset class="usa-fielset-inputs">
+          <legend class="label-style">Best time to call</legend>
+          <ul class="usa-list-inline">
+            <li>
+              <input id="day-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="day">
+              <label for="day-phone-3"><span>Day</span></label>
+            </li>
+            <li>
+              <input id="night-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="night">
+              <label for="night-phone-3"><span>Night</span></label>
+            </li>
+            <li>
+              <input id="day-night-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="both">
+              <label for="day-night-phone-3"><span>Both</span></label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </div>
+  </fieldset>
+  <!-- Mobile phone end -->
 	<!-- Back/next -->
 	<div class="next-back-block">
   	<% link_to '/example-form/other-names-used.html', :class => "usa-button back-button" do %>

@@ -168,7 +168,12 @@ fieldset {
   
   fieldset,
   .usa-form-control {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 }
 
@@ -187,10 +192,6 @@ legend.label-style {
   font-weight: 400;
   margin-bottom: 1rem;
   font-family: "Source Sans Pro"
-}
-
-legend + p {
-  margin-top: 0;
 }
 
 // Input validation

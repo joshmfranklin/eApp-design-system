@@ -16,6 +16,10 @@ h4 {
   font-size: $h4-font-size;
 }
 
+p {
+  margin-bottom: 4rem;
+}
+
 // Lists
 
 .usa-list-inline {
@@ -58,6 +62,7 @@ h4 {
   border-bottom: 2px solid $color-gray-lighter;
   padding: 2rem 0;
   margin-top: 0;
+  margin-bottom: 4rem;
 
   .usa-grid {
     padding: 0;
