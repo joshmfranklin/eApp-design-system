@@ -147,6 +147,29 @@ title: eApp Design System | Example form
 		      </div>
 		    </fieldset>
 	    	<!-- Dates of attendance end -->
+	    	<!-- Type of school -->
+			  <fieldset class="usa-fieldset-inputs">
+			  	<legend>Select the most appropriate box to describe your school</legend>
+			  	<ul class="usa-unstyled-list">
+			  		<li>
+			  			<input id="high-school" type="radio" name="school-type" >
+			        <label for="high-school"><span>High School</span></label>
+			  		</li>
+			  		<li>
+			  			<input id="college-university" type="radio" name="school-type" >
+			        <label for="college-university"><span>College, university, or military college</span></label>
+			  		</li>
+			  		<li>
+			  			<input id="vocational-technical" type="radio" name="school-type" >
+			        <label for="vocational-technical"><span>Vocational, technical, or trade school</span></label>
+			  		</li>
+			  		<li>
+			  			<input id="online-school" type="radio" name="school-type" >
+			        <label for="online-school"><span>Correspondence, distance, extension, or online school</span></label>
+			  		</li>
+			  	</ul>
+			  </fieldset>
+				<!-- Type of school end -->
 	    	<!-- School address -->
 	    	<fieldset id="address-block" class="usa-fieldset-inputs">
 			    <legend>
@@ -155,6 +178,7 @@ title: eApp Design System | Example form
 	            <i class="fas fa-question-circle"></i>
 	          </a>
 			    </legend>
+			    <p>For correspondence/distance/ extension/online schools, provide the address where the records are maintained. For assistance determining the school address, refer to <a href="http://ope.ed.gov/accreditation/search.aspx" target="_blank">http://ope.ed.gov/accreditation/search.aspx</a></p>
 			    <fieldset class="usa-fieldset-inputs">
 			      <legend class="label-style">This address is</legend>
 			      <ul class="usa-list-inline usa-list-inline-justified">
@@ -271,29 +295,7 @@ title: eApp Design System | Example form
 			    </div>
 			    <!-- APO/FPO/DPO fields end -->
 			  </fieldset>
-				<!-- Type of school -->
-			  <fieldset class="usa-fieldset-inputs">
-			  	<legend>Select the most appropriate box to describe your school</legend>
-			  	<ul class="usa-unstyled-list">
-			  		<li>
-			  			<input id="high-school" type="radio" name="school-type" >
-			        <label for="high-school"><span>High School</span></label>
-			  		</li>
-			  		<li>
-			  			<input id="college-university" type="radio" name="school-type" >
-			        <label for="college-university"><span>College, university, or military college</span></label>
-			  		</li>
-			  		<li>
-			  			<input id="vocational-technical" type="radio" name="school-type" >
-			        <label for="vocational-technical"><span>Vocational, technical, or trade school</span></label>
-			  		</li>
-			  		<li>
-			  			<input id="online-school" type="radio" name="school-type" >
-			        <label for="online-school"><span>Correspondence, distance, extension, or online school</span></label>
-			  		</li>
-			  	</ul>
-			  </fieldset>
-				<!-- Type of school end -->
+			  <!-- School address end -->
 				<!-- Recieve a degree -->
 				<fieldset class="usa-fieldset-inputs">
 					<legend>Did you receive a degree/diploma?</legend>
@@ -312,7 +314,7 @@ title: eApp Design System | Example form
 				<div class="recieved-diploma" style="display: none;">
 				<!-- Type of degree -->
 					<fieldset class="usa-fieldset-inputs">
-				  	<legend>Provide type of degrees(s)/diploma(s) received</legend>
+				  	<legend>Degree/diploma</legend>
 				  	<ul class="usa-unstyled-list">
 				  		<li>
 				  			<input id="high-school-diploma" type="radio" name="degree-type" >
@@ -347,7 +349,7 @@ title: eApp Design System | Example form
 				  <!-- Type of degree end -->
 					<!-- Degree date awarded -->
 					<fieldset class="usa-fieldset-inputs">
-						<legend>Date awarded</legend>
+						<legend>Month/year</legend>
 						<div class="m-d-y-block">
 			        <div class="usa-form-control">
 			          <label for="month">Month</label>
@@ -366,22 +368,6 @@ title: eApp Design System | Example form
 		        </div>
 					</fieldset>
 					<!-- Degree date awarded end -->
-					<!-- Another degree -->
-					<fieldset class="usa-fieldset-inputs">
-						<legend>Do you have another degree/diploma from this school to add?</legend>
-						<ul class="usa-list-inline usa-list-inline-justified">
-							<li>
-				        <input id="yes-3" type="radio" name="another-degree-diploma" >
-				        <label for="yes-3"><span>Yes</span></label>
-				      </li>
-				      <li>
-				        <input id="no-3" type="radio" name="another-degree-diploma" >
-				        <label for="no-3"><span>No</span></label>
-				      </li>
-						</ul>
-					</fieldset>
-				</div>
-				<!-- Another degree end -->
 	    </div>
 	  </li>
 	</ul>

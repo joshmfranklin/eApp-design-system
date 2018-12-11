@@ -53,18 +53,18 @@
           </li>
           <li>
             <input id="state-gov" type="radio" name="employment-activity">
-            <label for="state-gov"><span>State Government</span></label>
-          </li>
-          <li>
-            <input id="fed-contractor" type="radio" name="employment-activity">
-            <label for="fed-contractor"><span>Federal Contractor</span></label>
+            <label for="state-gov"><span>State Government (Non-Federal employment)</span></label>
           </li>
         </ul>
         <p>Other employment</p>
         <ul class="usa-unstyled-list">
           <li>
+            <input id="fed-contractor" type="radio" name="employment-activity">
+            <label for="fed-contractor"><span>Federal Contractor</span></label>
+          </li>
+          <li>
             <input id="non-gov" type="radio" name="employment-activity">
-            <label for="non-gov"><span>Non-government employee</span></label>
+            <label for="non-gov"><span>Non-government employee (excluding self-employment)</span></label>
           </li>
           <li>
             <input id="self-employ" type="radio" name="employment-activity">
@@ -534,9 +534,68 @@
         </ul>
       </fieldset>
       <!-- Supervisor APO/FPO -->
+      <!-- Supervisor phone number -->
+      <fieldset class="usa-fieldset-inputs">
+        <legend>Provide the telephone number for this supervisor</legend>
+        <div class="usa-phone-number-block">
+          <div class="usa-phone-number-input">
+            <label for="phone-number">Phone number</label>
+            <input type="text" name="phone-number" class="phone-input-2">
+          </div>
+          <div class="usa-extension-input">
+            <label for="extension">Extension</label>
+            <input type="text" name="extension" class="phone-input-2">
+          </div>
+          <div class="usa-phone-type-input">
+            <label for="phone-type-1">Phone type</label>
+            <select name="phone-type-1" id="phone-type-1" class="phone-input-2">
+              <option value="" style="display:none" disabled selected></option>
+              <option value="cell">Cell</option>
+              <option value="home">Home</option>
+              <option value="work">Work</option>
+            </select>
+          </div>
+          <div class="usa-phone-dont-know">
+            <ul class="usa-list-inline">
+              <li><span>or</span></li>
+              <li>
+                <input class="disabled-toggle" id="phone-dont-know-2" type="checkbox" name="phone-dont-know" value="phone-dont-know" data-id="phone-input-2">
+                <label for="phone-dont-know-2"><span>I don't know</span></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modifiers modifiers-left">
+          <div class="modifier">
+            <input id="international-dsn-3" type="checkbox" name="international-dsn-3" value="dns" class="phone-input-2">
+            <label class="simple-checkbox" for="international-dsn-3"><span>This is an international or DSN phone number</span></label>
+          </div>
+        </div>
+        <div class="usa-grid">
+          <div class="usa-width-one-half">
+            <fieldset class="usa-fielset-inputs">
+              <legend class="label-style">Best time to call</legend>
+              <ul class="usa-list-inline">
+                <li>
+                  <input id="day-phone-2" class="phone-input-2" type="radio" name="time-to-call-2" value="day">
+                  <label for="day-phone-2"><span>Day</span></label>
+                </li>
+                <li>
+                  <input id="night-phone-2" class="phone-input-2" type="radio" name="time-to-call-2" value="night">
+                  <label for="night-phone-2"><span>Night</span></label>
+                </li>
+                <li>
+                  <input id="day-night-phone-2" class="phone-input-2" type="radio" name="time-to-call-2" value="both">
+                  <label for="day-night-phone-2"><span>Both</span></label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+      </fieldset>
       <!-- Additional periods of activity -->
       <h2>Additional periods of activity with this employer</h2>
-      <p>List all of your employment activities, including unemployment and self-employment, beginning with the present and working back 5 years. The entire period must be accounted for without breaks. If the employment activity was military duty, list separate employment activity periods to show each change of military duty station.</p>
+      <p>Provide additional periods of activity if you worked for this employer on more than one occasion at the same physical location (for example, if you worked at XY Plumbing in Denver, CO, during 3 separate periods of time, you would enter information concerning the most recent period of employment above, and provide dates, position titles, and supervisors for the two previous periods of employment as entries below).</p>
       <p>Do not list employment before your 18th birthday unless to provide a minimum of 2 years employment history.</p>
       <fieldset class="usa-fieldset-inputs">
         <legend>Do you have any additional periods of activity to add?</legend>
