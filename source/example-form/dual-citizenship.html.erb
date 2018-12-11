@@ -1,0 +1,182 @@
+---
+layout: "example-form-layout"
+title: eApp Design System | Example form
+---
+
+<form action="" class="eapp-form" data-id="Section 3: Citizenship - Dual/Multiple Citizenship">
+	<h1 class="eapp-section-header">Dual/Multiple Citizenship</h1>
+	<!-- Ever had multiple citizenship -->
+	<fieldset class="usa-fieldset-inputs">
+		<legend>Do you now or have you <strong>EVER</strong> held dual/multiple citizenships?</legend>
+		<ul class="usa-list-inline usa-list-inline-justified">
+			<li>
+        <input class="yes-radio" id="yes-1" type="radio" name="multi-citizenship" data-id="multi-citizenship">
+        <label for="yes-1"><span>Yes</span></label>
+      </li>
+      <li>
+        <input class="no-radio" id="no-1" type="radio" name="multi-citizenship" data-id="multi-citizenship">
+        <label for="no-1"><span>No</span></label>
+      </li>
+		</ul>
+	</fieldset>
+	<!-- Ever had multiple citizenship end -->
+	<div class="multi-citizenship" style="display: none;">
+		<ul id="accordion" class="attended-school usa-accordion-bordered">
+		  <li>
+		    <div class="usa-accordion-header">
+		      <button class="usa-accordion-button"
+		        aria-expanded="true"
+		        aria-controls="b-a1">
+		        <div class="titles">
+		          <div class="title">
+		            <div class="title-right">
+		              <span class="fa-stack">
+		                <i class="fas fa-circle fa-stack-2x"></i>
+		                <i class="fas fa-stack-1x fa-flag fa-inverse"></i>
+		              </span>
+		              <span>Citizenship 1:</span>
+		            </div>
+		            <div class="title-left">
+		              <span></span>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="usa-accordion-close-button">
+		        </div>
+		      </button>
+		      <button class="usa-accordion-remove-button">
+		        <span class="fas fa-times fa-fw"></span>
+		        <span class="remove">Remove</span>
+		      </button>
+		     </div>
+		    <div id="b-a1" class="usa-accordion-content">
+		    	<!-- Multi citizen country -->
+		    	<div class="usa-form-control">
+		    		<label for="country-of-citizenship" class="usa-alt-label">Provide country of citizenship</label>
+		    		<input type="text" id="country-of-citizenship">
+		    	</div>
+		    	<!-- Multi citizen country end -->
+		    	<!-- Period of citizenship -->
+		    	<fieldset id="from-to-date-block" class="usa-fieldset-inputs">
+			      <legend>During what period of time did you hold citizenship with this country</legend>
+			      <p>Provide the date range that you held this citizenship; beginning with the date it was acquired through its termination or “Present,” whichever is appropriate.</p>
+			      <div class="from-to-dates">
+			        <div class="from-date-container">
+			          <p><strong>From date</strong></p>
+			          <div class="m-d-y-block">
+			            <div class="usa-form-control">
+			              <label for="month">Month</label>
+			              <input type="text" id="month" maxlength="2">
+			            </div>
+			            <div class="usa-form-control">
+			              <label for="day">Day</label>
+			              <input type="text" id="day" maxlength="2">
+			            </div>
+			            <div class="usa-form-control">
+			              <label for="year">Year</label>
+			              <input type="text" id="year" maxlength="4">
+			            </div>
+			          </div>
+			          <div class="modifiers modifiers-left">
+			            <div class="modifier">
+			              <input id="from-estimated" type="checkbox" name="from-estimated">
+			              <label class="simple-checkbox" for="from-estimated"><span>Estimated</span></label>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="from-to-date-arrow">
+			          <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+			        </div>
+			        <div class="to-date-container">
+			          <p><strong>To date</strong></p>
+			          <div class="m-d-y-block">
+			            <div class="usa-form-control">
+			              <label for="month">Month</label>
+			              <input type="text" id="month" class="to-date-input" maxlength="2">
+			            </div>
+			            <div class="usa-form-control">
+			              <label for="day">Day</label>
+			              <input type="text" id="day" class="to-date-input" maxlength="2">
+			            </div>
+			            <div class="usa-form-control">
+			              <label for="year">Year</label>
+			              <input type="text" id="year" class="to-date-input" maxlength="4">
+			            </div>
+			          </div>
+			          <div class="modifiers modifiers-left">
+			            <div class="modifier">
+			              <input id="to-estimated" class="to-date-input" type="checkbox" name="to-estimated">
+			              <label class="simple-checkbox" for="to-estimated"><span>Estimated</span></label>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="or">or</div>
+			        <div class="present">
+			          <input class="disabled-toggle" id="present" type="checkbox" name="present" data-id="to-date-input">
+			          <label for="present"><span>Present</span></label>
+			        </div>
+			      </div>
+			    </fieldset>
+			    <!-- Period of citizenship end -->
+			    <!-- How did you acquire -->
+			    <div class="usa-form-control">
+			    	<label for="acquire-citizenshio" class="usa-alt-label">How did you acquire this non-U.S. citizenship you now have or previously had?</label>
+			    	<textarea name="acquire-citizenshio" id="acquire-citizenshio" cols="30" rows="10"></textarea>
+			    </div>
+			    <!-- How did you acquire end -->
+			    <!-- Curently hold citizenship -->
+			    <fieldset class="usa-fieldset-inputs">
+						<legend>Do you currently hold citizenship with this country?</legend>
+						<ul class="usa-list-inline usa-list-inline-justified">
+							<li>
+				        <input class="yes-radio" id="yes-2" type="radio" name="currently-citizen" data-id="currently-citizen">
+				        <label for="yes-2"><span>Yes</span></label>
+				      </li>
+				      <li>
+				        <input class="no-radio" id="no-2" type="radio" name="currently-citizen" data-id="currently-citizen">
+				        <label for="no-2"><span>No</span></label>
+				      </li>
+						</ul>
+					</fieldset>
+					<div class="currently-citizen">
+						<!-- Explanation present citizen -->
+						<div class="usa-form-control">
+							<label for="explanation-present-citizen" class="usa-alt-label">Provide explanation</label>
+							<textarea name="explanation-present-citizen" id="explanation-present-citizen" cols="30" rows="10"></textarea>
+						</div>
+						<!-- Explanation present citizen end -->
+					</div>
+		    </div>
+		  </li>
+		</ul>
+		<!-- Additional citizenship -->
+		<fieldset class="usa-fieldset-inputs">
+			<legend>Do you have an additional citizenship to provide?</legend>
+			<ul class="usa-list-inline usa-list-inline-justified">
+				<li>
+	        <input id="yes-3" type="radio" name="additional-citizenship">
+	        <label for="yes-3"><span>Yes</span></label>
+	      </li>
+	      <li>
+	        <input id="no-3" type="radio" name="additional-citizenship">
+	        <label for="no-3"><span>No</span></label>
+	      </li>
+			</ul>
+		</fieldset>
+		<!-- Additional citizenship end -->
+	</div>
+	<!-- Back/next -->
+	<div class="next-back-block">
+  	<% link_to '/example-form/citizenship-status.html', :class => "usa-button back-button" do %>
+      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">Citizenship status</div>
+    <% end %>
+    <% link_to '/example-form/citizenship-review.html', :class => "usa-button next-button" do %>
+      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">Review</div>
+    <% end %>
+  </div>
+  <!-- Back/next end -->
+</form>
