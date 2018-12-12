@@ -1,0 +1,135 @@
+---
+layout: "example-form-layout"
+title: eApp Design System | Example form
+---
+
+<form action="" class="eapp-form" data-id="Section 4: Military History - Diciplinary Procedures">
+	<h1 class="eapp-section-header">Diciplinary Procedures</h1>
+	<!-- Ever been diciplined -->
+	<fieldset class="usa-fieldset-inputs">
+		<legend>In the last 5 years, have you been subject to court martial or other disciplinary procedure under the Uniform Code of Military Justice (UCMJ), such as Article 15, Captain’s mast, Article 135 Court of Inquiry, etc?</legend>
+		<ul class="usa-list-inline usa-list-inline-justified">
+			<li>
+        <input class="yes-radio" id="yes-1" type="radio" name="diciplined" data-id="diciplined-yes">
+        <label for="yes-1"><span>Yes</span></label>
+      </li>
+      <li>
+        <input class="no-radio" id="no-1" type="radio" name="diciplined">
+        <label for="no-1"><span>No</span></label>
+      </li>
+		</ul>
+	</fieldset>
+	<!-- Ever been diciplined end -->
+	<div class="diciplined-yes" style="display: none;">
+		<ul id="accordion" class="usa-accordion-bordered">
+	    <li>
+	      <div class="usa-accordion-header">
+	        <button class="usa-accordion-button"
+	          aria-expanded="true"
+	          aria-controls="b-a1">
+	          <div class="titles">
+	            <div class="title">
+	              <div class="title-right">
+	                <span class="fa-stack">
+	                  <i class="fas fa-circle fa-stack-2x"></i>
+	                  <i class="fas fa-stack-1x fa-gavel fa-inverse"></i>
+	                </span>
+	                <span>Procedure 1:</span>
+	              </div>
+	              <div class="title-left">
+	              </div>
+	            </div>
+	          </div>
+	          <div class="usa-accordion-close-button">
+	          </div>
+	        </button>
+	        <button class="usa-accordion-remove-button">
+	          <span class="fas fa-times fa-fw"></span>
+	          <span class="remove">Remove</span>
+	        </button>
+	       </div>
+	      <div id="b-a1" class="usa-accordion-content">
+					<!-- Date of diciplinary procedure -->
+					<fieldset class="usa-fieldset-inputs">
+			      <legend>Provide the date of the court martial or other disciplinary procedure.</legend>
+			      <div class="m-d-y-block">
+			        <div class="usa-form-control">
+			          <label for="month">Month</label>
+			          <input type="text" id="month" maxlength="2">
+			        </div>
+			        <div class="usa-form-control">
+			          <label for="day">Day</label>
+			          <input type="text" id="day" maxlength="2">
+			        </div>
+			        <div class="usa-form-control">
+			          <label for="year">Year</label>
+			          <input type="text" id="year" maxlength="4">
+			        </div>
+			      </div>
+			      <div class="modifiers modifiers-left">
+			        <div class="modifier">
+			          <input id="estimated" type="checkbox" name="estimated">
+			          <label class="simple-checkbox" for="estimated"><span>Estimated</span></label>
+			        </div>
+			      </div>
+			    </fieldset>
+			    <!-- Date of diciplinary procedure end -->
+			    <!-- Description of offenses -->
+			    <div class="usa-form-control">
+			    	<label for="description-offenses" class="usa-alt-label">Provide a description of the Uniform Code of Military Justice (UCMJ) offense(s) for which you were charged</label>
+			    	<textarea name="description-offenses" id="description-offenses" cols="30" rows="10"></textarea>
+			    </div>
+			    <!-- Description of offenses end -->
+			    <!-- Disiplincary procedure -->
+			    <div class="usa-form-control">
+			    	<label class="usa-alt-label" for="disiplinary-procedure">Provide the name of the disciplinary procedure</label>
+			    	<p class="usa-form-hint">For example: Court Martial, Article 15, Captain’s mast, Article 135 Court of Inquiry, etc</p>
+			    	<input type="text" id="disiplinary-procedure">
+			    </div>
+			     <!-- Disiplincary procedure end -->
+			     <!-- Description of charge -->
+			     <div class="usa-form-control">
+			     	<label class="usa-alt-label" for="description-charge">Provide the description of the military court or other authority in which you were charged (title of court or convening authority, address, to include city and state or country if overseas)</label>
+			     	<textarea name="description-charge" id="description-charge" cols="30" rows="10"></textarea>
+			     </div>
+			     <!-- Description of charge end -->
+			     <!-- Final outcome -->
+			     <div class="usa-form-control">
+			     	<label class="usa-alt-label" for="final-outcome">Provide the description of the final outcome of the disciplinary procedure</label>
+			     	<p class="usa-form-hint">Such as found guilty, found not guilty, fine, reduction in rank, imprisonment, etc</p>
+			     	<textarea name="final-outcome" id="final-outcome" cols="30" rows="10"></textarea>
+			     </div>
+			     <!-- Final outcome end -->
+	      </div>
+	    </li>
+	  </ul>
+		<!-- Additional dicipline -->
+		<fieldset class="usa-fieldset-inputs">
+			<legend>In the last 5 years do you have an additional instance of military discipline to report?</legend>
+			<ul class="usa-list-inline usa-list-inline-justified">
+				<li>
+	        <input id="yes-2" type="radio" name="additional-dicipline">
+	        <label for="yes-2"><span>Yes</span></label>
+	      </li>
+	      <li>
+	        <input id="no-2" type="radio" name="additional-dicipline">
+	        <label for="no-2"><span>No</span></label>
+	      </li>
+			</ul>
+		</fieldset>
+	</div>
+	<!-- Back/next -->
+	<div class="next-back-block">
+  	<% link_to '/example-form/us-military.html', :class => "usa-button back-button" do %>
+      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">U.S. military</div>
+    <% end %>
+    <% link_to '/example-form/foreign-military.html', :class => "usa-button next-button" do %>
+      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">Foreign military</div>
+    <% end %>
+  </div>
+  <!-- Back/next end -->
+</form>

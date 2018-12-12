@@ -95,12 +95,6 @@ select:disabled {
   cursor: not-allowed;
 }
 
-.usa-form-control,
-fieldset {
-  margin-bottom: 8rem;
-  max-width: 64rem;
-}
-
 .usa-dollar-input {
   display: flex;
 
@@ -162,7 +156,13 @@ fieldset {
   }
 }
 
-// Fieldsets
+// Fieldsets and form-controls
+
+.usa-form-control,
+fieldset {
+  margin-bottom: 8rem;
+  max-width: 64rem;
+}
 
 fieldset {
 
@@ -189,7 +189,7 @@ legend,
   font-size: 1.7rem;
   font-weight: 900;
   font-family: "Merriweather";
-  line-height: 1.3em;
+  line-height: 1.5em;
   margin-bottom: 2rem;
   max-width: 100%;
 }
@@ -199,6 +199,10 @@ legend.label-style {
   font-weight: 400;
   margin-bottom: 1rem;
   font-family: "Source Sans Pro"
+}
+
+.usa-form-hint {
+  margin-bottom: 1rem;
 }
 
 // Input validation
