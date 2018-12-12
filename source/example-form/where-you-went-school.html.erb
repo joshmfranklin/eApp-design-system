@@ -13,18 +13,18 @@ title: eApp Design System | Example form
 		<legend>Have you attended any schools in the last 5 years?</legend>
 		<ul class="usa-list-inline usa-list-inline-justified">
 			<li>
-        <input class="yes-radio" id="yes" type="radio" name="other-names" data-id="attended-school">
+        <input class="yes-radio" id="yes" type="radio" name="other-names" data-id="attended-school-yes">
         <label for="yes"><span>Yes</span></label>
       </li>
       <li>
-        <input class="no-radio" id="no" type="radio" name="other-names" data-id="attended-school">
+        <input class="no-radio" id="no" type="radio" name="other-names">
         <label for="no"><span>No</span></label>
       </li>
 		</ul>
 	</fieldset>
 	<!-- Attended school in last 5 years end -->
 	<!-- School/diploma counters -->
-	<div class="attended-school usa-timeline-block" style="display: none;">
+	<div class="attended-school-yes usa-timeline-block" style="display: none;">
 		<div class="usa-timeline-content">
 			<span class="usa-timeline-icon">
 				<i class="fas fa-graduation-cap fa-3x"></i>
@@ -51,7 +51,7 @@ title: eApp Design System | Example form
 		</div>
 	</div>
 	<!-- School accordion -->
-	<ul id="accordion" class="attended-school usa-accordion-bordered" style="display: none;">
+	<ul id="accordion" class="attended-school-yes usa-accordion-bordered" style="display: none;">
 	  <li>
 	    <div class="usa-accordion-header">
 	      <button class="usa-accordion-button"
@@ -297,17 +297,17 @@ title: eApp Design System | Example form
 					<legend>Did you receive a degree/diploma?</legend>
 					<ul class="usa-list-inline usa-list-inline-justified">
 						<li>
-			        <input class="yes-radio" id="yes-2" type="radio" name="degree-diploma" data-id="recieved-diploma">
+			        <input class="yes-radio" id="yes-2" type="radio" name="degree-diploma" data-id="recieved-diploma-yes">
 			        <label for="yes-2"><span>Yes</span></label>
 			      </li>
 			      <li>
-			        <input class="no-radio" id="no-2" type="radio" name="degree-diploma" data-id="recieved-diploma">
+			        <input class="no-radio" id="no-2" type="radio" name="degree-diploma">
 			        <label for="no-2"><span>No</span></label>
 			      </li>
 					</ul>
 				</fieldset>
 				<!-- Recieve a degree end -->
-				<div class="recieved-diploma" style="display: none;">
+				<div class="recieved-diploma-yes" style="display: none;">
 				<!-- Type of degree -->
 					<fieldset class="usa-fieldset-inputs">
 				  	<legend>Degree/diploma</legend>
@@ -369,7 +369,7 @@ title: eApp Design System | Example form
 	</ul>
 	<!-- School accordion end -->
 	<!-- Another school -->
-	<fieldset class="attended-school usa-fieldset-inputs" style="display: none;">
+	<fieldset class="attended-school-yes usa-fieldset-inputs" style="display: none;">
 		<legend>Do you have additional education to enter (include education within the last 5 years, as well as degrees or diplomas more than 5 years ago)?</legend>
 		<ul class="usa-list-inline usa-list-inline-justified">
 			<li>
@@ -390,10 +390,10 @@ title: eApp Design System | Example form
       <div class="direction">Back</div>
       <div class="label">Employment activities</div>
     <% end %>
-    <% link_to '/example-form/your-history-review.html', :class => "usa-button next-button" do %>
+    <% link_to '/example-form/citizenship-introduction.html', :class => "usa-button next-button" do %>
       <i class="far fa-arrow-alt-circle-right"></i>
       <div class="direction">Next</div>
-      <div class="label">Review</div>
+      <div class="label">Citizenship: Introduction</div>
     <% end %>
   </div>
   <!-- Back/next end -->

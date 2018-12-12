@@ -125,12 +125,16 @@ $(window).on('load', function(){
 
   // yes/no toggle
   $(".yes-radio").click(function(){
-    var yesBlock = $(this).attr("data-id");
+    var yesBlock = $(this).closest('ul').find('.yes-radio').attr("data-id");
+    var noBlock = $(this).closest('ul').find('.no-radio').attr("data-id");
     $('.'+yesBlock).show();
+    $('.'+noBlock).hide();
   })
 
   $(".no-radio").click(function(){
-    var yesBlock = $(this).attr("data-id");
+    var yesBlock = $(this).closest('ul').find('.yes-radio').attr("data-id");
+    var noBlock = $(this).closest('ul').find('.no-radio').attr("data-id");
+    $('.'+noBlock).show();
     $('.'+yesBlock).hide();
   })
 

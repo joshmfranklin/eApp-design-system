@@ -10,17 +10,17 @@ title: eApp Design System | Example form
 		<legend>Do you now or have you <strong>EVER</strong> held dual/multiple citizenships?</legend>
 		<ul class="usa-list-inline usa-list-inline-justified">
 			<li>
-        <input class="yes-radio" id="yes-1" type="radio" name="multi-citizenship" data-id="multi-citizenship">
+        <input class="yes-radio" id="yes-1" type="radio" name="multi-citizenship" data-id="multi-citizenship-yes">
         <label for="yes-1"><span>Yes</span></label>
       </li>
       <li>
-        <input class="no-radio" id="no-1" type="radio" name="multi-citizenship" data-id="multi-citizenship">
+        <input class="no-radio" id="no-1" type="radio" name="multi-citizenship">
         <label for="no-1"><span>No</span></label>
       </li>
 		</ul>
 	</fieldset>
 	<!-- Ever had multiple citizenship end -->
-	<div class="multi-citizenship" style="display: none;">
+	<div class="multi-citizenship-yes" style="display: none;">
 		<ul id="accordion" class="attended-school usa-accordion-bordered">
 		  <li>
 		    <div class="usa-accordion-header">
@@ -129,16 +129,16 @@ title: eApp Design System | Example form
 						<legend>Do you currently hold citizenship with this country?</legend>
 						<ul class="usa-list-inline usa-list-inline-justified">
 							<li>
-				        <input class="yes-radio" id="yes-2" type="radio" name="currently-citizen" data-id="currently-citizen">
+				        <input class="yes-radio" id="yes-2" type="radio" name="currently-citizen" data-id="currently-citizen-yes">
 				        <label for="yes-2"><span>Yes</span></label>
 				      </li>
 				      <li>
-				        <input class="no-radio" id="no-2" type="radio" name="currently-citizen" data-id="currently-citizen">
+				        <input class="no-radio" id="no-2" type="radio" name="currently-citizen">
 				        <label for="no-2"><span>No</span></label>
 				      </li>
 						</ul>
 					</fieldset>
-					<div class="currently-citizen">
+					<div class="currently-citizen-yes" style="display: none;">
 						<!-- Explanation present citizen -->
 						<div class="usa-form-control">
 							<label for="explanation-present-citizen" class="usa-alt-label">Provide explanation</label>
@@ -172,10 +172,10 @@ title: eApp Design System | Example form
       <div class="direction">Back</div>
       <div class="label">Citizenship status</div>
     <% end %>
-    <% link_to '/example-form/citizenship-review.html', :class => "usa-button next-button" do %>
+    <% link_to '/example-form/military-history-introduction.html', :class => "usa-button next-button" do %>
       <i class="far fa-arrow-alt-circle-right"></i>
       <div class="direction">Next</div>
-      <div class="label">Review</div>
+      <div class="label">Militray history: Introduction</div>
     <% end %>
   </div>
   <!-- Back/next end -->

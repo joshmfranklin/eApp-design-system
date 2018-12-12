@@ -530,15 +530,94 @@
         <legend>Do you have any additional periods of activity to add?</legend>
         <ul class="usa-list-inline-justified usa-list-inline">
           <li>
-            <input id="yes-3" type="radio" name="additional-activity-same-job">
+            <input class="yes-radio" id="yes-3" type="radio" name="additional-activity-same-job" data-id="additional-activity-yes">
             <label for="yes-3"><span>Yes</span></label>
           </li>
           <li>
-            <input id="no-3" type="radio" name="additional-activity-same-job">
+            <input class="no-radio" id="no-3" type="radio" name="additional-activity-same-job">
             <label for="no-3"><span>No</span></label>
           </li>
         </ul>
       </fieldset>
+      <div class="additional-activity-yes" style="display: none;">
+        <!-- Additional position title -->
+        <div class="usa-form-control">
+          <label for="additional-activity-title" class="usa-alt-label">Position title</label>
+          <input type="text" id="additional-activity-title">
+        </div>
+        <!-- Additional position title end -->
+        <!-- Additional position supervisor -->
+        <div class="usa-form-control">
+          <label for="additional-activity-supervisor" class="usa-alt-label">Supervisor</label>
+          <input type="text" id="additional-activity-supervisor">
+        </div>
+        <!-- Additional position supervisor end -->
+        <!-- Additional position dates -->
+        <fieldset id="from-to-date-block" class="usa-fieldset-inputs">
+          <legend>
+            <span>Dates of employment</span>
+            <a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+              <i class="fas fa-question-circle"></i>
+            </a>
+          </legend>
+          <div class="from-to-dates">
+            <div class="from-date-container">
+              <p><strong>From date</strong></p>
+              <div class="m-d-y-block">
+                <div class="usa-form-control">
+                  <label for="month">Month</label>
+                  <input type="text" id="month" maxlength="2">
+                </div>
+                <div class="usa-form-control">
+                  <label for="day">Day</label>
+                  <input type="text" id="day" maxlength="2">
+                </div>
+                <div class="usa-form-control">
+                  <label for="year">Year</label>
+                  <input type="text" id="year" maxlength="4">
+                </div>
+              </div>
+              <div class="modifiers modifiers-left">
+                <div class="modifier">
+                  <input id="from-estimated" type="checkbox" name="from-estimated">
+                  <label class="simple-checkbox" for="from-estimated"><span>Estimated</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="from-to-date-arrow">
+              <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+            </div>
+            <div class="to-date-container">
+              <p><strong>To date</strong></p>
+              <div class="m-d-y-block">
+                <div class="usa-form-control">
+                  <label for="month">Month</label>
+                  <input type="text" id="month" class="to-date-input-2" maxlength="2">
+                </div>
+                <div class="usa-form-control">
+                  <label for="day">Day</label>
+                  <input type="text" id="day" class="to-date-input-2" maxlength="2">
+                </div>
+                <div class="usa-form-control">
+                  <label for="year">Year</label>
+                  <input type="text" id="year" class="to-date-input-2" maxlength="4">
+                </div>
+              </div>
+              <div class="modifiers modifiers-left">
+                <div class="modifier">
+                  <input id="to-estimated" class="to-date-input-2" type="checkbox" name="to-estimated">
+                  <label class="simple-checkbox" for="to-estimated"><span>Estimated</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="or">or</div>
+            <div class="present">
+              <input class="disabled-toggle" id="present-2" type="checkbox" name="present-2" data-id="to-date-input-2">
+              <label for="present-2"><span>Present</span></label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
       <!-- Additional periods of activity end -->
       <!-- Reason for leaving -->
       <div class="usa-form-control">

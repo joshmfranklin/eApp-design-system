@@ -10,30 +10,30 @@ title: eApp Design System | Example form
 		<legend>Select the box that best reflects your citizenship status</legend>
 		<ul class="usa-unstyled-list">
 			<li>
-				<input class="no-radio" id="us-citizen" type="radio" name="citizenship-status" value="us-citizen" data-id="us-citizen-foreign-parents-section">
+				<input class="no-radio" id="us-citizen" type="radio" name="citizenship-status" value="us-citizen">
         <label for="us-citizen"><span>I am a U.S. citizen or national by birth in the U.S. or U.S. territory/commonwealth</span></label>
 			</li>
 			<li>
-				<input class="yes-radio" id="us-citizen-foreign-parents" type="radio" name="citizenship-status" value="us-citizen-foreign-parents" data-id="us-citizen-foreign-parents-section">
+				<input class="yes-radio" id="us-citizen-foreign-parents" type="radio" name="citizenship-status" value="us-citizen-foreign-parents" data-id="us-citizen-foreign-parents-section-yes">
         <label for="us-citizen-foreign-parents"><span>I am a U.S. citizen or national by birth, born to U.S. parent(s), in a foreign country</span></label>
 			</li>
 			<li>
-				<input class="no-radio" id="naturalized" type="radio" name="citizenship-status" value="naturalized" data-id="us-citizen-foreign-parents-section">
+				<input class="no-radio" id="naturalized" type="radio" name="citizenship-status" value="naturalized">
         <label for="naturalized"><span>I am a naturalized U.S. citizen</span></label>
 			</li>
 			<li>
-				<input class="no-radio" id="derived" type="radio" name="citizenship-status" value="derived" data-id="us-citizen-foreign-parents-section">
+				<input class="no-radio" id="derived" type="radio" name="citizenship-status" value="derived">
         <label for="derived"><span>I am a derived U.S. citizen</span></label>
 			</li>
 			<li>
-				<input class="no-radio" id="not-us-citizen" type="radio" name="citizenship-status" value="not-us-citizen" data-id="us-citizen-foreign-parents-section">
+				<input class="no-radio" id="not-us-citizen" type="radio" name="citizenship-status" value="not-us-citizen">
         <label for="not-us-citizen"><span>I am not a U.S. citizen</span></label>
 			</li>
 		</ul>
 	</fieldset>
 	<!-- Citizenship type end -->
 	<!-- U.S. citizen foreign parents section -->
-	<div class="us-citizen-foreign-parents-section" style="display:none;">
+	<div class="us-citizen-foreign-parents-section-yes" style="display:none;">
 		<!-- Type of documentation -->
 		<fieldset class="usa-fieldset-inputs">
 			<legend>Provide type of documentation of U.S. citizen born abroad</legend>
@@ -291,17 +291,17 @@ title: eApp Design System | Example form
 			<legend>Were you born on a U.S military installation?</legend>
 			<ul class="usa-list-inline usa-list-inline-justified">
 				<li>
-	        <input class="yes-radio" id="yes-1" type="radio" name="other-names" data-id="born-military-installation">
+	        <input class="yes-radio" id="yes-1" type="radio" name="other-names" data-id="born-military-installation-yes">
 	        <label for="yes-1"><span>Yes</span></label>
 	      </li>
 	      <li>
-	        <input class="no-radio" id="no-1" type="radio" name="other-names" data-id="born-military-installation">
+	        <input class="no-radio" id="no-1" type="radio" name="other-names">
 	        <label for="no-1"><span>No</span></label>
 	      </li>
 			</ul>
 		</fieldset>
 		<!-- Born on military installation end -->
-		<div class="born-military-installation" style="display:none;">
+		<div class="born-military-installation-yes" style="display:none;">
 			<!-- Name of base -->
 			<div class="usa-form-control">
 				<label for="name-of-base" class="usa-alt-label">Provide the name of the base</label>

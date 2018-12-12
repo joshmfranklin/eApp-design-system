@@ -1,0 +1,68 @@
+---
+layout: "example-form-layout"
+title: eApp Design System | Example form
+---
+
+<form action="" class="eapp-form" data-id="Section 4: Military History - Selective Service Record">
+	<h1 class="eapp-section-header">Selective Service Record</h1>
+
+	<!-- Male born after 1959 -->
+	<fieldset class="usa-fieldset-inputs">
+		<legend>Where you a male born after December 31, 1959?</legend>
+		<ul class="usa-list-inline usa-list-inline-justified">
+			<li>
+        <input class="yes-radio" id="yes-1" type="radio" name="selective-service" data-id="selective-service-yes">
+        <label for="yes-1"><span>Yes</span></label>
+      </li>
+      <li>
+        <input class="no-radio" id="no-1" type="radio" name="selective-service">
+        <label for="no-1"><span>No</span></label>
+      </li>
+		</ul>
+	</fieldset>
+	<!-- Male born after 1959 -->
+	<div class="selective-service-yes" style="display: none;">
+		<!-- Registered with selective service -->
+		<fieldset class="usa-fieldset-inputs">
+			<legend>Have you registered with the Selective Service System (SSS)?</legend>
+			<ul class="usa-list-inline usa-list-inline-justified">
+				<li>
+	        <input class="yes-radio" id="yes-2" type="radio" name="selective-service-registered" data-id="registered-selective-service-yes">
+	        <label for="yes-2"><span>Yes</span></label>
+	      </li>
+	      <li>
+	        <input class="no-radio" id="no-2" type="radio" name="selective-service-registered" data-id="registered-selective-service-no">
+	        <label for="no-2"><span>No</span></label>
+	      </li>
+			</ul>
+		</fieldset>
+		<!-- Registered with selective service end -->
+		<div class="registered-selective-service-yes" style="display: none;">
+			<div class="usa-form-control">
+				<label for="selective-service-number" class="usa-alt-label">Provide registration number</label>
+				<input type="text" id="selective-service-number">
+				<p>The Selective Service website, <a href="www.sss.gov" target="_blank">www.sss.gov</a>, can help provide the registration number for persons who have registered. Note: Selective Service Number is not your Social Security Number</p>
+			</div>
+		</div>
+		<div class="registered-selective-service-no" style="display: none;">
+			<div class="usa-form-control">
+				<label class="usa-alt-label" for="reason-no-sss">Provide explanation</label>
+				<textarea name="reason-no-sss" id="reason-no-sss" cols="30" rows="10"></textarea>
+			</div>
+		</div>
+	</div>
+	<!-- Back/next -->
+	<div class="next-back-block">
+  	<% link_to '/example-form/military-history-introduction.html', :class => "usa-button back-button" do %>
+      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">Military history: Introduction</div>
+    <% end %>
+    <% link_to '/example-form/us-military.html', :class => "usa-button next-button" do %>
+      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">U.S. military</div>
+    <% end %>
+  </div>
+  <!-- Back/next end -->
+</form>
