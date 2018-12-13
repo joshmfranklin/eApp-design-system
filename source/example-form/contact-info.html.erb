@@ -6,32 +6,30 @@ title: eApp Design System | Example form
 <form action="" class="eapp-form" data-id="Section 1: Information About You - Your Contact Information">
 	<h1 class="eapp-section-header">Your Contact Information</h1>
 	<!-- Email addresses -->
-	<fieldset class="usa-fieldset-inputs">
-		<legend>
-			<span>Your email addresses</span>
-			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="email-addresses-help">
-	      <i class="fas fa-question-circle"></i>
-	    </a>
-		</legend>
-    <div class="help-block email-addresses-help"></div>
-		<p>Email addresses may be used as contact method, and identify subject in records.</p>
-		<div class="usa-form-control">
-			<label for="home-email">Home email address</label>
-			<input type="text" id="home-email">
-		</div>
-		<div class="usa-form-control">
-			<label for="work-email">Work email address</label>
-			<input type="text" id="work-email">
-		</div>
-	</fieldset>
+  <h3>
+    <span>Your email addresses</span>
+    <a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="email-addresses-help">
+      <i class="fas fa-question-circle"></i>
+    </a>
+  </h3>
+  <div class="help-block email-addresses-help"></div>
+  <p>Email addresses may be used as contact method, and identify subject in records.</p>
+  <div class="usa-form-control">
+    <label class="usa-alt-label" for="home-email">Home email address</label>
+    <input type="text" id="home-email">
+  </div>
+  <div class="usa-form-control">
+    <label class="usa-alt-label" for="work-email">Work email address</label>
+    <input type="text" id="work-email">
+  </div>
 	<!-- Email addresses end -->
 	<!-- Phone numbers intro -->
-	<h4>
+	<h3>
 		<span>Your phone numbers</span>
 		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="your-phone-help">
       <i class="fas fa-question-circle"></i>
     </a>
-	</h4>
+	</h3>
   <div class="help-block your-phone-help"></div>
 	<p>Provide three contact numbers. <strong>At least one number is required</strong>. Additional numbers may assist in the completion of your background investigation.</p>
 	<!-- Phone numbers intro end -->
