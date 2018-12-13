@@ -6,30 +6,32 @@ title: eApp Design System | Example form
 <form action="" class="eapp-form" data-id="Section 1: Information About You - Social Security Number">
 	<h1 class="eapp-section-header">Social Security Number</h1>
 	<!-- Social security number -->
-	<h4>Provide your U.S. Social Security Number</h4>
-	<div class="usa-form-control">
-		<label for="ssn">
-			<span>Social Security Number</span>
-			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
-      <i class="fas fa-question-circle"></i>
-    </a>
-		</label>
-		<input type="text" id="ssn" class="ssn">
-		<div class="modifiers modifiers-left">
-      <div class="modifier">
-        <span>or</span>
+  <fieldset class="usa-fieldset-inputs">
+  	<legend>Provide your U.S. Social Security Number</legend>
+  	<div class="usa-form-control">
+  		<label for="ssn">
+  			<span>Social Security Number</span>
+  			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+        <i class="fas fa-question-circle"></i>
+      </a>
+  		</label>
+  		<input type="text" id="ssn" class="ssn">
+  		<div class="modifiers modifiers-left">
+        <div class="modifier">
+          <span>or</span>
+        </div>
+        <div class="modifier">
+          <input class="disabled-toggle" id="i-dont-know" type="checkbox" name="i-dont-know" data-id="ssn">
+          <label for="i-dont-know"><span>Not applicable</span></label>
+        </div>
       </div>
-      <div class="modifier">
-        <input class="disabled-toggle" id="i-dont-know" type="checkbox" name="i-dont-know" data-id="ssn">
-        <label for="i-dont-know"><span>Not applicable</span></label>
-      </div>
-    </div>
-	</div>
-	
-	<div class="usa-form-control">
-		<label for="ssn-confirm">Please confirm your Social Security Number</label>
-		<input type="text" id="ssn-confirm">
-	</div>
+  	</div>
+  	
+  	<div class="usa-form-control">
+  		<label for="ssn-confirm">Please confirm your Social Security Number</label>
+  		<input type="text" id="ssn-confirm">
+  	</div>
+  </fieldset>
 	<!-- Social security number end -->
 	<!-- Back/next -->
 	<div class="next-back-block">
