@@ -10,7 +10,12 @@ title: eApp Design System | Example form
 	
 	<!-- Attended school in last 5 years -->
 	<fieldset class="usa-fieldset-inputs">
-		<legend>Have you attended any schools in the last 5 years?</legend>
+		<legend>
+			<span>Have you attended any schools in the last 5 years?</span>
+			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+        <i class="fas fa-question-circle"></i>
+      </a>
+		</legend>
 		<ul class="usa-list-inline usa-list-inline-justified">
 			<li>
         <input class="yes-radio" id="yes" type="radio" name="other-names" data-id="attended-school-yes">
@@ -88,7 +93,12 @@ title: eApp Design System | Example form
 	    	<!-- Name of school end -->
 	    	<!-- Dates of attendance -->
 	    	<fieldset id="from-to-date-block" class="usa-fieldset-inputs">
-		      <legend>Provide the dates of attendance</legend>
+		      <legend>
+		      	<span>Provide the dates of attendance</span>
+		      	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	            <i class="fas fa-question-circle"></i>
+	          </a>
+		      </legend>
 		      <div class="from-to-dates">
 		        <div class="from-date-container">
 		          <p><strong>From date</strong></p>
@@ -310,7 +320,12 @@ title: eApp Design System | Example form
 				<div class="recieved-diploma-yes" style="display: none;">
 				<!-- Type of degree -->
 					<fieldset class="usa-fieldset-inputs">
-				  	<legend>Degree/diploma</legend>
+				  	<legend>
+				  		<span>Degree/diploma</span>
+				  		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+		            <i class="fas fa-question-circle"></i>
+		          </a>
+				  	</legend>
 				  	<ul class="usa-unstyled-list">
 				  		<li>
 				  			<input id="high-school-diploma" type="radio" name="degree-type" >
@@ -345,7 +360,12 @@ title: eApp Design System | Example form
 				  <!-- Type of degree end -->
 					<!-- Degree date awarded -->
 					<fieldset class="usa-fieldset-inputs">
-						<legend>Month/year</legend>
+						<legend>
+							<span>Month/year</span>
+							<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+		            <i class="fas fa-question-circle"></i>
+		          </a>
+						</legend>
 						<div class="m-d-y-block">
 			        <div class="usa-form-control">
 			          <label for="month">Month</label>

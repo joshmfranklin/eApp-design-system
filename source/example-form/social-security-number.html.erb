@@ -7,13 +7,15 @@ title: eApp Design System | Example form
 	<h1 class="eapp-section-header">Social Security Number</h1>
 	<!-- Social security number -->
   <fieldset class="usa-fieldset-inputs">
-  	<legend>Provide your U.S. Social Security Number</legend>
+  	<legend>
+      <span>Provide your U.S. Social Security Number</span>
+      <a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+        <i class="fas fa-question-circle"></i>
+      </a>
+    </legend>
   	<div class="usa-form-control">
   		<label for="ssn">
   			<span>Social Security Number</span>
-  			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
-        <i class="fas fa-question-circle"></i>
-      </a>
   		</label>
   		<input type="text" id="ssn" class="ssn">
   		<div class="modifiers modifiers-left">
