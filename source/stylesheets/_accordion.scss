@@ -7,8 +7,12 @@
 .usa-accordion-header {
   display: flex;
   position: sticky;
-  top: 0;
+  top: 57px;
   z-index: 999;
+
+  @media all and (max-width: 980px) {
+    top: 107px;
+  }
 
   .title:not(:last-child) {
     margin-bottom: 1.5rem;
