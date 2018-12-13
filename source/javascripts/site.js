@@ -172,4 +172,14 @@ $(window).on('load', function(){
       source: countryList
     });
   } );
+
+  // Show help blocks
+  $('.help-block').hide();
+
+  $('.usa-help-trigger').click(function() {
+    var thisHelpBlock = $(this).attr("data-id");
+    var thisHelpBlockClass = '.'+thisHelpBlock;
+    $(thisHelpBlockClass).load("help-blocks.html #" + thisHelpBlock);
+    $(thisHelpBlockClass).toggle();
+  })
 })

@@ -11,10 +11,11 @@ title: eApp Design System | Example form
   	<div class="usa-form-control">
     	<label for="first-name">
     		<span>First name</span>
-    		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
-        <i class="fas fa-question-circle"></i>
-      </a>
+    		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="first-name-help">
+          <i class="fas fa-question-circle"></i>
+        </a>
     	</label>
+      <div class="help-block first-name-help"></div>
     	<input type="text" id="first-name">
     	<div class="modifiers">
     		<div class="modifier">
@@ -26,10 +27,11 @@ title: eApp Design System | Example form
   	<div class="usa-form-control">
     	<label for="firs-name">
 	    	<span>Middle name</span>
-	    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="middle-name-help">
           <i class="fas fa-question-circle"></i>
         </a>
 	    </label>
+      <div class="help-block middle-name-help"></div>
     	<input type="text" id="middle-name">
     	<div class="modifiers">
     		<div class="modifier">
@@ -45,10 +47,11 @@ title: eApp Design System | Example form
   	<div class="usa-form-control">
     	<label for="firs-name">
 	    	<span>Last name</span>
-	    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+	    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="last-name-help">
           <i class="fas fa-question-circle"></i>
         </a>
 	    </label>
+      <div class="help-block last-name-help"></div>
     	<input type="text" id="last-name">
     	<div class="modifiers">
     		<div class="modifier">
@@ -60,10 +63,11 @@ title: eApp Design System | Example form
   	<div class="usa-form-control">
   		<label for="suffix">
   			<span>Suffix</span>
-  			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+  			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="suffix-help">
           <i class="fas fa-question-circle"></i>
         </a>
   		</label>
+      <div class="help-block suffix-help"></div>
   		<select class="usa-small-input" name="suffidx" id="suffix">
   			<option value="jr">Jr</option>
   			<option value="sr">Sr</option>

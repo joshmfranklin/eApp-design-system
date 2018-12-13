@@ -22,10 +22,11 @@ title: eApp Design System | Example form
 	<div class="your-other-names-yes" style="display: none;">
 		<h4>
 			<span>Provide your other names used and the period of time you used them</span>
-			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="other-names-help">
 	      <i class="fas fa-question-circle"></i>
 	    </a>
 		</h4>
+		<div class="help-block other-names-help"></div>
 		<ul id="accordion" class="usa-accordion-bordered">
 		  <li>
 		    <div class="usa-accordion-header">
@@ -61,10 +62,11 @@ title: eApp Design System | Example form
 				  	<div class="usa-form-control">
 				    	<label for="firs-name">
 				    		<span>First name</span>
-				    		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+				    		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="first-name-help">
 					        <i class="fas fa-question-circle"></i>
 					      </a>
 				    	</label>
+				    	<div class="help-block first-name-help"></div>
 				    	<input type="text" id="first-name">
 				    	<div class="modifiers">
 				    		<div class="modifier">
@@ -76,10 +78,11 @@ title: eApp Design System | Example form
 				  	<div class="usa-form-control">
 				    	<label for="firs-name">
 					    	<span>Middle name</span>
-					    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+					    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="middle-name-help">
 				          <i class="fas fa-question-circle"></i>
 				        </a>
 					    </label>
+					    <div class="help-block middle-name-help"></div>
 				    	<input type="text" id="middle-name">
 				    	<div class="modifiers">
 				    		<div class="modifier">
@@ -95,10 +98,11 @@ title: eApp Design System | Example form
 				  	<div class="usa-form-control">
 				    	<label for="firs-name">
 					    	<span>Last name</span>
-					    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+					    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="last-name-help">
 				          <i class="fas fa-question-circle"></i>
 				        </a>
 					    </label>
+					    <div class="help-block last-name-help"></div>
 				    	<input type="text" id="last-name">
 				    	<div class="modifiers">
 				    		<div class="modifier">
@@ -110,10 +114,11 @@ title: eApp Design System | Example form
 				  	<div class="usa-form-control">
 				  		<label for="suffix">
 				  			<span>Suffix</span>
-				  			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+				  			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="suffix-help">
 				          <i class="fas fa-question-circle"></i>
 				        </a>
 				  		</label>
+				  		<div class="help-block suffix-help"></div>
 				  		<select class="usa-small-input" name="suffidx" id="suffix">
 				  			<option value="jr">Jr</option>
 				  			<option value="sr">Sr</option>
@@ -134,10 +139,11 @@ title: eApp Design System | Example form
 				  <fieldset class="usa-fieldset-inputs">
 						<legend>
 							<span>Maiden name?</span>
-							<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+							<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="maiden-name-help">
 			          <i class="fas fa-question-circle"></i>
 			        </a>
 						</legend>
+						<div class="help-block maiden-name-help"></div>
 						<ul class="usa-list-inline usa-list-inline-justified">
 							<li>
 				        <input class="yes" id="yes-2" type="radio" name="maiden-name">
@@ -154,10 +160,11 @@ title: eApp Design System | Example form
 					<fieldset id="from-to-date-block" class="usa-fieldset-inputs">
 			      <legend>
 			      	<span>Provide dates used</span>
-			      	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+			      	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="other-name-dates-help">
 			          <i class="fas fa-question-circle"></i>
 			        </a>
 			      </legend>
+			      <div class="help-block other-name-dates-help"></div>
 			      <div class="from-to-dates">
 			        <div class="from-date-container">
 			          <p><strong>From date</strong></p>
@@ -220,10 +227,11 @@ title: eApp Design System | Example form
 			    <div class="usa-form-control">
 			      <label class="usa-alt-label" for="reason-why-name-changed">
 			      	<span>Provide reason(s) why the name changed</span>
-			      	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+			      	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="name-change-reason-help">
 			          <i class="fas fa-question-circle"></i>
 			        </a>
 			      </label>
+			      <div class="help-block name-change-reason-help"></div>
 			      <textarea name="" id="reason-why-name-changed" cols="30" rows="10"></textarea>
 			    </div>
 			    <!-- Reason name changed end -->
