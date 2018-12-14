@@ -70,10 +70,11 @@ title: eApp Design System | Example form
 				<fieldset id="address-block" class="usa-fieldset-inputs">
 			    <legend>
 			    	<span>Provide street address</span>
-			    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+			    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="address-help">
 	            <i class="fas fa-question-circle"></i>
 	          </a>
 			    </legend>
+			    <div class="help-block address-help"></div>
 			    <fieldset class="usa-fieldset-inputs">
 			      <legend class="label-style">This address is</legend>
 			      <ul class="usa-list-inline usa-list-inline-justified">
@@ -206,10 +207,11 @@ title: eApp Design System | Example form
 		    <fieldset id="from-to-date-block" class="usa-fieldset-inputs">
 		      <legend>
 		      	<span>Provide dates of residence</span>
-		      	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+		      	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="lived-dates-help">
 	            <i class="fas fa-question-circle"></i>
 	          </a>
 		      </legend>
+		      <div class="help-block lived-dates-help"></div>
 		      <p>You are not required to list temporary locations of less than 90 days that did not serve as your permanent or mailing address.</p>
 		      <div class="from-to-dates">
 		        <div class="from-date-container">
@@ -302,10 +304,11 @@ title: eApp Design System | Example form
 		    	<div class="usa-form-control">
 			    	<label for="firs-name">
 			    		<span>First name</span>
-			    		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+			    		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="first-name-help">
 	            <i class="fas fa-question-circle"></i>
 	          </a>
 			    	</label>
+			    	<div class="help-block first-name-help"></div>
 			    	<input type="text" id="first-name">
 			    	<div class="modifiers">
 			    		<div class="modifier">
@@ -317,10 +320,11 @@ title: eApp Design System | Example form
 		    	<div class="usa-form-control">
 			    	<label for="firs-name">
 				    	<span>Middle name</span>
-				    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+				    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="middle-name-help">
 		            <i class="fas fa-question-circle"></i>
 		          </a>
 				    </label>
+				    <div class="help-block middle-name-help"></div>
 			    	<input type="text" id="middle-name">
 			    	<div class="modifiers">
 			    		<div class="modifier">
@@ -336,10 +340,11 @@ title: eApp Design System | Example form
 		    	<div class="usa-form-control">
 			    	<label for="firs-name">
 				    	<span>Last name</span>
-				    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+				    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="last-name-help">
 		            <i class="fas fa-question-circle"></i>
 		          </a>
 				    </label>
+				    <div class="help-block last-name-help"></div>
 			    	<input type="text" id="last-name">
 			    	<div class="modifiers">
 			    		<div class="modifier">
@@ -351,10 +356,11 @@ title: eApp Design System | Example form
 		    	<div class="usa-form-control">
 		    		<label for="suffix">
 		    			<span>Suffix</span>
-		    			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+		    			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="suffix-help">
 		            <i class="fas fa-question-circle"></i>
 		          </a>
 		    		</label>
+		    		<div class="help-block suffix-help"></div>
 		    		<select class="usa-small-input" name="suffidx" id="suffix">
 		    			<option value="jr">Jr</option>
 		    			<option value="sr">Sr</option>
@@ -375,10 +381,11 @@ title: eApp Design System | Example form
 		    <fieldset class="usa-fieldset-inputs">
 		      <legend>
 		      	<span>Provide date of last contact</span>
-		      	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+		      	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="last-contact-date-help">
 	            <i class="fas fa-question-circle"></i>
 	          </a>
 		      </legend>
+		      <div class="help-block last-contact-date-help"></div>
 		      <div class="m-d-y-block">
 		        <div class="usa-form-control">
 		          <label for="month">Month</label>
@@ -438,10 +445,11 @@ title: eApp Design System | Example form
 				<fieldset class="usa-fieldset-inputs">
 			    <legend>
 			    	<span>Provide evening phone number for this person</span>
-			    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+			    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="phone-help">
 	            <i class="fas fa-question-circle"></i>
 	          </a>
 			    </legend>
+			    <div class="help-block phone-help"></div>
 					<div class="usa-phone-number-block">
 			      <div class="usa-phone-number-input">
 			        <label for="phone-number">Phone number</label>
@@ -503,10 +511,11 @@ title: eApp Design System | Example form
 				<fieldset class="usa-fieldset-inputs">
 			    <legend>
 			    	<span>Provide daytime phone number for this person</span>
-			    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+			    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;"data-id="phone-help">
 	            <i class="fas fa-question-circle"></i>
 	          </a>
 			    </legend>
+			    <div class="help-block phone-help"></div>
 					<div class="usa-phone-number-block">
 			      <div class="usa-phone-number-input">
 			        <label for="phone-number">Phone number</label>
@@ -568,10 +577,11 @@ title: eApp Design System | Example form
 			  <fieldset class="usa-fieldset-inputs">
 			    <legend>
 			    	<span>Provide mobile/cell phone number for this person</span>
-			    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+			    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;"data-id="phone-help">
 	            <i class="fas fa-question-circle"></i>
 	          </a>
 			    </legend>
+			    <div class="help-block phone-help"></div>
 					<div class="usa-phone-number-block">
 			      <div class="usa-phone-number-input">
 			        <label for="phone-number">Phone number</label>
@@ -633,10 +643,11 @@ title: eApp Design System | Example form
 			  <div class="usa-form-control">
 			  	<label for="email-address" class="usa-alt-label">
 			  		<span>Provide email address for this person</span>
-			  		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+			  		<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;"data-id="email-help">
 	            <i class="fas fa-question-circle"></i>
 	          </a>
 			  	</label>
+			  	<div class="help-block email-help"></div>
 			  	<input type="email" class="person-know-well-email">
 			  	<div class="modifiers modifiers-left">
 			  		<div class="modifier">
@@ -653,10 +664,11 @@ title: eApp Design System | Example form
 			  <fieldset id="address-block" class="usa-fieldset-inputs">
 			    <legend>
 			    	<span>Provide street address for this person</span>
-			    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+			    	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="address-help">
 	            <i class="fas fa-question-circle"></i>
 	          </a>
 			    </legend>
+			    <div class="help-block address-help"></div>
 			    <fieldset class="usa-fieldset-inputs">
 			      <legend class="label-style">This address is</legend>
 			      <ul class="usa-list-inline usa-list-inline-justified">

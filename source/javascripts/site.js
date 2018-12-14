@@ -180,6 +180,6 @@ $(window).on('load', function(){
     var thisHelpBlock = $(this).attr("data-id");
     var thisHelpBlockClass = '.'+thisHelpBlock;
     $(thisHelpBlockClass).load("help-blocks.html #" + thisHelpBlock);
-    $(thisHelpBlockClass).toggle();
+    $(this).parent().next().toggle();
   })
 })
