@@ -195,4 +195,18 @@ $(window).on('load', function(){
     var radioValue = $(this).val();
     $('#header-text').text(radioValue);
   })
+
+  // Comment toggle
+  $('#comment-toggle').click(function() {
+    event.preventDefault();
+    var commentToToggle = $(this).attr('data-id')
+
+    $('.'+commentToToggle).toggle()
+
+    if ($(this).text() == "Add comment") {
+      $(this).text("Remove comment");
+    } else {
+      $(this).text("Add comment");
+    }
+  })
 })

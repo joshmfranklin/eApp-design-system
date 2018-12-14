@@ -99,7 +99,7 @@ title: eApp Design System | Example form
 	<!-- Sex -->
 	<fieldset class="usa-fieldset-inputs">
 		<legend>
-			<span>Selec your sex</span>
+			<span>Select your sex</span>
 			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="sex-help">
 	      <i class="fas fa-question-circle"></i>
 	    </a>
@@ -115,6 +115,13 @@ title: eApp Design System | Example form
         <label for="female"><span>Female</span></label>
       </li>
 		</ul>
+		<div class="sex-comment" style="display: none;">
+			<div class="usa-form-control">
+				<label for="sex-comment">Comment</label>
+				<textarea name="sex-comment" id="sex-comment" cols="30" rows="10"></textarea>
+			</div>
+		</div>
+		<a href="#" id="comment-toggle" data-id="sex-comment">Add comment</a>
 	</fieldset>
 	<!-- Sex end -->
 	<!-- Back/next -->
