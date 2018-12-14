@@ -20,6 +20,19 @@ p {
   margin-bottom: 4rem;
 }
 
+// Links
+
+.usa-invert-link {
+  color: $color-gray-lighter;
+  text-decoration: none;
+
+  &:hover,
+  &:visited,
+  &:focus {
+    color: $color-white;
+  }
+}
+
 // Lists
 
 .usa-list-inline {

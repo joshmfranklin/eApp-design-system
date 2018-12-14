@@ -57,9 +57,13 @@ html {
 #eapp-save {
 	position:fixed;
 	right: 0;
-	top: 45vh;
+	top: 5rem;
 
-	@media all and (max-width: 1350px) {
+	&.eapp-save-shrink {
+		top: .15rem;
+	}
+
+	@media all and (max-width: 980px) {
 		position: relative;
 		width: 100%;
 		top: initial;

@@ -1,27 +1,30 @@
 .usa-eapp-save {
-	text-align: center;
-	background-color: $color-gray-extra-lightest;
-	border: 1px solid $color-gray-lighter;
+	background-color: $color-primary-darkest;
+	border: 1px solid $color-primary-alt-dark;
 	border-radius: 6px 0 0 6px;
-	padding: 1rem 2rem;
-	color: $color-gray;
-	width: 14rem;
-	height: 14rem;
+	padding: .5rem;
+	color: $color-white;
+	width: 20rem;
+	height: 5rem;
 	font-size: 1.4rem;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 	margin: 0;
+	z-index: 9999;
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	align-items: center;
 
 	&:hover {
 		background-color: $color-white;
-		box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15);
-		border-color: $color-primary-alt-light;
+		border: 1px solid $color-primary-alt-dark;
 		color: $color-gray;
 		transition: all .25s;
 	}
 }
 
 .usa-eapp-save-icon {
-	margin-bottom: 1rem;
+	margin-right: 1rem;
 
 	.fa-circle {
 		color: $color-primary;

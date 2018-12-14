@@ -143,10 +143,12 @@ $(window).on('load', function(){
     if
       ($(document).scrollTop() > 300){
       $(".eapp-header").addClass("eapp-header-shrink");
+      $("#eapp-save").addClass("eapp-save-shrink");
     }
     else
     {
       $(".eapp-header").removeClass("eapp-header-shrink");
+      $("#eapp-save").removeClass("eapp-save-shrink");
     }
   });
 

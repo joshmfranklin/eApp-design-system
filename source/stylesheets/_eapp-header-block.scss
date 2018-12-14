@@ -54,11 +54,22 @@
 	align-items: center;
 	padding: 0 5rem;
 	min-height: 14rem;
+	width: 60%;
 
 	@media all and (max-width: 980px) {
 		width: 100%;
 		padding: 0 1rem;
 		min-height: 5rem;
+	}
+}
+
+.eapp-header-links {
+	text-align: right;
+	width: 15%;
+	padding: 1.5rem;
+
+	@media all and (max-width: 980px) {
+		display: none;
 	}
 }
 
@@ -77,6 +88,14 @@
 
 	@media all and (max-width: 980px) {
 		min-height: 10rem;
+	}
+
+	.eapp-header-title {
+		width: 60%;
+	}
+
+	.eapp-header-links {
+		width: 20%;
 	}
 
 	.eapp-header-logo,
