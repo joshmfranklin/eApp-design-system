@@ -35,7 +35,8 @@ title: eApp Design System | Example form
 	                  <i class="fas fa-circle fa-stack-2x"></i>
 	                  <i class="fas fa-stack-1x fa-gavel fa-inverse"></i>
 	                </span>
-	                <span>Procedure 1:</span>
+	                <span class="usa-accordion-header-label">Procedure 1:</span>
+	                <span id="header-text"></span>
 	              </div>
 	              <div class="title-left">
 	              </div>
@@ -50,6 +51,13 @@ title: eApp Design System | Example form
 	        </button>
 	       </div>
 	      <div id="b-a1" class="usa-accordion-content">
+	      	<!-- Disiplincary procedure -->
+			    <div class="usa-form-control">
+			    	<label class="usa-alt-label" for="disiplinary-procedure">Provide the name of the disciplinary procedure</label>
+			    	<p>For example: Court Martial, Article 15, Captain’s mast, Article 135 Court of Inquiry, etc</p>
+			    	<input type="text" id="header-value">
+			    </div>
+			    <!-- Disiplincary procedure end -->
 					<!-- Date of diciplinary procedure -->
 					<fieldset class="usa-fieldset-inputs">
 			      <legend>Provide the date of the court martial or other disciplinary procedure.</legend>
@@ -81,26 +89,19 @@ title: eApp Design System | Example form
 			    	<textarea name="description-offenses" id="description-offenses" cols="30" rows="10"></textarea>
 			    </div>
 			    <!-- Description of offenses end -->
-			    <!-- Disiplincary procedure -->
+			    <!-- Description of charge -->
 			    <div class="usa-form-control">
-			    	<label class="usa-alt-label" for="disiplinary-procedure">Provide the name of the disciplinary procedure</label>
-			    	<p>For example: Court Martial, Article 15, Captain’s mast, Article 135 Court of Inquiry, etc</p>
-			    	<input type="text" id="disiplinary-procedure">
-			    </div>
-			     <!-- Disiplincary procedure end -->
-			     <!-- Description of charge -->
-			     <div class="usa-form-control">
 			     	<label class="usa-alt-label" for="description-charge">Provide the description of the military court or other authority in which you were charged (title of court or convening authority, address, to include city and state or country if overseas)</label>
 			     	<textarea name="description-charge" id="description-charge" cols="30" rows="10"></textarea>
-			     </div>
-			     <!-- Description of charge end -->
-			     <!-- Final outcome -->
-			     <div class="usa-form-control">
+			    </div>
+			    <!-- Description of charge end -->
+			    <!-- Final outcome -->
+			    <div class="usa-form-control">
 			     	<label class="usa-alt-label" for="final-outcome">Provide the description of the final outcome of the disciplinary procedure</label>
 			     	<p>Such as found guilty, found not guilty, fine, reduction in rank, imprisonment, etc</p>
 			     	<textarea name="final-outcome" id="final-outcome" cols="30" rows="10"></textarea>
-			     </div>
-			     <!-- Final outcome end -->
+			    </div>
+			    <!-- Final outcome end -->
 	      </div>
 	    </li>
 	  </ul>

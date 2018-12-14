@@ -50,7 +50,8 @@ title: eApp Design System | Example form
 	                <i class="fas fa-circle fa-stack-2x"></i>
 	                <i class="fas fa-stack-1x fa-home fa-inverse"></i>
 	              </span>
-	              <span>Address 1:</span>
+	              <span class="usa-accordion-header-label">Address 1:</span>
+	              <span id="header-text"></span>
 	            </div>
 	            <div class="title-left">
 	              <span></span>
@@ -97,7 +98,7 @@ title: eApp Design System | Example form
 			    <div class="inside-us-fields">
 			      <div class="usa-form-control">
 			        <label for="mailing-address-1" class="address-block">Street address</label>
-			        <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+			        <input id="header-value" name="mailing-address-1" type="text" class="address-block">
 			      </div>
 			      <div class="usa-form-control">
 			        <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
@@ -139,7 +140,7 @@ title: eApp Design System | Example form
 			      </div>
 			      <div class="usa-form-control">
 			        <label for="country-select" class="address-block">Country</label>
-			        <input type="text" id="country-select">
+			        <input type="text" class="country-select">
 			      </div>
 			    </div>
 			    <!-- Outside U.S. fields end -->
@@ -733,7 +734,7 @@ title: eApp Design System | Example form
 			      </div>
 			      <div class="usa-form-control">
 			        <label for="country-select" class="address-block">Country</label>
-			        <input type="text" id="country-select">
+			        <input type="text" class="country-select">
 			      </div>
 			    </div>
 			    <!-- Outside U.S. fields end -->

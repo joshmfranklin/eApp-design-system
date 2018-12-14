@@ -40,7 +40,8 @@ title: eApp Design System | Example form
 		                <i class="fas fa-circle fa-stack-2x"></i>
 		                <i class="fas fa-stack-1x fa-user fa-inverse"></i>
 		              </span>
-		              <span>Name 1:</span>
+		              <span class="usa-accordion-header-label">Name 1:</span>
+		              <span id="header-text"></span>
 		            </div>
 		            <div class="title-left">
 		              <span></span>
@@ -67,7 +68,7 @@ title: eApp Design System | Example form
 					      </a>
 				    	</label>
 				    	<div class="help-block first-name-help"></div>
-				    	<input type="text" id="first-name">
+				    	<input id="header-value" type="text">
 				    	<div class="modifiers">
 				    		<div class="modifier">
 				    			<input id="initial-only-first" type="checkbox">
@@ -83,7 +84,7 @@ title: eApp Design System | Example form
 				        </a>
 					    </label>
 					    <div class="help-block middle-name-help"></div>
-				    	<input type="text" id="middle-name">
+				    	<input type="text">
 				    	<div class="modifiers">
 				    		<div class="modifier">
 				    			<input id="no-middle" type="checkbox">
@@ -103,7 +104,7 @@ title: eApp Design System | Example form
 				        </a>
 					    </label>
 					    <div class="help-block last-name-help"></div>
-				    	<input type="text" id="last-name">
+				    	<input type="text">
 				    	<div class="modifiers">
 				    		<div class="modifier">
 				    			<input id="initial-only-last" type="checkbox">
@@ -119,7 +120,7 @@ title: eApp Design System | Example form
 				        </a>
 				  		</label>
 				  		<div class="help-block suffix-help"></div>
-				  		<select class="usa-small-input" name="suffidx" id="suffix">
+				  		<select class="usa-small-input" name="suffidx">
 				  			<option value="jr">Jr</option>
 				  			<option value="sr">Sr</option>
 				  			<option value="i">I</option>
