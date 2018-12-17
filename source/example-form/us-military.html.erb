@@ -8,7 +8,13 @@ title: eApp SF-85
 
 	<!-- Ever served in U.S. military -->
 	<fieldset class="usa-fieldset-inputs">
-		<legend>Have you EVER served in the U.S. Military?</legend>
+		<legend>
+			<span>Have you EVER served in the U.S. Military?</span>
+			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="served-us-military-help">
+	      <i class="fas fa-question-circle"></i>
+	    </a>
+		</legend>
+		<div class="help-block served-us-military-help"></div>
 		<ul class="usa-list-inline usa-list-inline-justified">
 			<li>
         <input class="yes-radio" id="yes-1" type="radio" name="us-military" data-id="us-military-yes">
@@ -126,7 +132,13 @@ title: eApp SF-85
 					<!-- Officer or enlisted end -->
 					<!-- Service number -->
 					<div class="usa-form-control">
-						<label for="service-number" class="usa-alt-label">Provide your service number</label>
+						<label for="service-number" class="usa-alt-label">
+							<span>Provide your service number</span>
+							<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="service-number-help">
+			          <i class="fas fa-question-circle"></i>
+			        </a>
+						</label>
+						<div class="help-block service-number-help"></div>
 						<input type="text" id="service-number">
 					</div>
 					<!-- Service number end -->
@@ -134,10 +146,11 @@ title: eApp SF-85
 					<fieldset id="from-to-date-block" class="usa-fieldset-inputs">
 			      <legend>
 			      	<span>Provide your dates of service</span>
-			      	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+			      	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="date-help">
 			          <i class="fas fa-question-circle"></i>
 			        </a>
 			      </legend>
+			      <div class="help-block date-help"></div>
 			      <p>You are not required to list temporary locations of less than 90 days that did not serve as your permanent or mailing address.</p>
 			      <div class="from-to-dates">
 			        <div class="from-date-container">
@@ -252,7 +265,13 @@ title: eApp SF-85
 						</div>
 						<!-- Discharge date -->
 						<fieldset class="usa-fieldset-inputs">
-				      <legend>Provide the date of discharge listed above</legend>
+				      <legend>
+				      	<span>Provide the date of discharge listed above</span>
+				      	<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="date-help">
+				          <i class="fas fa-question-circle"></i>
+				        </a>
+				      </legend>
+				      <div class="help-block date-help"></div>
 				      <div class="m-d-y-block">
 				        <div class="usa-form-control">
 				          <label for="month">Month</label>
