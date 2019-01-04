@@ -2,10 +2,26 @@
 <section id="phone-number-block" class="styleguide-section">
   <fieldset class="usa-fieldset-inputs">
     <legend>Provide this person's mobile/cell phone number</legend>
+    <ul class="usa-list-inline phone-format">
+      <li>
+        <input class="phone-input" id="usa-number" type="radio" name="phone-format-1" value="U.S phone number" checked>
+        <label class="simple-checkbox" for="usa-number"><span>U.S. phone number</span></label>
+      </li>
+      <li>
+        <input class="phone-input" id="international-number" type="radio" name="phone-format-1" value="International phone number">
+        <label class="simple-checkbox" for="international-number"><span>International phone number</span></label>
+      </li>
+      <li>
+        <input class="phone-input" id="dsn-number" type="radio" name="phone-format-1" value="DSN phone number">
+        <label class="simple-checkbox" for="dsn-number"><span>DSN phone number</span></label>
+      </li>
+    </ul>
     <div class="usa-phone-number-block">
       <div class="usa-phone-number-input">
-        <label for="phone-number">Phone number</label>
-        <input type="text" name="phone-number" class="phone-input">
+        <label class="label phone-input" for="phone-number">Phone number</label>
+        <input class="area-code phone-input" type="text" name="phone-number">
+        <input class="prefix phone-input" type="text" name="phone-number">
+        <input class="line-number phone-input" type="text" name="phone-number">
       </div>
       <div class="usa-extension-input">
         <label for="extension">Extension</label>
@@ -13,7 +29,7 @@
       </div>
       <div class="usa-phone-type-input">
         <label for="phone-type-1">Phone type</label>
-        <select name="phone-type-1" id="phone-type-1">
+        <select class="phone-input" name="phone-type-1" id="phone-type-1">
           <option value="" style="display:none" disabled selected></option>
           <option value="cell">Cell</option>
           <option value="home">Home</option>
@@ -28,12 +44,6 @@
             <label for="phone-dont-know"><span>I don't know</span></label>
           </li>
         </ul>
-      </div>
-    </div>
-    <div class="modifiers modifiers-left">
-      <div class="modifier">
-        <input id="international-dsn-3" type="checkbox" name="international-dsn-3" value="dns" class="phone-input">
-        <label class="simple-checkbox" for="international-dsn-3"><span>This is an international or DSN phone number</span></label>
       </div>
     </div>
     <div class="usa-grid">

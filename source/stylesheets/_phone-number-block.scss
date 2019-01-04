@@ -3,6 +3,7 @@
 .usa-phone-number-block {
 	margin-bottom: .5rem;
 	display: flex;
+	align-items: center;
 
 	@media all and (max-width: 980px) {
 	  flex-flow: row wrap;
@@ -15,7 +16,24 @@
 	}
 
 	.usa-phone-number-input {
-		width: 40%;
+		width: 45%;
+		display: flex;
+		align-items: center;
+		flex-flow: wrap;
+
+		.area-code,
+		.prefix {
+			flex: 1;
+			margin-right: 1rem;
+		}
+
+		.line-number {
+			flex: 2;
+		}
+
+		.label {
+			width: 100%;
+		}
 		
 		@media all and (max-width: 980px) {
 		  width: 100%;
@@ -37,6 +55,10 @@
 		  width: 100%;
 	  }
 	}
+}
+
+.phone-format {
+	margin-bottom: 2rem;
 }
 
 .usa-phone-dont-know {
