@@ -1,0 +1,956 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>eApp SF-85</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/1.6.8/css/uswds.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/1.6.9/js/uswds.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/webui-popover@1.2.18/dist/jquery.webui-popover.min.js"></script>
+    <link href="/eApp-design-system/stylesheets/site.css" rel="stylesheet" />
+  </head>
+  <div class="eapp-header">
+	<div class="eapp-header-logo">
+		<a href="" class="eapp-sidenav-mobile-toggle">
+			<i class="fas fa-bars"></i>
+		</a>
+<a href="/eApp-design-system/">		  <img src="/eApp-design-system/images/nbis-seal.png" alt="Nbis seal" />
+</a>		<span class="eapp-header-form-title">SF85</span>
+	</div>
+	<div class="eapp-header-title">
+		<span class="eapp-header-section-title"></span>
+	</div>
+	<div class="eapp-header-links">
+		<ul class="usa-list-inline">
+			<li>
+				<a href="#" class="usa-invert-link">Instructions</a>
+			</li>
+			<li>
+				<a href="#" class="usa-invert-link">Logout</a>
+			</li>
+		</ul>
+	</div>
+	<div class="eapp-progress">
+		<div class="eapp-progress-current"></div>
+	</div>
+</div>
+
+  <body>
+    <div class="eapp-page-wrapper">
+      <div class="eapp-sidenav-wrapper">
+  <div class="eapp-form-progress-counter usa-counter usa-counter-large">
+    <div class="usa-counter-fraction">
+      <span class="completed">0</span>
+      <span class="slash">/</span>
+      <span class="total">8</span>
+    </div>
+    <div class="usa-counter-unit">
+      Sections complete
+    </div>
+  </div>
+  <nav>
+    <ul class="usa-sidenav-list">
+      <li class="usa-sidenav-section-container">
+        <a class="usa-sidenav-toggle usa-sidenav-section" aria-expanded="false" href="">
+          <span class="usa-sidenav-section-name">Information about you</span>
+          <span class="usa-sidenav-status-icon"></span>
+        </a>
+        <ul class="usa-sidenav-sub_list">
+          <li>
+<a href="/eApp-design-system/example-form/about-you-introduction.html">              <span>Introduction</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/full-name.html">              <span>Full name</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/other-names-used.html">              <span>Other names used</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/contact-info.html">              <span>Your contact information</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/date-of-birth.html">              <span>Date of birth</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/place-of-birth.html">              <span>Place of birth</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/social-security-number.html">              <span>Social security number</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/identifying-info.html">              <span>Your identifying information</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+        </ul>
+      </li>
+      <li class="usa-sidenav-section-container">
+        <a href="" class="usa-sidenav-section usa-sidenav-toggle" aria-expanded="false">
+          <span class="usa-sidenav-section-name">Your history</span>
+          <span class="usa-sidenav-status-icon"></span>
+        </a>
+        <ul class="usa-sidenav-sub_list">
+          <li>
+<a href="/eApp-design-system/example-form/your-history-introduction.html">              <span>Introduction</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/where-you-have-lived.html">              <span>Where you have lived</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/employment-activities.html">              <span>Employment activities</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/where-you-went-school.html">              <span>Where you went to school</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+        </ul>
+      </li>
+      <li class="usa-sidenav-section-container">
+        <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+          <span class="usa-sidenav-section-name">Citizenship</span>
+          <span class="usa-sidenav-status-icon"></span>
+        </a>
+        <ul class="usa-sidenav-sub_list">
+          <li>
+<a href="/eApp-design-system/example-form/citizenship-introduction.html">              <span>Introduction</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/citizenship-status.html">              <span>Citizenship status</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/dual-citizenship.html">              <span>Dual/multiple citizenship</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+        </ul>
+      </li>
+      <li class="usa-sidenav-section-container">
+        <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+          <span class="usa-sidenav-section-name">Miliary history</span>
+          <span class="usa-sidenav-status-icon"></span>
+        </a>
+        <ul class="usa-sidenav-sub_list">
+          <li>
+<a href="/eApp-design-system/example-form/military-history-introduction.html">              <span>Introduction</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/selective-service.html">              <span>Selective service status</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/us-military.html">              <span>U.S. military</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/diciplinary-procedures.html">              <span>Disciplinary procedures</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+          <li>
+<a href="/eApp-design-system/example-form/foreign-military.html">              <span>Foreign military</span>
+              <span class="usa-sidenav-status-icon"></span>
+</a>          </li>
+        </ul>
+      </li>
+      <li class="usa-sidenav-section-container">
+        <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+          <span class="usa-sidenav-section-name">Foreign associations</span>
+          <span class="usa-sidenav-status-icon"></span>
+        </a>
+      </li>
+      <li class="usa-sidenav-section-container">
+        <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+          <span class="usa-sidenav-section-name">Financial record</span>
+          <span class="usa-sidenav-status-icon"></span>
+        </a>
+      </li>
+      <li class="usa-sidenav-section-container">
+        <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+          <span class="usa-sidenav-section-name">Substance abuse</span>
+          <span class="usa-sidenav-status-icon"></span>
+        </a>
+      </li>
+      <li class="usa-sidenav-section-container">
+        <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+          <span class="usa-sidenav-section-name">Investigative and criminal history</span>
+          <span class="usa-sidenav-status-icon"></span>
+        </a>
+      </li>
+      <li class="usa-sidenav-section-container">
+        <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+          <span class="usa-sidenav-section-name">Review and submit</span>
+          <span class="usa-sidenav-status-icon"></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+      <div class="eapp-form-wrapper usa-content">
+        <form action="" class="eapp-form" data-id="Section 2: Your History - Employment Activities">
+	<h1 class="eapp-section-header">Employment activities</h1>
+	<h3>List where you have worked</h3>
+	<p>List all of your employment activities, including unemployment and self-employment, beginning with the present and working back 5 years. The entire period must be accounted for without breaks. If the employment activity was military duty, list separate employment activity periods to show each change of military duty station. provide separate entries for employment activities with the same employer but having different physical addresses.</p>
+	<p>Do not list employment before your 18th birthday unless to provide a minimum of 2 years employment history.</p>
+
+	<div class="usa-timeline-block">
+		<div class="usa-timeline-content">
+			<span class="usa-timeline-icon">
+				<i class="fas fa-briefcase fa-3x"></i>
+			</span>
+			<span class="usa-timeline-title">
+				<strong>Employment activities</strong>
+			</span>
+			<div class="usa-timeline-progress">
+				<div class="usa-timeline-progress-filled"></div>
+			</div>
+		</div>
+		<div class="usa-counter">
+			<div class="usa-counter-fraction">
+				<span class="completed">0</span>
+				<span class="slash">/</span>
+				<span class="total">5</span>
+			</div>
+			<div class="usa-counter-unit">
+				Years covered
+			</div>
+		</div>
+	</div>
+	<div>
+		<ul id="accordion" class="usa-accordion-bordered">
+  <li>
+    <div class="usa-accordion-header">
+      <button class="usa-accordion-button" aria-expanded="true" aria-controls="b-a1">
+        <div class="titles">
+          <div class="title">
+            <div class="title-right">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-stack-1x fa-briefcase fa-inverse"></i>
+              </span>
+              <span class="usa-accordion-header-label">Employer 1:</span>
+              <span id="header-text"></span>
+            </div>
+            <div class="title-left">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="usa-accordion-close-button">
+        </div>
+      </button>
+      <button class="usa-accordion-remove-button">
+        <span class="fas fa-times fa-fw"></span>
+        <span class="remove">Remove</span>
+      </button>
+    </div>
+    <div id="b-a1" class="usa-accordion-content">
+      <!-- Employment type -->
+      <fieldset class="usa-fieldset-inputs">
+        <legend>
+          <span>Select your employment activity</span>
+          <a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="employment-type-help">
+            <i class="fas fa-question-circle"></i>
+          </a>
+        </legend>
+        <div class="help-blocks employment-type-help"></div>
+        <p>Government employment</p>
+        <ul class="usa-unstyled-list">
+          <li>
+            <input id="active-military" type="radio" name="employment-activity">
+            <label for="active-military"><span>Active military duty station</span></label>
+          </li>
+          <li>
+            <input id="national-guard" type="radio" name="employment-activity">
+            <label for="national-guard"><span>National Guard/Reserve</span></label>
+          </li>
+          <li>
+            <input id="usphs" type="radio" name="employment-activity">
+            <label for="usphs"><span>USPHS Commissioned Corps</span></label>
+          </li>
+          <li>
+            <input id="other-federal" type="radio" name="employment-activity">
+            <label for="other-federal"><span>Other fedaral employment</span></label>
+          </li>
+          <li>
+            <input id="state-gov" type="radio" name="employment-activity">
+            <label for="state-gov"><span>State Government (Non-Federal employment)</span></label>
+          </li>
+        </ul>
+        <p>Other employment</p>
+        <ul class="usa-unstyled-list">
+          <li>
+            <input id="fed-contractor" type="radio" name="employment-activity">
+            <label for="fed-contractor"><span>Federal Contractor</span></label>
+          </li>
+          <li>
+            <input id="non-gov" type="radio" name="employment-activity">
+            <label for="non-gov"><span>Non-government employee (excluding self-employment)</span></label>
+          </li>
+          <li>
+            <input id="self-employ" type="radio" name="employment-activity">
+            <label for="self-employ"><span>Self-employment</span></label>
+          </li>
+          <li>
+            <input id="unemployment" type="radio" name="employment-activity">
+            <label for="unemployment"><span>Unemployed</span></label>
+          </li>
+          <li>
+            <input id="other-employment" type="radio" name="employment-activity">
+            <label for="other-employment"><span>Other</span></label>
+          </li>
+        </ul>
+      </fieldset>
+      <!-- Employment type end -->
+      <!-- Name of employer -->
+      <div class="usa-form-control">
+        <label for="name-of-employer" class="usa-alt-label">Provide the name of your employer</label>
+        <input id="header-value" type="text">
+      </div>
+      <!-- Name of employer end -->
+      <!-- Recent position -->
+      <div class="usa-form-control">
+        <label for="recent-position" class="usa-alt-label">Provide the most recent position title</label>
+        <input type="text">
+      </div>
+      <!-- Recent position end -->
+      <!-- Employment status -->
+      <fieldset class="usa-fieldset-inputs">
+        <legend>Select the employment status for this position</legend>
+        <ul class="usa-list-inline-justified usa-list-inline">
+          <li>
+            <input id="full-time" type="radio" name="employment-status">
+            <label for="full-time"><span>Full-time</span></label>
+          </li>
+          <li>
+            <input id="part-time" type="radio" name="employment-status">
+            <label for="part-time"><span>Part-time</span></label>
+          </li>
+        </ul>
+      </fieldset>
+      <!-- Employment status end -->
+      <!-- Dates of employment -->
+      <fieldset id="from-to-date-block" class="usa-fieldset-inputs">
+        <legend>
+          <span>Provide dates of employment</span>
+          <a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="date-help">
+            <i class="fas fa-question-circle"></i>
+          </a>
+        </legend>
+        <div class="help-block date-help"></div>
+        <div class="from-to-dates">
+          <div class="from-date-container">
+            <p><strong>From date</strong></p>
+            <div class="m-d-y-block">
+              <div class="usa-form-control">
+                <label for="month">Month</label>
+                <input type="text" id="month" maxlength="2">
+              </div>
+              <div class="usa-form-control">
+                <label for="day">Day</label>
+                <input type="text" id="day" maxlength="2">
+              </div>
+              <div class="usa-form-control">
+                <label for="year">Year</label>
+                <input type="text" id="year" maxlength="4">
+              </div>
+            </div>
+            <div class="modifiers modifiers-left">
+              <div class="modifier">
+                <input id="from-estimated" type="checkbox" name="from-estimated">
+                <label class="simple-checkbox" for="from-estimated"><span>Estimated</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="from-to-date-arrow">
+            <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+          </div>
+          <div class="to-date-container">
+            <p><strong>To date</strong></p>
+            <div class="m-d-y-block">
+              <div class="usa-form-control">
+                <label for="month">Month</label>
+                <input type="text" id="month" class="to-date-input" maxlength="2">
+              </div>
+              <div class="usa-form-control">
+                <label for="day">Day</label>
+                <input type="text" id="day" class="to-date-input" maxlength="2">
+              </div>
+              <div class="usa-form-control">
+                <label for="year">Year</label>
+                <input type="text" id="year" class="to-date-input" maxlength="4">
+              </div>
+            </div>
+            <div class="modifiers modifiers-left">
+              <div class="modifier">
+                <input id="to-estimated" class="to-date-input" type="checkbox" name="to-estimated">
+                <label class="simple-checkbox" for="to-estimated"><span>Estimated</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="or">or</div>
+          <div class="present">
+            <input class="disabled-toggle" id="present" type="checkbox" name="present" data-id="to-date-input">
+            <label for="present"><span>Present</span></label>
+          </div>
+        </div>
+      </fieldset>
+      <!-- Dates of employment end -->
+      <!-- Employer address -->
+      <fieldset id="address-block" class="usa-fieldset-inputs">
+        <legend>
+          <span>Provide address of employer</span>
+          <a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="address-help">
+            <i class="fas fa-question-circle"></i>
+          </a>
+        </legend>
+        <div class="help-block address-help"></div>
+        <fieldset class="usa-fieldset-inputs">
+          <legend class="label-style">This address is</legend>
+          <ul class="usa-list-inline usa-list-inline-justified">
+            <li>
+              <input id="inside-us-radio" type="radio" name="address-type" value="inside-us-radio" checked>
+              <label for="inside-us-radio"><span>In the U.S.</span></label>
+            </li>
+            <li>
+              <input id="outside-us-radio" type="radio" name="address-type" value="outside-us-radio">
+              <label for="outside-us-radio"><span>Outside the U.S.</span></label>
+            </li>
+            <li>
+              <input id="apo-fpo-dpo-radio" type="radio" name="address-type" value="apo-fpo-dpo-radio">
+              <label for="apo-fpo-dpo-radio"><span>APO/FPO/DPO</span></label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <!-- Inside U.S. fields -->
+        <div class="inside-us-fields">
+          <div class="usa-form-control">
+            <label for="mailing-address-1" class="address-block">Street address</label>
+            <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+          </div>
+          <div class="usa-form-control">
+            <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+            <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+          </div>
+          <div class="usa-form-control">
+            <label for="city" class="address-block">City</label>
+            <input id="city" name="city" type="text" class="address-block">
+          </div>
+          <div class="usa-grid address-block">
+            <div class="usa-width-one-half">
+              <div class="usa-form-control">
+                <label for="state">State</label>
+                <input id="state" name="state" type="text">
+              </div>
+            </div>
+            <div class="usa-width-one-half">
+              <div class="usa-form-control">
+                <label for="zip">Zip</label>
+                <input id="zip" name="zip" type="zip">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Inside U.S. fields end -->
+        <!-- Outside U.S. fields -->
+        <div class="outside-us-fields">
+          <div class="usa-form-control">
+            <label for="mailing-address-1" class="address-block">Street address</label>
+            <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+          </div>
+          <div class="usa-form-control">
+            <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+            <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+          </div>
+          <div class="usa-form-control">
+            <label for="city" class="address-block">City</label>
+            <input id="city" name="city" type="text" class="address-block">
+          </div>
+          <div class="usa-form-control">
+            <label for="country-select" class="address-block">Country</label>
+            <input type="text" class="country-select">
+          </div>
+        </div>
+        <!-- Outside U.S. fields end -->
+        <!-- APO/FPO/DPO fields -->
+        <div class="apo-fpo-dpo-fields">
+          <div class="usa-form-control">
+            <label for="address" class="apo-fpo-dpo-address-block">Address</label>
+            <input type="text" class="apo-fpo-dpo-address-block">
+          </div>
+          <label for="" class="apo-fpo-dpo-address-block">Select APO, FPO, DPO</label>
+          <ul class="usa-list-inline usa-list-inline-justified apo-fpo-dpo-address-block">
+            <li>
+              <div class="usa-form-controlk">
+                <input id="apo" type="radio" name="apo-fpo-dpo" value="APO">
+                <label for="apo"><span>APO</span></label>
+              </div>
+            </li>
+            <li>
+              <div class="usa-form-control">
+                <input id="fpo" type="radio" name="apo-fpo-dpo" value="FPO">
+                <label for="fpo"><span>FPO</span></label>
+              </div>
+            </li>
+             <li>
+              <div class="usa-form-control">
+                <input id="dpo" type="radio" name="apo-fpo-dpo" value="DPO">
+                <label for="dpo"><span>DPO</span></label>
+              </div>
+            </li>
+          </ul>
+          <div class="usa-grid apo-fpo-dpo-address-block">
+            <div class="usa-width-one-half">
+              <div class="usa-form-control">
+                <label for="apo-fpo-dpo-code">APO/FPO/DPO State Code</label>
+                <input type="text">
+              </div>
+            </div>
+            <div class="usa-width-one-half">
+              <div class="usa-form-control">
+                <label for="apo-fpo-dpo-zip-code">Zip Code</label>
+                <input type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- APO/FPO/DPO fields end -->
+      </fieldset>
+      <!-- Employer address end -->
+      <!-- Telephone number -->
+      <fieldset class="usa-fieldset-inputs">
+        <legend>Telephone number</legend>
+        <div class="usa-phone-number-block">
+          <div class="usa-phone-number-input">
+            <label for="phone-number">Phone number</label>
+            <input type="text" name="phone-number" class="employer-phone">
+          </div>
+          <div class="usa-extension-input">
+            <label for="extension">Extension</label>
+            <input type="text" name="extension" class="employer-phone">
+          </div>
+          <div class="usa-phone-type-input">
+            <label for="phone-type-1">Phone type</label>
+            <select name="phone-type-1" id="phone-type-1" class="employer-phone">
+              <option value="" style="display:none" disabled selected></option>
+              <option value="cell">Cell</option>
+              <option value="home">Home</option>
+              <option value="work">Work</option>
+            </select>
+          </div>
+          <div class="usa-phone-dont-know">
+            <ul class="usa-list-inline">
+              <li><span>or</span></li>
+              <li>
+                <input class="disabled-toggle" id="phone-dont-know" type="checkbox" name="phone-dont-know" value="phone-dont-know" data-id="employer-phone">
+                <label for="phone-dont-know"><span>I don't know</span></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modifiers modifiers-left">
+          <div class="modifier">
+            <input class="employer-phone" id="international-dsn" type="checkbox" name="international-dsn" value="dns">
+            <label class="simple-checkbox" for="international-dsn"><span>This is an international or DSN phone number</span></label>
+          </div>
+        </div>
+        <div class="usa-grid">
+          <div class="usa-width-one-half">
+            <fieldset class="usa-fielset-inputs">
+              <legend class="label-style">Best time to call</legend>
+              <ul class="usa-list-inline">
+                <li>
+                  <input id="day-phone-1" class="employer-phone" type="radio" name="time-to-call-1" value="day">
+                  <label for="day-phone-1"><span>Day</span></label>
+                </li>
+                <li>
+                  <input id="night-phone-1" class="employer-phone" type="radio" name="time-to-call-1" value="night">
+                  <label for="night-phone-1"><span>Night</span></label>
+                </li>
+                <li>
+                  <input id="day-night-phone-1" class="employer-phone" type="radio" name="time-to-call-1" value="both">
+                  <label for="day-night-phone-1"><span>Both</span></label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+      </fieldset>
+      <!-- Telephone number end -->
+      <!-- Different address than employer address -->
+      <fieldset class="usa-fieldset-inputs">
+        <legend>
+          <span>Is/was your physcial work address different than you employer's address</span>
+          <a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="physical-address-help">
+            <i class="fas fa-question-circle"></i>
+          </a>
+        </legend>
+        <div class="help-block physical-address-help"></div>
+        <ul class="usa-list-inline-justified usa-list-inline">
+          <li>
+            <input id="yes-1" type="radio" name="different-address">
+            <label for="yes-1"><span>Yes</span></label>
+          </li>
+          <li>
+            <input id="no-1" type="radio" name="different-address">
+            <label for="no-1"><span>No</span></label>
+          </li>
+        </ul>
+      </fieldset>
+      <!-- Different address than employer address end -->
+      <!-- Name of supervisor -->
+      <div class="usa-form-control">
+        <label for="supervisor-name" class="usa-alt-label">Provide the name of your supervisor</label>
+        <input type="text">
+      </div>
+      <!-- Name of supervisor end -->
+      <!-- Rank/position of supervisor -->
+      <div class="usa-form-control">
+        <label for="supervisor-position" class="usa-alt-label">Provide the rank/position title of your supervisor</label>
+        <input type="text">
+      </div>
+      <!-- Rank/position of supervisor end -->
+      <!-- Email of supervisor -->
+      <div class="usa-form-control">
+        <label for="supervisor-email" class="usa-alt-label">Provide the email address of your supervisor</label>
+        <input type="email" class="super-email">
+        <div class="modifiers modifiers-left">
+          <div class="modifier">or</div>
+          <div class="modifier">
+            <input class="disabled-toggle" id="i-dont-know" type="checkbox" name="i-dont-know" data-id="super-email">
+            <label for="i-dont-know"><span>I don't know</span></label>
+          </div>
+        </div>
+      </div>
+      <!-- Email of supervisor end -->
+      <!-- Supervisor address -->
+      <fieldset id="address-block" class="usa-fieldset-inputs">
+        <legend>
+          <span>Provide physical work location of your supervisor</span>
+          <a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="supervisor-address-help">
+            <i class="fas fa-question-circle"></i>
+          </a>
+        </legend>
+        <div class="help-block supervisor-address-help"></div>
+        <fieldset class="usa-fieldset-inputs">
+          <legend class="label-style">This address is</legend>
+          <ul class="usa-list-inline usa-list-inline-justified">
+            <li>
+              <input id="inside-us-radio-2" type="radio" name="address-type-2" value="inside-us-radio-2" checked>
+              <label for="inside-us-radio-2"><span>In the U.S.</span></label>
+            </li>
+            <li>
+              <input id="outside-us-radio-2" type="radio" name="address-type-2" value="outside-us-radio-2">
+              <label for="outside-us-radio-2"><span>Outside the U.S.</span></label>
+            </li>
+            <li>
+              <input id="apo-fpo-dpo-radio-2" type="radio" name="address-type-2" value="apo-fpo-dpo-radio-2">
+              <label for="apo-fpo-dpo-radio-2"><span>APO/FPO/DPO</span></label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <!-- Inside U.S. fields -->
+        <div class="inside-us-fields-2">
+          <div class="usa-form-control">
+            <label for="mailing-address-1" class="address-block">Street address</label>
+            <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+          </div>
+          <div class="usa-form-control">
+            <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+            <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+          </div>
+          <div class="usa-form-control">
+            <label for="city" class="address-block">City</label>
+            <input id="city" name="city" type="text" class="address-block">
+          </div>
+          <div class="usa-grid address-block">
+            <div class="usa-width-one-half">
+              <div class="usa-form-control">
+                <label for="state">State</label>
+                <input id="state" name="state" type="text">
+              </div>
+            </div>
+            <div class="usa-width-one-half">
+              <div class="usa-form-control">
+                <label for="zip">Zip</label>
+                <input id="zip" name="zip" type="zip">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Inside U.S. fields end -->
+      </fieldset>
+      <!-- Supervisor address end -->
+      <!-- Supervisor APO/FPO -->
+      <fieldset class="usa-fieldset-inputs">
+        <legend>Did/does your supervisor have an APO/FPO address while at this location?</legend>
+        <ul class="usa-list-inline-justified usa-list-inline">
+          <li>
+            <input id="yes-2" type="radio" name="supervisor-apo-fpo-address">
+            <label for="yes-2"><span>Yes</span></label>
+          </li>
+          <li>
+            <input id="no-2" type="radio" name="supervisor-apo-fpo-address">
+            <label for="no-2"><span>No</span></label>
+          </li>
+        </ul>
+      </fieldset>
+      <!-- Supervisor APO/FPO -->
+      <!-- Supervisor phone number -->
+      <fieldset class="usa-fieldset-inputs">
+        <legend>Provide the telephone number for this supervisor</legend>
+        <div class="usa-phone-number-block">
+          <div class="usa-phone-number-input">
+            <label for="phone-number">Phone number</label>
+            <input type="text" name="phone-number" class="phone-input-2">
+          </div>
+          <div class="usa-extension-input">
+            <label for="extension">Extension</label>
+            <input type="text" name="extension" class="phone-input-2">
+          </div>
+          <div class="usa-phone-type-input">
+            <label for="phone-type-1">Phone type</label>
+            <select name="phone-type-1" id="phone-type-1" class="phone-input-2">
+              <option value="" style="display:none" disabled selected></option>
+              <option value="cell">Cell</option>
+              <option value="home">Home</option>
+              <option value="work">Work</option>
+            </select>
+          </div>
+          <div class="usa-phone-dont-know">
+            <ul class="usa-list-inline">
+              <li><span>or</span></li>
+              <li>
+                <input class="disabled-toggle" id="phone-dont-know-2" type="checkbox" name="phone-dont-know" value="phone-dont-know" data-id="phone-input-2">
+                <label for="phone-dont-know-2"><span>I don't know</span></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modifiers modifiers-left">
+          <div class="modifier">
+            <input id="international-dsn-3" type="checkbox" name="international-dsn-3" value="dns" class="phone-input-2">
+            <label class="simple-checkbox" for="international-dsn-3"><span>This is an international or DSN phone number</span></label>
+          </div>
+        </div>
+        <div class="usa-grid">
+          <div class="usa-width-one-half">
+            <fieldset class="usa-fielset-inputs">
+              <legend class="label-style">Best time to call</legend>
+              <ul class="usa-list-inline">
+                <li>
+                  <input id="day-phone-2" class="phone-input-2" type="radio" name="time-to-call-2" value="day">
+                  <label for="day-phone-2"><span>Day</span></label>
+                </li>
+                <li>
+                  <input id="night-phone-2" class="phone-input-2" type="radio" name="time-to-call-2" value="night">
+                  <label for="night-phone-2"><span>Night</span></label>
+                </li>
+                <li>
+                  <input id="day-night-phone-2" class="phone-input-2" type="radio" name="time-to-call-2" value="both">
+                  <label for="day-night-phone-2"><span>Both</span></label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+      </fieldset>
+      <!-- Additional periods of activity -->
+      <h3>Additional periods of activity with this employer</h3>
+      <p>Provide additional periods of activity if you worked for this employer on more than one occasion at the same physical location (for example, if you worked at XY Plumbing in Denver, CO, during 3 separate periods of time, you would enter information concerning the most recent period of employment above, and provide dates, position titles, and supervisors for the two previous periods of employment as entries below).</p>
+      <p>Do not list employment before your 18th birthday unless to provide a minimum of 2 years employment history.</p>
+      <fieldset class="usa-fieldset-inputs">
+        <legend>Do you have any additional periods of activity to add?</legend>
+        <ul class="usa-list-inline-justified usa-list-inline">
+          <li>
+            <input class="yes-radio" id="yes-3" type="radio" name="additional-activity-same-job" data-id="additional-activity-yes">
+            <label for="yes-3"><span>Yes</span></label>
+          </li>
+          <li>
+            <input class="no-radio" id="no-3" type="radio" name="additional-activity-same-job">
+            <label for="no-3"><span>No</span></label>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="additional-activity-yes" style="display: none;">
+        <!-- Additional position title -->
+        <div class="usa-form-control">
+          <label for="additional-activity-title" class="usa-alt-label">Position title</label>
+          <input type="text" id="additional-activity-title">
+        </div>
+        <!-- Additional position title end -->
+        <!-- Additional position supervisor -->
+        <div class="usa-form-control">
+          <label for="additional-activity-supervisor" class="usa-alt-label">Supervisor</label>
+          <input type="text" id="additional-activity-supervisor">
+        </div>
+        <!-- Additional position supervisor end -->
+        <!-- Additional position dates -->
+        <fieldset id="from-to-date-block" class="usa-fieldset-inputs">
+          <legend>
+            <span>Dates of employment</span>
+            <a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;" data-id="date-help">
+              <i class="fas fa-question-circle"></i>
+            </a>
+          </legend>
+          <div class="help-block date-help"></div>
+          <div class="from-to-dates">
+            <div class="from-date-container">
+              <p><strong>From date</strong></p>
+              <div class="m-d-y-block">
+                <div class="usa-form-control">
+                  <label for="month">Month</label>
+                  <input type="text" id="month" maxlength="2">
+                </div>
+                <div class="usa-form-control">
+                  <label for="day">Day</label>
+                  <input type="text" id="day" maxlength="2">
+                </div>
+                <div class="usa-form-control">
+                  <label for="year">Year</label>
+                  <input type="text" id="year" maxlength="4">
+                </div>
+              </div>
+              <div class="modifiers modifiers-left">
+                <div class="modifier">
+                  <input id="from-estimated" type="checkbox" name="from-estimated">
+                  <label class="simple-checkbox" for="from-estimated"><span>Estimated</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="from-to-date-arrow">
+              <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+            </div>
+            <div class="to-date-container">
+              <p><strong>To date</strong></p>
+              <div class="m-d-y-block">
+                <div class="usa-form-control">
+                  <label for="month">Month</label>
+                  <input type="text" id="month" class="to-date-input-2" maxlength="2">
+                </div>
+                <div class="usa-form-control">
+                  <label for="day">Day</label>
+                  <input type="text" id="day" class="to-date-input-2" maxlength="2">
+                </div>
+                <div class="usa-form-control">
+                  <label for="year">Year</label>
+                  <input type="text" id="year" class="to-date-input-2" maxlength="4">
+                </div>
+              </div>
+              <div class="modifiers modifiers-left">
+                <div class="modifier">
+                  <input id="to-estimated" class="to-date-input-2" type="checkbox" name="to-estimated">
+                  <label class="simple-checkbox" for="to-estimated"><span>Estimated</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="or">or</div>
+            <div class="present">
+              <input class="disabled-toggle" id="present-2" type="checkbox" name="present-2" data-id="to-date-input-2">
+              <label for="present-2"><span>Present</span></label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <!-- Additional periods of activity end -->
+      <!-- Reason for leaving -->
+      <div class="usa-form-control">
+        <label for="reason-to-leave" class="usa-alt-label">Provide the reason for leaving the employment activity</label>
+        <textarea name="" id="reason-to-leave" cols="30" rows="8"></textarea>
+      </div>
+      <!-- Reason for leaving end -->
+    </div>
+  </li>
+</ul>
+		<div>
+			<!-- Additional employment to enter -->
+			<fieldset class="usa-fieldset-inputs usa-sans">
+			  <legend>Do you have an additional employment activity to enter?</legend>
+			  <ul class="usa-list-inline-justified usa-list-inline">
+			    <li>
+			      <input id="yes-4" type="radio" name="additional-activity" >
+			      <label for="yes-4"><span>Yes</span></label>
+			    </li>
+			    <li>
+			      <input id="no-4" type="radio" name="additional-activity" >
+			      <label for="no-4"><span>No</span></label>
+			    </li>
+			  </ul>
+			</fieldset>
+			<!-- Additional employment to enter end -->
+			<!-- Employment record -->
+			<fieldset class="usa-fieldset-inputs">
+				<legend>Have any of the following happened to you in the last seven (5) years at employment activities that you have not previously listed?</legend>
+				<ul>
+					<li>Fired from a job?</li>
+					<li>Quit a job after being told you would be fired?</li>
+					<li>Have you left a job by mutual agreement following charges or allegations of misconduct?</li>
+					<li>Left a job by mutual agreement following notice of unsatisfactory performance?</li>
+					<li>Received a written warning, been officially reprimanded, suspended, or disciplined for misconduct in the workplace, such as violation of security policy?</li>
+				</ul>
+				<p>If you answer "Yes", you will be required to add an additional employment record above.</p>
+				<ul class="usa-list-inline-justified usa-list-inline">
+			    <li>
+			      <input id="yes-5" type="radio" name="happened-to-you" >
+			      <label for="yes-5"><span>Yes</span></label>
+			    </li>
+			    <li>
+			      <input id="no-5" type="radio" name="happened-to-you" >
+			      <label for="no-5"><span>No</span></label>
+			    </li>
+			  </ul>
+			</fieldset>
+			<!-- Employment record end -->
+		</div>
+		<div class="next-back-block">
+<a href="/eApp-design-system/example-form/where-you-have-lived.html" class="usa-button back-button">        <i class="far fa-arrow-alt-circle-left"></i>
+	      <div class="direction">Back</div>
+	      <div class="label">Places you have lived</div>
+</a><a href="/eApp-design-system/example-form/where-you-went-school.html" class="usa-button next-button">        <i class="far fa-arrow-alt-circle-right"></i>
+	      <div class="direction">Next</div>
+	      <div class="label">Schools & diplomas</div>
+</a>	  </div>
+	</div>
+</form>
+        <div>
+          <button id="eapp-save" class="usa-eapp-save">
+            <div class="usa-eapp-save-icon">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-save fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <span class="usa-eapp-save-label">
+              <div class="usa-timeago-label">
+                <div class="save-label">Your form was saved</div>
+                <div class="timeago-label"><strong>4 minutes ago</strong></div>
+              </div>
+              <span class="usa-save-label">
+                <div class="save-label"><strong>Save now</strong></div>
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/eApp-design-system/javascripts/site.js"></script>
+</html>

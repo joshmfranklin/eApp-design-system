@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>eApp Design System | Design Principles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/1.6.8/css/uswds.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/1.6.9/js/uswds.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="/eApp-design-system/stylesheets/site.css" rel="stylesheet" />
+    <script src="/eApp-design-system/javascripts/site.js"></script>
+  </head>
+  <header class="usa-header site-header">
+  <div class="usa-navbar site-header-navbar">
+    <div class="usa-logo site-logo">
+      <em class="usa-logo-text">
+        eApp Design System
+      </em>
+    </div>
+  </div>
+</header>
+
+  <div class="styleguide-secondary-nav sticky">
+    <ul>
+      <li>
+<a href="/eApp-design-system/">          <span>UI Components</span>
+</a>      </li>
+      <li>
+<a href="/eApp-design-system/design-principals-intro.html" class="usa-current">          <span>Design Principles</span>
+</a>      </li>
+      <li>
+<a href="/example-form/your-history/introduction.html">          <span>Example form</span>
+</a>      </li>
+    </ul>
+  </div>
+
+  <body>
+    <section id="styleguide-sidenav" class="sidenav">
+      <nav>
+        <ul class="usa-sidenav-list">
+          <li>
+            <a href="/eApp-design-system/design-principals-intro.html">Introduction</a>
+          </li>
+          <li>
+            <a href="/eApp-design-system/terminology.html">Terminology</a>
+          </li>
+          <li>
+            <a href="/eApp-design-system/eapp-should.html">Principles</a>
+          </li>
+          <li>
+            <a href="/eApp-design-system/systems-principles.html">System Principles</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section class="main-content">
+      <h1>eApp Design Principles (a person using eApp should...)</h1>
+<section class="styleguide-section">
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Have a consistent experience</h3>
+    <ul>
+      <li>Left menu should always be visible unless viewing at mobile width.</li>
+      <li>Equivalent experience on desktop and mobile.
+        <ul>
+          <li>A person should be able to accomplish the same actions on each.</li>
+        </ul>
+      </li>
+      <li>Accommodating applicants filling/reviewing the form in a non-linear order
+        <ul>
+          <li>Applicant needs awareness of what section they are in.</li>
+          <li>Applicant needs awareness that they can move to any page in the application at any time.</li>
+          <li>This principle is in acknowledgement they won’t have all the information at once so will likely fill out all they easily can in one sitting and will need to exit the form to collect/confirm more data.</li>
+        </ul>
+      </li>
+      <li>Consistent patterns
+        <ul>
+          <li>Form inputs/pages act the same across the site.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Trust the application to deliver what's expected</h3>
+    <ul>
+      <li>User input should trigger an eApp response with constant and consistent feedback loop from eApp (see below for feedback examples).
+        <ul>
+          <li>Data is being validated accurately.
+            <ul>
+              <li>Error messages should only show if content is incorrect.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Error messages say what’s expected rather than just what’s wrong.
+        <ul>
+          <li>Error messages should be proactively helpful, not just state something is wrong.</li>
+        </ul>
+      </li>
+      <li>Information is saved when expected.
+        <ul>
+          <li>An applicant should never be worried that information is being lost.</li>
+          <li>A person should know where and how to save at anytime.
+            <ul>
+              <li>When the “Save” button is clicked to save it should save</li>
+              <li>Warn when a logout is imminent and give them the ability to save and return to their work.</li>
+              <li>Know how to save and or print their completed form
+                <ul>
+                  <li>The styling of this should adhere to print design best practices for legibility and scannability.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Errors always bubble up if I have an error on a field I should see that error in the summary or at a higher level as well.</li>
+      <li>Fields
+        <ul>
+          <li>Show validation upon exiting field being typed in, either complete or invalid.
+            <ul>
+              <li>For fieldsets (like addresses), this may apply to the field set.</li>
+            </ul>
+          </li>
+          <li>Required fields that are untouched/empty show nothing, until the review page for that section (or the whole form) are hit.</li>
+        </ul>
+      </li>
+      <li>Subsections
+        <ul>
+          <li>A subsection page should be marked as valid only after all required questions are completed.</li>
+          <li>A subsection page that is partially complete (with all correct responses) should not have an indicator until the review page is hit.</li>
+          <li>A subsection page that has not been visited yet should not have an indicator until the review page is hit.</li>
+          <li>A subsection with a field error should show an error.</li>
+        </ul>
+      </li>
+      <li>Sections
+        <ul>
+          <li>A section should show green only when all subsections and fields are fully and complete.</li>
+          <li>If a subsection shows an error, the section above it should show an error.</li>
+        </ul>
+      </li>
+      <li>Applicants should understand each question, what it’s asking of them and how to enter their information.
+        <ul>
+          <li>For placeholder text in fields
+            <ul>
+              <li>“#” to indicate numbers and the amount of them required for a field.</li>
+              <li>In text fields, the default is to leave fields blank and have supporting text as the title of the field or in the helptext.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Applicants should be able to fully complete the requirements of the given form.
+        <ul>
+          <li>a person must be able to fill out and complete the form even if eApp flags their true information as false.</li>
+          <li>Add a comment for any field.</li>
+        </ul>
+      </li>
+      <li>Minimize hassle.
+        <ul>
+          <li>Applicants should only need to fill out a particular piece of information once.</li>
+          <li>Information should be derived, where possible.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </section>
+  </body>
+</html>

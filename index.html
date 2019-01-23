@@ -1,0 +1,1868 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>eApp Design System | UI Components</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/1.6.8/css/uswds.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/1.6.9/js/uswds.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="/eApp-design-system/stylesheets/site.css" rel="stylesheet" />
+  </head>
+  <header class="usa-header site-header">
+  <div class="usa-navbar site-header-navbar">
+    <div class="usa-logo site-logo">
+      <em class="usa-logo-text">
+        eApp Design System
+      </em>
+    </div>
+  </div>
+</header>
+
+  <div class="styleguide-secondary-nav sticky">
+    <ul>
+      <li>
+<a href="/eApp-design-system/" class="usa-current">          <span>UI Components</span>
+</a>      </li>
+      <li>
+<a href="/eApp-design-system/design-principals-intro.html">          <span>Design Principles</span>
+</a>      </li>
+      <li>
+<a href="/eApp-design-system/example-form/about-you-introduction.html">          <span>Example form</span>
+</a>      </li>
+    </ul>
+  </div>
+
+  <body>
+    <section id="styleguide-sidenav" class="sidenav">
+  <nav>
+    <ul class="usa-sidenav-list">
+      <li>
+        <a href="#intro" class="usa-current">Introduction</a>
+      </li>
+      <li>
+        <a href="#typography">Typography</a>
+      </li>
+      <li>
+        <a href="#alert-blocks">Alert blocks</a>
+      </li>
+      <li>
+        <a href="#help-block">Help block</a>
+      </li>
+      <li>
+        <a href="#input-blocks">Input blocks</a>
+      </li>
+      <li>
+        <a href="#checkbox-radio-blocks">Checkbox/radio button blocks</a>
+      </li>
+      <li>
+        <a href="#phone-number-block">Phone number block</a>
+      </li>
+      <li>
+        <a href="#date-blocks">Date blocks</a>
+      </li>
+      <li>
+        <a href="#address-block">Address block</a>
+      </li>
+      <li>
+        <a href="#accordion-block">Accordion block</a>
+      </li>
+      <li>
+        <a href="#back-next-block">Back/next block</a>
+      </li>
+      <li>
+        <a href="#sidenav-block">Sidenav block</a>
+      </li>
+      <li>
+        <a href="#timeline-counter-block">Timeline/counter blocks</a>
+      </li>
+      <li>
+        <a href="#save-block">Save block</a>
+      </li>
+    </ul>
+  </nav>
+</section>
+<section class="main-content usa-content">
+  <section id="intro" class="styleguide-section">
+    <h1>eApp UI Components</h1>
+    <p class="usa-font-lead">These UI components are design specifically for use in eApp. They are to be used when building any background check related form (e.g. SF-86, SF-85, and SF-85p).</p>
+    <p>These components are built using the <a href="https://designsystem.digital.gov/" target="_blank">U.S. Web Design System.</a> Not all components used in eApp are documented here. Basic components such as colors, buttons, links, icons, etc. are taken directly from the U.S Web Design System.</p>
+</section>
+
+  <h2 class="styleguide-section-header">Typography</h2>
+<section id="typography" class="styleguide-section">
+
+<h1>Heading 1 (3rem)</h1>
+<h2>Heading 2 (2.5rem)</h2>
+<h3>Heading 3 (2rem)</h3>
+<h4>Heading 4 (1.7rem)</h4>
+<p>Body copy (1.7rem). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate vulputate odio, dapibus pretium nibh dapibus eget. Aliquam ultrices mattis metus a interdum. Vestibulum dapibus laoreet porta. Duis interdum ex sed eros vestibulum, id cursus erat sagittis. Nunc id turpis quis arcu semper consectetur. Nullam at suscipit enim. Sed vulputate vestibulum ullamcorper. Vivamus vulputate mauris eu venenatis tempus</p>
+
+</section>
+
+  <h2 class="styleguide-section-header">Alert Blocks</h2>
+<section id="alert-blocks" class="styleguide-section">
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Alert types</h3>
+    <div class="usa-alert usa-alert-success">
+      <div class="usa-alert-body">
+        <h3 class="usa-alert-heading">Success Status</h3>
+        <p class="usa-alert-text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
+      </div>
+    </div>
+
+    <div class="usa-alert usa-alert-warning" >
+      <div class="usa-alert-body">
+        <h3 class="usa-alert-heading">Warning Status</h3>
+        <p class="usa-alert-text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
+      </div>
+    </div>
+
+    <div class="usa-alert usa-alert-error" role="alert">
+      <div class="usa-alert-body">
+        <h3 class="usa-alert-heading">Error Status</h3>
+        <p class="usa-alert-text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
+      </div>
+    </div>
+
+    <div class="usa-alert usa-alert-info" >
+      <div class="usa-alert-body">
+        <h3 class="usa-alert-heading">Information Status</h3>
+        <p class="usa-alert-text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
+      </div>
+    </div>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="alert-docs">
+          Documentation
+        </button>
+        <div id="alert-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Use an alert banner when you need to prompt the users attention. Alerts are primarily used for holding additional information about questions as well as displaying validation errors.</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>When the applicant is required to do something in response to an alert, let them know what they need to do and make that task as easy as possible. Think about how much context to provide with your message. For example, a notification of a system change may require more contextual information than a validation message. Write the message in concise, human readable language; avoid jargon and computer code.</li>
+            <li>Be polite in error messages — don’t place blame on the applicant.</li>
+            <li>Applicants generally won’t read documentation but will read a message that helps them resolve an error; include some educational material in your error message.</li>
+            <li>But don’t overdo it — too many notifications will either overwhelm or annoy the applicant and are likely to be ignored.</li>
+            <li>Allow a applicant to dismiss a notification wherever appropriate.</li>
+            <li>Don’t include notifications that aren’t related to the applicant’s current goal.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Section review summary alert</h3>
+    <div class="usa-alert usa-alert-error">
+      <div class="usa-alert-body">
+        <h3 class="usa-alert-heading">Here is a list of 5 questions with issues</h3>
+        <p class="usa-alert-text">
+          <strong>Full name</strong>
+          <ul>
+            <li>
+              <a href="">Provide your full name</a>
+            </li>
+          </ul>
+          <strong>Other names used</strong>
+          <ul>
+            <li>
+              <a href="">Have you used any other names?</a>
+            </li>
+          </ul>
+          <strong>Phone number 1</strong>
+          <ul>
+            <li>
+              <a href="">United States telephone number</a>
+            </li>
+          </ul>
+          <strong>Date of birth</strong>
+          <ul>
+            <li>
+              <a href="">Provide your date of birth</a>
+            </li>
+          </ul>
+          <strong>Place of birth</strong>
+          <ul>
+            <li>
+              <a href="">Provide your place of birth</a>
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="section-alert-docs">
+          Documentation
+        </button>
+        <div id="section-alert-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Use a section review summary alert block when showing an applicant each incomplete question on the section review page.</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>If an applicant clicks a link in the section review summary alert block the page should scroll to the selected question.</li>
+            <li>Links should dissappear from the summary alert block once the necessary field is valid and complete.</li>
+            <li>The entire summary alert block should dissappear once all fields indicated are valid and complete.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Form review summary alert</h3>
+    <div class="usa-alert usa-alert-error">
+      <div class="usa-alert-body">
+        <h3 class="usa-alert-heading">Information about you</h3>
+        <ul class="usa-alert-text">
+          <li>Other names used</li>
+          <li>Your contact information</li>
+          <li>Date of birth</li>
+          <li>Place of birth</li>
+          <li>Social Security Number</li>
+          <li>Your identifying information</li>
+        </ul>
+        <a href="" class="usa-button usa-button-secondary">Back to section</a>
+      </div>
+    </div>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="form-summary-alert-docs">
+          Documentation
+        </button>
+        <div id="form-summary-alert-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Use a Form review summary alert block when showing an applicant each incomplete section when reviewing the entire form before submission</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>If an applicant clicks the "back to section" button they should be directed to the proper section of the form.</li>
+            <li>A formm review summary alert should dissappear once all fields within the necessary section are valid and complete.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <h2 class="styleguide-section-header">Help Block</h2>
+<section id="help-block" class="styleguide-section">
+	<fieldset class="usa-fieldset-inputs">
+		<legend>
+			<span>Provide your date of birth</span>
+			<a class="usa-help-icon usa-help-trigger" href="#" onclick="return false;">
+				<i class="fas fa-question-circle"></i>
+			</a>
+		</legend>
+		<div class="usa-alert usa-alert-info usa-help-alert hidden">
+    <div class="usa-alert-body">
+      <h3 class="usa-alert-heading">Check "estimated" if date of birth is uknown</h3>
+      <p class="usa-alert-text">If you are not sure of your exact date of birth estimate it as best you can and check the "Estimated" checkbox.</p>
+      <a class="usa-help-trigger" href="#" onclick="return false;">Close help block</a>
+    </div>
+  </div>
+		<div class="m-d-y-block">
+      <div class="usa-form-control">
+        <label for="month">Month</label>
+        <input type="text" id="month" maxlength="2">
+      </div>
+      <div class="usa-form-control">
+        <label for="day">Day</label>
+        <input type="text" id="day" maxlength="2">
+      </div>
+      <div class="usa-form-control">
+        <label for="year">Year</label>
+        <input type="text" id="year" maxlength="4">
+      </div>
+    </div>
+    <div class="modifiers modifiers-left">
+      <div class="modifier">
+        <input id="estimated" type="checkbox" name="estimated">
+        <label class="simple-checkbox" for="estimated"><span>Estimated</span></label>
+      </div>
+    </div>
+	</fieldset>
+
+	<ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="help-block-docs">
+          Documentation
+        </button>
+        <div id="help-block-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Use a help block when an applicant may have additional questions about a particular question within the form.</li>
+            <li>Help blocks should be no more than 2-3 sentences.</li>
+            <li>Help blocks keep the applicant within the current flow allowing them to reference the associated fields and neighboring content.</li>
+          </ul>
+
+          <strong>When to consider something else</strong>
+          <ul>
+            <li>When help information is short (1-2 sentences) it doesn't need to be hidden in a help block. Instead include the help information directly on the form.</li>
+            <li>When help information is long consider including an external link to a separate page.</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Help icons should always be aligned with a fieldset label or a field label.</li>
+            <li>Applicants should be able to close a help block by clicking on the help icon again or the "close help block" link within the alert.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+</section>
+  <h2 class="styleguide-section-header">Input Blocks</h2>
+<section id="input-blocks" class="styleguide-section">
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Single/multi-line text inputs</h3>
+    <div class="usa-form-control">
+      <label for="first-name">First name</label>
+      <input type="text" id="first-name">
+    </div>
+    <div class="usa-form-control">
+      <label for="reason-why-name-changed">Reason(s) why the name changed</label>
+      <textarea name="" id="reason-why-name-changed" cols="30" rows="10"></textarea>
+    </div>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="input-docs">
+          Documentation
+        </button>
+        <div id="input-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>If you can’t reasonably predict a applicant’s answer to a prompt and there might be wide variability in applicants’ answers.</li>
+            <li>When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a calendar picker.</li>
+            <li>When applicants want to be able to paste in a response.</li>
+          </ul>
+
+          <strong>When to consider something else</strong>
+          <ul>
+            <li>When applicants are choosing from a specific set of options.</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>The length of the text input provides a hint to applicants as to how much text to write. Do not require applicants to write paragraphs of text into a single-line input box; use a text area instead.</li>
+            <li>Text inputs are among the easiest type of input for desktop applicants but are more difficult for mobile applicants.</li>
+            <li>Only show error validation messages or stylings after a applicant has interacted with a particular field.</li>
+            <li>Avoid using placeholder text that appears within a text field before a applicant starts typing. If placeholder text is no longer visible after a applicant clicks into the field, applicants will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Select input</h3>
+    <div class="usa-form-control usa-small-input">
+      <label for="hair-color">Suffix</label>
+      <select name="" id="hair-color">
+        <option value="" disabled selected></option>
+        <option value="brown">Mr.</option>
+        <option value="black">Mrs.</option>
+        <option value="blonde">Ms.</option>
+      </select>
+    </div>
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="select-docs">
+          Documentation
+        </button>
+        <div id="select-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Use sparingly — only when a applicant needs to choose from about seven to 15 possible options and you have limited space to display the options.</li>
+          </ul>
+
+          <strong>When to consider something else</strong>
+          <ul>
+            <li>If the list of options is very short. Use radio buttons instead.</li>
+            <li>If the list of options is very long. Let applicants type the same information into a text input that suggests possible options instead.</li>
+            <li>If you need to allow applicants to select more than one option at once. applicants often don’t understand how to select multiple items from dropdowns. Use checkboxes instead.</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Avoid making options in one dropdown menu change based on the input to another. Applicants often don’t understand how selecting an item in one impacts another.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Email input</h3>
+    <div class="usa-form-control">
+      <label for="home-email">Home email address</label>
+      <input type="email" id="home-email">
+    </div>
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="email-docs">
+          Documentation
+        </button>
+        <div id="email-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Use only when collecting an email address from an applicant.</li>
+            <li>Email inputs are automatically validated to ensure properly formatted email addresses.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Dollar amount input</h3>
+    <div class="usa-form-control usa-dollar-input usa-medium-input">
+      <span class="dollar-icon">
+        <i class="fas fa-dollar-sign"></i>
+      </span>
+      <input type="number">
+    </div>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="dollar-input-docs">
+          Documentation
+        </button>
+        <div id="dollar-input-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Use when collecting dollar amounts from an applicant</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Dollar amount inputs should use type="number" for proper fomatting.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Input modifiers</h3>
+    <div class="usa-form-control">
+      <label for="middle-name">Middle name</label>
+      <input type="text" id="fmiddle-name">
+      <div class="modifiers">
+        <div class="modifier">
+          <input id="no-middle-name" type="checkbox" name="no-middle-name">
+          <label class="simple-checkbox" for="no-middle-name"><span>No middle name</span></label>
+        </div>
+        <div class="modifier">
+          <input id="first-initial-only" type="checkbox" name="first-initial-only">
+          <label class="simple-checkbox" for="first-initial-only"><span>Initial only</span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="usa-form-control">
+      <label for="person-knew-well-email">Provide an email address for this person</label>
+      <input type="email" id="person-knew-well-email" class="email-input">
+      <div class="modifiers modifiers-left">
+        <div class="modifier">
+          <span>or</span>
+        </div>
+        <div class="modifier">
+          <input class="disabled-toggle" id="i-dont-know" type="checkbox" name="i-dont-know" data-id="email-input">
+          <label for="i-dont-know"><span>I don't know</span></label>
+        </div>
+      </div>
+    </div>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="input-modifier-docs">
+          Documentation
+        </button>
+        <div id="input-modifier-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Use input modifiers when you need to allow an applicant signify additional attributes for a field (e.g. initial only or no middle name).</li>
+            <li>Use input modifiers when allowing an applicant to disable a field if they don't know the information or the information is not applicable.</li>
+          </ul>
+
+          <strong>When to consider something else</strong>
+          <ul>
+            <li>Don't use modifiers to ask an additional question.</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>When an applicant checks "Not applicable" or "I don't know" for a given input, the input should become disabled even if it already has information typed into it.</li>
+            <li>If stacking input fields with modifiers (e.g. full name inputs) use modifiers on the right so as not to interfere with input labels.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Alternate input label style</h3>
+    <div class="usa-form-control usa-medium-input">
+      <label for="alt-input" class="usa-alt-label">Hair color</label>
+      <select name="" id="hair-color">
+        <option value="" disabled selected></option>
+        <option value="brown">Brown</option>
+        <option value="black">Black</option>
+        <option value="blonde">Blonde</option>
+      </select>
+    </div>
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="alt-input-label-docs">
+          Documentation
+        </button>
+        <div id="alt-input-label-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Use only when the normal label style is not needed. For example, when an input is not part of a fieldset you will want the label style to match the fieldset legend for design consistency.</li>
+            <li><i>Hair color</i> is a good example of this pattern.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Input sizing</h3>
+    <div class="usa-form-control usa-small-input">
+      <label for="small-input">Small input</label>
+      <input type="text">
+    </div>
+    <div class="usa-form-control usa-medium-input">
+      <label for="medium-input">Medium input</label>
+      <input type="text">
+    </div>
+    <div class="usa-form-control">
+      <label for="default-input">Default input</label>
+      <input type="text">
+    </div>
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="input-sizing-docs">
+          Documentation
+        </button>
+        <div id="input-sizing-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Varying input sizing gives the applicant a hint at the length of text to write for a particular question.</li>
+            <li>For example, you would use a small input size for collecting a weight from an applicant and a large input size for collectin a name of a school.</li>
+          </ul>
+          <strong>Guidance</strong>
+          <ul>
+            <li>Inputs with size classes applied will be full width on mobile.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Validation</h3>
+
+    <div class="form-control">
+      <label for="default-input">Untouched input</label>
+      <input type="text">
+    </div>
+
+    <div class="form-control usa-input-error">
+      <label for="error-input">Incomplete input</label>
+      <span class="usa-input-error-message" id="input-error-message" role="alert">Your response is required</span>
+      <input type="text">
+    </div>
+
+    <div class="form-control usa-input-success">
+      <label for="success-input">Complete input</label>
+      <input type="text">
+    </div>
+
+    <div id="validation-toggle-example" class="form-control">
+      <label for="default-input">Validation toggle</label>
+      <input type="text">
+    </div>
+    <input id="input-validation-toggle" type="checkbox" name="input-validation-toggle" value="truth">
+    <label class="simple-checkbox" for="input-validation-toggle"><span>Toggle incomplete validation</span></label>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="input-validation-docs">
+          Documentation
+        </button>
+        <div id="input-validation-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Validation is used to signify to the applicant the state of the information they input into the form.</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Untouched: fields that have not had any information added to them.</li>
+            <li>Incomplete: fields that hold invalid information and/or required fields that are empty.</li>
+            <li>Complete: fields that hold valid infomation and/or required fields that are filled in.</li>
+            <li>Validation should be triggered upon exiting a field. For fieldsets like addresses, this may apply to the fieldset as a whole.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</section>
+
+  <h2 class="styleguide-section-header">Checkbox/Radio Button Blocks</h2>
+<section id="checkbox-radio-blocks" class="styleguide-section">
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Checkbox block</h3>
+    <fieldset class="usa-fieldset-inputs usa-sans">
+      <legend>Select your employment activity</legend>
+      <ul class="usa-unstyled-list">
+        <li>
+          <input id="employer" type="checkbox" name="historical-figures-1" value="truth">
+          <label for="employer"><span>An employer, military commander, or employee assistance program</span></label>
+        </li>
+        <li>
+          <input id="medical" type="checkbox" name="historical-figures-1" value="douglass">
+          <label for="medical"><span>A medical professional</span></label>
+        </li>
+        <li>
+          <input id="mental" type="checkbox" name="historical-figures-1" value="washington">
+          <label for="mental"><span>A mental health professional</span></label>
+        </li>
+        <li>
+          <input id="court" type="checkbox" name="historical-figures-1" >
+          <label for="court"><span>A court official/judge</span></label>
+        </li>
+        <li>
+          <input id="have-not" type="checkbox" name="historical-figures-1" disabled>
+          <label for="have-not"><span>I have not been ordered, advised or asked to seek counseling or treatment by any of the above</span></label>
+        </li>
+      </ul>
+    </fieldset>
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="checkbox-docs">
+          Documentation
+        </button>
+        <div id="checkbox-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>When a user can select any number of choices from a set list.</li>
+            <li>When applicants need to see all the available options at a glance.</li>
+          </ul>
+
+          <strong>When to consider something different</strong>
+          <ul>
+            <li>If there are too many options to display on a mobile screen.</li>
+            <li>If a user can only select one option from a list (use radio buttons instead).</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Applicants should be able to tap on or click on either the text label or the checkbox to select or deselect an option.</li>
+            <li>Avoid using negative language in labels as they can be counterintuitive. For example, “I want to receive a promotional email” instead of “I don’t want to receive promotional email.”</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Radio button block</h3>
+    <fieldset class="usa-fieldset-inputs usa-sans">
+      <legend>Provide your current citizenship status</legend>
+      <ul class="usa-unstyled-list">
+        <li>
+          <input id="us-citizen" type="radio" name="citizenship-status">
+          <label for="us-citizen"><span>I am a U.S. citizen or national by birth in the U.S. or U.S. territory/commonwealth</span></label>
+        </li>
+        <li>
+          <input id="foreign-country" type="radio" name="citizenship-status">
+          <label for="foreign-country"><span>I am a U.S. citizen or national by birth, born to U.S. parent(s), in a foreign country</span></label>
+        </li>
+        <li>
+          <input id="naturalized" type="radio" name="citizenship-status">
+          <label for="naturalized"><span>I am a naturalized U.S. citizen</span></label>
+        </li>
+        <li>
+          <input id="derived" type="radio" name="citizenship-status" >
+          <label for="derived"><span>I am a derived U.S. citizen</span></label>
+        </li>
+        <li>
+          <input id="not-citizen" type="radio" name="citizenship-status" disabled>
+          <label for="not-citizen"><span>I am not a U.S. citizen</span></label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="radio-docs">
+          Documentation
+        </button>
+        <div id="radio-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>When applicants need to select only one option out of a set of mutually exclusive choices.</li>
+            <li>When the number of available options can fit onto a mobile screen.</li>
+          </ul>
+
+          <strong>When to consider something different</strong>
+          <ul>
+            <li>Consider checkboxes if applicants need to select more than one option or if there is only one item to select.</li>
+            <li>Consider a dropdown if you don’t have enough space to list out all available options.</li>
+            <li>If applicants should be able to select zero of the options.</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Applicants should be able to tap on or click on either the text label or the radio button to select or deselect an option.</li>
+            <li>Use caution if you decide to set a default value. Setting a default value can discourage applicants from making conscious decisions, seem pushy, or alienate applicants who don’t fit into your assumptions. If you are unsure, leave nothing selected by default.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Inline Radio Button Block</h3>
+    <fieldset class="usa-fieldset-inputs usa-sans">
+      <legend>Have you used any other names?</legend>
+      <ul class="usa-list-inline-justified usa-list-inline">
+        <li>
+          <input id="yes" type="radio" name="other-names" >
+          <label for="yes"><span>Yes</span></label>
+        </li>
+        <li>
+          <input id="no" type="radio" name="other-names" >
+          <label for="no"><span>No</span></label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="inline-radio-docs">
+          Documentation
+        </button>
+        <div id="inline-radio-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>When applicants need to choose “yes” or “no”</li>
+            <li>When the list of options is less than or equal to 3.</li>
+          </ul>
+
+          <strong>When to consider something different</strong>
+          <ul>
+            <li>If the list of options is greater than 3</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Applicants should be able to tap on or click on either the text label or the radio button to select or deselect an option.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Validation</h3>
+    <fieldset class="usa-fieldset-inputs usa-sans usa-checkbox-radio-error">
+      <legend>Have you used any other names?</legend>
+      <span class="usa-input-error-message" id="input-error-message" role="alert">Your response is required</span>
+      <ul class="usa-list-inline-justified usa-list-inline">
+        <li>
+          <input id="yes" type="radio" name="other-names" >
+          <label for="yes"><span>Yes</span></label>
+        </li>
+        <li>
+          <input id="no" type="radio" name="other-names" >
+          <label for="no"><span>No</span></label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset class="usa-fieldset-inputs usa-sans usa-checkbox-radio-error">
+      <legend>Select your employment activity</legend>
+      <span class="usa-input-error-message" id="input-error-message" role="alert">Your response is required</span>
+      <ul class="usa-unstyled-list">
+        <li>
+          <input id="employer" type="checkbox" name="historical-figures-1" value="truth">
+          <label for="employer"><span>An employer, military commander, or employee assistance program</span></label>
+        </li>
+        <li>
+          <input id="medical" type="checkbox" name="historical-figures-1" value="douglass">
+          <label for="medical"><span>A medical professional</span></label>
+        </li>
+        <li>
+          <input id="mental" type="checkbox" name="historical-figures-1" value="washington">
+          <label for="mental"><span>A mental health professional</span></label>
+        </li>
+        <li>
+          <input id="court" type="checkbox" name="historical-figures-1" >
+          <label for="court"><span>A court official/judge</span></label>
+        </li>
+        <li>
+          <input id="have-not" type="checkbox" name="historical-figures-1" disabled>
+          <label for="have-not"><span>I have not been ordered, advised or asked to seek counseling or treatment by any of the above</span></label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="radio-checkbox-validation-docs">
+          Documentation
+        </button>
+        <div id="radio-checkbox-validation-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>When an applicant has not selected any option in a list of radio buttons or checkboxes.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <h2 class="styleguide-section-header">Phone Number Block</h2>
+<section id="phone-number-block" class="styleguide-section">
+  <fieldset class="usa-fieldset-inputs">
+    <legend>Provide this person's mobile/cell phone number</legend>
+    <ul class="usa-list-inline phone-format">
+      <li>
+        <input class="phone-input" id="usa-number" type="radio" name="phone-format-1" value="U.S phone number" checked>
+        <label class="simple-checkbox" for="usa-number"><span>U.S. phone number</span></label>
+      </li>
+      <li>
+        <input class="phone-input" id="international-number" type="radio" name="phone-format-1" value="International phone number">
+        <label class="simple-checkbox" for="international-number"><span>International phone number</span></label>
+      </li>
+      <li>
+        <input class="phone-input" id="dsn-number" type="radio" name="phone-format-1" value="DSN phone number">
+        <label class="simple-checkbox" for="dsn-number"><span>DSN phone number</span></label>
+      </li>
+    </ul>
+    <div class="usa-phone-number-block">
+      <div class="usa-phone-number-input">
+        <label class="label phone-input" for="phone-number">Phone number</label>
+        <input class="area-code phone-input" type="text" name="phone-number">
+        <input class="prefix phone-input" type="text" name="phone-number">
+        <input class="line-number phone-input" type="text" name="phone-number">
+      </div>
+      <div class="usa-extension-input">
+        <label for="extension">Extension</label>
+        <input type="text" name="extension" class="phone-input">
+      </div>
+      <div class="usa-phone-type-input">
+        <label for="phone-type-1">Phone type</label>
+        <select class="phone-input" name="phone-type-1" id="phone-type-1">
+          <option value="" style="display:none" disabled selected></option>
+          <option value="cell">Cell</option>
+          <option value="home">Home</option>
+          <option value="work">Work</option>
+        </select>
+      </div>
+      <div class="usa-phone-dont-know">
+        <ul class="usa-list-inline">
+          <li><span>or</span></li>
+          <li>
+            <input class="disabled-toggle" id="phone-dont-know" type="checkbox" name="phone-dont-know" value="phone-dont-know" data-id="phone-input">
+            <label for="phone-dont-know"><span>I don't know</span></label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="usa-grid">
+      <div class="usa-width-one-half">
+        <fieldset class="usa-fielset-inputs">
+          <legend class="label-style">Best time to call</legend>
+          <ul class="usa-list-inline">
+            <li>
+              <input id="day-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="day">
+              <label for="day-phone-3"><span>Day</span></label>
+            </li>
+            <li>
+              <input id="night-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="night">
+              <label for="night-phone-3"><span>Night</span></label>
+            </li>
+            <li>
+              <input id="day-night-phone-3" class="phone-input" type="radio" name="time-to-call-3" value="both">
+              <label for="day-night-phone-3"><span>Both</span></label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </div>
+  </fieldset>
+
+  <ul class="usa-accordion-bordered styleguide-documentation-section">
+    <li>
+      <button class="usa-accordion-button"
+        aria-expanded="true"
+        aria-controls="phone-number-docs">
+        Documentation
+      </button>
+      <div id="phone-number-docs" class="usa-accordion-content">
+        <strong>When to use</strong>
+        <ul>
+          <li>When collecting a phone number from an applicant.</li>
+        </ul>
+
+        <strong>Guidance</strong>
+        <ul>
+          <li>Optionally allow for an "I don't know" checkbox depending on the question requirements.</li>
+          <li>Don't auto tab between form fields. This could confuse applicants as they are trying to recall a phone number.</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</section>
+
+  <h2 class="styleguide-section-header">Date Blocks</h2>
+<section id="date-blocks" class="styleguide-section">
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">From/to date block</h3>
+    <fieldset id="from-to-date-block" class="usa-fieldset-inputs">
+      <legend>Dates used</legend>
+      <div class="from-to-dates">
+        <div class="from-date-container">
+          <p><strong>From date</strong></p>
+          <div class="m-d-y-block">
+            <div class="usa-form-control">
+              <label for="month">Month</label>
+              <input type="text" id="month" maxlength="2">
+            </div>
+            <div class="usa-form-control">
+              <label for="day">Day</label>
+              <input type="text" id="day" maxlength="2">
+            </div>
+            <div class="usa-form-control">
+              <label for="year">Year</label>
+              <input type="text" id="year" maxlength="4">
+            </div>
+          </div>
+          <div class="modifiers modifiers-left">
+            <div class="modifier">
+              <input id="from-estimated" type="checkbox" name="from-estimated">
+              <label class="simple-checkbox" for="from-estimated"><span>Estimated</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="from-to-date-arrow">
+          <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+        </div>
+        <div class="to-date-container">
+          <p><strong>To date</strong></p>
+          <div class="m-d-y-block">
+            <div class="usa-form-control">
+              <label for="month">Month</label>
+              <input type="text" id="month" class="to-date-input" maxlength="2">
+            </div>
+            <div class="usa-form-control">
+              <label for="day">Day</label>
+              <input type="text" id="day" class="to-date-input" maxlength="2">
+            </div>
+            <div class="usa-form-control">
+              <label for="year">Year</label>
+              <input type="text" id="year" class="to-date-input" maxlength="4">
+            </div>
+          </div>
+          <div class="modifiers modifiers-left">
+            <div class="modifier">
+              <input id="to-estimated" class="to-date-input" type="checkbox" name="to-estimated">
+              <label class="simple-checkbox" for="to-estimated"><span>Estimated</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="or">or</div>
+        <div class="present">
+          <input id="present" type="checkbox" name="present">
+          <label for="present"><span>Present</span></label>
+        </div>
+      </div>
+    </fieldset>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="fromto-date-docs">
+          Documentation
+        </button>
+        <div id="fromto-date-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>The from/to date block is used to collect a date range from an applicant.</li>
+          </ul>
+
+          <strong>When to consider something else</strong>
+          <ul>
+            <li>Use a month/day/year block when you are only collecting a single date from an applicant.</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Don't auto tab between form fields. This could confuse applicants as they are trying to recall a date.</li>
+            <li>Error validation should be triggered if month entered doesn't exist</li>
+            <li>Error validation should be triggered if day entered doesn't exist in given month</li>
+            <li>Error validation should be triggered if year is too far in the past or future.</li>
+            <li>Error validation should be triggered if an applicant enters a "to" date that is before a "from" date in the same entry.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="styleguide-subsection">
+    <h3 class="styleguide-subsection-header">Month/Day/Year Block</h3>
+    <fieldset class="usa-fieldset-inputs">
+      <legend>Provide your date of birth</legend>
+      <div class="m-d-y-block">
+        <div class="usa-form-control">
+          <label for="month">Month</label>
+          <input type="text" id="month" maxlength="2">
+        </div>
+        <div class="usa-form-control">
+          <label for="day">Day</label>
+          <input type="text" id="day" maxlength="2">
+        </div>
+        <div class="usa-form-control">
+          <label for="year">Year</label>
+          <input type="text" id="year" maxlength="4">
+        </div>
+      </div>
+      <div class="modifiers modifiers-left">
+        <div class="modifier">
+          <input id="estimated" type="checkbox" name="estimated">
+          <label class="simple-checkbox" for="estimated"><span>Estimated</span></label>
+        </div>
+      </div>
+    </fieldset>
+
+    <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="mdy-date-docs">
+          Documentation
+        </button>
+        <div id="mdy-date-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>The month/day/year date block is used to collect a single date from an applicant.</li>
+          </ul>
+
+          <strong>When to consider something else</strong>
+          <ul>
+            <li>Use a from/to date block if you are collecting a date range from an applicant.</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Don't auto tab between form fields. This could confuse applicants as they are trying to recall a date.</li>
+            <li>Error validation should be triggered if month entered doesn't exist</li>
+            <li>Error validation should be triggered if day entered doesn't exist in given month</li>
+            <li>Error validation should be triggered if year is too far in the past or future.</li>
+            <li>Day input may be optionally ommited if only the monty and year is needed from an applicant.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <h2 class="styleguide-section-header">Address Block</h2>
+<section id="address-block" class="styleguide-section">
+  <fieldset id="address-block" class="usa-fieldset-inputs">
+    <legend>Provide your address</legend>
+    <fieldset class="usa-fieldset-inputs">
+      <legend class="label-style">This address is</legend>
+      <ul class="usa-list-inline usa-list-inline-justified">
+        <li>
+          <input id="inside-us-radio" type="radio" name="address-type" value="inside-us-radio" checked>
+          <label for="inside-us-radio"><span>In the U.S.</span></label>
+        </li>
+        <li>
+          <input id="outside-us-radio" type="radio" name="address-type" value="outside-us-radio">
+          <label for="outside-us-radio"><span>Outside the U.S.</span></label>
+        </li>
+        <li>
+          <input id="apo-fpo-dpo-radio" type="radio" name="address-type" value="apo-fpo-dpo-radio">
+          <label for="apo-fpo-dpo-radio"><span>APO/FPO/DPO</span></label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <!-- Inside U.S. fields -->
+    <div class="inside-us-fields">
+      <div class="usa-form-control">
+        <label for="mailing-address-1" class="address-block">Street address</label>
+        <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+      </div>
+      <div class="usa-form-control">
+        <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+        <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+      </div>
+      <div class="usa-form-control">
+        <label for="city" class="address-block">City</label>
+        <input id="city" name="city" type="text" class="address-block">
+      </div>
+      <div class="usa-grid address-block">
+        <div class="usa-width-one-half">
+          <div class="usa-form-control">
+            <label for="state">State</label>
+            <input id="state" name="state" type="text">
+          </div>
+        </div>
+        <div class="usa-width-one-half">
+          <div class="usa-form-control">
+            <label for="zip">Zip</label>
+            <input id="zip" name="zip" type="zip">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Inside U.S. fields end -->
+    <!-- Outside U.S. fields -->
+    <div class="outside-us-fields">
+      <div class="usa-form-control">
+        <label for="mailing-address-1" class="address-block">Street address</label>
+        <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+      </div>
+      <div class="usa-form-control">
+        <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+        <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+      </div>
+      <div class="usa-form-control">
+        <label for="city" class="address-block">City</label>
+        <input id="city" name="city" type="text" class="address-block">
+      </div>
+      <div class="usa-form-control">
+        <label for="country" class="address-block">Country</label>
+        <select name="country" id="country" class="address-block">
+          <option value="United States of America">United States of America</option>
+          <option value="Another country">Another country</option>
+          <option value="Another country">Another country</option>
+        </select>
+      </div>
+    </div>
+    <!-- Outside U.S. fields end -->
+    <!-- APO/FPO/DPO fields -->
+    <div class="apo-fpo-dpo-fields">
+      <div class="usa-form-control">
+        <label for="address" class="apo-fpo-dpo-address-block">Address</label>
+        <input type="text" class="apo-fpo-dpo-address-block">
+      </div>
+      <label for="" class="apo-fpo-dpo-address-block">Select APO, FPO, DPO</label>
+      <ul class="usa-list-inline usa-list-inline-justified apo-fpo-dpo-address-block">
+        <li>
+          <div class="usa-form-controlk">
+            <input id="apo" type="radio" name="apo-fpo-dpo" value="APO">
+            <label for="apo"><span>APO</span></label>
+          </div>
+        </li>
+        <li>
+          <div class="usa-form-control">
+            <input id="fpo" type="radio" name="apo-fpo-dpo" value="FPO">
+            <label for="fpo"><span>FPO</span></label>
+          </div>
+        </li>
+         <li>
+          <div class="usa-form-control">
+            <input id="dpo" type="radio" name="apo-fpo-dpo" value="DPO">
+            <label for="dpo"><span>DPO</span></label>
+          </div>
+        </li>
+      </ul>
+      <div class="usa-grid apo-fpo-dpo-address-block">
+        <div class="usa-width-one-half">
+          <div class="usa-form-control">
+            <label for="apo-fpo-dpo-code">APO/FPO/DPO State Code</label>
+            <input type="text">
+          </div>
+        </div>
+        <div class="usa-width-one-half">
+          <div class="usa-form-control">
+            <label for="apo-fpo-dpo-zip-code">Zip Code</label>
+            <input type="text">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- APO/FPO/DPO fields end -->
+  </fieldset>
+
+  <ul class="usa-accordion-bordered styleguide-documentation-section">
+      <li>
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="address-docs">
+          Documentation
+        </button>
+        <div id="address-docs" class="usa-accordion-content">
+          <strong>When to use</strong>
+          <ul>
+            <li>Use an address block when you need to collect a full address from an applicant.</li>
+            <li>Addresses can either be inside or outside the United States</li>
+          </ul>
+
+          <strong>When to consider something else</strong>
+          <ul>
+            <li>Another input should be chosen if you are not collecing a formatted address from an applicant. (e.g. school name)</li>
+          </ul>
+
+          <strong>Guidance</strong>
+          <ul>
+            <li>Address format should update depending on country chosen.
+              <ul>
+                <li>For addresses within the United States applicants should see fields for street, apt/suite/building/floor, city, state, and zip.</li>
+                <li>For addresses outside the United states applicants should see fields for street, apt/suite/building/floor, and city.</li>
+              </ul>
+            </li>
+            <li>Address format should update if applicant chooses that the address is a APO/FPO/DPO address.
+            </li>
+            <li>Fields may be optionally ommited from the addres block if they are not needed for a particular question.</li>
+            <li>Address blocks should be validated against USPS for accuracy.</li>
+            <li>Validation for address should not occur until all fields are filled in.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+</section>
+
+  <h2 class="styleguide-section-header">Accordion Block</h2>
+<section id="accordion-block" class="styleguide-section">
+  <ul id="accordion" class="usa-accordion-bordered">
+    <li>
+      <div class="usa-accordion-header">
+        <button class="usa-accordion-button"
+          aria-expanded="true"
+          aria-controls="b-a1">
+          <div class="titles">
+            <div class="title">
+              <div class="title-right">
+                <span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-stack-1x fa-home fa-inverse"></i>
+                </span>
+                <span>801 Union Street, Burlington, VT 05401</span>
+              </div>
+              <div class="title-left">
+                <span>09/2017-10/2018</span>
+              </div>
+            </div>
+          </div>
+          <div class="usa-accordion-close-button">
+          </div>
+        </button>
+        <button class="usa-accordion-remove-button">
+          <span class="fas fa-times fa-fw"></span>
+          <span class="remove">Remove</span>
+        </button>
+      </div>
+      <div id="b-a1" class="usa-accordion-content">
+        <form action="" class="usa-form-large">
+          <fieldset id="address-block" class="usa-fieldset-inputs">
+            <legend>Provide your address</legend>
+            <fieldset class="usa-fieldset-inputs">
+              <legend class="label-style">This address is</legend>
+              <ul class="usa-list-inline usa-list-inline-justified">
+                <li>
+                  <input id="inside-us-radio-accordion" type="radio" name="address-type-accordion" value="inside-us-radio" checked>
+                  <label for="inside-us-radio-accordion"><span>In the U.S.</span></label>
+                </li>
+                <li>
+                  <input id="outside-us-radio-accordion" type="radio" name="address-type-accordion" value="outside-us-radio">
+                  <label for="outside-us-radio-accordion"><span>Outside the U.S.</span></label>
+                </li>
+                <li>
+                  <input id="apo-fpo-dpo-radio-accordion" type="radio" name="address-type-accordion" value="apo-fpo-dpo-radio">
+                  <label for="apo-fpo-dpo-radio-accordion"><span>APO/FPO/DPO</span></label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <!-- Inside U.S. fields -->
+            <div class="inside-us-fields">
+              <div class="usa-form-control">
+                <label for="mailing-address-1" class="address-block">Street address</label>
+                <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+              </div>
+              <div class="usa-form-control">
+                <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+                <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+              </div>
+              <div class="usa-form-control">
+                <label for="city" class="address-block">City</label>
+                <input id="city" name="city" type="text" class="address-block">
+              </div>
+              <div class="usa-grid address-block">
+                <div class="usa-width-one-half">
+                  <div class="usa-form-control">
+                    <label for="state">State</label>
+                    <input id="state" name="state" type="text">
+                  </div>
+                </div>
+                <div class="usa-width-one-half">
+                  <div class="usa-form-control">
+                    <label for="zip">Zip</label>
+                    <input id="zip" name="zip" type="zip">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Inside U.S. fields end -->
+            <!-- Outside U.S. fields -->
+            <div class="outside-us-fields">
+              <div class="usa-form-control">
+                <label for="mailing-address-1" class="address-block">Street address</label>
+                <input id="mailing-address-1" name="mailing-address-1" type="text" class="address-block">
+              </div>
+              <div class="usa-form-control">
+                <label for="mailing-address-2" class="address-block">Apt, suite, building, floor, etc.(Optional)</label>
+                <input id="mailing-address-2" name="mailing-address-2" type="text" class="address-block">
+              </div>
+              <div class="usa-form-control">
+                <label for="city" class="address-block">City</label>
+                <input id="city" name="city" type="text" class="address-block">
+              </div>
+              <div class="usa-form-control">
+                <label for="country" class="address-block">Country</label>
+                <select name="country" id="country" class="address-block">
+                  <option value="United States of America">United States of America</option>
+                  <option value="Another country">Another country</option>
+                  <option value="Another country">Another country</option>
+                </select>
+              </div>
+            </div>
+            <!-- Outside U.S. fields end -->
+            <!-- APO/FPO/DPO fields -->
+            <div class="apo-fpo-dpo-fields">
+              <div class="usa-form-control">
+                <label for="address" class="apo-fpo-dpo-address-block">Address</label>
+                <input type="text" class="apo-fpo-dpo-address-block">
+              </div>
+              <label for="" class="apo-fpo-dpo-address-block">Select APO, FPO, DPO</label>
+              <ul class="usa-list-inline usa-list-inline-justified apo-fpo-dpo-address-block">
+                <li>
+                  <div class="usa-form-controlk">
+                    <input id="apo" type="radio" name="apo-fpo-dpo" value="APO">
+                    <label for="apo"><span>APO</span></label>
+                  </div>
+                </li>
+                <li>
+                  <div class="usa-form-control">
+                    <input id="fpo" type="radio" name="apo-fpo-dpo" value="FPO">
+                    <label for="fpo"><span>FPO</span></label>
+                  </div>
+                </li>
+                 <li>
+                  <div class="usa-form-control">
+                    <input id="dpo" type="radio" name="apo-fpo-dpo" value="DPO">
+                    <label for="dpo"><span>DPO</span></label>
+                  </div>
+                </li>
+              </ul>
+              <div class="usa-grid apo-fpo-dpo-address-block">
+                <div class="usa-width-one-half">
+                  <div class="usa-form-control">
+                    <label for="apo-fpo-dpo-code">APO/FPO/DPO State Code</label>
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="usa-width-one-half">
+                  <div class="usa-form-control">
+                    <label for="apo-fpo-dpo-zip-code">Zip Code</label>
+                    <input type="text">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- APO/FPO/DPO fields end -->
+          </fieldset>
+          <fieldset class="usa-fieldset-inputs">
+            <legend>Is/was this residence</legend>
+            <ul class="usa-unstyled-list">
+              <li>
+                <input id="owned" type="radio" name="residence-type">
+                <label for="owned"><span>Owned by you</span></label>
+              </li>
+              <li>
+                <input id="rented-leased" type="radio" name="residence-type">
+                <label for="rented-leased"><span>Rented or leased by you</span></label>
+              </li>
+              <li>
+                <input id="military-housing" type="radio" name="residence-type">
+                <label for="military-housing"><span>Military housing</span></label>
+              </li>
+              <li>
+                <input id="other" type="radio" name="residence-type">
+                <label for="other"><span>Other</span></label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+    </li>
+  </ul>
+
+  <ul class="usa-accordion-bordered styleguide-documentation-section">
+    <li>
+      <button class="usa-accordion-button"
+        aria-expanded="true"
+        aria-controls="accordion-docs">
+        Documentation
+      </button>
+      <div id="accordion-docs" class="usa-accordion-content">
+        <strong>When to use</strong>
+        <ul>
+          <li>When applicants need to answer a repetetive set of the same questions (e.g. list of places that they have lived).</li>
+        </ul>
+
+        <strong>When to consider something different</strong>
+        <ul>
+          <li>If an applicant is only answering a set of questions once withn a given section/subsection.</li>
+        </ul>
+
+        <strong>Guidance</strong>
+        <ul>
+          <li>Some piece of entered information within the accordion should become the title for the accordion in order to help the applicant keep context (e.g. street name, person's name, etc.).</li>
+          <li>Accordion headers should fix to top of window on scroll in order to keep context of a given set of questions.</li>
+          <li>If a set of questions is timeline based (e.g. places where you have lived) the accordion elements should automatically order themselves based on the dates provided from most recent to furthest in the past.
+            <ul>
+              <li>The reorder should be triggered when the applicant answers "yes" or "no" to adding more entries to the list.</li>
+            </ul>
+          </li>
+          <li>Applicants should have to confirm when they are removing an accordion entry.</li>
+          <li>New accordion entries should always be added to the bottom of the accordion list.</li>
+          <li>Applicants should be able to open and close an accordion at any time.</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</section>
+
+  <h2 class="styleguide-section-header">Back/Next Block</h2>
+<section id="back-next-block" class="styleguide-section">
+  <div class="next-back-block">
+    <button class="usa-button back-button">
+      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">Full name</div>
+    </button>
+    <button class="usa-button next-button">
+      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">Your contact information</div>
+    </button>
+  </div>
+
+  <ul class="usa-accordion-bordered styleguide-documentation-section">
+    <li>
+      <button class="usa-accordion-button"
+        aria-expanded="true"
+        aria-controls="back-next-docs">
+        Documentation
+      </button>
+      <div id="back-next-docs" class="usa-accordion-content">
+        <strong>When to use</strong>
+        <ul>
+          <li>When allowing an applicant to progress forward and backward through sections in the form.</li>
+        </ul>
+
+        <strong>Guidance</strong>
+        <ul>
+          <li>Next button should always show name of section/subsection immediately following the current section/subsection a applicant is on.</li>
+          <li>Back button should always show name of section/subsection immediately prior the current section/subsection an applicant is on.</li>
+          <li>Applicants should be able to progress foward and backward in a form at any time.</li>
+          <li>If there are no sections/subsctions prior to the current section the back button should not show.</li>
+          <li>If there are no sections/subsctions after to the current section the next button should not show.</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</section>
+
+  <h2 class="styleguide-section-header">Sidenav Block</h2>
+<section id="sidenav-block" class="styleguide-section">
+  <div class="usa-sidenav-wrapper">
+    <nav>
+      <ul class="usa-sidenav-list">
+        <li>
+          <a class="usa-current usa-sidenav-toggle usa-sidenav-section usa-sidenav-has-errors" aria-expanded="false" href="">
+            <span class="usa-sidenav-section-name">Information about you</span>
+            <span class="usa-sidenav-status-icon"></span>
+          </a>
+          <ul class="usa-sidenav-sub_list">
+            <li>
+              <a href="" class="usa-sidenav-has-errors">
+                <span>Introduction</span>
+                <span class="usa-sidenav-status-icon"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Full name</span>
+                <span class="usa-sidenav-status-icon"></span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="usa-sidenav-is-valid">
+                <span>Other names used</span>
+                <span class="usa-sidenav-status-icon"></span>
+              </a>
+            </li>
+            <li>
+              <a class="usa-current" href="" class="usa-sidenav-is-valid">
+                <span>Your contact information</span>
+                <span class="usa-sidenav-status-icon"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Date of birth</span>
+                <span class="usa-sidenav-status-icon"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Place of birth</span>
+                <span class="usa-sidenav-status-icon"></span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="usa-sidenav-is-valid">
+                <span>Social security number</span>
+                <span class="usa-sidenav-status-icon"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Your identifying information</span>
+                <span class="usa-sidenav-status-icon"></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Review</span>
+                <span class="usa-sidenav-status-icon"></span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="" class="usa-sidenav-section usa-sidenav-toggle usa-sidenav-is-valid" aria-expanded="false">
+            <span class="usa-sidenav-section-name">Your history</span>
+            <span class="usa-sidenav-status-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+            <span class="usa-sidenav-section-name">Relationships</span>
+            <span class="usa-sidenav-status-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+            <span class="usa-sidenav-section-name">Citizenship</span>
+            <span class="usa-sidenav-status-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+            <span class="usa-sidenav-section-name">Miliary history</span>
+            <span class="usa-sidenav-status-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+            <span class="usa-sidenav-section-name">Foreign associations</span>
+            <span class="usa-sidenav-status-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+            <span class="usa-sidenav-section-name">Financial record</span>
+            <span class="usa-sidenav-status-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+            <span class="usa-sidenav-section-name">Substance abuse</span>
+            <span class="usa-sidenav-status-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+            <span class="usa-sidenav-section-name">Investigative and criminal history</span>
+            <span class="usa-sidenav-status-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+            <span class="usa-sidenav-section-name">Psychological and emotional health</span>
+            <span class="usa-sidenav-status-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a class="usa-sidenav-section usa-sidenav-toggle" href="" aria-expanded="false">
+            <span class="usa-sidenav-section-name">Review and submit</span>
+            <span class="usa-sidenav-status-icon"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <ul class="usa-accordion-bordered styleguide-documentation-section">
+    <li>
+      <button class="usa-accordion-button"
+        aria-expanded="true"
+        aria-controls="sidenav-docs">
+        Documentation
+      </button>
+      <div id="sidenav-docs" class="usa-accordion-content">
+        <strong>When to use</strong>
+        <ul>
+          <li>When allowing an applicant to navigate through all sections in the form.</li>
+          <li>When you want to show an applicant their status as they are filling out a form.</li>
+        </ul>
+
+        <strong>Guidance</strong>
+        <ul>
+          <li>Applicant should be able to select any section/subsection of the form at any time from the sidenav.</li>
+          <li>Validation for each section/subsection should only be triggered when an applicant reaches a review page.</li>
+          <li>Subsections
+            <ul>
+              <li>A subsection page should be marked as valid only after all required questions are completed.</li>
+              <li>A subsection page that is partially complete (with all correct responses) should not have an indicator until the review page is hit.</li>
+              <li>A subsection page that has not been visited yet should not have an indicator until the review page is hit.</li>
+              <li>A subsection with a field error should show an error.</li>
+            </ul>
+          </li>
+          <li>Sections
+            <ul>
+              <li>A section should show green only when all subsections and fields are fully and complete.</li>
+              <li>If a subsection shows an error, the section above it should show an error.</li>
+            </ul>
+          </li>
+          <li>Sections and subsections should be fully collapsed by default unless clicked on or navigated to using the back/next buttons.</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</section>
+
+  <h2 class="styleguide-section-header">Timeline and Counter Blocks</h2>
+<section id="timeline-counter-block" class="styleguide-section">
+	<div class="styleguide-subsection">
+		<h3 class="styleguide-subsection-header">Timeline Block</h3>
+		<div class="usa-timeline-block">
+			<div class="usa-timeline-content">
+				<span class="usa-timeline-icon">
+					<i class="fas fa-home fa-3x"></i>
+				</span>
+				<span class="usa-timeline-title">
+					<strong>Where have you lived</strong>
+				</span>
+				<div class="usa-timeline-progress">
+					<div class="usa-timeline-progress-filled" style="left: 65%; width: 35%;"></div>
+				</div>
+			</div>
+			<div class="usa-counter">
+				<div class="usa-counter-fraction">
+					<span class="completed">4</span>
+					<span class="slash">/</span>
+					<span class="total">10</span>
+				</div>
+				<div class="usa-counter-unit">
+					Years covered
+				</div>
+			</div>
+		</div>
+
+		<ul class="usa-accordion-bordered styleguide-documentation-section">
+	    <li>
+	      <button class="usa-accordion-button"
+	        aria-expanded="true"
+	        aria-controls="timeline-docs">
+	        Documentation
+	      </button>
+	      <div id="timeline-docs" class="usa-accordion-content">
+	        <strong>When to use</strong>
+	        <ul>
+	          <li>Use a timeline block to show an applicant their progress when filling out information within a designated block of time (e.g. provide all the places you've lived over the past 10 years).</li>
+	        </ul>
+
+	        <strong>Guidance</strong>
+	        <ul>
+	          <li>The timeline progress bar fill amount should be relative to the timespan given for each entry.</li>
+	          <li>The timeline progress bar fill location should be relative to chronological order of entries.
+	          	<ul>
+	          		<li>Entries farther in the past should show up farther to the left in the progress bar.</li>
+	          		<li>Entries closer to the present should show up farther to the right in the progress bar.</li>
+	          	</ul>
+	          </li>
+	        </ul>
+	      </div>
+	    </li>
+	  </ul>
+	</div>
+
+	<div class="styleguide-subsection">
+		<h3 class="styleguide-subsection-header">Counter Block</h3>		
+		<div class="usa-counter usa-counter-large">
+			<div class="usa-counter-fraction">
+				<span class="completed">4</span>
+				<span class="slash">/</span>
+				<span class="total">10</span>
+			</div>
+			<div class="usa-counter-unit">
+				Sections complete
+			</div>
+		</div>
+		<div class="usa-counter">
+			<div class="usa-counter-fraction">
+				<span class="completed">4</span>
+			</div>
+			<div class="usa-counter-unit">
+				Schools attended
+			</div>
+		</div>
+	</div>
+
+	<ul class="usa-accordion-bordered styleguide-documentation-section">
+    <li>
+      <button class="usa-accordion-button"
+        aria-expanded="true"
+        aria-controls="counter-docs">
+        Documentation
+      </button>
+      <div id="counter-docs" class="usa-accordion-content">
+        <strong>When to use</strong>
+        <ul>
+          <li>Use a counter block when you want to show an applicant their progress within the entire form, a section, or a subsection.</li>
+        </ul>
+
+        <strong>When to consider something different</strong>
+        <ul>
+        	<li>Use a timeline block to show an applicant their progress filling out information over a particular period of time.</li>
+        </ul>
+
+        <strong>Guidance</strong>
+        <ul>
+          <li>Counter come in two sizes, large and default.</li>
+          <li>Counters can be used as a fraction or a single number.</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</section>
+
+
+
+
+  <h2 class="styleguide-section-header">Save Block</h2>
+<section class="styleguide-section" id="save-block">
+	<button class="usa-eapp-save">
+		<div class="usa-eapp-save-icon">
+			<span class="fa-stack fa-lg">
+				<i class="fas fa-circle fa-stack-2x"></i>
+				<i class="far fa-save fa-stack-1x fa-inverse"></i>
+			</span>
+		</div>
+		<span class="usa-eapp-save-label">
+			<div class="usa-timeago-label">
+				<div class="save-label">Saved</div>
+				<div class="timeago-label"><strong>4 minutes ago</strong></div>
+			</div>
+			<span class="usa-save-label">
+				<div class="save-label"><strong>Save now</strong></div>
+			</span>
+		</span>
+	</button>
+
+	<ul class="usa-accordion-bordered styleguide-documentation-section">
+    <li>
+      <button class="usa-accordion-button"
+        aria-expanded="true"
+        aria-controls="save-docs">
+        Documentation
+      </button>
+      <div id="save-docs" class="usa-accordion-content">
+        <strong>When to use</strong>
+        <ul>
+          <li>Use a save button to allow the applicant to save their progress in the form at any time.</li>
+        </ul>
+
+        <strong>Guidance</strong>
+        <ul>
+          <li>The save button should allow a user to submit a save at any time.</li>
+          <li>The save button shoud display the last time the form was saved either manually or autosaved.</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</section>
+</section>
+
+  </body>
+  <script src="/eApp-design-system/javascripts/site.js"></script>
+</html>
