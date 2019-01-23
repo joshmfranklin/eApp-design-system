@@ -52,6 +52,10 @@
 	background-color: $color-gray-cool-light;
 	margin-top: 1rem;
 	position: relative;
+
+	&.timeline-proto {
+		height: 2.25rem;
+	}
 }
 
 .usa-timeline-progress-filled {
@@ -60,7 +64,39 @@
 	background-color: $color-green-light;
 	width: 0;
 	top: 0;
-	left: 0
+	left: 0;
+
+	&.timeline-proto {
+		background-color: $color-green-light;
+		border: 2px solid $color-green;
+		color: $color-white;
+		text-align: center;
+		font-size: 1.4rem;
+		cursor: pointer;
+
+		&:hover {
+			transform: scaleY(1.2);
+			transition: transform 0.3s;
+			background-color: $color-green;
+		}
+
+		span:hover {
+			transform: scale(1.2);
+		}
+	}
+}
+
+.usa-timeline-min-max {
+	width: 100%;
+	margin-top: .5rem;
+
+	span {
+		font-weight: bold;
+	}
+
+	.max {
+		float: right;
+	}
 }
 
 // Counter block

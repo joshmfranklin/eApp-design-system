@@ -1,0 +1,16 @@
+.webui-popover {
+	background: $color-green-lightest;
+	max-width: 300px;
+	border-color: $color-green-light;
+	border-width: 2px;
+}
+
+.webui-popover-title {
+	background-color: $color-green-lightest;
+	border-bottom: none;
+}
+
+.webui-popover-title, 
+.webui-popover-content {
+	text-align: center;
+}
