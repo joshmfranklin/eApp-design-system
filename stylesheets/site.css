@@ -308,6 +308,8 @@ legend.label-style {
 
 .usa-accordion-bordered {
   margin-bottom: 5rem; }
+  .usa-accordion-bordered li {
+    margin-bottom: 2rem; }
 
 .usa-accordion-header {
   display: -webkit-box;
