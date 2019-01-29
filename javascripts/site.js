@@ -212,11 +212,11 @@ $(window).on('load', function(){
     }
   })
 
-  $('.timeline-popover-1').webuiPopover({title:'Address 3:',content:'10 Wyman Rd, Marblehead, MA 01945 (5/2006 - 12/2016)', placement: 'top', trigger: 'hover'});
+  $('.timeline-popover-1').webuiPopover({title:'Address 3:',content:'10 Wyman Rd, Marblehead, MA 01945 (5/2006 - 12/2010', placement: 'top', trigger: 'hover'});
 
-  $('.timeline-popover-2').webuiPopover({title:'Address 2:',content:'355 Bradley St, Brooklyn, NY 11245 (1/2017 - 3/2018)', placement: 'top', trigger: 'hover'});
+  $('.timeline-popover-2').webuiPopover({title:'Address 2:',content:'355 Bradley St, Brooklyn, NY 11245 (1/2012 - 3/2015)', placement: 'top', trigger: 'hover'});
 
-  $('.timeline-popover-3').webuiPopover({title:'Address 1:',content:'160 Union St, Brooklyn, NY 11215 (5/2018 - 1/2019)', placement: 'top', trigger: 'hover'});
+  $('.timeline-popover-3').webuiPopover({title:'Address 1:',content:'160 Union St, Brooklyn, NY 11215 (5/2015 - 1/2019)', placement: 'top', trigger: 'hover'});
 
   var startElement1 = document.getElementById('timeline-1');
   var endElement1 = document.getElementById('accordion-1');
