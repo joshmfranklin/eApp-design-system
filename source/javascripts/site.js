@@ -225,12 +225,12 @@ $(window).on('load', function(){
   var startElement3 = document.getElementById('timeline-3');
   var endElement3 = document.getElementById('accordion-3');
 
-  new LeaderLine(LeaderLine.mouseHoverAnchor({element: startElement1, showEffectName:'draw', style: {backgroundImage: 'none', backgroundColor: 'none', padding: '0', cursor: 'pointer'}, hoverStyle: {backgroundColor: ''}}), endElement1, {color: '#94bfa2', size: 4, startSocket: 'right', endSocket:'left', startPlug:'behind', endPlug:'behind'}
+  new LeaderLine(LeaderLine.mouseHoverAnchor({element: startElement1, showEffectName:'draw', style: {backgroundImage: 'none', backgroundColor: 'none', padding: '0', cursor: 'pointer'}, hoverStyle: {backgroundColor: ''}}), endElement1, {color: '#94bfa2', size: 4, startSocket: 'right', endSocket:'left', startPlug:'disc', endPlug:'disc', startPlugColor: '#4aa564', endPlugColor: '#4aa564'}
   );
 
-  new LeaderLine(LeaderLine.mouseHoverAnchor({element: startElement2, showEffectName:'draw', style: {backgroundImage: 'none', backgroundColor: 'none', padding: '0', cursor: 'pointer'}, hoverStyle: {backgroundColor: ''}}), endElement2, {color: '#94bfa2', size: 4, startSocket: 'right', endSocket:'left', startPlug:'behind', endPlug:'behind'}
+  new LeaderLine(LeaderLine.mouseHoverAnchor({element: startElement2, showEffectName:'draw', style: {backgroundImage: 'none', backgroundColor: 'none', padding: '0', cursor: 'pointer'}, hoverStyle: {backgroundColor: ''}}), endElement2, {color: '#94bfa2', size: 4, startSocket: 'right', endSocket:'left', startPlug:'disc', endPlug:'disc', startPlugColor: '#4aa564', endPlugColor: '#4aa564'}
   );
 
-  new LeaderLine(LeaderLine.mouseHoverAnchor({element: startElement3, showEffectName:'draw', style: {backgroundImage: 'none', backgroundColor: 'none', padding: '0', cursor: 'pointer'}, hoverStyle: {backgroundColor: ''}}), endElement3, {color: '#94bfa2', size: 4, startSocket: 'right', endSocket:'left', startPlug:'behind', endPlug:'behind'}
+  new LeaderLine(LeaderLine.mouseHoverAnchor({element: startElement3, showEffectName:'draw', style: {backgroundImage: 'none', backgroundColor: 'none', padding: '0', cursor: 'pointer'}, hoverStyle: {backgroundColor: ''}}), endElement3, {color: '#94bfa2', size: 4, startSocket: 'right', endSocket:'left', startPlug:'disc', endPlug:'disc', startPlugColor: '#4aa564', endPlugColor: '#4aa564'}
   );
 })
