@@ -726,6 +726,48 @@ legend.label-style {
 .usa-counter-large .usa-counter-unit {
   font-size: 2rem; }
 
+.usa-timeline-vertical-proto {
+  text-align: center; }
+  .usa-timeline-vertical-proto .usa-timeline-vertical-progress {
+    position: relative;
+    height: 55rem;
+    width: 2rem;
+    background-color: #dce4ef;
+    margin: 1rem auto; }
+    .usa-timeline-vertical-proto .usa-timeline-vertical-progress .usa-timeline-vertical-filled {
+      width: 100%;
+      position: absolute;
+      height: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #4aa564;
+      border: 2px solid #2e8540;
+      color: #ffffff;
+      text-align: center;
+      font-size: 1.4rem;
+      cursor: pointer;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      z-index: 9999; }
+      .usa-timeline-vertical-proto .usa-timeline-vertical-progress .usa-timeline-vertical-filled:hover {
+        -webkit-transform: scaleX(1.2);
+                transform: scaleX(1.2);
+        -webkit-transition: -webkit-transform 0.3s;
+        transition: -webkit-transform 0.3s;
+        transition: transform 0.3s;
+        transition: transform 0.3s, -webkit-transform 0.3s;
+        background-color: #2e8540; }
+      .usa-timeline-vertical-proto .usa-timeline-vertical-progress .usa-timeline-vertical-filled span:hover {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2); }
+
 .usa-eapp-save {
   background-color: #112e51;
   border: 1px solid #00a6d2;

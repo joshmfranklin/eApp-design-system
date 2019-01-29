@@ -217,4 +217,20 @@ $(window).on('load', function(){
   $('.timeline-popover-2').webuiPopover({title:'Address 2:',content:'355 Bradley St, Brooklyn, NY 11245 (1/2017 - 3/2018)', placement: 'top', trigger: 'hover'});
 
   $('.timeline-popover-3').webuiPopover({title:'Address 1:',content:'160 Union St, Brooklyn, NY 11215 (5/2018 - 1/2019)', placement: 'top', trigger: 'hover'});
+
+  var startElement1 = document.getElementById('timeline-1');
+  var endElement1 = document.getElementById('accordion-1');
+  var startElement2 = document.getElementById('timeline-2');
+  var endElement2 = document.getElementById('accordion-2');
+  var startElement3 = document.getElementById('timeline-3');
+  var endElement3 = document.getElementById('accordion-3');
+
+  new LeaderLine(LeaderLine.mouseHoverAnchor({element: startElement1, showEffectName:'draw', style: {backgroundImage: 'none', backgroundColor: 'none', padding: '0', cursor: 'pointer'}, hoverStyle: {backgroundColor: ''}}), endElement1, {color: '#94bfa2', size: 4, startSocket: 'right', endSocket:'left', startPlug:'disc', endPlug:'disc', startPlugColor: '#4aa564', endPlugColor: '#4aa564'}
+  );
+
+  new LeaderLine(LeaderLine.mouseHoverAnchor({element: startElement2, showEffectName:'draw', style: {backgroundImage: 'none', backgroundColor: 'none', padding: '0', cursor: 'pointer'}, hoverStyle: {backgroundColor: ''}}), endElement2, {color: '#94bfa2', size: 4, startSocket: 'right', endSocket:'left', startPlug:'disc', endPlug:'disc', startPlugColor: '#4aa564', endPlugColor: '#4aa564'}
+  );
+
+  new LeaderLine(LeaderLine.mouseHoverAnchor({element: startElement3, showEffectName:'draw', style: {backgroundImage: 'none', backgroundColor: 'none', padding: '0', cursor: 'pointer'}, hoverStyle: {backgroundColor: ''}}), endElement3, {color: '#94bfa2', size: 4, startSocket: 'right', endSocket:'left', startPlug:'disc', endPlug:'disc', startPlugColor: '#4aa564', endPlugColor: '#4aa564'}
+  );
 })
