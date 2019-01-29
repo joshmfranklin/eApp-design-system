@@ -53,6 +53,7 @@
 	margin-top: 1rem;
 	position: relative;
 
+	// Proto styles
 	&.timeline-proto {
 		height: 2.25rem;
 	}
@@ -65,7 +66,8 @@
 	width: 0;
 	top: 0;
 	left: 0;
-
+	
+	// Proto styles
 	&.timeline-proto {
 		background-color: $color-green-light;
 		border: 2px solid $color-green;
@@ -119,5 +121,46 @@
 
 	.usa-counter-unit {
 		font-size: 2rem;
+	}
+}
+
+// Vertical timeline proto styles
+.usa-timeline-vertical-proto {
+	text-align: center;
+
+	.usa-timeline-vertical-progress {
+		position: relative;
+		height: 55rem;
+		width: 2rem;
+		background-color: $color-gray-cool-light;
+		margin: 1rem auto;
+		
+		.usa-timeline-vertical-filled {
+			width: 100%;
+			position: absolute;
+			height: 0;
+			top: 0;
+			bottom: 0;
+			background-color: $color-green-light;
+			border: 2px solid $color-green;
+			color: $color-white;
+			text-align: center;
+			font-size: 1.4rem;
+			cursor: pointer;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    z-index: 9999;
+
+	    &:hover {
+				transform: scaleX(1.2);
+				transition: transform 0.3s;
+				background-color: $color-green;
+			}
+
+			span:hover {
+				transform: scale(1.2);
+			}
+		}
 	}
 }
