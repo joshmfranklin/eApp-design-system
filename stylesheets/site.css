@@ -1106,6 +1106,12 @@ html {
 .webui-popover-content {
   text-align: center; }
 
+.webui-popover.top > .webui-arrow {
+  border-top-color: #4aa564; }
+
+.webui-popover.top > .webui-arrow:after {
+  border-top-color: #e7f4e4; }
+
 .styleguide-section::before {
   display: block;
   content: " ";
