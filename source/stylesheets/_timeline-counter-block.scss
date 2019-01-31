@@ -131,6 +131,7 @@
 // Proto vertical timeline
 .proto-vertical-timeline-container {
 	width: 100%; 
+	margin: 4rem 0 8rem 0;
 
 	.proto-vertical-timeline-entry {
 		display: flex;
@@ -169,20 +170,22 @@
 			display: flex;
 			align-items: center;
 			border-top: 2px dotted $color-gray-lighter;
-			border-left: 2px solid $color-green;
+			border-left: 3px solid $color-green;
 			padding: 0 1rem 0 2rem;
 			position: relative;
 			justify-content: space-between;
+			text-decoration: none;
+			color: $color-primary;
 
 			&:before {
 				content: '';
-				height: 1rem;
-				width: 1rem;
+				height: 1.1rem;
+				width: 1.1rem;
 				background: $color-green;
 				border-radius: 50%;
 				position: absolute;
 				top: -6px;
-				left: -6px;
+				left: -7px;
 			}
 
 			.address {

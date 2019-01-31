@@ -131,4 +131,32 @@ title: eApp SF-85
 	    </div>
 		</li>
 	</ul>
+
+	<fieldset class="usa-fieldset-inputs usa-sans">
+    <legend>Do you have an additional residence to report?</legend>
+    <ul class="usa-list-inline-justified usa-list-inline">
+      <li>
+        <input id="yes-2" type="radio" name="additional-residence" >
+        <label for="yes-2"><span>Yes</span></label>
+      </li>
+      <li>
+        <input id="no-2" type="radio" name="additional-residence" >
+        <label for="no-2"><span>No</span></label>
+      </li>
+    </ul>
+  </fieldset>
+  <!-- Additional residences end -->
+  <!-- Back/next block -->
+  <div class="next-back-block">
+  	<% link_to '/example-form/your-history-introduction.html', :class => "usa-button back-button" do %>
+      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">Introduction</div>
+    <% end %>
+    <% link_to '/example-form/employment-activities.html', :class => "usa-button next-button" do %>
+      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">Employment activities</div>
+    <% end %>
+  </div>
 </div>
