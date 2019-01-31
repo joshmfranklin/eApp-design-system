@@ -14,7 +14,6 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.18/jquery.webui-popover.min.css">
     <script src="https://cdn.jsdelivr.net/npm/webui-popover@1.2.18/dist/jquery.webui-popover.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/leader-line@1.0.5/leader-line.min.js"></script>
     <link href="/eApp-design-system/stylesheets/site.css" rel="stylesheet" />
   </head>
   <div class="eapp-header">
@@ -233,58 +232,59 @@
 			</div>
 		</div>
 	</div>
+	<p><strong>Summary of places you have lived</strong></p>
 	<div class="proto-vertical-timeline-container">
 		<div class="proto-vertical-timeline-entry">
 			<div class="date"><div class="start"><strong>2019</strong></div></div>
-			<div class="timeline-entry" style="height: 20rem;">
+			<a href="" onclick="return false;" class="timeline-entry" style="height: 20rem;">
 				<div class="address-right">
 					<div class="address">Address 1: <strong>801 Union St. Apt 3, Brooklyn, NY 11215</strong></div>
 				</div>
 				<div class="address-dates-left"><strong>4/2015 - 1/2019</strong></div>
 				<div class="entry-actions">
-					<i class="fas fa-chevron-down"></i>
+					<i class="fas fa-pencil-alt"></i>
 					<i class="fas fa-trash"></i>
 				</div>
-			</div>
+			</a>
 		</div>
 		<div class="proto-vertical-timeline-entry">
 			<div class="date"><div class="start"><strong>2015</strong></div></div>
-			<div class="timeline-entry" style="height: 10rem;">
+			<a href="" onclick="return false;" class="timeline-entry" style="height: 10rem;">
 				<div class="address-right">
 					<div class="address">Address 2: <strong>50 Lexington Ave, New York, NY 10010</strong></div>
 				</div>
 				<div class="address-dates-left"><strong>8/2013 - 4/2015</strong></div>
 				<div class="entry-actions">
-					<i class="fas fa-chevron-down"></i>
+					<i class="fas fa-pencil-alt"></i>
 					<i class="fas fa-trash"></i>
 				</div>
-			</div>
+			</a>
 		</div>
 		<div class="proto-vertical-timeline-entry">
 			<div class="date"><div class="start"><strong>2013</strong></div></div>
-			<div class="timeline-entry" style="height: 10rem;">
+			<a href="" onclick="return false;" class="timeline-entry" style="height: 10rem;">
 				<div class="address-right">
 					<div class="address">Address 3: <strong>431 Union St. Burlington, VT 05401</strong></div>
 				</div>
 				<div class="address-dates-left"><strong>9/2011 - 7/2013</strong></div>
 				<div class="entry-actions">
-					<i class="fas fa-chevron-down"></i>
+					<i class="fas fa-pencil-alt"></i>
 					<i class="fas fa-trash"></i>
 				</div>
-			</div>
+			</a>
 		</div>
 		<div class="proto-vertical-timeline-entry">
 			<div class="date"><div class="start"><strong>2011</strong></div></div>
-			<div class="timeline-entry" style="height: 5rem;">
+			<a href="" onclick="return false;" class="timeline-entry" style="height: 5rem;">
 				<div class="address-right">
 					<div class="address">Address 4: <strong>79 Dale Rd, Burlington, VT 05401</strong></div>
 				</div>
 				<div class="address-dates-left"><strong>9/2010 - 8/2011</strong></div>
 				<div class="entry-actions">
-					<i class="fas fa-chevron-down"></i>
+					<i class="fas fa-pencil-alt"></i>
 					<i class="fas fa-trash"></i>
 				</div>
-			</div>
+			</a>
 		</div>
 		<div class="proto-vertical-timeline-entry">
 			<div class="date"><div class="start"><strong>2010</strong></div></div>
@@ -296,18 +296,42 @@
 				<div class="start"><strong>2009</strong></div>
 				<div class="end"><strong>2009</strong></div>
 			</div>
-			<div class="timeline-entry" style="height: 4rem;">
+			<a href="" onclick="return false;" class="timeline-entry" style="height: 4rem;">
 				<div class="address-right">
 					<div class="address">Address 5: <strong>273 Pearl St, Burlington, VT 05401</strong></div>
 				</div>
 				<div class="address-dates-left"><strong>9/2008 - 8/2009</strong></div>
 				<div class="entry-actions">
-					<i class="fas fa-chevron-down"></i>
+					<i class="fas fa-pencil-alt"></i>
 					<i class="fas fa-trash"></i>
 				</div>
-			</div>
+			</a>
 		</div>
 	</div>
+
+	<fieldset class="usa-fieldset-inputs usa-sans">
+    <legend>Do you have an additional residence to report?</legend>
+    <ul class="usa-list-inline-justified usa-list-inline">
+      <li>
+        <input id="yes-2" type="radio" name="additional-residence" >
+        <label for="yes-2"><span>Yes</span></label>
+      </li>
+      <li>
+        <input id="no-2" type="radio" name="additional-residence" >
+        <label for="no-2"><span>No</span></label>
+      </li>
+    </ul>
+  </fieldset>
+  <!-- Additional residences end -->
+  <!-- Back/next block -->
+  <div class="next-back-block">
+<a href="/eApp-design-system/example-form/your-history-introduction.html" class="usa-button back-button">      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">Introduction</div>
+</a><a href="/eApp-design-system/example-form/employment-activities.html" class="usa-button next-button">      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">Employment activities</div>
+</a>  </div>
 </div>
         <div>
           <button id="eapp-save" class="usa-eapp-save">

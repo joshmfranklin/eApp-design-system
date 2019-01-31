@@ -14,7 +14,6 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.18/jquery.webui-popover.min.css">
     <script src="https://cdn.jsdelivr.net/npm/webui-popover@1.2.18/dist/jquery.webui-popover.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/leader-line@1.0.5/leader-line.min.js"></script>
     <link href="/eApp-design-system/stylesheets/site.css" rel="stylesheet" />
   </head>
   <div class="eapp-header">
@@ -333,6 +332,30 @@
 	    </div>
 		</li>
 	</ul>
+
+	<fieldset class="usa-fieldset-inputs usa-sans">
+    <legend>Do you have an additional residence to report?</legend>
+    <ul class="usa-list-inline-justified usa-list-inline">
+      <li>
+        <input id="yes-2" type="radio" name="additional-residence" >
+        <label for="yes-2"><span>Yes</span></label>
+      </li>
+      <li>
+        <input id="no-2" type="radio" name="additional-residence" >
+        <label for="no-2"><span>No</span></label>
+      </li>
+    </ul>
+  </fieldset>
+  <!-- Additional residences end -->
+  <!-- Back/next block -->
+  <div class="next-back-block">
+<a href="/eApp-design-system/example-form/your-history-introduction.html" class="usa-button back-button">      <i class="far fa-arrow-alt-circle-left"></i>
+      <div class="direction">Back</div>
+      <div class="label">Introduction</div>
+</a><a href="/eApp-design-system/example-form/employment-activities.html" class="usa-button next-button">      <i class="far fa-arrow-alt-circle-right"></i>
+      <div class="direction">Next</div>
+      <div class="label">Employment activities</div>
+</a>  </div>
 </div>
         <div>
           <button id="eapp-save" class="usa-eapp-save">

@@ -730,7 +730,8 @@ legend.label-style {
   font-size: 2rem; }
 
 .proto-vertical-timeline-container {
-  width: 100%; }
+  width: 100%;
+  margin: 4rem 0 8rem 0; }
   .proto-vertical-timeline-container .proto-vertical-timeline-entry {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -763,21 +764,23 @@ legend.label-style {
           -ms-flex-align: center;
               align-items: center;
       border-top: 2px dotted #d6d7d9;
-      border-left: 2px solid #2e8540;
+      border-left: 3px solid #2e8540;
       padding: 0 1rem 0 2rem;
       position: relative;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between; }
+              justify-content: space-between;
+      text-decoration: none;
+      color: #0071bc; }
       .proto-vertical-timeline-container .proto-vertical-timeline-entry .timeline-entry:before {
         content: '';
-        height: 1rem;
-        width: 1rem;
+        height: 1.1rem;
+        width: 1.1rem;
         background: #2e8540;
         border-radius: 50%;
         position: absolute;
         top: -6px;
-        left: -6px; }
+        left: -7px; }
       .proto-vertical-timeline-container .proto-vertical-timeline-entry .timeline-entry .address {
         width: 35rem;
         white-space: nowrap;
