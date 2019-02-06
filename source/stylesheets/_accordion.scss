@@ -111,6 +111,59 @@
   max-width: 100%;
 }
 
+
+// Timeline proto 3
+.accordion-timeline > li {
+  background: $color-white;
+  padding: 0 0 0 2rem;
+  border-left: 3px solid $color-green-light;
+  margin-left: 5rem;
+  margin-bottom: 0;
+  position: relative;
+  width: auto;
+
+  &.timeline-entry-empty {
+    border-left: 3px dotted $color-gray-light;
+    height: 10rem;
+  }
+
+  .year-start {
+    position: absolute;
+    left: -5rem;
+    top: -1.4rem;
+  }
+
+  .year-end {
+    position: absolute;
+    left: -5rem;
+    bottom: -1.4rem;
+  }
+
+  &:before,
+  &:last-of-type:after {
+    content: '';
+    height: 1.4rem;
+    width: 1.4rem;
+    background: $color-green-light;
+    border: 2px solid $color-green;
+    border-radius: 50%;
+    position: absolute;
+    left: -8px;
+  }
+
+  &:before {
+    top: -8px;
+  }
+
+  &:last-of-type:after {
+    bottom: -8px;
+  }
+
+  .usa-accordion-header {
+    padding: 1rem 0;
+  }
+}
+
 // Mobile styles
 
 @media all and (max-width: 575px) {
