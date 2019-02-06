@@ -406,6 +406,41 @@ legend.label-style {
 .usa-content ol:not(.usa-accordion):not(.usa-accordion-bordered), .usa-content p, .usa-content ul:not(.usa-accordion):not(.usa-accordion-bordered) {
   max-width: 100%; }
 
+.accordion-timeline > li {
+  background: #ffffff;
+  padding: 0 0 0 2rem;
+  border-left: 3px solid #4aa564;
+  margin-left: 5rem;
+  margin-bottom: 0;
+  position: relative;
+  width: auto; }
+  .accordion-timeline > li.timeline-entry-empty {
+    border-left: 3px dotted #aeb0b5;
+    height: 10rem; }
+  .accordion-timeline > li .year-start {
+    position: absolute;
+    left: -5rem;
+    top: -1.4rem; }
+  .accordion-timeline > li .year-end {
+    position: absolute;
+    left: -5rem;
+    bottom: -1.4rem; }
+  .accordion-timeline > li:before, .accordion-timeline > li:last-of-type:after {
+    content: '';
+    height: 1.4rem;
+    width: 1.4rem;
+    background: #4aa564;
+    border: 2px solid #2e8540;
+    border-radius: 50%;
+    position: absolute;
+    left: -8px; }
+  .accordion-timeline > li:before {
+    top: -8px; }
+  .accordion-timeline > li:last-of-type:after {
+    bottom: -8px; }
+  .accordion-timeline > li .usa-accordion-header {
+    padding: 1rem 0; }
+
 @media all and (max-width: 575px) {
   .usa-accordion-button,
   .usa-accordion-content {
