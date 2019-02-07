@@ -125,6 +125,11 @@
   &.timeline-entry-empty {
     border-left: 3px dotted $color-gray-light;
     height: 10rem;
+
+    &:first-of-type:before {
+      background-color: $color-gray-light;
+      border-color: $color-gray-light;
+    }
   }
 
   .year-start {
