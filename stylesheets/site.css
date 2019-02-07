@@ -417,6 +417,9 @@ legend.label-style {
   .accordion-timeline > li.timeline-entry-empty {
     border-left: 3px dotted #aeb0b5;
     height: 10rem; }
+    .accordion-timeline > li.timeline-entry-empty:first-of-type:before {
+      background-color: #aeb0b5;
+      border-color: #aeb0b5; }
   .accordion-timeline > li .year-start {
     position: absolute;
     left: -5rem;
