@@ -126,7 +126,8 @@
     border-left: 3px dotted $color-gray-light;
     height: 10rem;
 
-    &:first-of-type:before {
+    &:first-of-type:before,
+    &:last-of-type:after {
       background-color: $color-gray-light;
       border-color: $color-gray-light;
     }
